@@ -1,0 +1,106 @@
+<html lang='en'>
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Py4Life - editor</title>
+  <link href='py.css' rel='stylesheet' type='text/css'>
+  <script src="Promise.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="FunctionPromise.js" type="text/javascript" charset="utf-8"></script>
+  <script src="pypyjs.js" type="text/javascript" charset="utf-8"></script>
+  <script src="addons.js" type="text/javascript" charset="utf-8"></script>
+  <script src="edit.js"></script>
+</head><body>
+    <div class='container' id='mcc'>
+	<span id='extra'>
+		Theme: <select onchange="selectTheme()" id=select><option selected>default</option><option>3024-day</option><option>3024-night</option><option>abcdef</option><option>ambiance</option><option>base16-dark</option><option>base16-light</option><option>bespin</option><option>blackboard</option><option>cobalt</option><option>colorforth</option><option>dracula</option><option>duotone-dark</option><option>duotone-light</option><option>eclipse</option><option>elegant</option><option>erlang-dark</option><option>hopscotch</option><option>icecoder</option><option>isotope</option><option>lesser-dark</option><option>liquibyte</option><option>material</option><option>mbo</option><option>mdn-like</option><option>midnight</option><option>monokai</option><option>neat</option><option>neo</option><option>night</option><option>panda-syntax</option><option>paraiso-dark</option><option>paraiso-light</option><option>pastel-on-dark</option><option>railscasts</option><option>rubyblue</option><option>seti</option><option>solarized dark</option><option>solarized light</option><option>the-matrix</option><option>tomorrow-night-bright</option><option>tomorrow-night-eighties</option><option>ttcn</option><option>twilight</option><option>vibrant-ink</option><option>xq-dark</option><option>xq-light</option><option>yeti</option><option>zenburn</option></select>
+    <input type='text' placeholder="sys.stdin" id='stdino'>
+    </span><textarea id="editor">import sys
+for line in sys.stdin:
+    print(line)
+a = input()
+print(a)
+
+#run   ~> runs this script
+    @ anything after run is an argv
+save  ~> save your work in a file
+clear ~> "clear" screen also "cls" and "clean" should also work
+ls    ~> lists current directory
+cd    ~> change current directory
+cwd ~ show you directory you are in "pwd" should also work"""</textarea>
+</div>
+    <div id="console"></div>
+<script> function setCookie(e,t,r){var n=new Date;n.setTime(n.getTime()+24*r*60*60*1e3);var o="expires="+n.toUTCString();document.cookie=e+"="+t+";"+o+";path=/"}function getCookie(e){for(var t=e+"=",r=document.cookie.split(";"),n=0;n<r.length;n++){for(var o=r[n];" "==o.charAt(0);)o=o.substring(1);if(0==o.indexOf(t))return o.substring(t.length,o.length)}return""}function selectTheme(){var e=document.getElementById("select");CodeMirrorEditor.setOption("theme",e.options[e.selectedIndex].textContent),setCookie("theme",e.options[e.selectedIndex].textContent,408),theme_fun()}function theme_fun(){if(""!=getCookie("theme")){CodeMirrorEditor.setOption("theme",getCookie("theme"));var e=$(".CodeMirror").getStyleObject().backgroundColor;luminance_get(e)<120?document.getElementById("mcc").style.color="white":document.getElementById("mcc").style.color="black",document.getElementById("mcc").style.background=$(".CodeMirror").getStyleObject().backgroundColor}}var getRGB=function(e){var t;return e&&e.constructor==Array&&3==e.length?e:(t=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(e))?[parseInt(t[1]),parseInt(t[2]),parseInt(t[3])]:(t=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(e))?[2.55*parseFloat(t[1]),2.55*parseFloat(t[2]),2.55*parseFloat(t[3])]:(t=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(e))?[parseInt(t[1],16),parseInt(t[2],16),parseInt(t[3],16)]:(t=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(e))?[parseInt(t[1]+t[1],16),parseInt(t[2]+t[2],16),parseInt(t[3]+t[3],16)]:"undefined"!=typeof colors?colors[jQuery.trim(e).toLowerCase()]:null},luminance_get=function(e){var t=getRGB(e);return t?.2126*t[0]+.7152*t[1]+.0722*t[2]:null};!function(e){e.fn.getStyleObject=function(){var e,t=this.get(0),r={};if(window.getComputedStyle){for(var n=function(e,t){return t.toUpperCase()},o=0,s=(e=window.getComputedStyle(t,null)).length;o<s;o++){var c=(i=e[o]).replace(/\-([a-z])/g,n),a=e.getPropertyValue(i);r[c]=a}return r}if(e=t.currentStyle){for(var i in e)r[i]=e[i];return r}return this.css()}}(jQuery);
+function fix_height() { $(".CodeMirror").css("height", (window.innerHeight - document.getElementById('extra').offsetHeight - 8) + "px"); }
+
+//start
+window.onload = function() {
+    //setup editor
+    CodeMirrorEditor = CodeMirror.fromTextArea($("#editor")[0], { mode: { name: "text/x-python", version: 2, singleLineStringErrors: false }, lineNumbers: true, styleActiveLine: true, indentUnit: 4, matchBrackets: true });
+    $(".CodeMirror").show(); CodeMirrorEditor.refresh(); theme_fun();
+    //console
+    window.jqconsole = $('#console').jqconsole('', '>>> ');
+    pypyjs.stdout = pypyjs.stderr = function(data) { jqconsole.Write(data, 'jqconsole-output'); }
+    pypyjs.ready().then(py_console).then(null, function(err) { jqconsole.Write('ERROR: ' + err); });
+	window.onresize = fix_height; fix_height();
+}
+
+// arguments global variable bad code :D
+var args;
+//run editor code
+function verbose_exec(code) {    
+    var init_start = new Date();
+    //THIS IS WHERE I AM TRYING TO SET UP WHAT STDIN ACTUALLY IS
+    window.vm = new pypyjs({
+        totalMemory: 256 * 1024 * 1024,
+        stdin: function() { return document.getElementById('stdino').value; }
+    });
+
+    vm.stdout = vm.stderr = function(data) { jqconsole.Write(data, 'jqconsole-output'); }
+    vm.ready().then(function() {
+        jqconsole.Reset();
+        window.vm.stdout("Python Loaded in: " + human_time(new Date() - init_start) + '\n');
+        vm.exec("import sys\ninput = raw_input\nsys.argv = "+args+"\n");
+        var start_time = new Date();
+        vm.exec(code).then(function() { 
+            window.vm.stdout("\nRun in: " + human_time(new Date() - start_time)+ " (OK)"); py_console(); },
+               function (err) { vm.stderr(err + "\nRun in " + human_time(new Date() - start_time) + "\n"); py_console(); /*("+err.name+": "+err.message+"!) the human-readable traceback, as a string*/ });
+    }, function(err) { jqconsole.Write('ERROR: ' + err); });
+}
+//call promt for user input
+function py_console() {
+	pypyjs.exec("input = raw_input");
+    return pypyjs.repl(function(ps1) { jqconsole.SetPromptLabel(ps1);
+        return new Promise(function(resolve, reject) { jqconsole.Prompt(true, function(input) {
+            if(input.toLowerCase()=='clear' || input.toLowerCase()=='clean' || input.toLowerCase()=='cls') { jqconsole.Reset(); py_console(); }
+            else if(input.toLowerCase()=='run') { jqconsole.Write('exec...', 'jqconsole-output');
+                verbose_exec(CodeMirrorEditor.getValue());
+            }
+            else if(input.substring(0,3).toLowerCase() == 'run') {
+                for(var i = 0; i < input.length; i++) {
+                    if(input[i]==' ') continue;
+                    else if(input[i]=='=') resolve(input);
+                    else break;
+                }
+                args = JSON.stringify(['main.py'].concat(input.split(' ')));
+                verbose_exec(CodeMirrorEditor.getValue());
+            }
+            else if(input.toLowerCase()=='pwd' || input.toLowerCase()=='cwd') { resolve("import os;cwd=os.getcwd();pwd=os.getcwd();del os;pwd"); }
+            else if(input.substring(0, 3).toLowerCase()=='cd ') { resolve("import os;os.chdir('"+input.substring(3)+"')"); }
+            else if(input.toLowerCase()=='ls') { resolve("import os;ls=os.listdir(os.getcwd());del os;ls"); }
+            else if(input.toLowerCase()=='save') { var a = document.createElement('a'); a.href = window.URL.createObjectURL(new Blob([CodeMirrorEditor.getValue()], {'type': 'text/plain;charset=utf-8'})); a.download = 'main.py'; a.click(); py_console() }
+            else if(input.toLowerCase()=='help') { verbose_exec('print("HELP: run with arguments | save | clear | ls | cwd | cd ../where/you/go")') }
+            else resolve(input);
+          }); });
+        });
+}
+
+shortcut.add("Ctrl+S",function() {
+     var a = document.createElement('a');
+	a.href = window.URL.createObjectURL(new Blob([CodeMirrorEditor.getValue()], {'type': 'text/plain;charset=utf-8'}));
+	a.download = 'main.py'; a.click();
+});
+</script>
+</body>
+</html>
