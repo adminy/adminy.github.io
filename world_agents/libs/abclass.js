@@ -1,7 +1,7 @@
 function ABClass() {
-    this.LOGO_PNG = "/images/logo.earth.png"
-    this.RUNLOGO_PNG = "/images/logo.blue.png"
-    this.LOGO_MOBILE_PNG = "/images/logo.mobile.3.transp.png"
+    this.LOGO_PNG = "images/logo.earth.png"
+    this.RUNLOGO_PNG = "images/logo.blue.png"
+    this.LOGO_MOBILE_PNG = "images/logo.mobile.3.transp.png"
     this.tickyes = "<img align=absmiddle src=images/tick.yes.png>  &nbsp; "
     this.tickno = "<img align=absmiddle src=images/tick.info.png> &nbsp; "
     this.WORLDIMAGE_WIDTH = 900
@@ -116,17 +116,17 @@ function ABClass() {
     this.printIcon = function (t, n) {
         var e = "https://" + AB.THESERVER,
             o = "<img  style='border:none;" + n + "'   \twidth=30  src='" + t + "'>";
-        document.write(" <a title='Ancient Brain home' href='" + e + "' >" + o + "</a> ")
+        document.write(" <a title='World Agents home' href='" + e + "' >" + o + "</a> ")
     }
     this.printNameIcon = function (t, n) {
         var e = "https://" + AB.THESERVER;
-        document.write(" <span class=logo-text > <a title='Ancient Brain home' href='" + e + "' style='text-decoration: none;' >Ancient&nbsp;Brain</a> </span> ")
+        document.write(" <span class=logo-text > <a title='World Agents home' href='" + e + "' style='text-decoration: none;' >Ancient&nbsp;Brain</a> </span> ")
         this.printIcon(t, n)
     }
     this.printMobileLogo = function () {
         var t = "https://" + AB.THESERVER,
             n = "<img  style='border:none; vertical-align:middle; max-width:20vw; max-height:60px;'   src='" + AB.LOGO_MOBILE_PNG + "'>";
-        document.write(" <a title='Ancient Brain home' href='" + t + "' >" + n + "</a> ")
+        document.write(" <a title='World Agents home' href='" + t + "' >" + n + "</a> ")
     }
     this.launchWorld = function (t, n) {
         return " <div class=runimgdiv> " + ("<a href='" + ("https://" + AB.RUNSERVER + "/run.php?world=" + t) + "'><img src='" + ("https://" + AB.THESERVER + "/worldpics/" + t + ".jpg") + "'></a>") + " </div>  <div style='font-size:smaller; width:220;' class=wrapbox > World: " + ("<a href='" + ("https://" + AB.THESERVER + "/world.php?world=" + t) + "'>" + n + "</a>") + " </div> "
@@ -308,7 +308,7 @@ AB.loadingScreen = function () {
     if(AB.insideIframe()) {
         loading.innerHTML = " <div id=loadingcontent  class='loading-inner' >  <div  style='font-size: 20px;'  class=logo-text > <p> Loading ... </p> </div>  <img  src='images/loading.gif'>  </div> "
     } else {
-        loading.innerHTML = " <div id=loadingcontent  class='loading-inner' >  <img  width=40 src='" + AB.LOGO_PNG + "'>  <div  style='font-size: 20px;'  class=logo-text > <p> Ancient Brain </p> <p> Loading ... </p> </div>  <img  src='images/loading.gif'>  </div> "
+        loading.innerHTML = " <div id=loadingcontent  class='loading-inner' >  <img  width=40 src='" + AB.LOGO_PNG + "'>  <div  style='font-size: 20px;'  class=logo-text > <p> World Agents </p> <p> Loading ... </p> </div>  <img  src='images/loading.gif'>  </div> "
     }
 }
 AB.loadingBlockPage = function () {
