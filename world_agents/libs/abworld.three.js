@@ -21,7 +21,7 @@ function ABWorldClass() {
         this.renderer = new THREE.WebGLRenderer({ preserveDrawingBuffer: false })
         this.renderer.setClearColor(t, 1)
         this.canvas = this.renderer.domElement
-        document.getElementById("runcanvas").appendChild(this.canvas)
+        document.getElementById('scene').appendChild(this.canvas)
         this.createScene()
         this.camera = new THREE.PerspectiveCamera(this.INIT_FOV, 1, this.INIT_NEAR, this.maxRadius)
         this.scene.add(this.camera)

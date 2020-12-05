@@ -1,7 +1,7 @@
 AB.clockTick = 0
 AB.maxSteps = 20000
 AB.world  = {
-    gridSize: 64,
+    gridSize: 32,
     squareSize: 100,
     grid: [],
     agents: [],
@@ -47,16 +47,17 @@ const getTreeTex = url => new Promise(whenDone => {
     new THREE.TextureLoader().load(url, texture => whenDone(texture))
 })
 
-function loadResources() {
+const SKY_RESOURCES = [...SKYBOX_ARRAY];
+async function loadResources() {
     const res = [TEXTURE_WALL, TEXTURE_AGENT, TEXTURE_ENEMY, TEXTURE_MAZE]
-    Promise.all(res.concat(SKYBOX_ARRAY).map(url => getTreeTex(url)))
-    .then(textures => {
-        textures.forEach(texture => texture.minFilter = THREE.LinearFilter);
+    const textures = await Promise.all(res.concat(SKYBOX_ARRAY).map(url => getTreeTex(url)));
+    for (const texture of textures) {
+        texture.minFilter = THREE.LinearFilter
+    }
         
-        [wall_texture, agent_texture, enemy_texture, maze_texture] = textures.slice(0, 4)
-        textures.slice(4).forEach((texture, i) => SKYBOX_ARRAY[i] = texture)
-        initScene()
-    })
+    [wall_texture, agent_texture, enemy_texture, maze_texture] = textures.slice(0, 4)
+    textures.slice(4).forEach((texture, i) => SKY_RESOURCES[i] = texture)
+    initScene()
 }
 
 
@@ -89,6 +90,11 @@ function translate ( i, j )
 }
 
 function initScene() {
+    AB.world.agents = [];
+    for (const $el of document.querySelectorAll('.agent-map, .agent-selector > button')) {
+        $el.remove();
+    }
+
         var i,j, shape, thecube;
         
         AB.world.grid = Array(AB.world.gridSize).fill(0).map(_ => Array(AB.world.gridSize))
@@ -125,29 +131,66 @@ function initScene() {
         thecube.position.copy ( translate(i,j) ); 		  	// translate my (i,j) grid coordinates to three.js (x,y,z) coordinates 
         ABWorld.scene.add(thecube);		
     }
-            
-    const makeAgent = map => {
-        const pos = randomPos()
-        const shape    = new THREE.BoxGeometry ( AB.world.squareSize, AB.world.squareSize, AB.world.squareSize )
-        const box = new THREE.Mesh(shape)
-        box.material =  new THREE.MeshBasicMaterial({map})
-        ABWorld.scene.add(box)
-        drawAgent(box, pos.x, pos.y)
-        const agent = {box, ...pos, id: AB.world.agents.length, mind: AB.mind.createAgent(AB.world.gridSize)}
-        AB.world.agents.push(agent)
-        return agent
-    }
+
     // set up enemy 
     // start in random location
-    // makeAgent(enemy_texture)
-    for(let i = 0; i < AB.world.totalAgents; i++)
-        makeAgent(Math.random() > 0.5 ? agent_texture : enemy_texture)
+    const $agentSelector = document.querySelector('.agent-selector');
+    for (let i = 0; i < AB.world.totalAgents; i++) {
+        const map = Math.random() > 0.5 ? agent_texture : enemy_texture;
+
+        const shape = new THREE.BoxGeometry(AB.world.squareSize, AB.world.squareSize, AB.world.squareSize)
+        const box = new THREE.Mesh(shape)
+        box.material = new THREE.MeshBasicMaterial({ map })
+        ABWorld.scene.add(box)
+
+        const pos = randomPos()
+        drawAgent(box, pos.x, pos.y)
+
+        const agent = { box, ...pos };
+        agent.id = AB.world.agents.push(agent);
+
+        const $map = document.createElement('canvas');
+        $map.width = AB.world.gridSize;
+        $map.height = AB.world.gridSize;
+        const mapScaledSize = AB.world.gridSize * ~~(256 / AB.world.gridSize);
+        $map.style.width = mapScaledSize + 'px';
+        $map.style.height = mapScaledSize + 'px';
+        $map.className = 'agent-map';
+
+        const ctx = $map.getContext('2d');
+        agent.drawBox = (x, y, color) => {
+            ctx.fillStyle = color;
+            ctx.fillRect(x, y, 1, 1);
+        };
+
+        const $tabBtn = document.createElement('button');
+        $tabBtn.innerText = agent.id;
+        $tabBtn.addEventListener('click', () => {
+            const $prev = document.querySelector('.agent-map.active');
+            const $prevBtn = $agentSelector.querySelector('.active');
+            if ($prev) {
+                $prev.classList.remove('active');
+                $prevBtn.classList.remove('active');
+            }
+
+            $tabBtn.classList.add('active');
+            $map.classList.add('active');
+        });
+
+        $agentSelector.after($map);
+        $agentSelector.appendChild($tabBtn);
+        if (!i) {
+            $tabBtn.classList.add('active');
+            $map.classList.add('active');
+        }
+
+        agent.mind = AB.mind.createAgent(AB.world.gridSize, agent.drawBox);
+    }
 
     var skyGeometry = new THREE.CubeGeometry ( skyboxConst, skyboxConst, skyboxConst )
-    var skyMaterial = new THREE.MeshFaceMaterial ( Array(6).fill(0).map((_, i) => new THREE.MeshBasicMaterial({map: SKYBOX_ARRAY[i], side: THREE.BackSide})))
+    var skyMaterial = new THREE.MeshFaceMaterial ( Array(6).fill(0).map((_, i) => new THREE.MeshBasicMaterial({map: SKY_RESOURCES[i], side: THREE.BackSide})))
     ABWorld.scene.add(new THREE.Mesh(skyGeometry, skyMaterial))
     ABWorld.render()
-    AB.removeLoading()
     AB.runReady = true
 }
 
@@ -183,50 +226,21 @@ const moveLogicalAgent = agent => {			// this is called by the infrastructure th
     }
 }
 
-const span1 = document.createElement('span')
-const span2 = document.createElement('span')
-const span3 = document.createElement('span')
-const controlPanel = document.getElementById('runheaderbox')
-controlPanel.appendChild(span1)
-controlPanel.appendChild(span2)
-controlPanel.appendChild(span3)
-controlPanel.appendChild(document.createElement('br'))
-
 // --- score: -----------------------------------
 // const badstep = () => Math.abs(ei - ai) < 2 && Math.abs(ej - aj) < 2
 const agentBlocked = () => occupied(ai - 1, aj) && occupied(ai + 1, aj) && occupied(ai, aj + 1) && occupied(ai, aj - 1)
-// const updateStatusBefore = a => span1.innerHTML = `Step: ${AB.step} &nbsp; x = (${AB.world.getState()}) &nbsp; a = (${a}) `
-// const updateStatusAfter = () => span2.innerHTML = ` &nbsp; y = (${AB.world.getState()}) <BR> Bad steps: ${badsteps} &nbsp; Good steps: ${goodsteps} &nbsp; Score: ${(( goodsteps / AB.step ) * 100).toFixed(2)}% `
 
 //--- public functions / interface / API ----------------------------------------------------------
 
 AB.world.newRun = () => {
-    AB.loadingScreen()
     AB.runReady = false
     badsteps = 0
     goodsteps = 0
-    ABWorld.init3d ( startRadiusConst, maxRadiusConst, SKYCOLOR  )
+    ABWorld.init3d(startRadiusConst, maxRadiusConst, SKYCOLOR )
     loadResources()
-    return AB.world.gridSize
 }
 
 AB.world.getState = agent => AB.world.agents.map(a => a == agent ? ({me: true, x: a.x, y: a.y}) : ({x: a.x, y: a.y})) //[ ai, aj, ei, ej ]
-
-// AB.world.takeAction = a => {
-//     updateStatusBefore(a);
-//     moveLogicalAgent(a);
-//     //AB.step % 2 === 0 && moveLogicalEnemy(getEnemyAction());
-//     // badstep() ? badsteps++ : goodsteps++;
-//     AB.world.agents.forEach(agent => drawAgent(agent.box, agent.x, agent.y))
-//     updateStatusAfter()
-//     // if (agentBlocked()) {
-//     //     badsteps = badsteps + BLOCKPUNISH
-//     //     AB.step = AB.step + BLOCKPUNISH
-//     //     span3.innerHTML = ' <br> <font color=red> <B> Agent blocked. ' + BLOCKPUNISH + ' extra bad steps and reset enemy. </B> </font> '
-//     //     soundAlarm()
-//     //     [ei, ej] = randomPos()
-//     // }
-// }
 
 AB.world.update = () => {
     AB.world.agents.forEach(agent => {
@@ -234,6 +248,5 @@ AB.world.update = () => {
         drawAgent(agent.box, agent.x, agent.y)
     })
 }
-AB.world.endRun = () => span3.innerHTML = ' <br> <font color=green> <B> Run over. </B> </font> '
 AB.world.getScore = () => (( goodsteps / AB.maxSteps ) * 100).toFixed(2)
 

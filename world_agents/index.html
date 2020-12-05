@@ -1,70 +1,57 @@
 <html>
-
-<head>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title> Run Mind: "Mind" in World: "World"</title>
-    <link rel=stylesheet type=text/css href='main.css'>
-</head>
-
-<body>
-    <script src='libs/abclass.js'></script>
-    <script src='libs/r80.three.min.js'></script>
-    <script src='libs/OBJLoader.js'></script>
-    <script src='libs/MTLLoader.js'></script>
-    <script src='libs/TGALoader.js'></script>
-    <script src='libs/abworld.three.js'></script>
-    <script src='libs/abhandler.three.js'></script>
-    <script src='libs/three.js'></script>
-
-    <div id=wrapper>
-        <div id=runcanvas></div>
-        <div id=threepage>
-            <DIV id=runheaderbox class='runheader' style='display:none'>
-                <h1>Controls Panel</h1>
-                <div style='margin-top:5px;'>
-                    <button class=altbutton onclick='AB.controlPause();'>Pause</button>
-                    <button class=altbutton onclick='AB.controlStep();'>Step</button>
-                    <button class=altbutton onclick='AB.controlRun();'>Resume</button>
-                    <button onclick='window.location.reload()' class=normbutton>Reload</button>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AncientBrain 2.0</title>
+        <link rel="stylesheet" href="./styles/main.css" />
+    </head>
+    <body>
+        <div id="scene">
+            <div class="overlay">
+                <div class="agent-selector"></div>
+                <div id="control-buttons">
+                    <button class="btn-icon" data-action="play"><img src="./img/icons/play.svg" /></button>
+                    <button class="btn-icon" data-action="pause"><img src="./img/icons/pause.svg" /></button>
+                    <button class="btn-icon" data-action="step"><img src="./img/icons/step.svg" /></button>
+                    <button class="btn-icon" data-action="info"><img src="./img/icons/info.svg" /></button>
+                    <button class="btn-icon" data-action="settings"><img src="./img/icons/settings.svg" /></button>
                 </div>
-                <br>
-                The world tells each agent its size.<br><br>
-                Each agent every time they take an action <br>
-                are told of their position and position of other agents<br>
-                <br>
-                <br>
-                For more fun we could let agents share a common wall recorder<br>
             </div>
         </div>
-    </div>
-    <script src='world.js'></script>
-    <script src='mind.js'></script>
-    <script>
-        AB.nextStep = () => {
-            if (AB.runReady) {
-                if (AB.endCondition()) {
-                    clearInterval(AB.timer)
-                    AB.running = false
-                    AB.world.endRun()
-                } else {
-                    AB.world.update()
-                    // const state = AB.world.getState()
-                    // const action = AB.mind.getAction(state)
-                    // AB.world.takeAction(action)
-                    ABWorld.render()
-                    AB.step++
-                }
-            }
-        }
+        <div id="info-block" class="right-box">
+            The world tells each agent its size.
+            <br />
+            <br />
+            Each agent every time they take an action <br />
+            are told of their position and position of other agents.
+            <br />
+            <br />
+            For more fun we could let agents share a common wall recorder.
+        </div>
+        <form id="settings-block" class="right-box">
+            <label>Iteration period (<span></span>):</label>
+            <input name="period" type="range" min="0" step="10" max="1500" />
 
-        AB.newRun = () => {
-            AB.step = 1
-            const worldSeed = AB.world.newRun()
-            // AB.world.createAgent(AB.mind.createAgent(worldSeed))
-            ABWorld.render()
-            AB.timer = setInterval(AB.nextStep, AB.clockTick)
-            AB.running = true
-        }
-        AB.newRun()
-    </script>
-</body>
+            <label>World size (<span></span>):</label>
+            <input name="world-size" type="range" min="16" step="1" max="128" />
+
+            <label>Agents (<span></span>):</label>
+            <input name="agents" type="range" min="1" step="1" max="20" />
+
+            <button type="submit">Apply</button>
+        </form>
+
+        <script src='libs/abclass.js'></script>
+        <script src='libs/r80.three.min.js'></script>
+        <script src='libs/OBJLoader.js'></script>
+        <script src='libs/MTLLoader.js'></script>
+        <script src='libs/TGALoader.js'></script>
+        <script src='libs/abworld.three.js'></script>
+        <script src='libs/abhandler.three.js'></script>
+        <script src='libs/three.js'></script>
+
+        <script src='world.js'></script>
+        <script src='mind.js'></script>
+    </body>
+
+    <script async src="./main.js"></script>
+</html>
