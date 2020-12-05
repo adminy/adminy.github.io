@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title> Run Mind: "Mind" in World: "World"</title>
+    <link rel=stylesheet type=text/css href='main.css'>
+</head>
+
+<body>
+    <script src='/libs/abclass.js'></script>
+    <script src='/libs/r80.three.min.js'></script>
+    <script src='/libs/OBJLoader.js'></script>
+    <script src='/libs/MTLLoader.js'></script>
+    <script src='/libs/TGALoader.js'></script>
+    <script src='/libs/abworld.three.js'></script>
+    <script src='/libs/abhandler.three.js'></script>
+    <script src='/libs/three.js'></script>
+
+    <div id=wrapper>
+        <div id=runcanvas></div>
+        <div id=threepage>
+            <DIV id=runheaderbox class='runheader' style='display:none'>
+                <h1>Controls Panel</h1>
+                <button onclick='window.location.reload()' class=normbutton>Reload</button>
+                <div style='margin-top:5px;'>
+                    <p> Run: <button class=altbutton onclick='AB.controlPause();'>Pause</button>
+                        <button class=altbutton onclick='AB.controlStep();'>Step</button>
+                        <button class=altbutton onclick='AB.controlRun();'>Resume</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/world.js'></script>
+    <script src='/mind.js'></script>
+    <script>
+        AB.nextStep = () => {
+            if (AB.runReady) {
+                if (AB.endCondition()) {
+                    clearInterval(AB.timer)
+                    AB.running = false
+                    AB.world.endRun()
+                } else {
+                    AB.world.update()
+                    // const state = AB.world.getState()
+                    // const action = AB.mind.getAction(state)
+                    // AB.world.takeAction(action)
+                    ABWorld.render()
+                    AB.step++
+                }
+            }
+        }
+
+        AB.newRun = () => {
+            AB.step = 1
+            const worldSeed = AB.world.newRun()
+            // AB.world.createAgent(AB.mind.createAgent(worldSeed))
+            ABWorld.render()
+            AB.timer = setInterval(AB.nextStep, AB.clockTick)
+            AB.running = true
+        }
+        AB.newRun()
+    </script>
+</body>
