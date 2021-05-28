@@ -10,11 +10,11 @@ AB.world  = {
 const BLOCKPUNISH = 50
 const [ACTION_LEFT, ACTION_RIGHT, ACTION_UP, ACTION_DOWN, ACTION_STAYSTILL] = [0, 1, 2, 3, 4]
 
-const TEXTURE_WALL 	= 'uploads/starter/door.jpg'
-const TEXTURE_MAZE 	= 'uploads/starter/latin.jpg'
-const TEXTURE_AGENT = 'uploads/starter/pacman.jpg'
-const TEXTURE_ENEMY = 'uploads/starter/ghost.3.png'
-const SOUND_ALARM = 'uploads/starter/air.horn.mp3'
+const TEXTURE_WALL 	= '/world_agents/uploads/starter/door.jpg'
+const TEXTURE_MAZE 	= '/world_agents/uploads/starter/latin.jpg'
+const TEXTURE_AGENT = '/world_agents/uploads/starter/pacman.jpg'
+const TEXTURE_ENEMY = '/world_agents/uploads/starter/ghost.3.png'
+const SOUND_ALARM = '/world_agents/uploads/starter/air.horn.mp3'
 const BOXDENSITY = 0.1
 const NOBOXES = Math.trunc(AB.world.gridSize * AB.world.gridSize * BOXDENSITY)
 const MAXPOS = AB.world.gridSize * AB.world.squareSize
@@ -27,7 +27,7 @@ ABHandler.GROUNDZERO = true
 
 const downmountain = [ 'xpos', 'xneg', 'ypos', 'yneg', 'zpos', 'zneg' ].map(name => 'dawnmountain-' + name + '.png')
 const stsky = [ 'posx', 'negx', 'posy', 'negy', 'posz', 'negz' ].map(name => 'st.' + name + '.jpg')
-const SKYBOX_ARRAY = downmountain.map(name => 'uploads/starter/' + name)
+const SKYBOX_ARRAY = downmountain.map(name => '/world_agents/uploads/starter/' + name)
 
 const [GRID_BLANK, GRID_WALL, GRID_MAZE] = [0, 1, 2]
 
