@@ -38,15 +38,16 @@
 				<!-- <h4 class="undertitle victor-mono watermelon-text">Info</h4> -->
 				<p class="victor-mono">
 				  Hi there! My name is Marin. I've a passion for programming but mostly when I do Javascript.<br>
-				  I'm quite experienced in anything you can throw at me as I've been coding for <span class="watermelon-text">6 years</span>.<br>
+				  I'm quite experienced in anything you can throw at me as I've been coding for <span class="watermelon-text" id='numberOfYearsExp'>? years</span>.<br>
 				  I've worked with amazing People whom have shown be the best team work I ever hoped for in <span class="watermelon-text">SAP</span> and <span class="watermelon-text">FssA Project</span><br>
 				  doing Agile Development with continuous integration pipelines & Jira Tickets, Scrum with Daily Standups<br>
 				  Worked on lots of frontend javascript backend Node.js web technologies in AWS Lambda. <br>
-				  Familiar with <span class="watermelon-text">Choo, React, Vue, Redux, Materialize, Cognito, parcel, webpack, fastify, express, ws, php, mongodb, mysql, sqlite</span> for my frontend and backend applications.<br><br>
-				  I'm a linux expert, avid user of tmux & vim over some ssh'd remote machine and created dozen of <span class="watermelon-text">Docker</span> images to isolate <span class="watermelon-text">Java</span> Large scale applications or just to have a build system toolset.<br>
+				  Familiar with <span class="watermelon-text"><a href="https://github.com/adminy/web-template" target="_blank">Choo</a>, React, Vue, Redux, <a href="https://github.com/adminy/cubic" target="_blank">Materialize</a>, Cognito, <a href="https://github.com/adminy/web-template" target="_blank">parcel</a>, webpack, <a href="https://github.com/adminy/web-template" target="_blank">fastify</a>, <a href="https://github.com/adminy/chat_edit">express, ws</a>, <a href="/php" target="_blank">php</a>, mongodb, <a href="https://github.com/adminy/cubic" target="_blank">mysql</a>, <a href="https://github.com/adminy/todo_app" target="_blank">sqlite</a></span> for my frontend and backend applications.<br><br>
+				  I'm a linux expert, avid user of tmux & <a href="https://gist.github.com/adminy/349584d2b235c6458b70b2bc9da6cd7c" target="_blank">vim</a> over some ssh'd remote machine and created dozen of <span class="watermelon-text">Docker</span> images to isolate <span class="watermelon-text">Java</span> Large scale applications or just to have a build system toolset.<br>
 				  I've <span class="watermelon-text">9 raspberry Pi's</span> and <span class="watermelon-text">1 BeagleBoard AI</span> which I use for IoT projects that bring me lots of joy!<br>
-				  There is a set of technologies I use outside of Web-Stack for fun. Those are: <span class="watermelon-text">Node.js, emscripten, gcc, g++, clang, python, c#, prolog, haskell, Unity3D, blender</span><br>
-				  Seeking a strong team of developers which will help me stay on the right path and looking for experienced ones so I don't feel alienated.
+				  There is a set of technologies I use outside of Web-Stack for fun. Those are: <span class="watermelon-text"><a href="https://github.com/adminy/pi-rfid" target="_blank">Node.js</a>, <a href="https://github.com/adminy/wasm-codecs" target="_blank">emscripten</a>, <a href="https://github.com/adminy/mt2-server" target="_blank">gcc, g++, clang</a>, <a href="/py" target="_blank">python</a>, c#, prolog, haskell, Unity3D, blender</span>.<br>
+				  I've done OS development for x86 and aarch64 to run pure javascript on bare metal. Hoping to pick that up again.<br/>
+				  Seeking a strong team of developers which which I could share my skills with and learn from them.
 				</p>
 				<h5 class="undertitle monospace watermelon-text" style="margin: 0">Fun Facts</h5>
 				<p>
@@ -63,7 +64,9 @@
 		</section>
 		<footer class="center box-container primary no-border-radius">
 			<p class="no-margin">adminy (c) 2021</p>
-			
 		</footer>
+		<script>
+			document.getElementById('numberOfYearsExp').innerText = new Date(new Date() - new Date().setYear(2014)).getFullYear() - 1970 + ' years'
+		</script>
 	</body>
 </html>
