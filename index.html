@@ -10,11 +10,6 @@
 		<meta content="https://avatars.githubusercontent.com/u/22717869?v=4" property="og:image" />
 		<!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
 		<link href="style.css" type="text/css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
-
-		<!-- <link href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css" type="text/css" rel="stylesheet"> -->
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-
 	</head>
 
 	<body>
@@ -64,14 +59,11 @@
 		<script>
 			const $ = id => document.getElementById(id)
 			$('numberOfYearsExp').innerText = new Date().getFullYear() - new Date('01/08/2014').getFullYear()
-			const hearts = ['♥️', '💙', '💛', '💜', '💚', '💗', '💔', '💖', '❤️', '💓', '💝', '💟', '💞', '🖤', '😘']
-			let currentHeart = 0
+			const hearts = ['♥️', '💙', '💛', '💜', '💚', '💗', '💔', '💖', '💓', '💝', '💟', '💞', '🖤', '😘']
 			setInterval(() => {
-				$('heart').innerText = hearts[currentHeart++]
-				if (currentHeart >= hearts.length) {
-					currentHeart = 0
-				}
-			}, 3000)
+				hearts.push($('heart').innerText)
+				$('heart').innerText = hearts.shift()
+			}, 2900)
 			const facts = [
 				'<a href="https://caniuse.com/?search=h265" target="_blank">H265</a> video codec lost support with latest edge updates and its now only available on safari browser. <br/>' +
 				'<a href="https://caniuse.com/?search=opus" target="_blank">Opus</a> codec decoding only works if you download the whole file first, so nothing realtime other than webRTC. <br/>'+
