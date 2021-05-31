@@ -190,6 +190,7 @@ button {
 .box-container {
   border-radius: 10px;
   margin-bottom: 2.5em;
+  padding: 1em;
   position: relative;
 }
 
@@ -199,6 +200,10 @@ button {
 
 .no-border-radius {
   border-radius: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
 }
 
 @font-face {
