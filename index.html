@@ -37,9 +37,9 @@
 			<div class="box-container">
 				<!-- <h4 class="undertitle victor-mono watermelon-text">Info</h4> -->
 				<p class="victor-mono">
-				  Hi there! My name is Marin. I've a passion for programming but mostly when I do Javascript.<br>
-				  I'm quite experienced in anything you can throw at me as I've been coding for <span class="watermelon-text" id='numberOfYearsExp'>? years</span>.<br>
-				  I've worked with amazing People whom have shown be the best team work I ever hoped for in <span class="watermelon-text">SAP</span> and <span class="watermelon-text">FssA Project</span><br>
+				  Hi there! My name is Marin. I've a passion for programming. I <span id="heart">❤️</span> Javascript.<br>
+				  I'm quite experienced in anything you can throw at me as I've been coding for <span class="watermelon-text"><a href="https://drive.google.com/file/d/0B8HlYvDREiIbUDRUQUI4ekJUaGs/view?usp=sharing" target="_blank" id='numberOfYearsExp'>?</a> years</span>.<br>
+				  I've worked with amazing People whom have shown me the best team work I ever hoped for in <span class="watermelon-text">SAP</span> and <a href="https://www.dcu.ie/computing/news/2021/apr/embracing-disruption-serverless-computing" target="_blank">FssA Project</a><br>
 				  doing Agile Development with continuous integration pipelines & Jira Tickets, Scrum with Daily Standups<br>
 				  Worked on lots of frontend <a href="/world_agents" target="_blank">javascript</a> backend Node.js web technologies in AWS Lambda. <br>
 				  Familiar with <span class="watermelon-text"><a href="https://github.com/adminy/web-template" target="_blank">Choo</a>, React, Vue, Redux, <a href="https://github.com/adminy/cubic" target="_blank">Materialize</a>, Cognito, <a href="https://github.com/adminy/web-template" target="_blank">parcel</a>, webpack, <a href="https://github.com/adminy/web-template" target="_blank">fastify</a>, <a href="https://github.com/adminy/chat_edit">express, ws</a>, <a href="/php" target="_blank">php</a>, mongodb, <a href="https://github.com/adminy/cubic" target="_blank">mysql</a>, <a href="https://github.com/adminy/todo_app" target="_blank">sqlite</a></span> for my frontend and backend applications.<br><br>
@@ -50,11 +50,7 @@
 				  Seeking a strong team of developers which I could share my skills with and learn from them.
 				</p>
 				<h5 class="undertitle monospace watermelon-text" style="margin: 0">Fun Facts</h5>
-				<p>
-					<a href="https://caniuse.com/?search=h265" target="_blank">H265</a> video codec lost support with latest edge updates and its now only available on safari browser. <br/>
-					<a href="https://caniuse.com/?search=opus" target="_blank">Opus</a> codec decoding only works if you download the whole file first, so nothing realtime other than webRTC. <br/>
-					Not to worry though, as Javascript saves the day with the assistance of emscripten you get <a href="https://github.com/adminy/wasm-codecs" target="_blank">libde265.js & opus.js</a> decoding in one place done by yours truly!
-				</p>
+				<div id='facts'></div>
 			</div>
 			<div class="buttons">
 				<a href="https://github.com/adminy" aria-label="github"><i class="github-border fab fa-github"></i></a>
@@ -66,7 +62,36 @@
 			<p class="no-margin">adminy (c) 2021</p>
 		</footer>
 		<script>
-			document.getElementById('numberOfYearsExp').innerText = new Date(new Date() - new Date().setYear(2014)).getFullYear() - 1970 + ' years'
+			const $ = id => document.getElementById(id)
+			$('numberOfYearsExp').innerText = new Date().getFullYear() - new Date('01/08/2014').getFullYear()
+			const hearts = ['♥️', '💙', '💛', '💜', '💚', '💗', '💔', '💖', '❤️', '💓', '💝', '💟', '💞', '🖤']
+			let currentHeart = 0
+			setInterval(() => {
+				$('heart').innerText = hearts[currentHeart++]
+				if (currentHeart >= hearts.length) {
+					currentHeart = 0
+				}
+			}, 3000)
+			const facts = [
+				'<a href="https://caniuse.com/?search=h265" target="_blank">H265</a> video codec lost support with latest edge updates and its now only available on safari browser. <br/>' +
+				'<a href="https://caniuse.com/?search=opus" target="_blank">Opus</a> codec decoding only works if you download the whole file first, so nothing realtime other than webRTC. <br/>'+
+				'Not to worry though, as Javascript saves the day with the assistance of emscripten you get <a href="https://github.com/adminy/wasm-codecs" target="_blank">libde265.js & opus.js</a> decoding in one place done by yours truly!',
+				'Lets say you love music, you got yourself a powerful sound amplifier but its lacking Bass & Treble Hardware buttons or perhaps a Classical/Dance preset, or even Rock/Techno preset. However your amplifier just has a volume adjuster. Not to worry, Here is a software <a href="https://github.com/adminy/amixer-web" target="_blank">Mixer</a>',
+				'You can have a normal restricted life with <a href="https://github.com/adminy/WhiteWebWorld" target="_blank">White Web World</a> Whitelisting DNS tool. No more distractions in your life, just place the essential websites into the whitelist file.'
+			]
+			const addFact = () => {
+				const p = document.createElement('p')
+				p.innerHTML = facts.shift()
+				const nextFact = document.createElement('button')
+				nextFact.innerText = 'Next'
+				facts.length && p.appendChild(nextFact)
+				nextFact.addEventListener('click', e => {
+					addFact()
+					nextFact.remove()
+				})
+				$('facts').appendChild(p)
+			}
+			addFact()
 		</script>
 	</body>
 </html>
