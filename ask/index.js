@@ -70,8 +70,11 @@ const quizAnswer = e => {
 	!isFinished && loadQuestion()
 	button.classList.remove('is-loading')
 	if (isFinished) {
-		const answers = state.answers.map(B => {
-			const A = Array(state.quiz[index].answers.length).fill(0).map((_, i) => i).reverse().slice(0, state.quiz[index].pick || 1)
+		const answers = state.answers.map((B, index) => {
+			const A = Array(state.quiz[index].answers.length)
+				.fill(0).map((_, i) => i)
+				.reverse()
+				.slice(0, state.quiz[index].pick || 1)
 			// score = (A ∩ B) / (A ∪ B)
 			return A.filter(x => B.includes(x)).length / new Set([...A, ...B]).size
 		})
