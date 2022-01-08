@@ -24,7 +24,8 @@ const loadQuestion = () => {
 					}
 				}
 			}
-		}))
+		})),
+		onkeyup: e => e.keyCode === 13 && quizAnswer()
 	})
 }
 
@@ -45,16 +46,19 @@ const tryQuiz = () => {
 	})
 }
 
-const auth = () => appendElement($('.subtitle'), 'div', {
-	children: [
-		{ input: { placeholder: 'Your name is ...', class: 'input is-success is-large', type: 'text', autocomplete: 'off', ...(state.name ? { value: state.name } : {}) } },
-		{ br: {} }, { br: {} }, { br: {} },
-		{ input: { placeholder: 'Enter Test Key Here ...', class: 'input is-danger is-large', type: 'password', autocomplete: 'off' } }
-	]
-})
+const auth = () => {
+	appendElement($('.subtitle'), 'div', {
+		children: [
+			{ input: { placeholder: 'Your name is ...', class: 'input is-success is-large', type: 'text', autocomplete: 'off', ...(state.name ? { value: state.name } : {}) } },
+			{ br: {} }, { br: {} }, { br: {} },
+			{ input: { placeholder: 'Enter Test Key Here ...', class: 'input is-danger is-large', type: 'password', autocomplete: 'off' } }
+		]
+	})
+	$('.is-danger').addEventListener('keyup', e => e.keyCode === 13 && tryQuiz())
+}
 
-const quizAnswer = e => {
-	const button = e.currentTarget
+const quizAnswer = () => {
+	const button = $('.button')
 	button.classList.add('is-loading')
 	const B = [...document.querySelectorAll('input[name="answer"]')]
 		.filter(input => input.checked)
