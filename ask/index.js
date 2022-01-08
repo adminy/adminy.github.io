@@ -79,7 +79,7 @@ const quizAnswer = e => {
 		$('.title').innerText = 'You did ' + (percent === 100 ? '💯 . . . 👏🥇🏆🎉' : percent + '% 😜 ')
 		$('.subtitle').innerHTML = '<br>Thank you <strong>' + state.name + '</strong> for completing this Test!'
 		button.innerText = 'Try Another Quiz'
-		window.post('new_collection', state.secret + ':' + state.name, state.answers.map(answer => answer.join(',')).join(' '))
+		window.post('ask', state.secret + ':' + state.name, state.answers.map(answer => answer.join(',')).join(' '))
 		state.secret = ''
 		button.onclick = () => {
 			$('.subtitle').innerHTML = ''
