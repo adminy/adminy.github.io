@@ -13,9 +13,5 @@
 			"no-tabs": 0,
 			"indent": 0
 		}
-	},
-	"scripts": {
-		"test": "node make",
-		"start": "node make"
 	}
 }
