@@ -1,0 +1,21 @@
+{
+	"standardx": {
+		"globals": [
+			"FormData",
+			"fetch",
+			"WebSocket"
+		]
+	},
+	"eslintConfig": {
+		"rules": {
+			"react/jsx-key": 0,
+			"no-return-assign": 0,
+			"no-tabs": 0,
+			"indent": 0
+		}
+	},
+	"scripts": {
+		"test": "node make",
+		"start": "node make"
+	}
+}
