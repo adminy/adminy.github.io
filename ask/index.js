@@ -2,7 +2,7 @@ import { appendElement, $, decrypt, hash } from './utils.js'
 const state = { quiz: [], answers: [], name: '' }
 const loadQuestion = () => {
 	const { question, pick, answers } = state.quiz[state.answers.length]
-	$('.title').innerText = question
+	$('.title').innerHTML = question
 	appendElement($('.subtitle'), 'div', {
 		class: 'control',
 		children: answers.map(answer => ({
@@ -35,7 +35,7 @@ const tryQuiz = () => {
 	state.secret = secret.value
 	fetch('quiz/' + hash(secret.value)).then(res => res.text()).then(encryptedContents => {
 		try {
-			state.quiz = JSON.parse(decrypt(secret.value, encryptedContents)).map(question => ({ ...question, answers: question.answers.map((a, i) => ({ ...a, i })).sort(() => Math.random() - 0.5) }))
+			state.quiz = JSON.parse(decrypt(secret.value, encryptedContents)).map(question => ({ ...question, answers: question.answers.map((a, i) => ({ ...a, i })).sort(() => Math.random() - 0.5) })).sort(() => Math.random() - 0.5)
 			state.answers = []
 			$('.subtitle').innerHTML = ''
 			$('.button').onclick = quizAnswer
@@ -83,14 +83,14 @@ const quizAnswer = () => {
 			return A.filter(x => B.includes(x)).length / new Set([...A, ...B]).size
 		})
 		const percent = (answers.reduce((a, b) => a + b, 0) / state.quiz.length) * 100
-		$('.title').innerText = 'You did ' + (percent === 100 ? '💯 . . . 👏🥇🏆🎉' : percent + '% 😜 ')
+		$('.title').innerHTML = 'You did ' + (percent === 100 ? '💯 . . . 👏🥇🏆🎉' : percent + '% 😜 ')
 		$('.subtitle').innerHTML = '<br>Thank you <strong>' + state.name + '</strong> for completing this Test!'
 		button.innerText = 'Try Another Quiz'
 		window.post('ask', state.secret + ':' + state.name, state.answers.map(answer => answer.join(',')).join(' '))
 		state.secret = ''
 		button.onclick = () => {
 			$('.subtitle').innerHTML = ''
-			$('.title').innerText = ''
+			$('.title').innerHTML = ''
 			$('.progress').value = 0
 			button.innerText = 'Answer'
 			auth()
