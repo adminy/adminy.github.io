@@ -10,4 +10,4 @@ const hash = str => str.split('').map(v => v.charCodeAt(0)).reduce((a, v) => a +
 
 const key = process.argv[2]
 const file = fs.readFileSync(path.resolve(process.argv[3])).toString()
-fs.writeFileSync('../quiz/' + hash(key), encrypt(key, file))
+fs.writeFileSync('quiz/' + hash(key), encrypt(key, file))
