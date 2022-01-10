@@ -21,10 +21,8 @@
 				<p class="undertitle victor-mono-i">The <span class="ravy-text">JavaScript</span> Master</p>
 			</div>
 			<div>
-				<a href="https://github.com/adminy" aria-label="github"><img src="https://github-readme-stats.vercel.app/api?username=adminy&count_private=true&show_icons=true&theme=dracula"/></a><br>
+				<a href="https://github.com/adminy" aria-label="github"><img src="https://github-readme-stats.vercel.app/api?username=adminy&show_icons=true&theme=github_dark"/></a><br>
 				<a href="https://github.com/adminy" aria-label="github"><img src="https://komarev.com/ghpvc/?username=adminy"/></a>
-				<!-- <a href="https://github.com/adminy" aria-label="github"><img src="https://github-readme-stats.vercel.app/api/wakatime?username=adminy&compat=true&theme=dracula"/></a> -->
-
 			</div>
 	
 		</section>
@@ -33,17 +31,7 @@
 			<div class="box-container">
 				<!-- <h4 class="undertitle victor-mono watermelon-text">Info</h4> -->
 				<p class="victor-mono">
-				  Hi there! My name is Marin. I've a passion for programming. I <span id="heart">❤️</span>&nbsp;&nbsp; <a href="/world_agents" target="_blank">Javascript</a>.<br>
-				  I'm quite experienced in anything you can throw at me as I've been coding for <span class="watermelon-text"><a href="https://drive.google.com/file/d/0B8HlYvDREiIbUDRUQUI4ekJUaGs/view?usp=sharing" target="_blank" id='numberOfYearsExp'>?</a> years</span>.<br>
-				  I've worked with amazing People whom have shown me the best team work I ever hoped for in <span class="watermelon-text">SAP</span> and <a href="https://www.dcu.ie/computing/news/2021/apr/embracing-disruption-serverless-computing" target="_blank">FssA Project</a><br>
-				  doing Agile Development with continuous integration pipelines & Jira Tickets, Scrum with Daily Standups<br>
-				  Worked on lots of frontend javascript backend Node.js web technologies in AWS Lambda. <br>
-				  Familiar with <span class="watermelon-text"><a href="https://github.com/adminy/web-template" target="_blank">Choo</a>, React, Vue, Redux, <a href="https://github.com/adminy/cubic" target="_blank">Materialize</a>, Cognito, <a href="https://github.com/adminy/web-template" target="_blank">parcel</a>, webpack, <a href="https://github.com/adminy/web-template" target="_blank">fastify</a>, <a href="https://github.com/adminy/chat_edit">express, ws</a>, <a href="/php" target="_blank">php</a>, mongodb, <a href="https://github.com/adminy/cubic" target="_blank">mysql</a>, <a href="https://github.com/adminy/todo_app" target="_blank">sqlite</a></span> for my frontend and backend applications.<br><br>
-				  I'm a linux expert, avid user of tmux & <a href="https://gist.github.com/adminy/349584d2b235c6458b70b2bc9da6cd7c" target="_blank">vim</a> over some ssh'd remote machine and created dozen of <span class="watermelon-text">Docker</span> images to isolate <span class="watermelon-text">Java</span> Large scale applications or just to have a build system toolset.<br>
-				  I've <span class="watermelon-text">9 raspberry Pi's</span> and <span class="watermelon-text">1 BeagleBoard AI</span> which I use for IoT projects that bring me lots of joy!<br>
-				  There is a set of technologies I use outside of Web-Stack for fun. Those are: <span class="watermelon-text"><a href="https://github.com/adminy/pi-rfid" target="_blank">Node.js</a>, <a href="https://github.com/adminy/wasm-codecs" target="_blank">emscripten</a>, <a href="https://github.com/adminy/mt2-server" target="_blank">gcc, g++, clang</a>, <a href="/py" target="_blank">python</a>, c#, prolog, haskell, Unity3D, blender</span>.<br>
-				  I've done OS development for x86 and aarch64 to run pure javascript on bare metal. Hoping to pick that up again.<br/>
-				  Seeking a strong team of developers which I could share my skills with and learn from them.
+				  Hi there! My name is Marin. I've a passion for programming, <span id="heart">❤️</span>&nbsp;&nbsp; Javascript.<br>
 				</p>
 				<h5 class="undertitle monospace watermelon-text" style="margin: 0">Fun Facts</h5>
 				<div id='facts'></div>
@@ -59,13 +47,14 @@
 		</footer>
 		<script>
 			const $ = id => document.getElementById(id)
-			$('numberOfYearsExp').innerText = new Date().getFullYear() - new Date('01/08/2014').getFullYear()
-			const hearts = ['♥️', '💙', '💛', '💜', '💚', '💗', '💔', '💖', '💓', '💝', '💟', '💞', '🖤', '😘']
+			// $('numberOfYearsExp').innerText = new Date().getFullYear() - new Date('01/08/2014').getFullYear()
+			const hearts = ['♥️', '💙', '💛', '💜', '💚', '💗', '💖', '💓', '💝', '💟', '💞', '🖤', '😘']
 			setInterval(() => {
 				hearts.push($('heart').innerText)
 				$('heart').innerText = hearts.shift()
 			}, 2900)
 			const facts = [
+				'The secure platform quiz <a href="/ask">Ask</a>',
 				'<a href="https://caniuse.com/?search=h265" target="_blank">H265</a> video codec lost support with latest edge updates and its now only available on safari browser. <br/>' +
 				'<a href="https://caniuse.com/?search=opus" target="_blank">Opus</a> codec decoding only works if you download the whole file first, so nothing realtime other than webRTC. <br/>'+
 				'Not to worry though, as Javascript saves the day with the assistance of emscripten you get <a href="https://github.com/adminy/wasm-codecs" target="_blank">libde265.js & opus.js</a> decoding in one place done by yours truly!',
@@ -78,10 +67,7 @@
 				const nextFact = document.createElement('button')
 				nextFact.innerText = 'Next'
 				facts.length && p.appendChild(nextFact)
-				nextFact.addEventListener('click', e => {
-					addFact()
-					nextFact.remove()
-				})
+				nextFact.addEventListener('click', e => addFact(nextFact.remove()))
 				$('facts').appendChild(p)
 			}
 			addFact()
