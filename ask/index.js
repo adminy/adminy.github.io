@@ -35,7 +35,7 @@ const tryQuiz = () => {
 	state.secret = secret.value
 	fetch('quiz/' + hash(secret.value)).then(res => res.text()).then(encryptedContents => {
 		try {
-			state.quiz = JSON.parse(decrypt(secret.value, encryptedContents)).map(question => ({ ...question, answers: question.answers.map((a, i) => ({ ...a, i })).sort(() => Math.random() - 0.5) })).sort(() => Math.random() - 0.5)
+			state.quiz = JSON.parse(decrypt(secret.value, encryptedContents)).map((question, i) => ({ ...question, i, answers: question.answers.map((a, i) => ({ ...a, i })).sort(() => Math.random() - 0.5) })).sort(() => Math.random() - 0.5)
 			state.answers = []
 			$('.subtitle').innerHTML = ''
 			$('.button').onclick = quizAnswer
@@ -66,7 +66,7 @@ const quizAnswer = () => {
 		.sort((a, b) => b - a)
 
 	const index = state.answers.length
-	state.answers.push(B)
+	state.answers.push({ i: state.answers[index].i, B })
 
 	$('.subtitle').innerHTML = ''
 	$('.progress').value = parseInt(((index + 1) / state.quiz.length) * 100)
@@ -74,7 +74,7 @@ const quizAnswer = () => {
 	!isFinished && loadQuestion()
 	button.classList.remove('is-loading')
 	if (isFinished) {
-		const answers = state.answers.map((B, index) => {
+		const answers = state.answers.map(({ B }, index) => {
 			const A = Array(state.quiz[index].answers.length)
 				.fill(0).map((_, i) => i)
 				.reverse()
