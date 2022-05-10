@@ -94,7 +94,7 @@ next_btn.onclick = ()=>{
 function showQuetions(index){
     const que_text = document.querySelector(".que_text")
     
-    let que_tag = '<span>Question '+ (index + 1) + ". " + questions[index].question +'</span>'
+    let que_tag = '<span style="font-weight: 600">Question '+ (index + 1) + ". </span>" + questions[index].question
     let option_tag = questions[index].answers.map(({answer}, i) => '<div class="option" data-answer="'+i+'"><span>' + answer + '</span></div>').join('')
     que_text.innerHTML = que_tag
     option_list.innerHTML = option_tag
@@ -173,12 +173,8 @@ function startTimer(time){
     counter = setInterval(() => {
         timeCount.textContent = time
 
-        let w = parseInt(time_line.style.width) || 0
-        const wm = parseInt(((QUESTION_TIMEOUT - time) / QUESTION_TIMEOUT) * 800)
-        const wi = setInterval(() => {
-            time_line.style.width =  w + 'px'
-            w++ > wm && clearInterval(wi)
-        }, QUESTION_TIMEOUT)
+
+        time_line.style.width = parseInt(((QUESTION_TIMEOUT - time) / QUESTION_TIMEOUT) * 80) + 'vw'
         if(time-- < 0) {
             clearInterval(counter)
             timeText.textContent = "Time Off"

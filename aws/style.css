@@ -108,7 +108,7 @@ body{
 }
 
 .quiz_box{
-    width: 90vw;
+    width: 80vw;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -174,16 +174,29 @@ body{
     left: 0px;
     height: 3px;
     background: #007bff;
+    transition: width 0.1s; /* HERE! */
 }
 
 section{
     padding: 25px 30px 20px 30px;
     background: #fff;
+    overflow-y: scroll;
+    height: 80vh;
+}
+img {width:100%}
+
+.udlite-heading-md {
+    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.6rem;
+    margin: 0;
+    max-width: 60rem;
 }
 
 section .que_text{
     font-size: 25px;
-    font-weight: 600;
 }
 
 section .option_list{
