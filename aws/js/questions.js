@@ -1,5 +1,15 @@
+Array.prototype.shuffle = function() {
+	let i = this.length
+	if (i == 0) return this
+	while (--i) {
+	   const j = ~~(Math.random() * ( i + 1 ));
+	   [this[i], this[j]] = [this[j], this[i]]
+	}
+	return this
+}
+
 function randomInteger(min, max) {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
+	return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 let questionSet = randomInteger(0, 3)
@@ -6846,3 +6856,6 @@ let questions = [
 		"explanation": "<h4 class=\"udlite-heading-md\">Explanation</h4><div data-purpose=\"safely-set-inner-html:mc-quiz-question:question-explanation\"><p>A <strong>service control policy (SCP)</strong> determines what services and actions can be delegated by administrators to the users and roles in the accounts that the SCP is applied to. An SCP <strong><em>does not</em></strong> grant any permissions. Instead, SCPs are JSON policies that specify the maximum permissions for an organization or organizational unit (OU). The SCP limits permissions for entities in member accounts, including each AWS account root user.</p><p>If the SCP allows the actions for a service, the administrator of the account can grant permissions for those actions to the users and roles in that account, and the users and roles can perform the actions of the administrators grant those permissions. If the SCP denies actions for a service, the administrators in that account can't effectively grant permissions for those actions, and the users and roles in the account can't perform the actions even if granted by an administrator.</p><p><img src=\"https://media.tutorialsdojo.com/sap_scp_org_attached.png\"></p><p>Users and roles must still be granted permissions using IAM permission policies attached to them or to groups. The SCPs filter the permissions granted by such policies, and the user can't perform any actions that the applicable SCPs don't allow. Actions allowed by the SCPs can be used if they are granted to the user or role by one or more IAM permission policies. Take note that the IAM user being used by the administrator does not have IAM policies that explicitly grant EC2 or S3 service actions.</p><p>Hence, the correct answer is: <strong>The IAM user in the member account does not have IAM policies that explicitly grant EC2 or S3 service actions</strong>.</p><p>The option that says: <strong>All accounts within the OU does not automatically inherit the policy attached to them. You still have to manually attach the SCP to the individual AWS accounts of the OU</strong> is incorrect because an SCP attached to an OU is automatically inherited by all accounts within that same OU. The main cause of this issue is the missing IAM policy in the account, which explicitly grants EC2 or S3 service actions to the IAM user.</p><p>The option that says: <strong>An IAM policy that allows the use of S3 and EC2 services should be the one attached in the OU instead of an SCP</strong> is incorrect because you cannot directly assign an IAM policy to an OU. In addition, there is no attached IAM policy that allows EC2 or S3 service actions to the IAM user.</p><p><strong>Using the root user of the account to be able to create the new S3 bucket</strong> is incorrect because SCPs <strong>do</strong> affect the root user along with all IAM users and standard IAM roles in any affected account. The issue lies in the missing IAM policy of the account and not with the SCP, OU, or its AWS Organizations settings.</p><p><br></p><p><strong>References:</strong></p><p><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_about-scps.html\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_about-scps.html</a></p><p><a href=\"https://aws.amazon.com/organizations/faqs/\">https://aws.amazon.com/organizations/faqs/</a></p><p><br></p><p><strong>Check out these AWS Cheat Sheets:</strong></p><p><a href=\"https://tutorialsdojo.com/service-control-policies-scp-vs-iam-policies/?src=udemy\">https://tutorialsdojo.com/service-control-policies-scp-vs-iam-policies/</a></p></div>"
 	}
 ].slice(questionSet * 75, (questionSet + 1) * 75)
+.reverse().shuffle()
+.reverse().shuffle()
+.reverse().shuffle()
