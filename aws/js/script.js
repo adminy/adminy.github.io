@@ -74,18 +74,17 @@ quit_quiz.onclick = () => {
 
 next_btn.onclick = () => {
     document.querySelector('.explanation').innerHTML = ''
-    if(que_count < questions.length - 1){ 
+    clearInterval(counter)
+    if(que_count < questions.length - 1) { 
         que_count++ 
         que_numb++ 
         showQuetions(que_count) 
         queCounter(que_numb) 
-        clearInterval(counter) 
         startTimer(timeValue) 
         timeText.textContent = 'Time Left' 
         next_btn.classList.remove('show') 
         check_btn.classList.remove('show')
     }else{
-        clearInterval(counter) 
         showResult() 
     }
 }
@@ -128,6 +127,7 @@ check_btn.onclick = () => {
     const totalAnswers = answers.map(({correct}) => correct).reduce((a, b) => a + b, 0)
     let currentAnswers = 0
     for (const option of options) {
+        option.removeAttribute('onclick')
         option.classList.add('disabled')
         const selected = option.classList.contains('selected')
         const {answer, correct} = answers[parseInt(option.getAttribute('data-answer'))]
