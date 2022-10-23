@@ -1,0 +1,3 @@
+[submodule "themes/aurora"]
+	path = themes/aurora
+	url = git@github.com:adminy/hexo-theme-aurora.git
