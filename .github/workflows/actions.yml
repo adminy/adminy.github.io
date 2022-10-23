@@ -16,9 +16,12 @@ jobs:
           submodules: 'recursive'
 
       - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm test
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: test # will run `yarn test` command
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
