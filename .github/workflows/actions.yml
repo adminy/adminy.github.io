@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: borales/actions-yarn@v3.0.0
-      # - uses: JamesIves/github-pages-deploy-action@v4
+      - uses: actions/setup-node@v3
         with:
           submodules: 'recursive'
-          cmd: |
-            install
-            test
-          # folder: public
+      - run: yarn install
+      - run: yarn test
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: public
