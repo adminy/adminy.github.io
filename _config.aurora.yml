@@ -50,7 +50,7 @@ theme:
     color_3: '#2c3e50'
   postEdit:
     enable: true
-    url: https://github.com/adminy/adminy.github.io/tree/main/source/_posts # Link for view source
+    url: https://github.com/adminy/adminy.github.io/tree/master/source/_posts/ # Link for view source
     #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
 # → #
   # gradient:
@@ -71,7 +71,7 @@ socials:
   stackoverflow: 'stackoverflow.com/adminy'
   customs:
     instagram:
-      icon: iconfont icon-instagram
+      icon: fa-brands fa-instagram
       link: https://instagram.com/god8luck
   ##! Example:
   ##! --- Using SVG
