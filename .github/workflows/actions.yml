@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v3
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
+          submodules: 'recursive'
           folder: public
         run: |
           yarn install
