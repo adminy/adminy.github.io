@@ -15,7 +15,7 @@ jobs:
           submodules: 'recursive'
       - uses: actions/setup-node@v3
       - run: |
-          cd themes/aurora && yarn install -std=c++17 --ignore-engines && cd ..
+          cd themes/aurora && yarn install -std=c++17 --ignore-engines && cd ../..
           yarn install
           yarn test
       - uses: JamesIves/github-pages-deploy-action@v4
