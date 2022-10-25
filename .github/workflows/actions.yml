@@ -12,10 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          submodules: 'recursive'
-      - run: yarn install
-      - run: yarn test
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: public
+        run: |
+          yarn install
+          yarn test
