@@ -1,5 +1,6 @@
 ---
 title: Blog Setup
+date: 01/10/2022
 ---
 To set up the blog I'm using hexo and one theme it offers called aurora.
 ## Quick Start.

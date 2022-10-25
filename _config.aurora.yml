@@ -67,12 +67,16 @@ theme:
 #! ---------------------------------------------------------------
 socials:
   github: 'https://github.com/adminy'
-  twitter: 'twitter.com/adminy'
-  stackoverflow: 'stackoverflow.com/adminy'
+  twitter: 'https://twitter.com/adminy8'
+  stackoverflow: 'https://stackoverflow.com/users/4316850/got-to-figure'
   customs:
     instagram:
       icon: fa-brands fa-instagram
       link: https://instagram.com/god8luck
+    discord:
+      icon: fa-brands fa-discord
+      link: https://discord.gg/spxDansF
+
   ##! Example:
   ##! --- Using SVG
   # bilibili:

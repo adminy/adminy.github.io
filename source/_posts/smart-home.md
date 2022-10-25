@@ -2,6 +2,7 @@
 title: Future Proof Smart Home
 subtitle: NRF52840 wonders and what smart home is and will do with it and javascript
 cover: https://www.smarthomeperfected.com/wp-content/uploads/2021/06/matter-protocol2-scaled.jpg
+date: 05/10/2022
 tags:
 - hardware
 - protocols
