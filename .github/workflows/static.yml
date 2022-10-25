@@ -16,6 +16,6 @@ jobs:
         with:
           submodules: 'recursive'
           folder: public
-        run: |
+      - run: |
           yarn install
           yarn test
