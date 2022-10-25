@@ -15,16 +15,6 @@ jobs:
           submodules: 'recursive'
       - uses: actions/setup-node@v3
       - run: cd themes/aurora && yarn install -std=c++17 --ignore-engines && cd ../.. && yarn install && yarn test
-      # - uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: public
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # Upload entire repository
-          path: 'public'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          folder: public
