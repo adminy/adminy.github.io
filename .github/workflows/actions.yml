@@ -20,7 +20,7 @@ jobs:
             themes/aurora/node_modules
             node_modules
           key: node-modules-${{ hashFiles('package.json') }}-${{ hashFiles('themes/aurora/package.json') }}
-      - run: cd themes/aurora && yarn install -std=c++17 --ignore-engines && cd ../.. && yarn install && yarn test
+      - run: cd themes/aurora && yarn install -std=c++17 --ignore-engines && cd ../.. && yarn install && yarn test --verbose
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: public
