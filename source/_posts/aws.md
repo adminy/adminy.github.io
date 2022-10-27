@@ -1,6 +1,8 @@
 ---
+layout: post
 title: AWS Professional Training
 date: 01/08/2022
+tags:
 ---
 
 # How to pass the professional Exam
