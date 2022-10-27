@@ -41,7 +41,7 @@ menu:
 #! @docs https://aurora.tridiamond.tech/guide/theme.html
 #! ---------------------------------------------------------------
 theme:
-  dark_mode: false
+  dark_mode: true
   profile_shape: rounded # support `circle`, `diamond`, `rounded`
   feature: true
   gradient:
@@ -111,18 +111,18 @@ site_meta:
 
 # For local development only!
 gitalk:
-  enable: false
-#   autoExpand: true
-#   clientID: ''
-#   clientSecret: ''
-#   repo: 'dev-blog-comments'
-#   owner: 'adminy'
-#   admin: ['adminy']
-#   id: uid
-#   language: en
-#   distractionFreeMode: true
-#   recentComment: true
-#   proxy: ''
+  enable: true
+  autoExpand: true
+  clientID: '9e9f01173af30c7fd8b7'
+  clientSecret: 'eda4a72205ae299b48a6164359580d24813229c8'
+  repo: 'https://github.com/adminy/adminy.github.io'
+  owner: 'adminy'
+  admin: ['adminy']
+  id: uid
+  language: en
+  distractionFreeMode: true
+  recentComment: true
+  # proxy: ''
 
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
