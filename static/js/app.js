@@ -176,7 +176,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -222,7 +222,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -487,7 +487,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _components_ArticleCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/ArticleCard */ "./src/components/ArticleCard/index.ts");
 
@@ -536,7 +536,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -689,7 +689,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
 /* harmony import */ var _components_Dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/Dropdown */ "./src/components/Dropdown/index.ts");
 /* harmony import */ var _utils_validate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/utils/validate */ "./src/utils/validate.ts");
@@ -951,7 +951,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var _components_Dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/Dropdown */ "./src/components/Dropdown/index.ts");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
 /* harmony import */ var _stores_navigator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/stores/navigator */ "./src/stores/navigator.ts");
@@ -1035,7 +1035,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var _stores_navigator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/stores/navigator */ "./src/stores/navigator.ts");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
 /* harmony import */ var _stores_search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/stores/search */ "./src/stores/search.ts");
@@ -1153,7 +1153,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.push.js */ "./node_modules/core-js/modules/es.array.push.js");
 /* harmony import */ var core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -1245,7 +1245,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_push_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _stores_search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/stores/search */ "./src/stores/search.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
 
 
@@ -1536,7 +1536,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
 /* harmony import */ var _stores_author__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/author */ "./src/stores/author.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var _components_Social_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/Social.vue */ "./src/components/Social.vue");
 
 
@@ -1571,7 +1571,8 @@ __webpack_require__.r(__webpack_exports__);
     };
     const fetchAuthor = async () => {
       if (author.value === '') return;
-      await authorStore.fetchAuthorData(author.value).then(data => {
+      const blogAuthor = appStore.themeConfig.site.author.replaceAll(' ', '-').toLowerCase();
+      await authorStore.fetchAuthorData(blogAuthor).then(data => {
         authorData.value = data;
       });
     };
@@ -1616,12 +1617,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
-/* harmony import */ var _utils_github_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/utils/github-api */ "./src/utils/github-api.ts");
-/* harmony import */ var _utils_leancloud_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/utils/leancloud-api */ "./src/utils/leancloud-api.ts");
-/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
-
-
+/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -1632,36 +1629,42 @@ __webpack_require__.r(__webpack_exports__);
     SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_1__.SubTitle
   },
   setup() {
-    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_4__.useAppStore)();
+    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_2__.useAppStore)();
     const {
       t
-    } = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_5__.useI18n)();
+    } = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_3__.useI18n)();
     const recentComments = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
     const initRecentComment = () => {
       if (!appStore.configReady) return;
-      if (appStore.themeConfig.plugins.gitalk.enable && appStore.themeConfig.plugins.gitalk.recentComment) {
-        const githubComments = new _utils_github_api__WEBPACK_IMPORTED_MODULE_2__.GithubComments({
-          repo: appStore.themeConfig.plugins.gitalk.repo,
-          clientId: appStore.themeConfig.plugins.gitalk.clientID,
-          clientSecret: appStore.themeConfig.plugins.gitalk.clientSecret,
-          owner: appStore.themeConfig.plugins.gitalk.owner,
-          admin: appStore.themeConfig.plugins.gitalk.admin[0]
-        });
-        githubComments.getComments().then(response => {
-          recentComments.value = response;
-        });
-      } else if (appStore.themeConfig.plugins.valine.enable && appStore.themeConfig.plugins.valine.recentComment) {
-        const leadCloudComments = new _utils_leancloud_api__WEBPACK_IMPORTED_MODULE_3__.LeanCloudComments({
-          appId: appStore.themeConfig.plugins.valine.app_id,
-          appKey: appStore.themeConfig.plugins.valine.app_key,
-          avatar: appStore.themeConfig.plugins.valine.avatar,
-          admin: appStore.themeConfig.plugins.valine.admin,
-          lang: appStore.themeConfig.plugins.valine.lang
-        });
-        leadCloudComments.getRecentComments(7).then(response => {
-          recentComments.value = response;
-        });
-      }
+      // if (
+      //   appStore.themeConfig.plugins.gitalk.enable &&
+      //   appStore.themeConfig.plugins.gitalk.recentComment
+      // ) {
+      //   const githubComments = new GithubComments({
+      //     repo: appStore.themeConfig.plugins.gitalk.repo,
+      //     clientId: appStore.themeConfig.plugins.gitalk.clientID,
+      //     clientSecret: appStore.themeConfig.plugins.gitalk.clientSecret,
+      //     owner: appStore.themeConfig.plugins.gitalk.owner,
+      //     admin: appStore.themeConfig.plugins.gitalk.admin[0]
+      //   })
+      //   githubComments.getComments().then(response => {
+      //     recentComments.value = response
+      //   })
+      // } else if (
+      //   appStore.themeConfig.plugins.valine.enable &&
+      //   appStore.themeConfig.plugins.valine.recentComment
+      // ) {
+      //   const leadCloudComments = new LeanCloudComments({
+      //     appId: appStore.themeConfig.plugins.valine.app_id,
+      //     appKey: appStore.themeConfig.plugins.valine.app_key,
+      //     avatar: appStore.themeConfig.plugins.valine.avatar,
+      //     admin: appStore.themeConfig.plugins.valine.admin,
+      //     lang: appStore.themeConfig.plugins.valine.lang
+      //   })
+      //   leadCloudComments.getRecentComments(7).then(response => {
+      //     recentComments.value = response
+      //   })
+      // }
     };
     /** Wait for config is ready */
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => appStore.configReady, (newValue, oldValue) => {
@@ -1717,7 +1720,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
 /* harmony import */ var _stores_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/tag */ "./src/stores/tag.ts");
 /* harmony import */ var _components_Tag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/Tag */ "./src/components/Tag/index.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -2120,7 +2123,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -2186,7 +2189,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 
 
@@ -2325,7 +2328,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
 /* harmony import */ var _models_Post_class__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/models/Post.class */ "./src/models/Post.class.ts");
 /* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var _stores_category__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/stores/category */ "./src/stores/category.ts");
 /* harmony import */ var _components_Paginator_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/components/Paginator.vue */ "./src/components/Paginator.vue");
 /* harmony import */ var _stores_meta__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/stores/meta */ "./src/stores/meta.ts");
@@ -2455,8 +2458,16 @@ __webpack_require__.r(__webpack_exports__);
         return author.replace(/[\s]+/g, '-');
       }),
       recentCommentEnable: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
-        return appStore.themeConfig.plugins.gitalk.enable && appStore.themeConfig.plugins.gitalk.recentComment || !appStore.themeConfig.plugins.gitalk.enable && appStore.themeConfig.plugins.valine.enable && appStore.themeConfig.plugins.valine.recentComment;
+        return false;
+        // return (
+        //   (appStore.themeConfig.plugins.gitalk.enable &&
+        //     appStore.themeConfig.plugins.gitalk.recentComment) ||
+        //   (!appStore.themeConfig.plugins.gitalk.enable &&
+        //     appStore.themeConfig.plugins.valine.enable &&
+        //     appStore.themeConfig.plugins.valine.recentComment)
+        // )
       }),
+
       expanderClass,
       tabClass,
       expandHandler,
@@ -5453,7 +5464,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "i18n": function() { return /* binding */ i18n; }
 /* harmony export */ });
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 
 function loadLocaleMessages() {
   const locales = __webpack_require__("./src/locales/languages sync recursive [A-Za-z0-9-_,\\s]+\\.json$/");
@@ -5468,7 +5479,6 @@ function loadLocaleMessages() {
   return messages;
 }
 const i18n = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_0__.createI18n)({
-  legacy: false,
   locale: ({"NODE_ENV":"development","VUE_APP_PROJECT_TITLE":"Aurora Blog","VUE_APP_BASE_API":"api","VUE_APP_PUBLIC_PATH":"/","BASE_URL":"/"}).VUE_APP_I18N_LOCALE || 'en',
   fallbackLocale: ({"NODE_ENV":"development","VUE_APP_PROJECT_TITLE":"Aurora Blog","VUE_APP_BASE_API":"api","VUE_APP_PUBLIC_PATH":"/","BASE_URL":"/"}).VUE_APP_I18N_FALLBACK_LOCALE || 'en',
   messages: loadLocaleMessages()
@@ -6738,33 +6748,21 @@ class Plugins {
    * @param raw - Config data generated from Hexo
    */
   constructor(raw) {
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "gitalk", {
+    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "giscus", {
       enable: false,
-      autoExpand: true,
-      clientID: '',
-      clientSecret: '',
-      repo: 'blog-comments',
-      owner: 'adminy',
-      admin: ['adminy'],
-      id: 'location.pathname',
-      language: 'en',
-      distractionFreeMode: false,
-      recentComment: false,
-      proxy: ''
-    });
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "valine", {
-      enable: false,
-      app_id: '',
-      app_key: '',
-      avatar: 'mp',
-      placeholder: 'Leave your thoughts behind~',
-      visitor: true,
-      lang: '',
-      meta: [],
-      requiredFields: [],
-      avatarForce: false,
-      admin: '',
-      recentComment: false
+      repo: '',
+      repoId: '',
+      category: '',
+      categoryId: '',
+      mapping: 'pathname',
+      term: 'Leave your thoughts behind~',
+      reactionsEnabled: 1,
+      emitMetadata: 1,
+      inputPosition: 'top',
+      theme: 'dark',
+      lang: 'en',
+      crossorigin: 'anonymous',
+      loading: 'lazy'
     });
     (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "recent_comments", false);
     (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "busuanzi", {
@@ -6893,7 +6891,7 @@ const routes = [{
 }, {
   path: '/page/:slug*',
   name: 'page',
-  component: () => Promise.all(/*! import() | page */[__webpack_require__.e("src_stores_article_ts-src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("page")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Page.vue */ "./src/views/Page.vue")),
+  component: () => Promise.all(/*! import() | page */[__webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("src_stores_article_ts-src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("page")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Page.vue */ "./src/views/Page.vue")),
   props: true
 }, {
   path: '/result',
@@ -7118,9 +7116,7 @@ const useAuthorStore = (0,pinia__WEBPACK_IMPORTED_MODULE_2__.defineStore)({
       const {
         data
       } = await (0,_api__WEBPACK_IMPORTED_MODULE_0__.fetchAuthorPost)(slug);
-      return new Promise(resolve => {
-        resolve(new _models_Post_class__WEBPACK_IMPORTED_MODULE_1__.AuthorPosts(data));
-      });
+      return new _models_Post_class__WEBPACK_IMPORTED_MODULE_1__.AuthorPosts(data);
     }
   }
 });
@@ -7819,7 +7815,7 @@ class AuroraBotSoftware {
     const devtools = () => {
       console.log('opened devtools');
     };
-    console.log('%c', devtools);
+    // console.log('%c', devtools)
     devtools.toString = () => {
       this.showMessage(this.botTips.console, 6000, 9);
     };
@@ -7955,659 +7951,6 @@ class AuroraBotSoftware {
   getTheySaidSo() {
     fetch('https://quotes.rest/qod?language=en').then(response => response.json()).then(result => {
       this.showMessage(result.contents.quotes[0].quote, 6000, 9);
-    });
-  }
-}
-
-/***/ }),
-
-/***/ "./src/utils/external-request.ts":
-/*!***************************************!*\
-  !*** ./src/utils/external-request.ts ***!
-  \***************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-
-// create an axios instance
-const service = axios__WEBPACK_IMPORTED_MODULE_0__["default"].create({
-  // withCredentials: true, // send cookies when cross-domain requests
-  timeout: 5000 // request timeout
-});
-// request interceptor
-service.interceptors.request.use(config => {
-  // do something before request is sent
-  return config;
-}, error => {
-  // do something with request error
-  console.log(error); // for debug
-  return Promise.reject(error);
-});
-// response interceptor
-service.interceptors.response.use(
-/**
- * If you want to get http information such as headers or status
- * Please return  response => response
- */
-/**
- * Determine the request status by custom code
- * Here is just an example
- * You can also judge the status by HTTP Status Code
- */
-response => {
-  // Login or other response handle place here.
-  return response;
-}, error => {
-  console.log('err' + error); // for debug
-  console.error(error.message);
-  return Promise.reject(error);
-});
-/* harmony default export */ __webpack_exports__["default"] = (service);
-
-/***/ }),
-
-/***/ "./src/utils/github-api.ts":
-/*!*********************************!*\
-  !*** ./src/utils/github-api.ts ***!
-  \*********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "GithubComment": function() { return /* binding */ GithubComment; },
-/* harmony export */   "GithubComments": function() { return /* binding */ GithubComments; }
-/* harmony export */ });
-/* harmony import */ var _home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var core_js_modules_web_dom_exception_stack_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-exception.stack.js */ "./node_modules/core-js/modules/web.dom-exception.stack.js");
-/* harmony import */ var core_js_modules_web_dom_exception_stack_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_exception_stack_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils_external_request__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/utils/external-request */ "./src/utils/external-request.ts");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/utils */ "./src/utils/index.ts");
-
-
-
-
-const COMMENT_CACHE_KEY = 'github-comment-cache-key';
-const GITHUB_API_URL = 'https://api.github.com/repos';
-class GithubComments {
-  constructor(options) {
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "commentUrlCount", 0);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "configs", {
-      repo: '',
-      owner: '',
-      clientId: '',
-      clientSecret: '',
-      admin: '',
-      authorizationToken: '',
-      lang: 'en'
-    });
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "comments", []);
-    /**
-     * Initializing the configs.
-     */
-    this.configs.repo = `${GITHUB_API_URL}/${options.owner}/${options.repo}/issues`;
-    this.configs.clientId = options.clientId;
-    this.configs.clientSecret = options.clientSecret;
-    this.configs.admin = options.admin;
-    this.configs.authorizationToken = 'Basic ' + window.btoa(options.clientId + ':' + options.clientSecret);
-    if (options.lang) this.configs.lang = options.lang;
-  }
-  async getComments() {
-    return new Promise(resolve => {
-      const cacheComments = this.getCache();
-      if (cacheComments.isValid()) {
-        this.comments = cacheComments.data;
-        resolve(this.comments);
-      } else {
-        this.fetchCommentData().then(comments => {
-          resolve(comments);
-        });
-      }
-    });
-  }
-  /**
-   * Saving comments into cache avoiding high frequent
-   * requesting Github api.
-   * @param comments Fresh comment data for caching.
-   */
-  setCache(comments) {
-    const cacheComments = new CommentCache(comments);
-    localStorage.setItem(COMMENT_CACHE_KEY, JSON.stringify(cacheComments));
-  }
-  /**
-   * Getting the cached comment from localStorage.
-   * @returns GithubComment
-   */
-  getCache() {
-    const stringCache = localStorage.getItem(COMMENT_CACHE_KEY);
-    if (stringCache) {
-      const cacheComments = JSON.parse(stringCache);
-      return new CommentCache(cacheComments['data'], cacheComments['time']);
-    }
-    return new CommentCache();
-  }
-  /**
-   * Fetching the comment data.
-   * @param authorizationToken GitHub authorization token
-   */
-  async fetchCommentData() {
-    const url = this.configs.repo + '/comments?sort=created&direction=desc&per_page=7&page=1';
-    return new Promise(resolve => {
-      this.fetchGithub(url, this.configs.authorizationToken).then(response => {
-        const {
-          data
-        } = response;
-        this.comments = data.map(item => {
-          return new GithubComment(item, this.configs);
-        });
-        this.setCache(this.comments);
-        resolve(this.comments);
-      });
-    });
-  }
-  /**
-   * Fetching the data from GitHub
-   * @param url Github api + repo url
-   * @param authorizationToken Github authorization token
-   * @parma call
-   */
-  async fetchGithub(url, authorizationToken) {
-    return await _utils_external_request__WEBPACK_IMPORTED_MODULE_2__["default"].get(url, {
-      headers: {
-        Accept: 'application/json; charset=utf-8',
-        Authorization: authorizationToken
-      }
-    });
-  }
-}
-class CommentCache {
-  constructor(data, time) {
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "data", []);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "time", 0);
-    this.data = data ? data.map(item => {
-      return new GithubComment(item);
-    }) : [];
-    this.time = time ? time : new Date().getTime();
-  }
-  isValid() {
-    /**
-     * One minute cache to keep the requests to Github API
-     * are at 1 minute intervals.
-     */
-    if (this.data.length !== 0 && new Date().getTime() - this.time < 60 * 1000) return true;
-    return false;
-  }
-}
-/**
- * Base on the restful API of GitHub
- * @see https://docs.github.com/en/rest/reference/issues#list-issue-comments-for-a-repository
- */
-class GithubComment {
-  /**
-   * Model class for Site meta settings
-   *
-   * @param raw Config data generated from Hexo
-   * @param options GithubAttributes
-   */
-  constructor(raw, options) {
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "id", 0);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "body", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "node_id", 0);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "html_url", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "issue_url", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "created_at", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "updated_at", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "author_association", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "filtered", false);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "user", {
-      id: 0,
-      login: '',
-      avatar_url: '',
-      html_url: ''
-    });
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "is_admin", false);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "cache_flag", true);
-    if (raw) {
-      let cachedData = false;
-      for (const key of Object.keys(this)) {
-        if (Object.prototype.hasOwnProperty.call(raw, key)) {
-          if (key === 'user') {
-            this.user.id = raw[key].id;
-            this.user.avatar_url = raw[key].avatar_url;
-            this.user.html_url = raw[key].html_url;
-            this.user.login = raw[key].login;
-            if (options && options.admin && options.admin !== '') {
-              this.is_admin = options.admin === raw[key].login ? true : false;
-            }
-          } else {
-            Object.assign(this, {
-              [key]: raw[key]
-            });
-          }
-          if (!cachedData && key === 'cache_flag') cachedData = true;
-        }
-      }
-      // Skip filters if it's cache data.
-      if (!cachedData) {
-        const lang = options && options.lang ? 'en' : 'cn';
-        this.filterBody();
-        this.transformTime(lang);
-      }
-    }
-  }
-  /**
-   * Filter out the code blocks, images, links,
-   * and quote blocks in the comment string.
-   */
-  filterBody() {
-    if (this.body.length === 0) return;
-    let content = this.body.trim().replace('&nbsp;', '');
-    const hasFirstQuoteMark = content.indexOf('>') > -1;
-    /**
-     * If the comment is posted on gitalk, the return
-     * symbol would be '\n\n' however, if the comment is
-     * posted on github, the quote will finish with '\r\n\r\n'.
-     * Therefore here need to progress 2 different cases.
-     */
-    let splitArr = [];
-    /**
-     * Case 1: Posted on gitalk
-     * Split content string by '\n\n'
-     */
-    const splitByNewline = '\n\n';
-    splitArr = content.split(splitByNewline);
-    /**
-     * Case 2: Posted on gitalk
-     * If split array has less than 2
-     * means failed to split the quote and real comment
-     * therefore need to split again with '\r\n\r\n' instead.
-     */
-    if (splitArr.length !== 2) {
-      const splitByReturn = '\r\n\r\n';
-      splitArr = content.split(splitByReturn);
-    }
-    if (splitArr.length === 2 && hasFirstQuoteMark) {
-      // Found the comment string
-      content = splitArr[1];
-    } else if (splitArr.length > 2 && hasFirstQuoteMark) {
-      content = content.substr(content.indexOf(splitByNewline) + 4);
-    } else {
-      // Here is when there no a reply quote.
-      content = content.replace(/(-)+>/g, ' to ')
-      // Removing quote blocks.
-      .replaceAll('>', ' ')
-      // Removing code fences.
-      .replaceAll(/```([^`]*)```/g, '')
-      // Removing all returns.
-      .replaceAll('\r\n\r\n', '\n')
-      // Removing all double new lines.
-      .replaceAll('\n\n', '\n');
-    }
-    content = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.filterHTMLContent)(content, 28);
-    this.body = content;
-  }
-  /**
-   * Transforming the created_at field into a
-   * human readable time format.
-   *
-   * eg. `10 minutes ago.`
-   */
-  transformTime(lang) {
-    const templates = {
-      en: 'commented [TIME]',
-      cn: '[TIME]评论了'
-    };
-    this.created_at = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.formatTime)(this.created_at, {
-      template: templates[lang],
-      lang: lang
-    });
-  }
-}
-
-/***/ }),
-
-/***/ "./src/utils/index.ts":
-/*!****************************!*\
-  !*** ./src/utils/index.ts ***!
-  \****************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "filterHTMLContent": function() { return /* binding */ filterHTMLContent; },
-/* harmony export */   "formatTime": function() { return /* binding */ formatTime; }
-/* harmony export */ });
-/**
- * Formatting ISO time into readable times.
- */
-function formatTime(time, options) {
-  const configs = {
-    template: '[TIME]',
-    lang: 'en'
-  };
-  const languages = {
-    en: {
-      seconds: 'just seconds ago',
-      minutes: ' minutes ago',
-      hours: ' hours ago',
-      days: ' days ago',
-      months: ' months ago',
-      years: ' years ago'
-    },
-    cn: {
-      seconds: '刚刚',
-      minutes: '分钟前',
-      hours: '小时前',
-      days: '天前',
-      months: '个月前',
-      years: '年前'
-    }
-  };
-  if (options !== undefined) {
-    if (options.template) configs.template = options.template;
-    if (options.lang) configs.lang = options.lang;
-  }
-  if (typeof time === 'string') {
-    if (/[a-zA-Z]+/g.test(time)) time = new Date(time).getTime();else time = parseInt(time);
-  }
-  if (String('' + time).length === 10) {
-    time = parseInt(String(time)) * 1000;
-  } else {
-    time = +time;
-  }
-  const d = new Date(time).getTime();
-  const now = Date.now();
-  const diff = Math.floor((now - d) / 1000);
-  let formattedTime = '';
-  if (diff < 60) {
-    // Within 1 minute
-    formattedTime = languages[configs.lang].seconds;
-  } else if (diff < 3600) {
-    // Within 1 hour
-    formattedTime = String(Math.ceil(diff / 60)) + languages[configs.lang].minutes;
-  } else if (diff < 3600 * 24) {
-    // Within 1 day
-    formattedTime = String(Math.ceil(diff / 3600)) + languages[configs.lang].hours;
-  } else if (diff < 3600 * 24 * 30) {
-    // Within 1 month
-    formattedTime = String(Math.ceil(diff / 3600 / 24)) + languages[configs.lang].days;
-  } else if (diff < 3600 * 24 * 365) {
-    // Within 1 year
-    formattedTime = String(Math.ceil(diff / 3600 / 24 / 30)) + languages[configs.lang].months;
-  } else {
-    formattedTime = String(Math.ceil(diff / 3600 / 24 / 365)) + languages[configs.lang].years;
-  }
-  return configs.template.replace('[TIME]', formattedTime);
-}
-function filterHTMLContent(content, length) {
-  if (!length) length = 28;
-  content = content
-  // Replace all images
-  .replace(/![\s\w\](?:http(s)?://)+[\w.-]+(?:.[\w.-]+)+[\w\-._~:/?#[\]@!$&'*+,;=.]+\)/g, '[img]')
-  // Replacing all links.
-  .replace(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)+/g, '[link]')
-  // Removing all html tags
-  .replace(/(&nbsp;|<([^>]+)>)/gi, '');
-  if (content.length > length) {
-    content = content.substr(0, length);
-    content += '...';
-  }
-  return content;
-}
-
-/***/ }),
-
-/***/ "./src/utils/leancloud-api.ts":
-/*!************************************!*\
-  !*** ./src/utils/leancloud-api.ts ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "LeanCloudComment": function() { return /* binding */ LeanCloudComment; },
-/* harmony export */   "LeanCloudComments": function() { return /* binding */ LeanCloudComments; }
-/* harmony export */ });
-/* harmony import */ var _home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/utils */ "./src/utils/index.ts");
-/* harmony import */ var _package_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../package.json */ "./package.json");
-
-/**
- * LeanCloud Storage
- * This API is used with leancloud storage to:
- * - Fetch your blog's latest comments.
- * - Fetch your blog's post views.
- * - Fetch Gravatar.
- */
-// import request from '@/utils/external-request'
-// import { AxiosResponse } from 'axios'
-
-
-const VERSION = _package_json__WEBPACK_IMPORTED_MODULE_2__.version;
-let AV_INITIALIZED = false;
-class LeanCloudComments {
-  constructor(options) {
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "configs", {
-      leanCloudConfig: {
-        appId: '',
-        appKey: '',
-        className: 'Comment',
-        pageSize: 7,
-        prefix: 'https://',
-        admin: '',
-        lang: ''
-      },
-      gravatarConfig: {
-        // cdn: 'https://cdn.v2ex.com/gravatar/',
-        cdn: 'https://www.gravatar.com/avatar',
-        ds: ['mp', 'identicon', 'monsterid', 'wavatar', 'robohash', 'retro', ''],
-        params: '',
-        url: ''
-      }
-    });
-    this.initLeancloud(options);
-    this.initGravatar(options);
-  }
-  /**
-   * Initializing LeanCloud SDK setup.
-   */
-  initLeancloud(options) {
-    const {
-      appId,
-      appKey,
-      pageSize = 7,
-      serverURLs
-    } = options;
-    this.configs.leanCloudConfig.appId = appId;
-    this.configs.leanCloudConfig.appKey = appKey;
-    this.configs.leanCloudConfig.pageSize = Number(pageSize);
-    let apiURL = '';
-    let prefix = this.configs.leanCloudConfig.prefix;
-    /**
-     * Base on leancloud's APP ID, switch the
-     * prefix of the API URL.
-     * @see https://leancloud.cn/docs/sdk_setup-js.html#hash20935048
-     */
-    if (!serverURLs) {
-      switch (appId.slice(-9)) {
-        // TAB
-        case '-9Nh9j0Va':
-          prefix += 'tab.';
-          break;
-        // US
-        case '-MdYXbMMI':
-          prefix += 'us.';
-          break;
-        default:
-          break;
-      }
-    }
-    apiURL = serverURLs || prefix + 'avoscloud.com';
-    if (!AV_INITIALIZED) {
-      try {
-        AV.init({
-          appId: appId,
-          appKey: appKey,
-          serverURLs: apiURL
-        });
-      } catch (e) {
-        console.warn(e);
-      }
-    }
-    AV_INITIALIZED = true;
-  }
-  /**
-   * Initializing Gravatar setup.
-   */
-  initGravatar(options) {
-    const ds = this.configs.gravatarConfig.ds;
-    const {
-      avatar = 'undefined',
-      avatarCDN = '',
-      admin = '',
-      lang = 'en'
-    } = options;
-    this.configs.leanCloudConfig.admin = admin;
-    this.configs.leanCloudConfig.lang = lang;
-    this.configs.gravatarConfig.params = `?d=${ds.indexOf(avatar) > -1 ? avatar : 'mp'}&v=${VERSION}`;
-    const gravatarCDNs = {
-      en: 'https://www.gravatar.com/avatar',
-      ja: 'https://www.gravatar.com/avatar',
-      'zh-CN': 'https://gravatar.loli.net/avatar/',
-      'zh-TW': 'https://www.gravatar.com/avatar'
-    };
-    this.configs.gravatarConfig.cdn = /^https?:\/\//.test(avatarCDN) ? avatarCDN : gravatarCDNs[String(this.configs.leanCloudConfig.lang)] ? gravatarCDNs[String(this.configs.leanCloudConfig.lang)] : gravatarCDNs['en'];
-    this.configs.gravatarConfig.url = this.configs.gravatarConfig.cdn + this.configs.gravatarConfig.params;
-  }
-  /**
-   * Lean cloud query for all records.
-   */
-  queryAll() {
-    const notExist = new AV.Query(this.configs.leanCloudConfig.className);
-    notExist.doesNotExist('rid');
-    const isEmpty = new AV.Query(this.configs.leanCloudConfig.className);
-    isEmpty.equalTo('rid', '');
-    const q = AV.Query.or(notExist, isEmpty);
-    q.exists('url');
-    q.addDescending('createdAt');
-    q.addDescending('insertedAt');
-    return q;
-  }
-  /**
-   * Lean cloud query specific id records.
-   * @param id Required record id.
-   */
-  queryRid(id) {
-    const ids = JSON.stringify(id.replace(/(\[|\])/g, ''));
-    const cql = `select * from ${this.configs.leanCloudConfig.className} where rid in (${ids}) order by -createdAt,-createdAt`;
-    return AV.Query.doCloudQuery(cql);
-  }
-  /**
-   * Fetching the recent comments.
-   * @param limit Amount of records needed.
-   */
-  async getRecentComments(limit) {
-    return await new Promise(resolve => {
-      this.queryAll().limit(limit).find().then(comments => {
-        const generatedComments = comments.map(comment => {
-          return new LeanCloudComment(this.mapComments(comment));
-        });
-        resolve(generatedComments);
-      });
-    });
-  }
-  /**
-   * Reformat the data fetch from lean cloud storage.
-   */
-  mapComments(comment) {
-    const mail = comment._serverData.mail;
-    const avatar = String(mail).endsWith('@qq.com') ? 'https://q4.qlogo.cn/g?b=qq&nk=' + mail.replace('@qq.com', '') + '&s=100' : this.configs.gravatarConfig.url + '&' + md5(comment._serverData.mail);
-    const admin = this.configs.leanCloudConfig.admin;
-    return {
-      id: comment.id,
-      body: comment._serverData.comment,
-      html_url: comment._serverData.url,
-      issue_url: '',
-      created_at: new Date(comment._serverData.insertedAt.getTime() - 8 * 1000 * 60 * 60).toISOString(),
-      updated_at: '',
-      author_association: '',
-      user: {
-        id: 0,
-        login: comment._serverData.nick,
-        avatar_url: avatar,
-        html_url: comment._serverData.link
-      },
-      is_admin: admin === '' || admin !== comment._serverData.nick ? false : true
-    };
-  }
-}
-class LeanCloudComment {
-  /**
-   * Class for Lean Cloud Comment
-   *
-   * @param raw Raw data from LeanCloud API
-   * @param options Additional params
-   */
-  constructor(raw, lang) {
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "id", 0);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "body", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "node_id", 0);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "html_url", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "issue_url", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "created_at", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "updated_at", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "author_association", '');
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "filtered", false);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "user", {
-      id: 0,
-      login: '',
-      avatar_url: '',
-      html_url: ''
-    });
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "is_admin", false);
-    (0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "cache_flag", true);
-    if (raw) {
-      let cachedData = false;
-      for (const key of Object.keys(this)) {
-        if (Object.prototype.hasOwnProperty.call(raw, key)) {
-          Object.assign(this, {
-            [key]: raw[key]
-          });
-          if (!cachedData && key === 'cache_flag') cachedData = true;
-        }
-      }
-      // Skip filters if it's cache data.
-      if (!cachedData) {
-        const language = lang === 'en' || lang === 'cn' ? lang : 'en';
-        this.filterBody();
-        this.transformTime(language);
-      }
-    }
-  }
-  /**
-   * Filter out HTML contents.
-   */
-  filterBody() {
-    this.body = (0,_utils__WEBPACK_IMPORTED_MODULE_1__.filterHTMLContent)(this.body, 28);
-  }
-  /**
-   * Transforming the created_at field into a
-   * human readable time format.
-   *
-   * eg. `10 minutes ago.`
-   */
-  transformTime(lang) {
-    const templates = {
-      en: 'commented [TIME]',
-      cn: '[TIME]评论了'
-    };
-    this.created_at = (0,_utils__WEBPACK_IMPORTED_MODULE_1__.formatTime)(this.created_at, {
-      template: templates[lang],
-      lang: lang
     });
   }
 }
@@ -9161,7 +8504,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n:root {\n  --max-width: 1600px;\n  --gap: 2rem;\n  --main-gradient: linear-gradient(\n    130deg,\n    #24c6dc,\n    #5433ff 41.07%,\n    #ff0099 76.05%\n  );\n  --theme-transition: all 250ms ease;\n}\n\n.theme-light {\n  --background-primary: #f1f3f9;\n  --background-primary-alt: #fafafa;\n  --background-secondary: #ffffff;\n  --background-secondary-alt: #2e3236;\n  --background-trans: rgba(0, 0, 0, 0.15);\n  --text-bright: #000000;\n  --text-normal: #333333;\n  --text-accent: #e93796;\n  --text-sub-accent: #547ce7;\n  --text-faint: #b2b2b2;\n  --text-dim: #858585;\n  --text-title-h1: #333;\n  --text-title-h2: #333;\n  --text-title-h3: #333;\n  --text-title-h4: #333;\n  --text-title-h5: #333;\n  --text-link: #b4b4b4;\n  --text-a: #db4d52;\n  --text-a-hover: #db4d52;\n  --bg-accent-55: rgba(244, 86, 157, 0.55);\n  --bg-sub-accent-55: rgba(13, 185, 215, 0.55);\n  --bg-accent-05: rgba(244, 86, 157, 0.05);\n  --strong-gradient: linear-gradient(\n    62deg,\n    #188bfd 0%,\n    #a03bff 100%\n  ) !important;\n  --gradient-cover: linear-gradient(\n    90deg,\n    hsla(0, 0%, 98%, 0) 0,\n    hsla(0, 0%, 98%, 0.013) 8.1%,\n    hsla(0, 0%, 98%, 0.049) 15.5%,\n    hsla(0, 0%, 98%, 0.104) 22.5%,\n    hsla(0, 0%, 98%, 0.175) 29%,\n    hsla(0, 0%, 98%, 0.259) 35.3%,\n    hsla(0, 0%, 98%, 0.352) 41.2%,\n    hsla(0, 0%, 98%, 0.45) 47.1%,\n    hsla(0, 0%, 98%, 0.55) 52.9%,\n    hsla(0, 0%, 98%, 0.648) 58.8%,\n    hsla(0, 0%, 98%, 0.741) 64.7%,\n    hsla(0, 0%, 98%, 0.825) 71%,\n    hsla(0, 0%, 98%, 0.896) 77.5%,\n    hsla(0, 0%, 98%, 0.951) 84.5%,\n    hsla(0, 0%, 98%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --article-cover: linear-gradient(\n    180deg,\n    hsla(0, 0%, 98%, 0) 0,\n    hsla(0, 0%, 98%, 0.013) 8.1%,\n    hsla(0, 0%, 98%, 0.049) 15.5%,\n    hsla(0, 0%, 98%, 0.104) 22.5%,\n    hsla(0, 0%, 98%, 0.175) 29%,\n    hsla(0, 0%, 98%, 0.259) 35.3%,\n    hsla(0, 0%, 98%, 0.352) 41.2%,\n    hsla(0, 0%, 98%, 0.45) 47.1%,\n    hsla(0, 0%, 98%, 0.55) 52.9%,\n    hsla(0, 0%, 98%, 0.648) 58.8%,\n    hsla(0, 0%, 98%, 0.741) 64.7%,\n    hsla(0, 0%, 98%, 0.825) 71%,\n    hsla(0, 0%, 98%, 0.896) 77.5%,\n    hsla(0, 0%, 98%, 0.951) 84.5%,\n    hsla(0, 0%, 98%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --trans-ease: all 250ms ease;\n  --accent-shadow: 0 20px 25px -5px rgba(232, 57, 255, 0.06),\n    0 10px 10px -5px rgba(53, 11, 59, 0.1);\n  --sub-accent-shadow: 0 20px 25px -5px rgba(71, 190, 255, 0.06),\n    0 10px 10px -5px rgba(11, 42, 59, 0.1);\n  --search-modal-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);\n  --search-modal-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff,\n    0 1px 2px 1px rgba(30, 35, 90, 0.4);\n  --custom-quote-tip: #7343d5;\n  --custom-quote-warning: #e98503;\n  --custom-quote-danger: #dd2500;\n  --custom-quote: #e93796;\n}\n\n.theme-dark {\n  --background-primary: #1a1a1a;\n  --background-primary-alt: #0d0b12;\n  --background-secondary: #212121;\n  --background-secondary-alt: #0d0b12;\n  --background-trans: rgba(255, 255, 255, 0.15);\n  --skeleton-bg: #2e2e2e;\n  --skeleton-hl: #363636;\n  --text-bright: #fff;\n  --text-normal: #bebebe;\n  --text-accent: #0fb6d6;\n  --text-sub-accent: #f4569d;\n  --text-dim: #6d6d6d;\n  --text-faint: #7aa2f7;\n  --text-title-h1: var(--text-accent);\n  --text-title-h2: #cbdbe5;\n  --text-title-h3: #cbdbe5;\n  --text-title-h4: #cbdbe5;\n  --text-title-h5: #cbdbe5;\n  --text-link: #b4b4b4;\n  --text-a: #6bcafb;\n  --text-a-hover: #6bcafb;\n  --bg-sub-accent-55: rgba(244, 86, 157, 0.55);\n  --bg-accent-55: rgba(13, 185, 215, 0.55);\n  --bg-accent-05: rgba(14, 210, 247, 0.05);\n  --strong-gradient: linear-gradient(\n    62deg,\n    #87c2fd 0%,\n    #dcb9fc 100%\n  ) !important;\n  --gradient-cover: linear-gradient(\n    90deg,\n    hsla(0, 0%, 13%, 0) 0,\n    hsla(0, 0%, 13%, 0.013) 8.1%,\n    hsla(0, 0%, 13%, 0.049) 15.5%,\n    hsla(0, 0%, 13%, 0.104) 22.5%,\n    hsla(0, 0%, 13%, 0.175) 29%,\n    hsla(0, 0%, 13%, 0.259) 35.3%,\n    hsla(0, 0%, 13%, 0.352) 41.2%,\n    hsla(0, 0%, 13%, 0.45) 47.1%,\n    hsla(0, 0%, 13%, 0.55) 52.9%,\n    hsla(0, 0%, 13%, 0.648) 58.8%,\n    hsla(0, 0%, 13%, 0.741) 64.7%,\n    hsla(0, 0%, 13%, 0.825) 71%,\n    hsla(0, 0%, 13%, 0.896) 77.5%,\n    hsla(0, 0%, 13%, 0.951) 84.5%,\n    hsla(00, 0%, 13%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --article-cover: linear-gradient(\n    180deg,\n    hsla(0, 0%, 13%, 0) 0,\n    hsla(0, 0%, 13%, 0.013) 8.1%,\n    hsla(0, 0%, 13%, 0.049) 15.5%,\n    hsla(0, 0%, 13%, 0.104) 22.5%,\n    hsla(0, 0%, 13%, 0.175) 29%,\n    hsla(0, 0%, 13%, 0.259) 35.3%,\n    hsla(0, 0%, 13%, 0.352) 41.2%,\n    hsla(0, 0%, 13%, 0.45) 47.1%,\n    hsla(0, 0%, 13%, 0.55) 52.9%,\n    hsla(0, 0%, 13%, 0.648) 58.8%,\n    hsla(0, 0%, 13%, 0.741) 64.7%,\n    hsla(0, 0%, 13%, 0.825) 71%,\n    hsla(0, 0%, 13%, 0.896) 77.5%,\n    hsla(0, 0%, 13%, 0.951) 84.5%,\n    hsla(00, 0%, 13%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --trans-ease: all 250ms ease;\n  --accent-shadow: 0 20px 25px -5px rgba(11, 42, 59, 0.35),\n    0 10px 10px -5px rgba(11, 42, 59, 0.14);\n  --sub-accent-shadow: 0 20px 25px -5px rgba(53, 11, 59, 0.35),\n    0 10px 10px -5px rgba(53, 11, 59, 0.14);\n  --search-modal-key-gradient: linear-gradient(-225deg, #3f3e3e, #2c2c2c);\n  --search-modal-key-shadow: inset 0 -2px 0 0 #363636, inset 0 0 1px 1px #2e2e2e,\n    0 1px 2px 1px rgba(30, 35, 90, 0.4);\n  --custom-quote-tip: #8d53ff;\n  --custom-quote-warning: #cbcb00;\n  --custom-quote-danger: #dd2500;\n  --custom-quote: #5dc3d9;\n}\n\n.ob-text-bright {\n  color: var(--text-bright);\n}\n\n.ob-drop-shadow {\n  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));\n}\n\n.ob-hz-thumbnail {\n  max-width: 120%;\n}\n\n.ob-gradient-plate {\n  width: calc(100% - 0.5rem);\n  height: calc(100% - 0.5rem);\n  margin: 0.25rem;\n}\n\n.ob-gradient-cut-plate {\n  top: 8%;\n  width: calc(100% - 0.5rem);\n  height: calc(92% - 0.5rem);\n  margin: 0.25rem;\n}\n\n.ob-avatar{\n  margin: 0px;\n  height: 7rem;\n  width: 7rem;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.footer-avatar{\n  margin: 0px;\n  height: 5rem;\n  width: 5rem;\n  opacity: 0.4;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.diamond-avatar {\n  -webkit-clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n          clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n}\n\n.circle-avatar{\n  border-radius: 9999px;\n  border-color: var(--background-primary);\n  border-width: 6px;\n}\n\n.rounded-avatar{\n  border-radius: 1rem;\n  border-color: var(--background-primary);\n  border-width: 6px;\n}\n\n.animation-text {\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  -webkit-box-decoration-break: clone;\n  background-color: #cccccc;\n  background-image: linear-gradient(90deg, #cccccc, #ffffff, #cccccc);\n  animation: 1.5s ease-in-out 0s infinite normal none running SkeletonLoading;\n}\n\n.main-grid,\n.inverted-main-grid {\n  display: flex;\n  flex-direction: column;\n}\n\n@media (min-width: 1024px) {\n  .main-grid {\n    display: grid;\n    gap: var(--gap);\n    grid-template-columns: minmax(0, 1fr) 320px;\n  }\n  .inverted-main-grid {\n    display: grid;\n    gap: var(--gap);\n    grid-template-columns: 245px minmax(0, 1fr);\n  }\n}\n.tab{\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  overflow-y: hidden;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding-left: 1.5rem;\n  padding-right: 3rem;\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  height: 3.5rem;\n  transition: height 400ms ease;\n}\n.tab.expanded-tab {\n  overflow-y: initial;\n  height: auto;\n}\n.tab li{\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  margin-right: 0.75rem;\n  cursor: pointer;\n}\n.tab li:hover{\n  opacity: 0.5;\n}\n.tab li.active{\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n}\n.tab li span{\n  white-space: nowrap;\n  border-top-left-radius: 0.375rem;\n  border-bottom-left-radius: 0.375rem;\n  background-color: var(--background-primary);\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  text-align: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.tab li span.first-tab{\n  border-radius: 0.375rem;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n.tab li b{\n  white-space: nowrap;\n  border-top-right-radius: 0.375rem;\n  border-bottom-right-radius: 0.375rem;\n  background-color: var(--background-primary);\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  text-align: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  color: var(--text-accent);\n  opacity: 0.7;\n}\n\n.tab-expander{\n  position: absolute;\n  right: 1.25rem;\n  top: 1.25rem;\n  cursor: pointer;\n  stroke: currentColor;\n  color: var(--text-bright);\n  opacity: 0.8;\n}\n.tab-expander:hover {\n  opacity: 0.5;\n}\n.tab-expander svg {\n  transition: transform 400ms ease;\n}\n.tab-expander.expanded svg {\n  transform: rotate(180deg);\n}\n\n/** nprogress styles */\n#loading-bar-wrapper #nprogress {\n  pointer-events: none;\n}\n#loading-bar-wrapper #nprogress .bar {\n  background: var(--main-gradient);\n  position: absolute;\n  z-index: 3000;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 8px;\n}\n#loading-bar-wrapper #nprogress .peg {\n  display: none;\n  position: absolute;\n  right: 0;\n  width: 100px;\n  height: 8px;\n  opacity: 0;\n  box-shadow: none;\n  transform: rotate(3deg) translate(0, -4px);\n}\n#loading-bar-wrapper #nprogress .spinner {\n  display: block;\n  position: fixed;\n  z-index: 3000;\n  top: 15px;\n  right: 15px;\n}\n#loading-bar-wrapper #nprogress .spinner-icon {\n  width: 18px;\n  height: 18px;\n  box-sizing: border-box;\n  border: 2px solid transparent;\n  border-top-color: var(--text-accent);\n  border-left-color: var(--text-accent);\n  border-radius: 50%;\n  animation: nprogress-spinner 0.4s linear infinite;\n}\n#loading-bar-wrapper {\n  position: fixed;\n  width: 100px;\n  top: 8px;\n  left: 50%;\n  transform: translateX(-50%);\n  height: 8px;\n  border-radius: 8px;\n  z-index: 2000;\n  background: transparent;\n  overflow: hidden;\n}\n#loading-bar-wrapper.nprogress-custom-parent {\n  background: var(--background-secondary);\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n}\n\na{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\na:hover{\n  opacity: 0.5;\n}\n\n/* Base css */\n/*! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com */\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n::before,\n::after {\n  --tw-content: '';\n}\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n/*\nRemove the default font size and weight for headings.\n*/\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n/*\nAdd the correct font weight in Edge and Safari.\n*/\nb,\nstrong {\n  font-weight: bolder;\n}\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n/*\nAdd the correct font size in all browsers.\n*/\nsmall {\n  font-size: 80%;\n}\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -0.25em;\n}\nsup {\n  top: -0.5em;\n}\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  font-weight: inherit; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\nbutton,\nselect {\n  text-transform: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n:-moz-focusring {\n  outline: auto;\n}\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\nprogress {\n  vertical-align: baseline;\n}\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n/*\nAdd the correct display in Chrome and Safari.\n*/\nsummary {\n  display: list-item;\n}\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n  padding: 0;\n}\nlegend {\n  padding: 0;\n}\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n/*\nPrevent resizing textareas horizontally by default.\n*/\ntextarea {\n  resize: vertical;\n}\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n/*\nSet the default cursor for buttons.\n*/\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n/* Make elements with the HTML hidden attribute stay hidden by default */\n[hidden] {\n  display: none;\n}\n*, ::before, ::after{\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n::backdrop{\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n/* Components css */\n.container{\n  width: 100%;\n}\n@media (min-width: 640px){\n  .container{\n    max-width: 640px;\n  }\n}\n@media (min-width: 768px){\n  .container{\n    max-width: 768px;\n  }\n}\n@media (min-width: 1024px){\n  .container{\n    max-width: 1024px;\n  }\n}\n@media (min-width: 1280px){\n  .container{\n    max-width: 1280px;\n  }\n}\n@media (min-width: 1536px){\n  .container{\n    max-width: 1536px;\n  }\n}\n.article-container{\n  position: relative;\n  height: 100%;\n  list-style-type: none;\n  border-radius: 1rem;\n}\n.article-container:hover .article-tag {\n  transform: translateY(-60%);\n}\n.article-container:hover .article,\n.article-container:hover .feature-article {\n  transform: scale(1.015);\n}\n.article-container .article-tag{\n  position: absolute;\n  left: 1.5rem;\n  top: -0.25rem;\n  display: flex;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  align-items: flex-start;\n  border-radius: 0.375rem;\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n  padding-top: 0.25rem;\n  padding-bottom: 0.75rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  font-weight: 700;\n  text-transform: uppercase;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  background: var(--main-gradient);\n  z-index: 0;\n  transition: transform 200ms ease-in-out;\n}\n.article-container .article-tag > b{\n  border-radius: 0.25rem;\n  stroke: currentColor;\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  width: 100%;\n  height: 100%;\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n  background: rgba(0, 0, 0, 0.5);\n}\n\n.article{\n  position: relative;\n  top: 0px;\n  z-index: 10;\n  display: grid;\n  height: 100%;\n  grid-template-rows: repeat(3, minmax(0, 1fr));\n  overflow: hidden;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  transition: transform 0.2s ease-in-out;\n}\n.article .article-thumbnail{\n  position: relative;\n  grid-row: span 1 / span 1;\n}\n.article .article-thumbnail img{\n  position: absolute;\n  z-index: 20;\n  display: block;\n  height: 120%;\n  width: 100%;\n  border-radius: 1rem;\n  background-size: cover;\n  background-repeat: no-repeat;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.article .article-thumbnail .thumbnail-screen{\n  pointer-events: none;\n  position: absolute;\n  left: 0px;\n  z-index: 30;\n  height: 120%;\n  width: 100%;\n  opacity: 0.4;\n  max-width: 120%;\n  mix-blend-mode: screen;\n}\n.article .article-thumbnail:after {\n  pointer-events: none;\n  content: \"\";\n  position: absolute;\n  z-index: 35;\n  top: 13%;\n  left: 0;\n  height: 120%;\n  width: 100%;\n  background: var(--article-cover);\n}\n.article .article-content{\n  position: relative;\n  z-index: 40;\n  grid-row: span 2 / span 2;\n  display: flex;\n  flex-direction: column;\n  background-color: transparent;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n.article .article-content span {\n  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.1));\n}\n.article .article-content span b{\n  font-size: 0.75rem;\n  line-height: 1rem;\n  text-transform: uppercase;\n  color: var(--text-accent);\n}\n.article .article-content span ul{\n  display: inline-flex;\n  padding-left: 1rem;\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.article .article-content span ul li{\n  margin-right: 0.75rem;\n}\n.article .article-content h1{\n  margin-bottom: 1.5rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 800;\n  color: var(--text-bright);\n}\n@media (min-width: 1024px){\n  .article .article-content h1{\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n  }\n}\n.article .article-content p{\n  margin-bottom: 0.5rem;\n  padding-bottom: 1rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n@media (min-width: 1024px){\n  .article .article-content p{\n    margin-bottom: 0.5rem;\n    padding-bottom: 1.5rem;\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n.article .article-content .article-footer{\n  display: flex;\n  width: 100%;\n  flex: 1 1 0%;\n  align-content: flex-end;\n  align-items: flex-end;\n  justify-content: flex-start;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.article .article-content .article-footer img{\n  margin-right: 0.5rem;\n  border-radius: 9999px;\n  height: 28px;\n  width: 28px;\n}\n\n.feature-article{\n  position: relative;\n  top: 0px;\n  z-index: 10;\n  display: grid;\n  grid-template-rows: repeat(3, minmax(0, 1fr));\n  overflow: hidden;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n@media (min-width: 1024px){\n  .feature-article{\n    height: 28rem;\n    width: 100%;\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n    grid-template-rows: none;\n  }\n}\n\n.feature-article {\n  transition: transform 0.2s ease-in-out;\n}\n.feature-article .feature-thumbnail{\n  position: relative;\n  grid-row: span 1 / span 1;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-thumbnail{\n    grid-row: auto;\n  }\n}\n.feature-article .feature-thumbnail img{\n  position: absolute;\n  left: 0px;\n  z-index: 20;\n  display: block;\n  height: 120%;\n  width: 100%;\n  background-size: cover;\n  background-repeat: no-repeat;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-thumbnail img{\n    height: 28rem;\n    width: 120%;\n  }\n}\n.feature-article .feature-thumbnail span{\n  pointer-events: none;\n  position: absolute;\n  left: 0px;\n  z-index: 30;\n  height: 120%;\n  width: 100%;\n  opacity: 0.4;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-thumbnail span{\n    height: 28rem;\n    width: 120%;\n  }\n}\n.feature-article .feature-thumbnail:after {\n  pointer-events: none;\n  content: \"\";\n  position: absolute;\n  z-index: 35;\n  left: 71%;\n  top: 0;\n  height: 100%;\n  width: 50%;\n  background: var(--gradient-cover);\n}\n.feature-article .feature-content{\n  position: relative;\n  z-index: 40;\n  grid-row: span 2 / span 2;\n  display: flex;\n  flex-direction: column;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-content{\n    grid-row: auto;\n    padding: 3rem;\n  }\n}\n.feature-article .feature-content b{\n  text-transform: uppercase;\n  color: var(--text-accent);\n}\n.feature-article .feature-content ul{\n  display: inline-flex;\n  padding-left: 1rem;\n}\n.feature-article .feature-content ul li{\n  margin-right: 0.75rem;\n}\n.feature-article .feature-content h1{\n  margin-bottom: 1.5rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 800;\n  color: var(--text-bright);\n}\n@media (min-width: 1024px){\n  .feature-article .feature-content h1{\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    font-size: 2.25rem;\n    line-height: 2.5rem;\n  }\n}\n.feature-article .feature-content p{\n  margin-bottom: 0.5rem;\n  padding-bottom: 1rem;\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-content p{\n    margin-bottom: 0.5rem;\n    padding-bottom: 1.5rem;\n    font-size: 1.125rem;\n    line-height: 1.75rem;\n  }\n}\n.feature-article .feature-content .article-footer{\n  display: flex;\n  width: 100%;\n  flex: 1 1 0%;\n  align-content: flex-end;\n  align-items: flex-end;\n  justify-content: flex-start;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.feature-article .feature-content .article-footer img{\n  margin-right: 0.5rem;\n  border-radius: 9999px;\n  height: 28px;\n  width: 28px;\n}\n\n.thumbnail-screen {\n  max-width: 120%;\n  mix-blend-mode: screen;\n}\n\n@media (max-width: 1023px) {\n  .feature-article > div:first-of-type:after {\n    top: 13%;\n    left: 0;\n    height: 120%;\n    width: 100%;\n    background: var(--article-cover);\n  }\n}\n.post-html{\n  margin-bottom: 2rem;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding: 1rem;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n@media (min-width: 1024px){\n  .post-html{\n    margin-bottom: 0px;\n    padding: 3.5rem;\n  }\n}\n.post-html {\n  /* bullet lists */\n  /* numbered lists */\n  /* Remove blockquote left margin */\n}\n.post-html h1,\n.post-html h2,\n.post-html h3,\n.post-html h4,\n.post-html h5,\n.post-html h6{\n  position: relative;\n  margin-bottom: 1rem;\n  display: flex;\n  align-items: center;\n  padding-top: 1.75rem;\n  padding-bottom: 0.5rem;\n  color: var(--text-bright);\n  font-weight: 600;\n}\n.post-html h1:after,\n.post-html h2:after,\n.post-html h3:after,\n.post-html h4:after,\n.post-html h5:after,\n.post-html h6:after{\n  position: absolute;\n  bottom: 0px;\n  height: 0.25rem;\n  width: 6rem;\n  border-radius: 9999px;\n  content: \"\";\n  background: var(--main-gradient);\n}\n.post-html h1{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n@media (min-width: 1024px){\n  .post-html h1{\n    font-size: 2.25rem;\n    line-height: 2.5rem;\n  }\n}\n.post-html h2{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n@media (min-width: 1024px){\n  .post-html h2{\n    font-size: 1.875rem;\n    line-height: 2.25rem;\n  }\n}\n.post-html h3{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n@media (min-width: 1024px){\n  .post-html h3{\n    font-size: 1.5rem;\n    line-height: 2rem;\n  }\n}\n.post-html h4{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n@media (min-width: 1024px){\n  .post-html h4{\n    font-size: 1.25rem;\n    line-height: 1.75rem;\n  }\n}\n.post-html h5{\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n@media (min-width: 1024px){\n  .post-html h5{\n    font-size: 1.125rem;\n    line-height: 1.75rem;\n  }\n}\n.post-html h6{\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.post-html p{\n  margin-top: 1.5rem;\n  margin-bottom: 1.5rem;\n}\n.post-html ul {\n  margin: 1.5rem 0;\n}\n.post-html ul ul {\n  position: relative;\n  margin: 0;\n}\n.post-html ul > li > ul::before {\n  content: \"\";\n  border-left: 1px solid var(--text-accent);\n  position: absolute;\n  opacity: 0.35;\n  left: -1em;\n  top: 0;\n  bottom: 0;\n}\n.post-html ul li,\n.post-html ol li {\n  margin-left: 2rem;\n}\n.post-html ul,\n.post-html ul ul,\n.post-html ol ul,\n.post-html ul ul ul,\n.post-html ol ul ul {\n  list-style: none;\n}\n.post-html li > p {\n  display: inline-block;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n.post-html ul li::before {\n  content: \"•\";\n  color: var(--text-accent);\n  display: inline-block;\n  width: 1em;\n  margin-left: -1.15em;\n  padding: 0;\n  font-weight: bold;\n  text-shadow: 0 0 0.5em var(--accent-2);\n}\n.post-html ul ul li::before {\n  content: \"•\";\n}\n.post-html ul ul ul li::before {\n  content: \"•\";\n}\n.post-html ol {\n  list-style: none;\n  counter-reset: li;\n}\n.post-html ol > li {\n  counter-increment: li;\n}\n.post-html ol > li::before,\n.post-html ul ol > li::before,\n.post-html ul ul ol > li::before,\n.post-html ul ul ul ol > li::before {\n  content: \".\" counter(li);\n  color: var(--text-accent);\n  font-weight: normal;\n  display: inline-block;\n  width: 1em;\n  margin-left: -1.5em;\n  margin-right: 0.5em;\n  text-align: right;\n  direction: rtl;\n  overflow: visible;\n  word-break: keep-all;\n  white-space: nowrap;\n}\n.post-html blockquote {\n  -webkit-margin-start: 0;\n          margin-inline-start: 0;\n}\n.post-html .custom-quote,\n.post-html blockquote {\n  position: relative;\n  padding: 0.5rem 1rem 0.5rem 2rem;\n  color: var(--text-normal);\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  margin-bottom: 2em;\n  margin-top: 2em;\n  margin-right: 0 !important;\n  border-left: 3px var(--text-accent) solid;\n  border-top: transparent;\n  border-bottom: transparent;\n  border-right: transparent;\n  background: linear-gradient(135deg, var(--background-primary), var(--background-primary) 41.07%, var(--background-secondary) 76.05%, var(--background-secondary));\n}\n.post-html .custom-quote::before,\n.post-html blockquote::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0px;\n  height: 2px;\n  width: 76%;\n  background: linear-gradient(90deg, var(--text-accent), var(--background-secondary) 76.05%);\n}\n.post-html .custom-quote::after,\n.post-html blockquote::after {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0px;\n  height: 2px;\n  width: 45%;\n  background: linear-gradient(90deg, var(--text-accent), var(--background-primary) 45%);\n}\n.post-html .custom-quote-svg,\n.post-html .custom-blockquote-svg {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  top: -0.65rem;\n  left: -1rem;\n  height: 2.3rem;\n  width: 2.3rem;\n  fill: currentColor;\n  stroke: var(--background-secondary);\n  overflow: hidden;\n}\n.post-html .custom-quote-svg svg,\n.post-html .custom-blockquote-svg svg {\n  height: 100%;\n  width: 100%;\n}\n.post-html .custom-blockquote-svg {\n  color: var(--text-accent);\n}\n.post-html .custom-quote.tip .custom-quote-svg {\n  color: var(--custom-quote-tip);\n}\n.post-html .custom-quote.tip {\n  border-left: 3px solid var(--custom-quote-tip) !important;\n}\n.post-html .custom-quote.tip .custom-quote-title {\n  color: var(--custom-quote-tip);\n}\n.post-html .custom-quote.tip::before {\n  background: linear-gradient(90deg, var(--custom-quote-tip), var(--background-primary));\n}\n.post-html .custom-quote.tip::after {\n  background: linear-gradient(90deg, var(--custom-quote-tip), var(--background-primary));\n}\n.post-html .custom-quote.warning .custom-quote-svg {\n  color: var(--custom-quote-warning);\n}\n.post-html .custom-quote.warning {\n  border-left: 3px solid var(--custom-quote-warning) !important;\n}\n.post-html .custom-quote.warning .custom-quote-title {\n  color: var(--custom-quote-warning);\n}\n.post-html .custom-quote.warning::before {\n  background: linear-gradient(90deg, var(--custom-quote-warning), var(--background-primary));\n}\n.post-html .custom-quote.warning::after {\n  background: linear-gradient(90deg, var(--custom-quote-warning), var(--background-primary));\n}\n.post-html .custom-quote.danger .custom-quote-svg {\n  color: var(--custom-quote-danger);\n}\n.post-html .custom-quote.danger {\n  border-left: 3px solid var(--custom-quote-danger) !important;\n}\n.post-html .custom-quote.danger .custom-quote-title {\n  color: var(--custom-quote-danger);\n}\n.post-html .custom-quote.danger::before {\n  background: linear-gradient(90deg, var(--custom-quote-danger), var(--background-primary));\n}\n.post-html .custom-quote.danger::after {\n  background: linear-gradient(90deg, var(--custom-quote-danger), var(--background-primary));\n}\n.post-html .custom-details{\n  border-radius: 0.75rem;\n  padding: 1rem;\n  background: linear-gradient(135deg, var(--background-primary), var(--background-primary) 41.07%, var(--background-secondary) 76.05%, var(--background-secondary));\n}\n.post-html .custom-details summary{\n  cursor: pointer;\n  border-radius: 0.5rem;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */\n  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently */\n  padding: 0.5rem 1.2rem;\n  background: linear-gradient(135deg, var(--bg-accent-55), transparent 46.07%);\n  opacity: 1;\n}\n.post-html .custom-details summary:hover {\n  opacity: 0.6;\n}\n.post-html strong {\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  padding: 0 0.1rem;\n  color: #7aa2f7;\n  background-color: #7aa2f7;\n  background-image: var(--strong-gradient);\n}\n.post-html strong::-moz-selection {\n  -webkit-text-fill-color: var(--text-faint);\n}\n.post-html strong::selection {\n  -webkit-text-fill-color: var(--text-faint);\n}\n.post-html table {\n  border-collapse: collapse;\n  margin: 1rem 0;\n  display: block;\n  overflow-x: auto;\n}\n.post-html th {\n  border: 1px solid var(--background-primary-alt) !important;\n  background-color: var(--background-secondary);\n}\n.post-html td,\n.post-html th {\n  border: 1px solid var(--background-primary-alt) !important;\n  padding: 0.6em 1em;\n}\n.post-html tr {\n  border-top: 1px solid var(--background-primary-alt) !important;\n  background-color: var(--background-primary);\n}\n.post-html tr:nth-child(2n) {\n  background-color: var(--background-secondary);\n}\n.post-html em {\n  color: #bb9af7 !important;\n  font-family: OperatorMonoSSmLig-Book, Rubik !important;\n}\n.post-html a {\n  text-shadow: -1px -1px 2px var(--background-primary), -1px 1px 2px var(--background-primary), 1px -1px 2px var(--background-primary), 1px 1px 2px var(--background-primary);\n  -webkit-text-fill-color: var(--text-bright);\n  background-position: 0 100%;\n  background-repeat: repeat-x;\n  background-size: 5px 5px;\n  text-decoration: none;\n  transition: all 350ms ease;\n  background-image: linear-gradient(to bottom, var(--bg-sub-accent-55) 0%, var(--bg-sub-accent-55) 100%);\n}\n.post-html a strong {\n  -webkit-background-clip: initial;\n  -webkit-text-fill-color: initial;\n  color: inherit;\n  background-color: initial;\n  background-image: none;\n}\n.post-html a:hover {\n  text-shadow: -1px -1px 2px var(--background-modifier-border), -1px 1px 2px var(--background-modifier-border), 1px -1px 2px var(--background-modifier-border), 1px 1px 2px var(--background-modifier-border);\n  -webkit-text-fill-color: var(--text-bright);\n  background-size: 4px 50px;\n}\n.post-html svg {\n  display: inline-block;\n}\n.post-html hr {\n  position: relative;\n  -webkit-margin-before: 0;\n          margin-block-start: 0;\n  -webkit-margin-after: 0;\n          margin-block-end: 0;\n  border: none;\n  height: 1px;\n  padding: 2.5em 0;\n}\n.post-html hr::before {\n  content: \"§\";\n  display: inline-block;\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, -44%) rotate(60deg);\n  transform-origin: 50% 50%;\n  padding: 0.25rem;\n  color: var(--text-sub-accent);\n  background-color: var(--background-secondary);\n  z-index: 10;\n  border-radius: 60%;\n}\n.post-html hr::after {\n  position: absolute;\n  content: \"\";\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  background: var(--main-gradient);\n  height: 3px;\n  width: 26%;\n  border-radius: 9999px;\n  opacity: 0.26;\n  margin: 2.5em auto;\n}\n.post-html pre {\n  overflow: auto !important;\n  overflow-wrap: normal !important;\n}\n.post-html pre code {\n  padding: 0;\n}\n.post-html code {\n  color: var(--text-normal);\n  margin: 0;\n  font-size: 0.85em;\n  border-radius: 3px;\n  overflow-wrap: break-word;\n  background-color: var(--bg-accent-05);\n  word-wrap: break-word;\n  padding: 0.1rem 0.3rem;\n  border-radius: 0.3rem;\n  color: var(--text-accent) !important;\n}\n\n.post-header{\n  margin-bottom: 1rem;\n}\n.post-header .post-labels{\n  position: relative;\n  bottom: -0.375rem;\n}\n.post-header .post-labels > b{\n  display: inline-flex;\n  border-radius: 0.375rem;\n  padding: 0.125rem;\n  font-size: 0.75rem;\n  line-height: 1rem;\n  text-transform: uppercase;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  opacity: 0.9;\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n}\n.post-header .post-labels ul{\n  display: inline-flex;\n  padding-left: 0.5rem;\n}\n.post-header .post-labels ul li{\n  margin-right: 0.75rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  opacity: 0.7;\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n}\n.post-header .post-title{\n  margin-top: 0.5rem;\n  margin-bottom: 1rem;\n  font-size: clamp(1.2rem, 1rem + 3.5vw, 4rem);\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n  line-height: 1.1;\n}\n.post-header .post-stats{\n  margin-right: 1rem;\n  display: none;\n  flex-direction: row;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n@media (min-width: 1024px){\n  .post-header .post-stats{\n    display: flex;\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n.post-header .post-stats > span{\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  stroke: currentColor;\n  padding-right: 1rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  opacity: 0.8;\n}\n\n.post-footer{\n  margin-right: 1rem;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: flex-start;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n@media (min-width: 1024px){\n  .post-footer{\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n.post-footer img{\n  margin-right: 0.5rem;\n  border-radius: 9999px;\n  height: 28px;\n  width: 28px;\n}\n\n.sidebar-box{\n  position: relative;\n  margin-bottom: 2rem;\n  width: 100%;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding: 2rem;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.modal--active {\n  overflow: hidden !important;\n}\n\n#search-modal {\n  --search-modal-height: 600px;\n  --search-modal-searchbox-height: 56px;\n  --search-modal-spacing: 12px;\n  --search-modal-footer-height: 44px;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  height: 100vh;\n  width: 100vw;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  background-color: rgba(26, 26, 26, 0.8);\n  z-index: 250;\n}\n#search-modal .search-container{\n  position: relative;\n  margin-top: 4rem;\n  margin-bottom: auto;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  max-width: 36rem;\n  border-radius: 1rem;\n  background-color: var(--background-primary);\n  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n@media (min-width: 1024px){\n  #search-modal .search-container{\n    margin-right: auto;\n    margin-left: auto;\n  }\n}\n#search-modal .search-form{\n  position: relative;\n  display: flex;\n  height: 3.5rem;\n  width: 100%;\n  align-items: center;\n  border-radius: 0.75rem;\n  border-width: 2px;\n  border-color: var(--text-accent);\n  background-color: var(--background-secondary);\n  padding-top: 0px;\n  padding-bottom: 0px;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n#search-modal .search-form button:hover {\n  color: var(--search-modal-highlight);\n}\n#search-modal .search-input{\n  height: 100%;\n  width: 80%;\n  flex: 1 1 0%;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border-width: 0px;\n  background-color: transparent;\n  padding-left: 0.5rem;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n#search-modal .search-btn{\n  cursor: pointer;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border-radius: 9999px;\n  border-width: 0px;\n  background-image: none;\n  padding: 0.125rem;\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n#search-modal .search-dropdown{\n  margin-top: 0.5rem;\n  overflow-y: auto;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  min-height: var(--search-modal-spacing);\n  max-height: calc(var(--search-modal-height) - var(--search-modal-searchbox-height) - var(--search-modal-spacing) - var(--search-modal-footer-height));\n  scrollbar-color: var(--search-modal-muted-color) var(--search-modal-background);\n  scrollbar-width: thin;\n}\n#search-modal .search-hit-label{\n  position: sticky;\n  top: 0px;\n  z-index: 10;\n  background-color: var(--background-primary);\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  font-weight: 600;\n  color: var(--text-accent);\n}\n#search-modal .search-hit{\n  position: relative;\n  display: flex;\n  border-radius: 0.25rem;\n  padding-bottom: 0.5rem;\n}\n#search-modal .search-hit:last-of-type{\n  padding-bottom: 1rem;\n}\n#search-modal .search-hit a{\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  border-radius: 0.5rem;\n  border-width: 2px;\n  border-color: var(--background-secondary);\n  background-color: var(--background-secondary);\n  padding-left: 0.75rem;\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n#search-modal .search-hit.active a{\n  border-color: var(--text-accent);\n}\n#search-modal .search-hit-container{\n  display: flex;\n  height: 3.5rem;\n  align-items: center;\n  padding-right: 0.75rem;\n  color: var(--text-normal);\n}\n#search-modal .search-hit-icon{\n  stroke-width: 2;\n  color: var(--text-dim);\n}\n#search-modal .search-hit-content-wrapper{\n  position: relative;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  display: flex;\n  width: 80%;\n  flex: 1 1 auto;\n  flex-direction: column;\n  justify-content: center;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-weight: 500;\n}\n#search-modal .search-hit-title{\n  width: 91.666667%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n#search-modal .search-hit-title mark{\n  background-color: var(--text-accent);\n}\n#search-modal .search-hit-path{\n  font-size: 0.75rem;\n  line-height: 1rem;\n  color: var(--text-dim);\n}\n#search-modal .search-hit-action{\n  display: flex;\n  align-items: center;\n  height: 22px;\n  width: 22px;\n}\n#search-modal .search-footer{\n  position: relative;\n  display: flex;\n  height: 2.75rem;\n  width: 100%;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n  flex-direction: row-reverse;\n  align-items: center;\n  justify-content: space-between;\n  border-bottom-right-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  box-shadow: 0 -1px 0 0, #363636 0 -3px 6px 0 rgba(30, 35, 90, 0.12);\n  z-index: 300;\n}\n#search-modal .search-logo a{\n  display: flex;\n  align-items: center;\n  justify-items: center;\n  text-decoration-line: none;\n}\n#search-modal .search-label{\n  margin-right: 0.5rem;\n  font-size: 0.75rem;\n  line-height: 1rem;\n  color: var(--text-dim);\n}\n#search-modal .search-commands{\n  margin: 0px;\n  display: none;\n  list-style-type: none;\n  padding: 0px;\n  color: var(--text-dim);\n}\n@media (min-width: 1024px){\n  #search-modal .search-commands{\n    display: flex;\n  }\n}\n#search-modal .search-commands li{\n  margin-right: 0.5rem;\n  display: flex;\n  align-items: center;\n}\n#search-modal .search-commands-key{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 0.125rem;\n  background: var(--search-modal-key-gradient);\n  box-shadow: var(--search-modal-key-shadow);\n  margin-right: 0.4em;\n  height: 18px;\n  width: 20px;\n}\n#search-modal .search-commands-label{\n  color: var(--text-dim);\n}\n#search-modal .search-startscreen{\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0px;\n  margin-bottom: 0px;\n  width: 80%;\n  padding-top: 2.25rem;\n  padding-bottom: 2.25rem;\n  text-align: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n#search-modal .search-startscreen p{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  color: var(--text-dim);\n}\n\n/* Utilities css */\n.fixed{\n  position: fixed;\n}\n.absolute{\n  position: absolute;\n}\n.relative{\n  position: relative;\n}\n.sticky{\n  position: sticky;\n}\n.top-0{\n  top: 0px;\n}\n.bottom-0{\n  bottom: 0px;\n}\n.bottom-4{\n  bottom: 1rem;\n}\n.right-4{\n  right: 1rem;\n}\n.left-0{\n  left: 0px;\n}\n.right-0{\n  right: 0px;\n}\n.top-10{\n  top: 2.5rem;\n}\n.z-10{\n  z-index: 10;\n}\n.z-50{\n  z-index: 50;\n}\n.z-40{\n  z-index: 40;\n}\n.z-0{\n  z-index: 0;\n}\n.col-span-1{\n  grid-column: span 1 / span 1;\n}\n.row-span-1{\n  grid-row: span 1 / span 1;\n}\n.m-0{\n  margin: 0px;\n}\n.mx-2{\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.my-8{\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.my-1{\n  margin-top: 0.25rem;\n  margin-bottom: 0.25rem;\n}\n.my-0{\n  margin-top: 0px;\n  margin-bottom: 0px;\n}\n.mx-auto{\n  margin-left: auto;\n  margin-right: auto;\n}\n.-mr-4{\n  margin-right: -1rem;\n}\n.mt-8{\n  margin-top: 2rem;\n}\n.mb-8{\n  margin-bottom: 2rem;\n}\n.mb-6{\n  margin-bottom: 1.5rem;\n}\n.mr-1{\n  margin-right: 0.25rem;\n}\n.mt-2{\n  margin-top: 0.5rem;\n}\n.mr-2{\n  margin-right: 0.5rem;\n}\n.mr-1\\.5{\n  margin-right: 0.375rem;\n}\n.mb-4{\n  margin-bottom: 1rem;\n}\n.mt-1{\n  margin-top: 0.25rem;\n}\n.mr-0{\n  margin-right: 0px;\n}\n.mb-2{\n  margin-bottom: 0.5rem;\n}\n.mt-6{\n  margin-top: 1.5rem;\n}\n.mb-1\\.5{\n  margin-bottom: 0.375rem;\n}\n.mb-1{\n  margin-bottom: 0.25rem;\n}\n.ml-2{\n  margin-left: 0.5rem;\n}\n.box-border{\n  box-sizing: border-box;\n}\n.block{\n  display: block;\n}\n.inline-block{\n  display: inline-block;\n}\n.inline{\n  display: inline;\n}\n.flex{\n  display: flex;\n}\n.table{\n  display: table;\n}\n.grid{\n  display: grid;\n}\n.contents{\n  display: contents;\n}\n.hidden{\n  display: none;\n}\n.h-full{\n  height: 100%;\n}\n.h-28{\n  height: 7rem;\n}\n.h-1{\n  height: 0.25rem;\n}\n.h-12{\n  height: 3rem;\n}\n.h-56{\n  height: 14rem;\n}\n.h-98{\n  height: 28rem;\n}\n.min-h-screen{\n  min-height: 100vh;\n}\n.w-full{\n  width: 100%;\n}\n.w-28{\n  width: 7rem;\n}\n.w-14{\n  width: 3.5rem;\n}\n.w-12{\n  width: 3rem;\n}\n.w-24{\n  width: 6rem;\n}\n.w-48{\n  width: 12rem;\n}\n.min-w-full{\n  min-width: 100%;\n}\n.flex-1{\n  flex: 1 1 0%;\n}\n.origin-top-right{\n  transform-origin: top right;\n}\n.transform{\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.cursor-pointer{\n  cursor: pointer;\n}\n.resize{\n  resize: both;\n}\n.list-none{\n  list-style-type: none;\n}\n.grid-cols-3{\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.grid-cols-1{\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-cols-4{\n  grid-template-columns: repeat(4, minmax(0, 1fr));\n}\n.grid-rows-1{\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n}\n.flex-row{\n  flex-direction: row;\n}\n.flex-col{\n  flex-direction: column;\n}\n.flex-wrap{\n  flex-wrap: wrap;\n}\n.items-start{\n  align-items: flex-start;\n}\n.items-end{\n  align-items: flex-end;\n}\n.items-center{\n  align-items: center;\n}\n.justify-start{\n  justify-content: flex-start;\n}\n.justify-end{\n  justify-content: flex-end;\n}\n.justify-center{\n  justify-content: center;\n}\n.justify-evenly{\n  justify-content: space-evenly;\n}\n.justify-items-center{\n  justify-items: center;\n}\n.gap-6{\n  gap: 1.5rem;\n}\n.gap-8{\n  gap: 2rem;\n}\n.gap-1\\.5{\n  gap: 0.375rem;\n}\n.gap-1{\n  gap: 0.25rem;\n}\n.gap-3{\n  gap: 0.75rem;\n}\n.gap-2{\n  gap: 0.5rem;\n}\n.self-stretch{\n  align-self: stretch;\n}\n.overflow-hidden{\n  overflow: hidden;\n}\n.overflow-y-auto{\n  overflow-y: auto;\n}\n.whitespace-nowrap{\n  white-space: nowrap;\n}\n.rounded-2xl{\n  border-radius: 1rem;\n}\n.rounded-xl{\n  border-radius: 0.75rem;\n}\n.rounded-lg{\n  border-radius: 0.5rem;\n}\n.rounded-full{\n  border-radius: 9999px;\n}\n.rounded-md{\n  border-radius: 0.375rem;\n}\n.rounded{\n  border-radius: 0.25rem;\n}\n.rounded-tl-md{\n  border-top-left-radius: 0.375rem;\n}\n.rounded-bl-md{\n  border-bottom-left-radius: 0.375rem;\n}\n.rounded-tr-md{\n  border-top-right-radius: 0.375rem;\n}\n.rounded-br-md{\n  border-bottom-right-radius: 0.375rem;\n}\n.border{\n  border-width: 1px;\n}\n.border-2{\n  border-width: 2px;\n}\n.border-b-2{\n  border-bottom-width: 2px;\n}\n.border-r-4{\n  border-right-width: 4px;\n}\n.border-none{\n  border-style: none;\n}\n.border-ob{\n  border-color: var(--text-accent);\n}\n.border-ob-deep-900{\n  border-color: var(--background-primary);\n}\n.bg-ob-deep-900{\n  background-color: var(--background-primary);\n}\n.bg-ob-deep-800{\n  background-color: var(--background-secondary);\n}\n.bg-transparent{\n  background-color: transparent;\n}\n.fill-current{\n  fill: currentColor;\n}\n.stroke-current{\n  stroke: currentColor;\n}\n.stroke-ob-bright{\n  stroke: var(--text-bright);\n}\n.stroke-2{\n  stroke-width: 2;\n}\n.stroke-0{\n  stroke-width: 0;\n}\n.p-4{\n  padding: 1rem;\n}\n.p-0{\n  padding: 0px;\n}\n.p-0\\.5{\n  padding: 0.125rem;\n}\n.p-1{\n  padding: 0.25rem;\n}\n.px-3{\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.px-4{\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-6{\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n.px-6{\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n.px-2{\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.px-10{\n  padding-left: 2.5rem;\n  padding-right: 2.5rem;\n}\n.px-1\\.5{\n  padding-left: 0.375rem;\n  padding-right: 0.375rem;\n}\n.py-0\\.5{\n  padding-top: 0.125rem;\n  padding-bottom: 0.125rem;\n}\n.px-1{\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.py-0{\n  padding-top: 0px;\n  padding-bottom: 0px;\n}\n.py-1{\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.px-14{\n  padding-left: 3.5rem;\n  padding-right: 3.5rem;\n}\n.py-16{\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\n.py-4{\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.py-2{\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.py-8{\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n.px-8{\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.px-0{\n  padding-left: 0px;\n  padding-right: 0px;\n}\n.py-3{\n  padding-top: 0.75rem;\n  padding-bottom: 0.75rem;\n}\n.pr-6{\n  padding-right: 1.5rem;\n}\n.pl-4{\n  padding-left: 1rem;\n}\n.pt-8{\n  padding-top: 2rem;\n}\n.pt-6{\n  padding-top: 1.5rem;\n}\n.pb-2{\n  padding-bottom: 0.5rem;\n}\n.pt-1{\n  padding-top: 0.25rem;\n}\n.pt-4{\n  padding-top: 1rem;\n}\n.pr-4{\n  padding-right: 1rem;\n}\n.pr-1\\.5{\n  padding-right: 0.375rem;\n}\n.pr-1{\n  padding-right: 0.25rem;\n}\n.pl-2{\n  padding-left: 0.5rem;\n}\n.pt-2{\n  padding-top: 0.5rem;\n}\n.pb-10{\n  padding-bottom: 2.5rem;\n}\n.pb-8{\n  padding-bottom: 2rem;\n}\n.pr-2{\n  padding-right: 0.5rem;\n}\n.pt-12{\n  padding-top: 3rem;\n}\n.text-center{\n  text-align: center;\n}\n.text-right{\n  text-align: right;\n}\n.text-sm{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-lg{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-4xl{\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.text-base{\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-2xl{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.text-xs{\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.text-3xl{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n.text-xl{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.font-extrabold{\n  font-weight: 800;\n}\n.font-semibold{\n  font-weight: 600;\n}\n.font-medium{\n  font-weight: 500;\n}\n.uppercase{\n  text-transform: uppercase;\n}\n.not-italic{\n  font-style: normal;\n}\n.text-white{\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.text-ob-normal{\n  color: var(--text-normal);\n}\n.text-ob-bright{\n  color: var(--text-bright);\n}\n.text-ob-dim{\n  color: var(--text-dim);\n}\n.text-ob{\n  color: var(--text-accent);\n}\n.text-ob-secondary{\n  color: var(--text-sub-accent);\n}\n.text-gray-500{\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n.opacity-50{\n  opacity: 0.5;\n}\n.opacity-80{\n  opacity: 0.8;\n}\n.opacity-70{\n  opacity: 0.7;\n}\n.opacity-90{\n  opacity: 0.9;\n}\n.opacity-0{\n  opacity: 0;\n}\n.opacity-75{\n  opacity: 0.75;\n}\n.shadow-xl{\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-lg{\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow{\n  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-2xl{\n  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-md{\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-sm{\n  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.outline{\n  outline-style: solid;\n}\n.filter{\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.transition{\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.transition-all{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.transition-shadow{\n  transition-property: box-shadow;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-300{\n  transition-duration: 300ms;\n}\n.ease-in-out{\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n/* bouncy-transition */\n.fade-bounce-y-enter-active {\n  transition: all 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-y-leave-active {\n  transition: all 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-y-enter-from,\n.fade-bounce-y-leave-to {\n  transform: translateY(20%);\n  opacity: 0;\n}\n\n.fade-bounce-pure-y-enter-active {\n  transition: transform 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-pure-y-leave-active {\n  transition: transform 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-pure-y-enter-from,\n.fade-bounce-pure-y-leave-to {\n  transform: translateY(15%);\n  opacity: 0;\n}\n\n/* fade-slide */\n.fade-slide-y-enter-active {\n  transition: all 0.3s ease;\n}\n\n.fade-slide-y-leave-active {\n  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);\n}\n\n.fade-slide-y-enter-from,\n.fade-slide-y-leave-to {\n  transform: translateY(10px);\n  opacity: 0;\n}\n\n/* breadcrumb transition */\n.breadcrumb-enter-active,\n.breadcrumb-leave-active {\n  transition: all 0.5s;\n}\n\n.breadcrumb-enter,\n.breadcrumb-leave-active {\n  opacity: 0;\n  transform: translateX(20px);\n}\n\n.breadcrumb-move {\n  transition: all 0.5s;\n}\n\n.breadcrumb-leave-active {\n  position: absolute;\n}\n\n@keyframes gradient {\n  0% {\n    background-position: 0% 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0% 50%;\n  }\n}\n.stroke-ob-bright {\n  stroke: var(--text-bright) !important;\n}\n\n.diamond-clip-path {\n  -webkit-clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n          clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n  background: var(--background-trans);\n}\n\n.diamond-icon{\n  display: flex;\n  height: 3rem;\n  width: 3rem;\n  cursor: pointer;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  color: var(--text-bright);\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\n.diamond-icon:hover{\n  opacity: 0.5;\n}\n\nhtml {\n  scrollbar-color: rgba(82, 82, 82, 0.8) transparent;\n}\n\nhtml::-webkit-scrollbar {\n  width: 12px;\n  height: 12px;\n}\n\nhtml::-webkit-scrollbar-thumb {\n  background: #434343;\n  border-radius: 16px;\n  box-shadow: inset 2px 2px 2px rgba(100, 100, 100, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);\n}\n\nhtml::-webkit-scrollbar-track {\n  border: none;\n  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);\n}\n\ndiv::-webkit-scrollbar {\n  width: 10px;\n  height: 10px;\n}\n\ndiv::-webkit-scrollbar-thumb {\n  background: #434343;\n  border-radius: 16px;\n  box-shadow: inset 2px 2px 2px rgba(100, 100, 100, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);\n}\n\ndiv::-webkit-scrollbar-track {\n  border: none;\n  background: transparent !important;\n}\n\n.hover\\:bg-ob-trans:hover{\n  background-color: var(--background-trans);\n}\n\n.hover\\:text-ob:hover{\n  color: var(--text-accent);\n}\n\n.hover\\:text-ob-bright:hover{\n  color: var(--text-bright);\n}\n\n.hover\\:opacity-50:hover{\n  opacity: 0.5;\n}\n\n.hover\\:shadow-2xl:hover{\n  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.hover\\:shadow-ob:hover{\n  --tw-shadow: var(--accent-shadow);\n  --tw-shadow-colored: var(--accent-shadow);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  --tw-shadow-color: var(--text-accent);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n\n@media (min-width: 768px){\n  .md\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .md\\:grid-cols-1{\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n  }\n}\n\n@media (min-width: 1024px){\n  .lg\\:col-span-3{\n    grid-column: span 3 / span 3;\n  }\n  .lg\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .lg\\:mb-0{\n    margin-bottom: 0px;\n  }\n  .lg\\:mr-4{\n    margin-right: 1rem;\n  }\n  .lg\\:mt-0{\n    margin-top: 0px;\n  }\n  .lg\\:flex{\n    display: flex;\n  }\n  .lg\\:h-auto{\n    height: auto;\n  }\n  .lg\\:max-w-screen-2xl{\n    max-width: 1536px;\n  }\n  .lg\\:grid-cols-4{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .lg\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .lg\\:grid-rows-none{\n    grid-template-rows: none;\n  }\n  .lg\\:flex-row{\n    flex-direction: row;\n  }\n  .lg\\:justify-end{\n    justify-content: flex-end;\n  }\n  .lg\\:gap-12{\n    gap: 3rem;\n  }\n  .lg\\:px-8{\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n  .lg\\:px-14{\n    padding-left: 3.5rem;\n    padding-right: 3.5rem;\n  }\n  .lg\\:py-10{\n    padding-top: 2.5rem;\n    padding-bottom: 2.5rem;\n  }\n  .lg\\:pb-16{\n    padding-bottom: 4rem;\n  }\n  .lg\\:text-left{\n    text-align: left;\n  }\n  .lg\\:text-base{\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n\n@media (min-width: 1280px){\n  .xl\\:grid-cols-3{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .xl\\:grid-cols-1{\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n:root {\n  --max-width: 1600px;\n  --gap: 2rem;\n  --main-gradient: linear-gradient(\n    130deg,\n    #24c6dc,\n    #5433ff 41.07%,\n    #ff0099 76.05%\n  );\n  --theme-transition: all 250ms ease;\n}\n\n.theme-light {\n  --background-primary: #f1f3f9;\n  --background-primary-alt: #fafafa;\n  --background-secondary: #ffffff;\n  --background-secondary-alt: #2e3236;\n  --background-trans: rgba(0, 0, 0, 0.15);\n  --text-bright: #000000;\n  --text-normal: #333333;\n  --text-accent: #e93796;\n  --text-sub-accent: #547ce7;\n  --text-faint: #b2b2b2;\n  --text-dim: #858585;\n  --text-title-h1: #333;\n  --text-title-h2: #333;\n  --text-title-h3: #333;\n  --text-title-h4: #333;\n  --text-title-h5: #333;\n  --text-link: #b4b4b4;\n  --text-a: #db4d52;\n  --text-a-hover: #db4d52;\n  --bg-accent-55: rgba(244, 86, 157, 0.55);\n  --bg-sub-accent-55: rgba(13, 185, 215, 0.55);\n  --bg-accent-05: rgba(244, 86, 157, 0.05);\n  --strong-gradient: linear-gradient(\n    62deg,\n    #188bfd 0%,\n    #a03bff 100%\n  ) !important;\n  --gradient-cover: linear-gradient(\n    90deg,\n    hsla(0, 0%, 98%, 0) 0,\n    hsla(0, 0%, 98%, 0.013) 8.1%,\n    hsla(0, 0%, 98%, 0.049) 15.5%,\n    hsla(0, 0%, 98%, 0.104) 22.5%,\n    hsla(0, 0%, 98%, 0.175) 29%,\n    hsla(0, 0%, 98%, 0.259) 35.3%,\n    hsla(0, 0%, 98%, 0.352) 41.2%,\n    hsla(0, 0%, 98%, 0.45) 47.1%,\n    hsla(0, 0%, 98%, 0.55) 52.9%,\n    hsla(0, 0%, 98%, 0.648) 58.8%,\n    hsla(0, 0%, 98%, 0.741) 64.7%,\n    hsla(0, 0%, 98%, 0.825) 71%,\n    hsla(0, 0%, 98%, 0.896) 77.5%,\n    hsla(0, 0%, 98%, 0.951) 84.5%,\n    hsla(0, 0%, 98%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --article-cover: linear-gradient(\n    180deg,\n    hsla(0, 0%, 98%, 0) 0,\n    hsla(0, 0%, 98%, 0.013) 8.1%,\n    hsla(0, 0%, 98%, 0.049) 15.5%,\n    hsla(0, 0%, 98%, 0.104) 22.5%,\n    hsla(0, 0%, 98%, 0.175) 29%,\n    hsla(0, 0%, 98%, 0.259) 35.3%,\n    hsla(0, 0%, 98%, 0.352) 41.2%,\n    hsla(0, 0%, 98%, 0.45) 47.1%,\n    hsla(0, 0%, 98%, 0.55) 52.9%,\n    hsla(0, 0%, 98%, 0.648) 58.8%,\n    hsla(0, 0%, 98%, 0.741) 64.7%,\n    hsla(0, 0%, 98%, 0.825) 71%,\n    hsla(0, 0%, 98%, 0.896) 77.5%,\n    hsla(0, 0%, 98%, 0.951) 84.5%,\n    hsla(0, 0%, 98%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --trans-ease: all 250ms ease;\n  --accent-shadow: 0 20px 25px -5px rgba(232, 57, 255, 0.06),\n    0 10px 10px -5px rgba(53, 11, 59, 0.1);\n  --sub-accent-shadow: 0 20px 25px -5px rgba(71, 190, 255, 0.06),\n    0 10px 10px -5px rgba(11, 42, 59, 0.1);\n  --search-modal-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);\n  --search-modal-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff,\n    0 1px 2px 1px rgba(30, 35, 90, 0.4);\n  --custom-quote-tip: #7343d5;\n  --custom-quote-warning: #e98503;\n  --custom-quote-danger: #dd2500;\n  --custom-quote: #e93796;\n}\n\n.theme-dark {\n  --background-primary: #1a1a1a;\n  --background-primary-alt: #0d0b12;\n  --background-secondary: #212121;\n  --background-secondary-alt: #0d0b12;\n  --background-trans: rgba(255, 255, 255, 0.15);\n  --skeleton-bg: #2e2e2e;\n  --skeleton-hl: #363636;\n  --text-bright: #fff;\n  --text-normal: #bebebe;\n  --text-accent: #0fb6d6;\n  --text-sub-accent: #f4569d;\n  --text-dim: #6d6d6d;\n  --text-faint: #7aa2f7;\n  --text-title-h1: var(--text-accent);\n  --text-title-h2: #cbdbe5;\n  --text-title-h3: #cbdbe5;\n  --text-title-h4: #cbdbe5;\n  --text-title-h5: #cbdbe5;\n  --text-link: #b4b4b4;\n  --text-a: #6bcafb;\n  --text-a-hover: #6bcafb;\n  --bg-sub-accent-55: rgba(244, 86, 157, 0.55);\n  --bg-accent-55: rgba(13, 185, 215, 0.55);\n  --bg-accent-05: rgba(14, 210, 247, 0.05);\n  --strong-gradient: linear-gradient(\n    62deg,\n    #87c2fd 0%,\n    #dcb9fc 100%\n  ) !important;\n  --gradient-cover: linear-gradient(\n    90deg,\n    hsla(0, 0%, 13%, 0) 0,\n    hsla(0, 0%, 13%, 0.013) 8.1%,\n    hsla(0, 0%, 13%, 0.049) 15.5%,\n    hsla(0, 0%, 13%, 0.104) 22.5%,\n    hsla(0, 0%, 13%, 0.175) 29%,\n    hsla(0, 0%, 13%, 0.259) 35.3%,\n    hsla(0, 0%, 13%, 0.352) 41.2%,\n    hsla(0, 0%, 13%, 0.45) 47.1%,\n    hsla(0, 0%, 13%, 0.55) 52.9%,\n    hsla(0, 0%, 13%, 0.648) 58.8%,\n    hsla(0, 0%, 13%, 0.741) 64.7%,\n    hsla(0, 0%, 13%, 0.825) 71%,\n    hsla(0, 0%, 13%, 0.896) 77.5%,\n    hsla(0, 0%, 13%, 0.951) 84.5%,\n    hsla(00, 0%, 13%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --article-cover: linear-gradient(\n    180deg,\n    hsla(0, 0%, 13%, 0) 0,\n    hsla(0, 0%, 13%, 0.013) 8.1%,\n    hsla(0, 0%, 13%, 0.049) 15.5%,\n    hsla(0, 0%, 13%, 0.104) 22.5%,\n    hsla(0, 0%, 13%, 0.175) 29%,\n    hsla(0, 0%, 13%, 0.259) 35.3%,\n    hsla(0, 0%, 13%, 0.352) 41.2%,\n    hsla(0, 0%, 13%, 0.45) 47.1%,\n    hsla(0, 0%, 13%, 0.55) 52.9%,\n    hsla(0, 0%, 13%, 0.648) 58.8%,\n    hsla(0, 0%, 13%, 0.741) 64.7%,\n    hsla(0, 0%, 13%, 0.825) 71%,\n    hsla(0, 0%, 13%, 0.896) 77.5%,\n    hsla(0, 0%, 13%, 0.951) 84.5%,\n    hsla(00, 0%, 13%, 0.987) 91.9%,\n    var(--background-secondary)\n  );\n  --trans-ease: all 250ms ease;\n  --accent-shadow: 0 20px 25px -5px rgba(11, 42, 59, 0.35),\n    0 10px 10px -5px rgba(11, 42, 59, 0.14);\n  --sub-accent-shadow: 0 20px 25px -5px rgba(53, 11, 59, 0.35),\n    0 10px 10px -5px rgba(53, 11, 59, 0.14);\n  --search-modal-key-gradient: linear-gradient(-225deg, #3f3e3e, #2c2c2c);\n  --search-modal-key-shadow: inset 0 -2px 0 0 #363636, inset 0 0 1px 1px #2e2e2e,\n    0 1px 2px 1px rgba(30, 35, 90, 0.4);\n  --custom-quote-tip: #8d53ff;\n  --custom-quote-warning: #cbcb00;\n  --custom-quote-danger: #dd2500;\n  --custom-quote: #5dc3d9;\n}\n\n.ob-text-bright {\n  color: var(--text-bright);\n}\n\n.ob-drop-shadow {\n  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));\n}\n\n.ob-hz-thumbnail {\n  max-width: 120%;\n}\n\n.ob-gradient-plate {\n  width: calc(100% - 0.5rem);\n  height: calc(100% - 0.5rem);\n  margin: 0.25rem;\n}\n\n.ob-gradient-cut-plate {\n  top: 8%;\n  width: calc(100% - 0.5rem);\n  height: calc(92% - 0.5rem);\n  margin: 0.25rem;\n}\n\n.ob-avatar{\n  margin: 0px;\n  height: 7rem;\n  width: 7rem;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.footer-avatar{\n  margin: 0px;\n  height: 5rem;\n  width: 5rem;\n  opacity: 0.4;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.diamond-avatar {\n  -webkit-clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n          clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n}\n\n.circle-avatar{\n  border-radius: 9999px;\n  border-color: var(--background-primary);\n  border-width: 6px;\n}\n\n.rounded-avatar{\n  border-radius: 1rem;\n  border-color: var(--background-primary);\n  border-width: 6px;\n}\n\n.animation-text {\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  -webkit-box-decoration-break: clone;\n  background-color: #cccccc;\n  background-image: linear-gradient(90deg, #cccccc, #ffffff, #cccccc);\n  animation: 1.5s ease-in-out 0s infinite normal none running SkeletonLoading;\n}\n\n.main-grid,\n.inverted-main-grid {\n  display: flex;\n  flex-direction: column;\n}\n\n@media (min-width: 1024px) {\n  .main-grid {\n    display: grid;\n    gap: var(--gap);\n    grid-template-columns: minmax(0, 1fr) 320px;\n  }\n  .inverted-main-grid {\n    display: grid;\n    gap: var(--gap);\n    grid-template-columns: 245px minmax(0, 1fr);\n  }\n}\n.tab{\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  overflow-y: hidden;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding-left: 1.5rem;\n  padding-right: 3rem;\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  height: 3.5rem;\n  transition: height 400ms ease;\n}\n.tab.expanded-tab {\n  overflow-y: initial;\n  height: auto;\n}\n.tab li{\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  margin-right: 0.75rem;\n  cursor: pointer;\n}\n.tab li:hover{\n  opacity: 0.5;\n}\n.tab li.active{\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n}\n.tab li span{\n  white-space: nowrap;\n  border-top-left-radius: 0.375rem;\n  border-bottom-left-radius: 0.375rem;\n  background-color: var(--background-primary);\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  text-align: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.tab li span.first-tab{\n  border-radius: 0.375rem;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n.tab li b{\n  white-space: nowrap;\n  border-top-right-radius: 0.375rem;\n  border-bottom-right-radius: 0.375rem;\n  background-color: var(--background-primary);\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  text-align: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  color: var(--text-accent);\n  opacity: 0.7;\n}\n\n.tab-expander{\n  position: absolute;\n  right: 1.25rem;\n  top: 1.25rem;\n  cursor: pointer;\n  stroke: currentColor;\n  color: var(--text-bright);\n  opacity: 0.8;\n}\n.tab-expander:hover {\n  opacity: 0.5;\n}\n.tab-expander svg {\n  transition: transform 400ms ease;\n}\n.tab-expander.expanded svg {\n  transform: rotate(180deg);\n}\n\n/** nprogress styles */\n#loading-bar-wrapper #nprogress {\n  pointer-events: none;\n}\n#loading-bar-wrapper #nprogress .bar {\n  background: var(--main-gradient);\n  position: absolute;\n  z-index: 3000;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 8px;\n}\n#loading-bar-wrapper #nprogress .peg {\n  display: none;\n  position: absolute;\n  right: 0;\n  width: 100px;\n  height: 8px;\n  opacity: 0;\n  box-shadow: none;\n  transform: rotate(3deg) translate(0, -4px);\n}\n#loading-bar-wrapper #nprogress .spinner {\n  display: block;\n  position: fixed;\n  z-index: 3000;\n  top: 15px;\n  right: 15px;\n}\n#loading-bar-wrapper #nprogress .spinner-icon {\n  width: 18px;\n  height: 18px;\n  box-sizing: border-box;\n  border: 2px solid transparent;\n  border-top-color: var(--text-accent);\n  border-left-color: var(--text-accent);\n  border-radius: 50%;\n  animation: nprogress-spinner 0.4s linear infinite;\n}\n#loading-bar-wrapper {\n  position: fixed;\n  width: 100px;\n  top: 8px;\n  left: 50%;\n  transform: translateX(-50%);\n  height: 8px;\n  border-radius: 8px;\n  z-index: 2000;\n  background: transparent;\n  overflow: hidden;\n}\n#loading-bar-wrapper.nprogress-custom-parent {\n  background: var(--background-secondary);\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n}\n\na{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\na:hover{\n  opacity: 0.5;\n}\n\n/* Base css */\n/*! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com */\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n::before,\n::after {\n  --tw-content: '';\n}\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n/*\nRemove the default font size and weight for headings.\n*/\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n/*\nAdd the correct font weight in Edge and Safari.\n*/\nb,\nstrong {\n  font-weight: bolder;\n}\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n/*\nAdd the correct font size in all browsers.\n*/\nsmall {\n  font-size: 80%;\n}\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -0.25em;\n}\nsup {\n  top: -0.5em;\n}\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  font-weight: inherit; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\nbutton,\nselect {\n  text-transform: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n:-moz-focusring {\n  outline: auto;\n}\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\nprogress {\n  vertical-align: baseline;\n}\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n/*\nAdd the correct display in Chrome and Safari.\n*/\nsummary {\n  display: list-item;\n}\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n  padding: 0;\n}\nlegend {\n  padding: 0;\n}\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n/*\nPrevent resizing textareas horizontally by default.\n*/\ntextarea {\n  resize: vertical;\n}\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n/*\nSet the default cursor for buttons.\n*/\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n/* Make elements with the HTML hidden attribute stay hidden by default */\n[hidden] {\n  display: none;\n}\n*, ::before, ::after{\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n::backdrop{\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n/* Components css */\n.container{\n  width: 100%;\n}\n@media (min-width: 640px){\n  .container{\n    max-width: 640px;\n  }\n}\n@media (min-width: 768px){\n  .container{\n    max-width: 768px;\n  }\n}\n@media (min-width: 1024px){\n  .container{\n    max-width: 1024px;\n  }\n}\n@media (min-width: 1280px){\n  .container{\n    max-width: 1280px;\n  }\n}\n@media (min-width: 1536px){\n  .container{\n    max-width: 1536px;\n  }\n}\n.article-container{\n  position: relative;\n  height: 100%;\n  list-style-type: none;\n  border-radius: 1rem;\n}\n.article-container:hover .article-tag {\n  transform: translateY(-60%);\n}\n.article-container:hover .article,\n.article-container:hover .feature-article {\n  transform: scale(1.015);\n}\n.article-container .article-tag{\n  position: absolute;\n  left: 1.5rem;\n  top: -0.25rem;\n  display: flex;\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  align-items: flex-start;\n  border-radius: 0.375rem;\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n  padding-top: 0.25rem;\n  padding-bottom: 0.75rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  font-weight: 700;\n  text-transform: uppercase;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  background: var(--main-gradient);\n  z-index: 0;\n  transition: transform 200ms ease-in-out;\n}\n.article-container .article-tag > b{\n  border-radius: 0.25rem;\n  stroke: currentColor;\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  width: 100%;\n  height: 100%;\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n  background: rgba(0, 0, 0, 0.5);\n}\n\n.article{\n  position: relative;\n  top: 0px;\n  z-index: 10;\n  display: grid;\n  height: 100%;\n  grid-template-rows: repeat(3, minmax(0, 1fr));\n  overflow: hidden;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  transition: transform 0.2s ease-in-out;\n}\n.article .article-thumbnail{\n  position: relative;\n  grid-row: span 1 / span 1;\n}\n.article .article-thumbnail img{\n  position: absolute;\n  z-index: 20;\n  display: block;\n  height: 120%;\n  width: 100%;\n  border-radius: 1rem;\n  background-size: cover;\n  background-repeat: no-repeat;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.article .article-thumbnail .thumbnail-screen{\n  pointer-events: none;\n  position: absolute;\n  left: 0px;\n  z-index: 30;\n  height: 120%;\n  width: 100%;\n  opacity: 0.4;\n  max-width: 120%;\n  mix-blend-mode: screen;\n}\n.article .article-thumbnail:after {\n  pointer-events: none;\n  content: \"\";\n  position: absolute;\n  z-index: 35;\n  top: 13%;\n  left: 0;\n  height: 120%;\n  width: 100%;\n  background: var(--article-cover);\n}\n.article .article-content{\n  position: relative;\n  z-index: 40;\n  grid-row: span 2 / span 2;\n  display: flex;\n  flex-direction: column;\n  background-color: transparent;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n.article .article-content span {\n  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.1));\n}\n.article .article-content span b{\n  font-size: 0.75rem;\n  line-height: 1rem;\n  text-transform: uppercase;\n  color: var(--text-accent);\n}\n.article .article-content span ul{\n  display: inline-flex;\n  padding-left: 1rem;\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.article .article-content span ul li{\n  margin-right: 0.75rem;\n}\n.article .article-content h1{\n  margin-bottom: 1.5rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 800;\n  color: var(--text-bright);\n}\n@media (min-width: 1024px){\n  .article .article-content h1{\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n  }\n}\n.article .article-content p{\n  margin-bottom: 0.5rem;\n  padding-bottom: 1rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n@media (min-width: 1024px){\n  .article .article-content p{\n    margin-bottom: 0.5rem;\n    padding-bottom: 1.5rem;\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n.article .article-content .article-footer{\n  display: flex;\n  width: 100%;\n  flex: 1 1 0%;\n  align-content: flex-end;\n  align-items: flex-end;\n  justify-content: flex-start;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.article .article-content .article-footer img{\n  margin-right: 0.5rem;\n  border-radius: 9999px;\n  height: 28px;\n  width: 28px;\n}\n\n.feature-article{\n  position: relative;\n  top: 0px;\n  z-index: 10;\n  display: grid;\n  grid-template-rows: repeat(3, minmax(0, 1fr));\n  overflow: hidden;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n@media (min-width: 1024px){\n  .feature-article{\n    height: 28rem;\n    width: 100%;\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n    grid-template-rows: none;\n  }\n}\n\n.feature-article {\n  transition: transform 0.2s ease-in-out;\n}\n.feature-article .feature-thumbnail{\n  position: relative;\n  grid-row: span 1 / span 1;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-thumbnail{\n    grid-row: auto;\n  }\n}\n.feature-article .feature-thumbnail img{\n  position: absolute;\n  left: 0px;\n  z-index: 20;\n  display: block;\n  height: 120%;\n  width: 100%;\n  background-size: cover;\n  background-repeat: no-repeat;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-thumbnail img{\n    height: 28rem;\n    width: 120%;\n  }\n}\n.feature-article .feature-thumbnail span{\n  pointer-events: none;\n  position: absolute;\n  left: 0px;\n  z-index: 30;\n  height: 120%;\n  width: 100%;\n  opacity: 0.4;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-thumbnail span{\n    height: 28rem;\n    width: 120%;\n  }\n}\n.feature-article .feature-thumbnail:after {\n  pointer-events: none;\n  content: \"\";\n  position: absolute;\n  z-index: 35;\n  left: 71%;\n  top: 0;\n  height: 100%;\n  width: 50%;\n  background: var(--gradient-cover);\n}\n.feature-article .feature-content{\n  position: relative;\n  z-index: 40;\n  grid-row: span 2 / span 2;\n  display: flex;\n  flex-direction: column;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-content{\n    grid-row: auto;\n    padding: 3rem;\n  }\n}\n.feature-article .feature-content b{\n  text-transform: uppercase;\n  color: var(--text-accent);\n}\n.feature-article .feature-content ul{\n  display: inline-flex;\n  padding-left: 1rem;\n}\n.feature-article .feature-content ul li{\n  margin-right: 0.75rem;\n}\n.feature-article .feature-content h1{\n  margin-bottom: 1.5rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 800;\n  color: var(--text-bright);\n}\n@media (min-width: 1024px){\n  .feature-article .feature-content h1{\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    font-size: 2.25rem;\n    line-height: 2.5rem;\n  }\n}\n.feature-article .feature-content p{\n  margin-bottom: 0.5rem;\n  padding-bottom: 1rem;\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n@media (min-width: 1024px){\n  .feature-article .feature-content p{\n    margin-bottom: 0.5rem;\n    padding-bottom: 1.5rem;\n    font-size: 1.125rem;\n    line-height: 1.75rem;\n  }\n}\n.feature-article .feature-content .article-footer{\n  display: flex;\n  width: 100%;\n  flex: 1 1 0%;\n  align-content: flex-end;\n  align-items: flex-end;\n  justify-content: flex-start;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.feature-article .feature-content .article-footer img{\n  margin-right: 0.5rem;\n  border-radius: 9999px;\n  height: 28px;\n  width: 28px;\n}\n\n.thumbnail-screen {\n  max-width: 120%;\n  mix-blend-mode: screen;\n}\n\n@media (max-width: 1023px) {\n  .feature-article > div:first-of-type:after {\n    top: 13%;\n    left: 0;\n    height: 120%;\n    width: 100%;\n    background: var(--article-cover);\n  }\n}\n.post-html{\n  margin-bottom: 2rem;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding: 1rem;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n@media (min-width: 1024px){\n  .post-html{\n    margin-bottom: 0px;\n    padding: 3.5rem;\n  }\n}\n.post-html {\n  /* bullet lists */\n  /* numbered lists */\n  /* Remove blockquote left margin */\n}\n.post-html h1,\n.post-html h2,\n.post-html h3,\n.post-html h4,\n.post-html h5,\n.post-html h6{\n  position: relative;\n  margin-bottom: 1rem;\n  display: flex;\n  align-items: center;\n  padding-top: 1.75rem;\n  padding-bottom: 0.5rem;\n  color: var(--text-bright);\n  font-weight: 600;\n}\n.post-html h1:after,\n.post-html h2:after,\n.post-html h3:after,\n.post-html h4:after,\n.post-html h5:after,\n.post-html h6:after{\n  position: absolute;\n  bottom: 0px;\n  height: 0.25rem;\n  width: 6rem;\n  border-radius: 9999px;\n  content: \"\";\n  background: var(--main-gradient);\n}\n.post-html h1{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n@media (min-width: 1024px){\n  .post-html h1{\n    font-size: 2.25rem;\n    line-height: 2.5rem;\n  }\n}\n.post-html h2{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n@media (min-width: 1024px){\n  .post-html h2{\n    font-size: 1.875rem;\n    line-height: 2.25rem;\n  }\n}\n.post-html h3{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n@media (min-width: 1024px){\n  .post-html h3{\n    font-size: 1.5rem;\n    line-height: 2rem;\n  }\n}\n.post-html h4{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n@media (min-width: 1024px){\n  .post-html h4{\n    font-size: 1.25rem;\n    line-height: 1.75rem;\n  }\n}\n.post-html h5{\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n@media (min-width: 1024px){\n  .post-html h5{\n    font-size: 1.125rem;\n    line-height: 1.75rem;\n  }\n}\n.post-html h6{\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.post-html p{\n  margin-top: 1.5rem;\n  margin-bottom: 1.5rem;\n}\n.post-html ul {\n  margin: 1.5rem 0;\n}\n.post-html ul ul {\n  position: relative;\n  margin: 0;\n}\n.post-html ul > li > ul::before {\n  content: \"\";\n  border-left: 1px solid var(--text-accent);\n  position: absolute;\n  opacity: 0.35;\n  left: -1em;\n  top: 0;\n  bottom: 0;\n}\n.post-html ul li,\n.post-html ol li {\n  margin-left: 2rem;\n}\n.post-html ul,\n.post-html ul ul,\n.post-html ol ul,\n.post-html ul ul ul,\n.post-html ol ul ul {\n  list-style: none;\n}\n.post-html li > p {\n  display: inline-block;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n.post-html ul li::before {\n  content: \"•\";\n  color: var(--text-accent);\n  display: inline-block;\n  width: 1em;\n  margin-left: -1.15em;\n  padding: 0;\n  font-weight: bold;\n  text-shadow: 0 0 0.5em var(--accent-2);\n}\n.post-html ul ul li::before {\n  content: \"•\";\n}\n.post-html ul ul ul li::before {\n  content: \"•\";\n}\n.post-html ol {\n  list-style: none;\n  counter-reset: li;\n}\n.post-html ol > li {\n  counter-increment: li;\n}\n.post-html ol > li::before,\n.post-html ul ol > li::before,\n.post-html ul ul ol > li::before,\n.post-html ul ul ul ol > li::before {\n  content: \".\" counter(li);\n  color: var(--text-accent);\n  font-weight: normal;\n  display: inline-block;\n  width: 1em;\n  margin-left: -1.5em;\n  margin-right: 0.5em;\n  text-align: right;\n  direction: rtl;\n  overflow: visible;\n  word-break: keep-all;\n  white-space: nowrap;\n}\n.post-html blockquote {\n  -webkit-margin-start: 0;\n          margin-inline-start: 0;\n}\n.post-html .custom-quote,\n.post-html blockquote {\n  position: relative;\n  padding: 0.5rem 1rem 0.5rem 2rem;\n  color: var(--text-normal);\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  margin-bottom: 2em;\n  margin-top: 2em;\n  margin-right: 0 !important;\n  border-left: 3px var(--text-accent) solid;\n  border-top: transparent;\n  border-bottom: transparent;\n  border-right: transparent;\n  background: linear-gradient(135deg, var(--background-primary), var(--background-primary) 41.07%, var(--background-secondary) 76.05%, var(--background-secondary));\n}\n.post-html .custom-quote::before,\n.post-html blockquote::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0px;\n  height: 2px;\n  width: 76%;\n  background: linear-gradient(90deg, var(--text-accent), var(--background-secondary) 76.05%);\n}\n.post-html .custom-quote::after,\n.post-html blockquote::after {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0px;\n  height: 2px;\n  width: 45%;\n  background: linear-gradient(90deg, var(--text-accent), var(--background-primary) 45%);\n}\n.post-html .custom-quote-svg,\n.post-html .custom-blockquote-svg {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  top: -0.65rem;\n  left: -1rem;\n  height: 2.3rem;\n  width: 2.3rem;\n  fill: currentColor;\n  stroke: var(--background-secondary);\n  overflow: hidden;\n}\n.post-html .custom-quote-svg svg,\n.post-html .custom-blockquote-svg svg {\n  height: 100%;\n  width: 100%;\n}\n.post-html .custom-blockquote-svg {\n  color: var(--text-accent);\n}\n.post-html .custom-quote.tip .custom-quote-svg {\n  color: var(--custom-quote-tip);\n}\n.post-html .custom-quote.tip {\n  border-left: 3px solid var(--custom-quote-tip) !important;\n}\n.post-html .custom-quote.tip .custom-quote-title {\n  color: var(--custom-quote-tip);\n}\n.post-html .custom-quote.tip::before {\n  background: linear-gradient(90deg, var(--custom-quote-tip), var(--background-primary));\n}\n.post-html .custom-quote.tip::after {\n  background: linear-gradient(90deg, var(--custom-quote-tip), var(--background-primary));\n}\n.post-html .custom-quote.warning .custom-quote-svg {\n  color: var(--custom-quote-warning);\n}\n.post-html .custom-quote.warning {\n  border-left: 3px solid var(--custom-quote-warning) !important;\n}\n.post-html .custom-quote.warning .custom-quote-title {\n  color: var(--custom-quote-warning);\n}\n.post-html .custom-quote.warning::before {\n  background: linear-gradient(90deg, var(--custom-quote-warning), var(--background-primary));\n}\n.post-html .custom-quote.warning::after {\n  background: linear-gradient(90deg, var(--custom-quote-warning), var(--background-primary));\n}\n.post-html .custom-quote.danger .custom-quote-svg {\n  color: var(--custom-quote-danger);\n}\n.post-html .custom-quote.danger {\n  border-left: 3px solid var(--custom-quote-danger) !important;\n}\n.post-html .custom-quote.danger .custom-quote-title {\n  color: var(--custom-quote-danger);\n}\n.post-html .custom-quote.danger::before {\n  background: linear-gradient(90deg, var(--custom-quote-danger), var(--background-primary));\n}\n.post-html .custom-quote.danger::after {\n  background: linear-gradient(90deg, var(--custom-quote-danger), var(--background-primary));\n}\n.post-html .custom-details{\n  border-radius: 0.75rem;\n  padding: 1rem;\n  background: linear-gradient(135deg, var(--background-primary), var(--background-primary) 41.07%, var(--background-secondary) 76.05%, var(--background-secondary));\n}\n.post-html .custom-details summary{\n  cursor: pointer;\n  border-radius: 0.5rem;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */\n  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently */\n  padding: 0.5rem 1.2rem;\n  background: linear-gradient(135deg, var(--bg-accent-55), transparent 46.07%);\n  opacity: 1;\n}\n.post-html .custom-details summary:hover {\n  opacity: 0.6;\n}\n.post-html strong {\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  padding: 0 0.1rem;\n  color: #7aa2f7;\n  background-color: #7aa2f7;\n  background-image: var(--strong-gradient);\n}\n.post-html strong::-moz-selection {\n  -webkit-text-fill-color: var(--text-faint);\n}\n.post-html strong::selection {\n  -webkit-text-fill-color: var(--text-faint);\n}\n.post-html table {\n  border-collapse: collapse;\n  margin: 1rem 0;\n  display: block;\n  overflow-x: auto;\n}\n.post-html th {\n  border: 1px solid var(--background-primary-alt) !important;\n  background-color: var(--background-secondary);\n}\n.post-html td,\n.post-html th {\n  border: 1px solid var(--background-primary-alt) !important;\n  padding: 0.6em 1em;\n}\n.post-html tr {\n  border-top: 1px solid var(--background-primary-alt) !important;\n  background-color: var(--background-primary);\n}\n.post-html tr:nth-child(2n) {\n  background-color: var(--background-secondary);\n}\n.post-html em {\n  color: #bb9af7 !important;\n  font-family: OperatorMonoSSmLig-Book, Rubik !important;\n}\n.post-html a {\n  text-shadow: -1px -1px 2px var(--background-primary), -1px 1px 2px var(--background-primary), 1px -1px 2px var(--background-primary), 1px 1px 2px var(--background-primary);\n  -webkit-text-fill-color: var(--text-bright);\n  background-position: 0 100%;\n  background-repeat: repeat-x;\n  background-size: 5px 5px;\n  text-decoration: none;\n  transition: all 350ms ease;\n  background-image: linear-gradient(to bottom, var(--bg-sub-accent-55) 0%, var(--bg-sub-accent-55) 100%);\n}\n.post-html a strong {\n  -webkit-background-clip: initial;\n  -webkit-text-fill-color: initial;\n  color: inherit;\n  background-color: initial;\n  background-image: none;\n}\n.post-html a:hover {\n  text-shadow: -1px -1px 2px var(--background-modifier-border), -1px 1px 2px var(--background-modifier-border), 1px -1px 2px var(--background-modifier-border), 1px 1px 2px var(--background-modifier-border);\n  -webkit-text-fill-color: var(--text-bright);\n  background-size: 4px 50px;\n}\n.post-html svg {\n  display: inline-block;\n}\n.post-html hr {\n  position: relative;\n  -webkit-margin-before: 0;\n          margin-block-start: 0;\n  -webkit-margin-after: 0;\n          margin-block-end: 0;\n  border: none;\n  height: 1px;\n  padding: 2.5em 0;\n}\n.post-html hr::before {\n  content: \"§\";\n  display: inline-block;\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, -44%) rotate(60deg);\n  transform-origin: 50% 50%;\n  padding: 0.25rem;\n  color: var(--text-sub-accent);\n  background-color: var(--background-secondary);\n  z-index: 10;\n  border-radius: 60%;\n}\n.post-html hr::after {\n  position: absolute;\n  content: \"\";\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  background: var(--main-gradient);\n  height: 3px;\n  width: 26%;\n  border-radius: 9999px;\n  opacity: 0.26;\n  margin: 2.5em auto;\n}\n.post-html pre {\n  overflow: auto !important;\n  overflow-wrap: normal !important;\n}\n.post-html pre code {\n  padding: 0;\n}\n.post-html code {\n  color: var(--text-normal);\n  margin: 0;\n  font-size: 0.85em;\n  border-radius: 3px;\n  overflow-wrap: break-word;\n  background-color: var(--bg-accent-05);\n  word-wrap: break-word;\n  padding: 0.1rem 0.3rem;\n  border-radius: 0.3rem;\n  color: var(--text-accent) !important;\n}\n\n.post-header{\n  margin-bottom: 1rem;\n}\n.post-header .post-labels{\n  position: relative;\n  bottom: -0.375rem;\n}\n.post-header .post-labels > b{\n  display: inline-flex;\n  border-radius: 0.375rem;\n  padding: 0.125rem;\n  font-size: 0.75rem;\n  line-height: 1rem;\n  text-transform: uppercase;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  opacity: 0.9;\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n}\n.post-header .post-labels ul{\n  display: inline-flex;\n  padding-left: 0.5rem;\n}\n.post-header .post-labels ul li{\n  margin-right: 0.75rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  opacity: 0.7;\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n}\n.post-header .post-title{\n  margin-top: 0.5rem;\n  margin-bottom: 1rem;\n  font-size: clamp(1.2rem, 1rem + 3.5vw, 4rem);\n  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);\n  line-height: 1.1;\n}\n.post-header .post-stats{\n  margin-right: 1rem;\n  display: none;\n  flex-direction: row;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n@media (min-width: 1024px){\n  .post-header .post-stats{\n    display: flex;\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n.post-header .post-stats > span{\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  stroke: currentColor;\n  padding-right: 1rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n  opacity: 0.8;\n}\n\n.post-footer{\n  margin-right: 1rem;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: flex-start;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n@media (min-width: 1024px){\n  .post-footer{\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n.post-footer img{\n  margin-right: 0.5rem;\n  border-radius: 9999px;\n  height: 28px;\n  width: 28px;\n}\n\n.sidebar-box{\n  position: relative;\n  margin-bottom: 2rem;\n  width: 100%;\n  border-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding: 2rem;\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.modal--active {\n  overflow: hidden !important;\n}\n\n#search-modal {\n  --search-modal-height: 600px;\n  --search-modal-searchbox-height: 56px;\n  --search-modal-spacing: 12px;\n  --search-modal-footer-height: 44px;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  height: 100vh;\n  width: 100vw;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n  background-color: rgba(26, 26, 26, 0.8);\n  z-index: 250;\n}\n#search-modal .search-container{\n  position: relative;\n  margin-top: 4rem;\n  margin-bottom: auto;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  max-width: 36rem;\n  border-radius: 1rem;\n  background-color: var(--background-primary);\n  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n@media (min-width: 1024px){\n  #search-modal .search-container{\n    margin-right: auto;\n    margin-left: auto;\n  }\n}\n#search-modal .search-form{\n  position: relative;\n  display: flex;\n  height: 3.5rem;\n  width: 100%;\n  align-items: center;\n  border-radius: 0.75rem;\n  border-width: 2px;\n  border-color: var(--text-accent);\n  background-color: var(--background-secondary);\n  padding-top: 0px;\n  padding-bottom: 0px;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n#search-modal .search-form button:hover {\n  color: var(--search-modal-highlight);\n}\n#search-modal .search-input{\n  height: 100%;\n  width: 80%;\n  flex: 1 1 0%;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border-width: 0px;\n  background-color: transparent;\n  padding-left: 0.5rem;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n}\n#search-modal .search-btn{\n  cursor: pointer;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border-radius: 9999px;\n  border-width: 0px;\n  background-image: none;\n  padding: 0.125rem;\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n#search-modal .search-dropdown{\n  margin-top: 0.5rem;\n  overflow-y: auto;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  min-height: var(--search-modal-spacing);\n  max-height: calc(var(--search-modal-height) - var(--search-modal-searchbox-height) - var(--search-modal-spacing) - var(--search-modal-footer-height));\n  scrollbar-color: var(--search-modal-muted-color) var(--search-modal-background);\n  scrollbar-width: thin;\n}\n#search-modal .search-hit-label{\n  position: sticky;\n  top: 0px;\n  z-index: 10;\n  background-color: var(--background-primary);\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  font-weight: 600;\n  color: var(--text-accent);\n}\n#search-modal .search-hit{\n  position: relative;\n  display: flex;\n  border-radius: 0.25rem;\n  padding-bottom: 0.5rem;\n}\n#search-modal .search-hit:last-of-type{\n  padding-bottom: 1rem;\n}\n#search-modal .search-hit a{\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  border-radius: 0.5rem;\n  border-width: 2px;\n  border-color: var(--background-secondary);\n  background-color: var(--background-secondary);\n  padding-left: 0.75rem;\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n#search-modal .search-hit.active a{\n  border-color: var(--text-accent);\n}\n#search-modal .search-hit-container{\n  display: flex;\n  height: 3.5rem;\n  align-items: center;\n  padding-right: 0.75rem;\n  color: var(--text-normal);\n}\n#search-modal .search-hit-icon{\n  stroke-width: 2;\n  color: var(--text-dim);\n}\n#search-modal .search-hit-content-wrapper{\n  position: relative;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  display: flex;\n  width: 80%;\n  flex: 1 1 auto;\n  flex-direction: column;\n  justify-content: center;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-weight: 500;\n}\n#search-modal .search-hit-title{\n  width: 91.666667%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n#search-modal .search-hit-title mark{\n  background-color: var(--text-accent);\n}\n#search-modal .search-hit-path{\n  font-size: 0.75rem;\n  line-height: 1rem;\n  color: var(--text-dim);\n}\n#search-modal .search-hit-action{\n  display: flex;\n  align-items: center;\n  height: 22px;\n  width: 22px;\n}\n#search-modal .search-footer{\n  position: relative;\n  display: flex;\n  height: 2.75rem;\n  width: 100%;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n  flex-direction: row-reverse;\n  align-items: center;\n  justify-content: space-between;\n  border-bottom-right-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  background-color: var(--background-secondary);\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  box-shadow: 0 -1px 0 0, #363636 0 -3px 6px 0 rgba(30, 35, 90, 0.12);\n  z-index: 300;\n}\n#search-modal .search-logo a{\n  display: flex;\n  align-items: center;\n  justify-items: center;\n  text-decoration-line: none;\n}\n#search-modal .search-label{\n  margin-right: 0.5rem;\n  font-size: 0.75rem;\n  line-height: 1rem;\n  color: var(--text-dim);\n}\n#search-modal .search-commands{\n  margin: 0px;\n  display: none;\n  list-style-type: none;\n  padding: 0px;\n  color: var(--text-dim);\n}\n@media (min-width: 1024px){\n  #search-modal .search-commands{\n    display: flex;\n  }\n}\n#search-modal .search-commands li{\n  margin-right: 0.5rem;\n  display: flex;\n  align-items: center;\n}\n#search-modal .search-commands-key{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 0.125rem;\n  background: var(--search-modal-key-gradient);\n  box-shadow: var(--search-modal-key-shadow);\n  margin-right: 0.4em;\n  height: 18px;\n  width: 20px;\n}\n#search-modal .search-commands-label{\n  color: var(--text-dim);\n}\n#search-modal .search-startscreen{\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0px;\n  margin-bottom: 0px;\n  width: 80%;\n  padding-top: 2.25rem;\n  padding-bottom: 2.25rem;\n  text-align: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n#search-modal .search-startscreen p{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  color: var(--text-dim);\n}\n\n/* Utilities css */\n.fixed{\n  position: fixed;\n}\n.absolute{\n  position: absolute;\n}\n.relative{\n  position: relative;\n}\n.sticky{\n  position: sticky;\n}\n.top-0{\n  top: 0px;\n}\n.bottom-0{\n  bottom: 0px;\n}\n.bottom-4{\n  bottom: 1rem;\n}\n.right-4{\n  right: 1rem;\n}\n.left-0{\n  left: 0px;\n}\n.right-0{\n  right: 0px;\n}\n.top-10{\n  top: 2.5rem;\n}\n.z-10{\n  z-index: 10;\n}\n.z-50{\n  z-index: 50;\n}\n.z-40{\n  z-index: 40;\n}\n.z-0{\n  z-index: 0;\n}\n.col-span-1{\n  grid-column: span 1 / span 1;\n}\n.row-span-1{\n  grid-row: span 1 / span 1;\n}\n.m-0{\n  margin: 0px;\n}\n.mx-2{\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.my-8{\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.my-1{\n  margin-top: 0.25rem;\n  margin-bottom: 0.25rem;\n}\n.my-0{\n  margin-top: 0px;\n  margin-bottom: 0px;\n}\n.mx-auto{\n  margin-left: auto;\n  margin-right: auto;\n}\n.-mr-4{\n  margin-right: -1rem;\n}\n.mt-8{\n  margin-top: 2rem;\n}\n.mb-8{\n  margin-bottom: 2rem;\n}\n.mr-1{\n  margin-right: 0.25rem;\n}\n.mt-2{\n  margin-top: 0.5rem;\n}\n.mb-6{\n  margin-bottom: 1.5rem;\n}\n.mr-2{\n  margin-right: 0.5rem;\n}\n.mr-1\\.5{\n  margin-right: 0.375rem;\n}\n.mb-4{\n  margin-bottom: 1rem;\n}\n.mt-1{\n  margin-top: 0.25rem;\n}\n.mr-0{\n  margin-right: 0px;\n}\n.mb-2{\n  margin-bottom: 0.5rem;\n}\n.mt-6{\n  margin-top: 1.5rem;\n}\n.mb-1\\.5{\n  margin-bottom: 0.375rem;\n}\n.mb-1{\n  margin-bottom: 0.25rem;\n}\n.ml-2{\n  margin-left: 0.5rem;\n}\n.box-border{\n  box-sizing: border-box;\n}\n.block{\n  display: block;\n}\n.inline-block{\n  display: inline-block;\n}\n.inline{\n  display: inline;\n}\n.flex{\n  display: flex;\n}\n.table{\n  display: table;\n}\n.grid{\n  display: grid;\n}\n.contents{\n  display: contents;\n}\n.hidden{\n  display: none;\n}\n.h-full{\n  height: 100%;\n}\n.h-28{\n  height: 7rem;\n}\n.h-1{\n  height: 0.25rem;\n}\n.h-12{\n  height: 3rem;\n}\n.h-56{\n  height: 14rem;\n}\n.h-98{\n  height: 28rem;\n}\n.min-h-screen{\n  min-height: 100vh;\n}\n.w-full{\n  width: 100%;\n}\n.w-28{\n  width: 7rem;\n}\n.w-14{\n  width: 3.5rem;\n}\n.w-12{\n  width: 3rem;\n}\n.w-24{\n  width: 6rem;\n}\n.w-48{\n  width: 12rem;\n}\n.min-w-full{\n  min-width: 100%;\n}\n.flex-1{\n  flex: 1 1 0%;\n}\n.origin-top-right{\n  transform-origin: top right;\n}\n.transform{\n  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.cursor-pointer{\n  cursor: pointer;\n}\n.resize{\n  resize: both;\n}\n.list-none{\n  list-style-type: none;\n}\n.grid-cols-3{\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.grid-cols-1{\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-cols-4{\n  grid-template-columns: repeat(4, minmax(0, 1fr));\n}\n.grid-rows-1{\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n}\n.flex-row{\n  flex-direction: row;\n}\n.flex-col{\n  flex-direction: column;\n}\n.flex-wrap{\n  flex-wrap: wrap;\n}\n.items-start{\n  align-items: flex-start;\n}\n.items-end{\n  align-items: flex-end;\n}\n.items-center{\n  align-items: center;\n}\n.justify-start{\n  justify-content: flex-start;\n}\n.justify-end{\n  justify-content: flex-end;\n}\n.justify-center{\n  justify-content: center;\n}\n.justify-evenly{\n  justify-content: space-evenly;\n}\n.justify-items-center{\n  justify-items: center;\n}\n.gap-6{\n  gap: 1.5rem;\n}\n.gap-8{\n  gap: 2rem;\n}\n.gap-1\\.5{\n  gap: 0.375rem;\n}\n.gap-1{\n  gap: 0.25rem;\n}\n.gap-3{\n  gap: 0.75rem;\n}\n.gap-2{\n  gap: 0.5rem;\n}\n.self-stretch{\n  align-self: stretch;\n}\n.overflow-hidden{\n  overflow: hidden;\n}\n.overflow-y-auto{\n  overflow-y: auto;\n}\n.whitespace-nowrap{\n  white-space: nowrap;\n}\n.rounded-2xl{\n  border-radius: 1rem;\n}\n.rounded-lg{\n  border-radius: 0.5rem;\n}\n.rounded-full{\n  border-radius: 9999px;\n}\n.rounded-md{\n  border-radius: 0.375rem;\n}\n.rounded{\n  border-radius: 0.25rem;\n}\n.rounded-xl{\n  border-radius: 0.75rem;\n}\n.rounded-tl-md{\n  border-top-left-radius: 0.375rem;\n}\n.rounded-bl-md{\n  border-bottom-left-radius: 0.375rem;\n}\n.rounded-tr-md{\n  border-top-right-radius: 0.375rem;\n}\n.rounded-br-md{\n  border-bottom-right-radius: 0.375rem;\n}\n.border{\n  border-width: 1px;\n}\n.border-2{\n  border-width: 2px;\n}\n.border-b-2{\n  border-bottom-width: 2px;\n}\n.border-r-4{\n  border-right-width: 4px;\n}\n.border-ob{\n  border-color: var(--text-accent);\n}\n.border-ob-deep-900{\n  border-color: var(--background-primary);\n}\n.bg-ob-deep-900{\n  background-color: var(--background-primary);\n}\n.bg-ob-deep-800{\n  background-color: var(--background-secondary);\n}\n.bg-transparent{\n  background-color: transparent;\n}\n.fill-current{\n  fill: currentColor;\n}\n.stroke-current{\n  stroke: currentColor;\n}\n.stroke-ob-bright{\n  stroke: var(--text-bright);\n}\n.stroke-2{\n  stroke-width: 2;\n}\n.stroke-0{\n  stroke-width: 0;\n}\n.p-4{\n  padding: 1rem;\n}\n.p-0{\n  padding: 0px;\n}\n.p-0\\.5{\n  padding: 0.125rem;\n}\n.p-1{\n  padding: 0.25rem;\n}\n.px-3{\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.py-6{\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n.px-6{\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n.px-2{\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.px-10{\n  padding-left: 2.5rem;\n  padding-right: 2.5rem;\n}\n.px-1\\.5{\n  padding-left: 0.375rem;\n  padding-right: 0.375rem;\n}\n.py-0\\.5{\n  padding-top: 0.125rem;\n  padding-bottom: 0.125rem;\n}\n.px-1{\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.py-0{\n  padding-top: 0px;\n  padding-bottom: 0px;\n}\n.py-1{\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.px-14{\n  padding-left: 3.5rem;\n  padding-right: 3.5rem;\n}\n.py-16{\n  padding-top: 4rem;\n  padding-bottom: 4rem;\n}\n.py-4{\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.px-4{\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-2{\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.py-8{\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n.px-8{\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.px-0{\n  padding-left: 0px;\n  padding-right: 0px;\n}\n.py-3{\n  padding-top: 0.75rem;\n  padding-bottom: 0.75rem;\n}\n.pr-6{\n  padding-right: 1.5rem;\n}\n.pl-4{\n  padding-left: 1rem;\n}\n.pt-8{\n  padding-top: 2rem;\n}\n.pt-1{\n  padding-top: 0.25rem;\n}\n.pt-4{\n  padding-top: 1rem;\n}\n.pt-6{\n  padding-top: 1.5rem;\n}\n.pb-2{\n  padding-bottom: 0.5rem;\n}\n.pr-4{\n  padding-right: 1rem;\n}\n.pr-1\\.5{\n  padding-right: 0.375rem;\n}\n.pr-1{\n  padding-right: 0.25rem;\n}\n.pl-2{\n  padding-left: 0.5rem;\n}\n.pt-2{\n  padding-top: 0.5rem;\n}\n.pb-10{\n  padding-bottom: 2.5rem;\n}\n.pb-8{\n  padding-bottom: 2rem;\n}\n.pr-2{\n  padding-right: 0.5rem;\n}\n.pt-12{\n  padding-top: 3rem;\n}\n.text-center{\n  text-align: center;\n}\n.text-right{\n  text-align: right;\n}\n.text-sm{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-lg{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-4xl{\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.text-base{\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-2xl{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.text-xs{\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.text-3xl{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n.text-xl{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.font-extrabold{\n  font-weight: 800;\n}\n.font-semibold{\n  font-weight: 600;\n}\n.font-medium{\n  font-weight: 500;\n}\n.uppercase{\n  text-transform: uppercase;\n}\n.not-italic{\n  font-style: normal;\n}\n.text-white{\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.text-ob-normal{\n  color: var(--text-normal);\n}\n.text-ob-bright{\n  color: var(--text-bright);\n}\n.text-ob-dim{\n  color: var(--text-dim);\n}\n.text-ob{\n  color: var(--text-accent);\n}\n.text-ob-secondary{\n  color: var(--text-sub-accent);\n}\n.text-gray-500{\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n.opacity-50{\n  opacity: 0.5;\n}\n.opacity-80{\n  opacity: 0.8;\n}\n.opacity-70{\n  opacity: 0.7;\n}\n.opacity-90{\n  opacity: 0.9;\n}\n.opacity-0{\n  opacity: 0;\n}\n.opacity-75{\n  opacity: 0.75;\n}\n.shadow-xl{\n  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-lg{\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow{\n  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-2xl{\n  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-md{\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-sm{\n  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.outline{\n  outline-style: solid;\n}\n.filter{\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.transition{\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.transition-all{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.transition-shadow{\n  transition-property: box-shadow;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-300{\n  transition-duration: 300ms;\n}\n.ease-in-out{\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n/* bouncy-transition */\n.fade-bounce-y-enter-active {\n  transition: all 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-y-leave-active {\n  transition: all 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-y-enter-from,\n.fade-bounce-y-leave-to {\n  transform: translateY(20%);\n  opacity: 0;\n}\n\n.fade-bounce-pure-y-enter-active {\n  transition: transform 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-pure-y-leave-active {\n  transition: transform 0.35s cubic-bezier(0, 1.8, 1, 1.2);\n}\n\n.fade-bounce-pure-y-enter-from,\n.fade-bounce-pure-y-leave-to {\n  transform: translateY(15%);\n  opacity: 0;\n}\n\n/* fade-slide */\n.fade-slide-y-enter-active {\n  transition: all 0.3s ease;\n}\n\n.fade-slide-y-leave-active {\n  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);\n}\n\n.fade-slide-y-enter-from,\n.fade-slide-y-leave-to {\n  transform: translateY(10px);\n  opacity: 0;\n}\n\n/* breadcrumb transition */\n.breadcrumb-enter-active,\n.breadcrumb-leave-active {\n  transition: all 0.5s;\n}\n\n.breadcrumb-enter,\n.breadcrumb-leave-active {\n  opacity: 0;\n  transform: translateX(20px);\n}\n\n.breadcrumb-move {\n  transition: all 0.5s;\n}\n\n.breadcrumb-leave-active {\n  position: absolute;\n}\n\n@keyframes gradient {\n  0% {\n    background-position: 0% 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0% 50%;\n  }\n}\n.stroke-ob-bright {\n  stroke: var(--text-bright) !important;\n}\n\n.diamond-clip-path {\n  -webkit-clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n          clip-path: polygon(50% 3%, 91% 25%, 91% 75%, 50% 97%, 9% 75%, 9% 25%);\n  background: var(--background-trans);\n}\n\n.diamond-icon{\n  display: flex;\n  height: 3rem;\n  width: 3rem;\n  cursor: pointer;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  color: var(--text-bright);\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\n.diamond-icon:hover{\n  opacity: 0.5;\n}\n\nhtml {\n  scrollbar-color: rgba(82, 82, 82, 0.8) transparent;\n}\n\nhtml::-webkit-scrollbar {\n  width: 12px;\n  height: 12px;\n}\n\nhtml::-webkit-scrollbar-thumb {\n  background: #434343;\n  border-radius: 16px;\n  box-shadow: inset 2px 2px 2px rgba(100, 100, 100, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);\n}\n\nhtml::-webkit-scrollbar-track {\n  border: none;\n  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);\n}\n\ndiv::-webkit-scrollbar {\n  width: 10px;\n  height: 10px;\n}\n\ndiv::-webkit-scrollbar-thumb {\n  background: #434343;\n  border-radius: 16px;\n  box-shadow: inset 2px 2px 2px rgba(100, 100, 100, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);\n}\n\ndiv::-webkit-scrollbar-track {\n  border: none;\n  background: transparent !important;\n}\n\n.hover\\:bg-ob-trans:hover{\n  background-color: var(--background-trans);\n}\n\n.hover\\:text-ob:hover{\n  color: var(--text-accent);\n}\n\n.hover\\:text-ob-bright:hover{\n  color: var(--text-bright);\n}\n\n.hover\\:opacity-50:hover{\n  opacity: 0.5;\n}\n\n.hover\\:shadow-2xl:hover{\n  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.hover\\:shadow-ob:hover{\n  --tw-shadow: var(--accent-shadow);\n  --tw-shadow-colored: var(--accent-shadow);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n  --tw-shadow-color: var(--text-accent);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n\n@media (min-width: 768px){\n  .md\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .md\\:grid-cols-1{\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n  }\n}\n\n@media (min-width: 1024px){\n  .lg\\:col-span-3{\n    grid-column: span 3 / span 3;\n  }\n  .lg\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .lg\\:mb-0{\n    margin-bottom: 0px;\n  }\n  .lg\\:mr-4{\n    margin-right: 1rem;\n  }\n  .lg\\:mt-0{\n    margin-top: 0px;\n  }\n  .lg\\:flex{\n    display: flex;\n  }\n  .lg\\:h-auto{\n    height: auto;\n  }\n  .lg\\:max-w-screen-2xl{\n    max-width: 1536px;\n  }\n  .lg\\:grid-cols-4{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .lg\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .lg\\:grid-rows-none{\n    grid-template-rows: none;\n  }\n  .lg\\:flex-row{\n    flex-direction: row;\n  }\n  .lg\\:justify-end{\n    justify-content: flex-end;\n  }\n  .lg\\:gap-12{\n    gap: 3rem;\n  }\n  .lg\\:px-8{\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n  .lg\\:px-14{\n    padding-left: 3.5rem;\n    padding-right: 3.5rem;\n  }\n  .lg\\:py-10{\n    padding-top: 2.5rem;\n    padding-bottom: 2.5rem;\n  }\n  .lg\\:pb-16{\n    padding-bottom: 4rem;\n  }\n  .lg\\:text-left{\n    text-align: left;\n  }\n  .lg\\:text-base{\n    font-size: 1rem;\n    line-height: 1.5rem;\n  }\n}\n\n@media (min-width: 1280px){\n  .xl\\:grid-cols-3{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .xl\\:grid-cols-1{\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n  }\n}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -13204,17 +12547,6 @@ module.exports = __webpack_require__.p + "static/img/default-cover.ec492978.jpg"
 
 "use strict";
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAMAUExURUxpcfjxsuzNbOC3gOCzcezbl/PWkvnpveKrTPXMmtmTRu/ljumwSdq1geSbP+a8ae+zSurBV/LjrO7Yb+bNlfrrrtmNP/PgdenEWurKhenFdt2rYt/EjPXnu+e9faFjNbWReNq8fdi1hZ1xTuOtVVxBUlIxSGFPX+jGXvHgmu/hn/Hfj96tYe7Yqea7XfXimPLghP334+Cwbvr32N3CiN/Bd+K5fui0Wt2fUeS2U+zOeuO1Y/bmiuPEiuG0bqyKduG5hfvOWaBuWk8sPa6DW++jROfFZfLkl86JV/nuyOzZfvjVY9qkYd20dJ9yXL+YWWxSWcmjbpyQdoyHee7ZfOGsVuTBau3WeOW7V92nUdCSRee3UcaEQuOwVufJk4deQfPOgIpsTt2fR6R/Vtyzd86keNqsab6SX8GYdPWlPPy/VZySeevMYufDeenMZtqkT9KRU/LNYP3aj8imfLCMbdQsG+m+Xem4UurDXtYgF+e2Weq+VRgWb+/KXui7WOWzUxESfO3BWQ8JatIWEduVQdcKCw8PcttQJ+GjSenIZNZfLhcHX9dKKNqXUOnBaN+fR8pEIuO4YdOEPOm0T+/GXNdBJNS6c96jUNIeEsZRJOhyNPbKaedoLeR2OelcJG9wehkaeIN9etQ1HvDOYqqkhdhzNNg6H/jCUv3VWNEIBRUeidl+OPG+UtmjW+GQP9x0OsdeLMsLCPfFXSMOXfAsEcEOEaqBUaWOZU0GRM+wax81jbOgboeFf8izeu6uWaSbfb2ve+OtV9RqMt1rNN2DQt6IN49aOOaiQ7slGmlgblBMb8ovF91YKMcfEF9ujex/M2FkfYeMjJKNfnl3d5wGHpJ7Xu2NQuKxTNBZLseoWb9oOfY7GcE7LWUZSGYEOPevRp+AXDVGinSAi4ZvW60TFUcmU7Cbe7ipdNBGJv7oapJsSV8nUa81NL9GI/R6LbORVbJQOCgueogKJ3ZjXuNCHK4HGn1oYDMfXLp7Pi8LVmsuUKM7LkFXknNiZHtdUdwjFSsuVN8AAAB1dFJOUwAE/hMaDRsI/gH+FPw6/L/+9GT+cS/+7vyP0M0kQbD5w1uI/uf5+v7sTHyU3FvVPLgXvyRJ/aPk1fyq66Vn2NEt/Nv85/7eh2FLzPfvsvX9+N7m8trP7+ntyafrm/OH+Jz59+3Pn3/Mq+qq+NHq5MF4+InD117Lt0kAAAU3SURBVDjLbdV3VJNnFAdgE8gkCQkJS9nInspQRGSIu+496qhard3tySAkIYuEbCBkAAFCwpCN7CkgKGUvBffee1S7z+kXUiL2cP9+zu97733Pe79582YXaFFIAMHFJdqFEBCyCDRv7kLAYGbmMegoN5fo6Gg3AjrG3AwGQ8wBYdaObsfj4pydDx06cuTo0bi4427rHGFzBEJ8ok66bHJ3dr5w4enThoZNm1xOEgIgcwQ6nIj3XHnB+epVobC7qqK5tdHTM/6Ew/8jQTAoOv72SgBWVw/marIkFQboHo+GghCfdmt9eOMWj3tPCzVqjk7B56uJk6qOca8t4T9BZ2eCINahG7d6eLg3ZOVyknU6saKEMzLZWeDl9XM4GgozzQkUEmS51cPTa8v5kSJiQgJRp1CoOUMDZ9MmRj08jjkBnzdBxxWbH/zm9W7kJVENQKKiSM2pH1p1ti3vgefWY6EOINMEQ7fla7WXGjS5yclEIJPDIRLPnMnNedRBo+VvC40BzZwwyHVbPpN5qSHXBHUA5GvaC2i8ie2uQZBpiVgUc8ry63wmzf13/q/JyQkJuqIiXUJCSUkRX9lJ4+VtD15uPX3vIAf0qUAjHDRAokLMF+uIABw0wvXBjiEGCHH98qtVD9uYzNubRzTJJamX023g8J4qtTo3p/kRjZff8eOGNVYQExwHzvhq8iXnTGZ1OndqqrKHSMyabG6l8do6MmL9fA3QzC0cg2nvKC3tu4e6lfkiNfVcYVlZVVVZTyz90j88bUE7Fut00GwabsRgmh+Wlva/g6+qzkxNFQoLC7u7e5A1lA9eTG2BEotysjdA88X+NpVS5Z0WWu3r6pwc8ePUx0KhWNydU3X1N1rpHSW4F+O/2NwAF3xmYyNV/t3CE/31IiuLLzZkisUazeXXteyWO2FgDNcE09Nvnb07zGRfrK+7NijMzDxXmJN1ra7+vYg9fJdUzLWJtJwFx+4C8H1dHf8yAM9Nw4si3vAYq5iLDDTC8MVfyGqy2wtamE0379cPDQ0MDOj4fMX1tzd52o727Oykz43NmAEwpSY7rLOltKnp7cX7938B6vr1589vNtHePFIa4DJj107HkNwuajZ4bJjGFolEtU03btz4o1YkYvNGJwQbSFQ4fP4ycyOUIFVdNdKCsTdaNpstevDsz2e1Ijabp80bp8dSu2YgdH5YhUQiwfRKwzpb730YzWts3Pyqr7+/fzSvOQ3VK5PBk3avh07DbysAWYkhScOUjbfb2lqvXLkykdfXlz+eRu3FyGRTETuCDRBi5bsnQqVC2pSdL6/R6+n08nIslkTB4+msyvNIJHzKzpvgY3iKsHVWgXvgKiSysAxbfBqo4mIsNvb0kyexxQCUdEV4f+NjDZteTlAr39W4iKn0dK6Mrmex5HIGQ6/foE+RISVp0l2rCT4W/71tIHO1t10E0obLpdBJjKQkBomu1wtSZCqVFLxrfkDQzA6AOQasiLSzM5BEFoVComRksBhweBJVABZIF/q7zoJWKyIFAgqFSjVACoWewSCnpFAZYABG+kf5zEALv2BbPB6flkalMoBUEolBlslS4FQqiSQA422Xr7EwweW2tnjwR0iWA2OGUxkkEhhsOwuCoNZ+y7xxZDIro7xcLieTUSgyg8VKTKQIdu/w83WwQJi2N5RgHxi4fz8OlwgguRyFYuDs7HA47+/WB/taQT5uSAQIYhGDXvvDvn17dy5dunDhkiU7F1haHraPcnWAWkA+XfgIM/O1aw8c+H6vES4AoP3BUPTH38K/OmNBlhC2jIMAAAAASUVORK5CYII=";
-
-/***/ }),
-
-/***/ "./package.json":
-/*!**********************!*\
-  !*** ./package.json ***!
-  \**********************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = JSON.parse('{"name":"aurora","version":"1.0.0","description":"Futuristic auroral theme for Hexo.","license":"MIT","repository":"https://github.com/adminy/aurora","keywords":["hexo","hexo-theme","aurora","auroral-ui","blog"],"scripts":{"serve":"vue-cli-service serve","build":"vue-cli-service build --mode production","build:stage":"vue-cli-service build --mode staging","test:unit":"vue-cli-service test:unit --coverage","test:unit-watch":"vue-cli-service test:unit --watch --coverage","lint":"vue-cli-service lint","env:local":"node ./build/scripts/config-script.js local","env:prod":"node ./build/scripts/config-script.js prod","env:pub":"node ./build/scripts/config-script.js publish"},"dependencies":{"axios":"^1.1.3","core-js":"^3.26.0","js-cookie":"^3.0.1","normalize.css":"^8.0.1","nprogress":"^0.2.0","pinia":"^2.0.23","sass":"^1.55.0","truncate-html":"^1.0.4","valine":"^1.5.1","vue":"^3.2.41","vue-class-component":"^7.2.6","vue-i18n":"^9.2.2","vue-router":"^4.1.6","vue3-click-away":"^1.2.4","vue3-lazy":"^1.0.0-alpha.1","vue3-scroll-spy":"^1.0.8"},"devDependencies":{"@tailwindcss/postcss7-compat":"^2.2.17","@types/jest":"^29.2.0","@types/js-cookie":"^3.0.2","@types/node":"^18.11.7","@types/nprogress":"^0.2.0","@typescript-eslint/eslint-plugin":"^5.41.0","@typescript-eslint/parser":"^5.41.0","@vue/cli-plugin-babel":"^5.0.8","@vue/cli-plugin-eslint":"^5.0.8","@vue/cli-plugin-router":"^5.0.8","@vue/cli-plugin-typescript":"^5.0.8","@vue/cli-plugin-unit-jest":"^5.0.8","@vue/cli-service":"^5.0.8","@vue/compiler-sfc":"^3.2.41","@vue/eslint-config-prettier":"^7.0.0","@vue/eslint-config-typescript":"^11.0.2","@vue/test-utils":"^2.2.0","autoprefixer":"^10.4.12","eslint":"^8.26.0","eslint-plugin-prettier":"^4.2.1","eslint-plugin-vue":"^9.6.0","hexo-pagination":"^3.0.0","hexo-util":"^2.7.0","js-yaml":"^4.1.0","postcss":"^8.4.18","prettier":"^2.7.1","runjs":"^4.4.2","sass-loader":"^13.1.0","script-ext-html-webpack-plugin":"^2.1.5","svg-sprite-loader":"^6.0.11","svgo":"^3.0.0","tailwindcss":"^3.2.1","typescript":"^4.8.4","vue-jest":"^3.0.7"}}');
 
 /***/ }),
 

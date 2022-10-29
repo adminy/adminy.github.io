@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
 /* harmony import */ var _components_Comment_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/Comment.vue */ "./src/components/Comment.vue");
 /* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
 /* harmony import */ var _components_ArticleCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/components/ArticleCard */ "./src/components/ArticleCard/index.ts");
