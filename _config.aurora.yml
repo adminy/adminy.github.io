@@ -127,7 +127,7 @@ gitalk:
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
 valine:
-  enable: true
+  enable: false
   app_id: 'YXlOIn8hlvxBB63rZCkPhV8H-MdYXbMMI'
   app_key: 'd3PCTKckIvJc0sa7rIr8DRkH'
   lang: en
