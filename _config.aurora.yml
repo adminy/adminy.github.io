@@ -112,15 +112,15 @@ site_meta:
 giscus:
   enable: false
   repo: 'adminy/adminy.github.io'
-  repo_id: 'MDEwOlJlcG9zaXRvcnk5ODA4NzE5NA=='
+  repoId: 'MDEwOlJlcG9zaXRvcnk5ODA4NzE5NA=='
   category: General'
-  category_id: 'DIC_kwDOBdixGs4CSQhK'
+  categoryId: 'DIC_kwDOBdixGs4CSQhK'
   # Available values: pathname | url | title | og:title
   mapping: pathname
   # Available values: 0 | 1 
-  reactions_enabled: 1
+  reactionsEnabled: 1
    # Available values: 0 | 1 
-  emit_metadata: 1
+  emitMetadata: 1
   # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
   theme: dark
   # Available values: en | zh-C
@@ -128,7 +128,7 @@ giscus:
   # Available value: anonymous
   crossorigin: anonymous
   # Place the comment box above the comments
-  input_position: top
+  inputPosition: top
   # Load the comments lazily
   loading: lazy
 
