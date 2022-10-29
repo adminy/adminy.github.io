@@ -15386,6 +15386,18 @@ function genPropsAccessExp(name) {
 
 /***/ }),
 
+/***/ "./node_modules/axios/node_modules/form-data/lib/browser.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/axios/node_modules/form-data/lib/browser.js ***!
+  \******************************************************************/
+/***/ (function(module) {
+
+/* eslint-env browser */
+module.exports = typeof self == 'object' ? self.FormData : window.FormData;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/a-callable.js":
 /*!******************************************************!*\
   !*** ./node_modules/core-js/internals/a-callable.js ***!
@@ -17620,18 +17632,6 @@ module.exports = function (cssWithMappingToString) {
 module.exports = function (i) {
   return i[1];
 };
-
-/***/ }),
-
-/***/ "./node_modules/form-data/lib/browser.js":
-/*!***********************************************!*\
-  !*** ./node_modules/form-data/lib/browser.js ***!
-  \***********************************************/
-/***/ (function(module) {
-
-/* eslint-env browser */
-module.exports = typeof self == 'object' ? self.FormData : window.FormData;
-
 
 /***/ }),
 
@@ -25123,7 +25123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! form-data */ "./node_modules/form-data/lib/browser.js");
+/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! form-data */ "./node_modules/axios/node_modules/form-data/lib/browser.js");
 
 /* harmony default export */ __webpack_exports__["default"] = (form_data__WEBPACK_IMPORTED_MODULE_0__);
 
