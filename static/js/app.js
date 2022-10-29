@@ -6865,7 +6865,7 @@ const routes = [{
 }, {
   path: '/page/about/',
   name: 'about',
-  component: () => Promise.all(/*! import() | about */[__webpack_require__.e("src_stores_article_ts-src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("about")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/About.vue */ "./src/views/About.vue"))
+  component: () => Promise.all(/*! import() | about */[__webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("about")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/About.vue */ "./src/views/About.vue"))
 }, {
   path: '/categories',
   name: 'categories',
@@ -6877,7 +6877,7 @@ const routes = [{
 }, {
   path: '/tags',
   name: 'tags',
-  component: () => __webpack_require__.e(/*! import() | tags */ "tags").then(__webpack_require__.bind(__webpack_require__, /*! ../views/Tag.vue */ "./src/views/Tag.vue"))
+  component: () => Promise.all(/*! import() | tags */[__webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("tags")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Tag.vue */ "./src/views/Tag.vue"))
 }, {
   path: '/tags/search',
   name: 'tags-search',
@@ -6890,7 +6890,7 @@ const routes = [{
 }, {
   path: '/page/:slug*',
   name: 'page',
-  component: () => Promise.all(/*! import() | page */[__webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("src_stores_article_ts-src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("page")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Page.vue */ "./src/views/Page.vue")),
+  component: () => Promise.all(/*! import() | page */[__webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("page")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Page.vue */ "./src/views/Page.vue")),
   props: true
 }, {
   path: '/result',

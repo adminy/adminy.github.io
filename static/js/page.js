@@ -86,9 +86,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 
-const _hoisted_1 = {
-  id: "comments"
-};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Breadcrumbs = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Breadcrumbs");
   const _component_Comment = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Comment");
@@ -99,11 +96,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     post: _ctx.pageData,
     title: _ctx.pageTitle
   }, {
-    default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(() => [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Comment, {
+    default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(() => [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Comment, {
       title: _ctx.pageData.title,
       body: _ctx.pageData.text,
       uid: _ctx.pageData.uid
-    }, null, 8 /* PROPS */, ["title", "body", "uid"])])]),
+    }, null, 8 /* PROPS */, ["title", "body", "uid"])]),
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["post", "title"])]);
 }
