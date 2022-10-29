@@ -14,23 +14,24 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://codeismagic.com
-permalink: /post/:title
+permalink: /post/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
-public_dir: public
+# public_dir: public
+
+copy_src: "_static" # name of the directory you want to copy from _static by default
+# copy_dst: "" # name of the directory you want to copy the files to '' by default
+
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
-  - "_posts/aws/*"
-
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -42,10 +43,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true
+post_asset_folder: false
+# marked:
+#   prependRoot: true
+#   postAsset: true
 relative_link: false
 future: true
 highlight:
