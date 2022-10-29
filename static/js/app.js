@@ -6893,7 +6893,7 @@ const routes = [{
 }, {
   path: '/page/:slug*',
   name: 'page',
-  component: () => Promise.all(/*! import() | page */[__webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("src_stores_article_ts-src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("page")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Page.vue */ "./src/views/Page.vue")),
+  component: () => Promise.all(/*! import() | page */[__webpack_require__.e("src_stores_article_ts-src_components_Breadcrumbs_vue-src_components_PageContainer_vue"), __webpack_require__.e("src_components_Comment_vue"), __webpack_require__.e("page")]).then(__webpack_require__.bind(__webpack_require__, /*! ../views/Page.vue */ "./src/views/Page.vue")),
   props: true
 }, {
   path: '/result',
