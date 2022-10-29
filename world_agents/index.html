@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AncientBrain 2.0</title>
+        <link rel="stylesheet" href="/world_agents/styles/main.css" />
+    </head>
+    <body>
+        <div id="scene">
+            <div class="overlay">
+                <div class="agent-selector"></div>
+                <div id="control-buttons">
+                    <button class="btn-icon" data-action="play"><img src="/world_agents/img/icons/play.svg" /></button>
+                    <button class="btn-icon" data-action="pause"><img src="/world_agents/img/icons/pause.svg" /></button>
+                    <button class="btn-icon" data-action="step"><img src="/world_agents/img/icons/step.svg" /></button>
+                    <button class="btn-icon" data-action="info"><img src="/world_agents/img/icons/info.svg" /></button>
+                    <button class="btn-icon" data-action="settings"><img src="/world_agents/img/icons/settings.svg" /></button>
+                </div>
+            </div>
+        </div>
+        <div id="info-block" class="right-box">
+            The world tells each agent its size.
+            <br />
+            <br />
+            Each agent every time they take an action <br />
+            are told of their position and position of other agents.
+            <br />
+            <br />
+            For more fun we could let agents share a common wall recorder.
+        </div>
+        <form id="settings-block" class="right-box">
+            <label>Iteration period (<span></span>):</label>
+            <input name="period" type="range" min="0" step="10" max="1500" />
+
+            <label>World size (<span></span>):</label>
+            <input name="world-size" type="range" min="16" step="1" max="128" />
+
+            <label>Agents (<span></span>):</label>
+            <input name="agents" type="range" min="1" step="1" max="20" />
+
+            <button type="submit">Apply</button>
+        </form>
+
+        <script src='/world_agents/libs/abclass.js'></script>
+        <script src='/world_agents/libs/r80.three.min.js'></script>
+        <script src='/world_agents/libs/OBJLoader.js'></script>
+        <script src='/world_agents/libs/MTLLoader.js'></script>
+        <script src='/world_agents/libs/TGALoader.js'></script>
+        <script src='/world_agents/libs/abworld.three.js'></script>
+        <script src='/world_agents/libs/abhandler.three.js'></script>
+        <script src='/world_agents/libs/three.js'></script>
+        <script src='/world_agents/world.js'></script>
+        <script src='/world_agents/mind.js'></script>
+        <script async src="/world_agents/main.js"></script>
+    </body>
+
+</html>

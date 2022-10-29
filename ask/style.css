@@ -1,0 +1,19 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.answer-button {
+    float:right;
+    font-weight:bold
+}
+
+.control > div > label {
+    font-size: 300%;
+    padding: 20px
+}
+
+.control > div > label > input {
+    position:absolute;
+    top: 25px;
+    left: -80px;
+    width: 64px;
+    height: 64px
+}

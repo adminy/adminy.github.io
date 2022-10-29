@@ -1,0 +1,76 @@
+
+
+<html>
+	<head>
+		<title>adminy</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	
+		<meta name="theme-color" content="#f1daeb">
+		<meta content="https://avatars.githubusercontent.com/u/22717869?v=4" property="og:image" />
+		<!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+		<link href="style.css" type="text/css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<section class="me unset center-object background" style="position:relative; background-image: url('/img/background.jpg')">
+			<a href="https://github.com/adminy"><img draggable="false" src="https://avatars.githubusercontent.com/u/22717869?v=4" class="image-title"></a>
+			<div class="unset">
+				<h1 class="undertitle victor-mono-i"><img style="height: .8em;padding: 0px;margin: 0px;" src="/img/flower.svg"> <a href="https://github.com/adminy">adminy</a> <span class="ravy-text">ʕ•́ᴥ•̀ʔっ</span></h1>
+				<p class="undertitle victor-mono-i">The <span class="ravy-text">JavaScript</span> Master</p>
+			</div>
+			<div>
+				<a href="https://github.com/adminy" aria-label="github"><img src="https://github-readme-stats.vercel.app/api?username=adminy&show_icons=true&theme=github_dark"/></a><br>
+				<a href="https://github.com/adminy" aria-label="github"><img src="https://komarev.com/ghpvc/?username=adminy"/></a>
+			</div>
+	
+		</section>
+
+		<section class="container">
+			<div class="box-container">
+				<!-- <h4 class="undertitle victor-mono watermelon-text">Info</h4> -->
+				<p class="victor-mono">
+				  Hi there! My name is Marin. I've a passion for programming, <span id="heart">❤️</span>&nbsp;&nbsp; Javascript.<br>
+				</p>
+				<h5 class="undertitle monospace watermelon-text" style="margin: 0">Fun Facts</h5>
+				<div id='facts'></div>
+			</div>
+			<div class="buttons socials">
+				<a href="https://github.com/adminy" aria-label="github"><img src="/img/github.svg"/></a>
+				<a href="http://discordapp.com/adminy#8202" aria-label="discord"><img src="/img/discord.svg"/></a>
+				<a href="https://instagram.com/god8luck" aria-label="instagram"><img src="/img/instagram.svg"/></a>
+			</div>
+		</section>
+		<footer class="center box-container primary no-border-radius no-padding">
+			<p class="no-margin">adminy (c) 2021</p>
+		</footer>
+		<script>
+			const $ = id => document.getElementById(id)
+			// $('numberOfYearsExp').innerText = new Date().getFullYear() - new Date('01/08/2014').getFullYear()
+			const hearts = ['♥️', '💙', '💛', '💜', '💚', '💗', '💖', '💓', '💝', '💟', '💞', '🖤', '😘']
+			setInterval(() => {
+				hearts.push($('heart').innerText)
+				$('heart').innerText = hearts.shift()
+			}, 2900)
+			const facts = [
+				'The secure platform quiz <a href="/ask">Ask</a>',
+				'<a href="https://caniuse.com/?search=h265" target="_blank">H265</a> video codec lost support with latest edge updates and its now only available on safari browser. <br/>' +
+				'<a href="https://caniuse.com/?search=opus" target="_blank">Opus</a> codec decoding only works if you download the whole file first, so nothing realtime other than webRTC. <br/>'+
+				'Not to worry though, as Javascript saves the day with the assistance of emscripten you get <a href="https://github.com/adminy/wasm-codecs" target="_blank">libde265.js & opus.js</a> decoding in one place done by yours truly!',
+				'Lets say you love music, you got yourself a powerful sound amplifier but its lacking Bass & Treble Hardware buttons or perhaps a Classical/Dance preset, or even Rock/Techno preset. However your amplifier just has a volume adjuster. Not to worry, Here is a software <a href="https://github.com/adminy/amixer-web" target="_blank">Mixer</a> with 18 presets to choose from!',
+				'You can have a normal restricted life with <a href="https://github.com/adminy/WhiteWebWorld" target="_blank">WhiteWebWorld</a> Whitelisting DNS tool. No more distractions in your life, just place the essential websites into the whitelist file and enjoy a limited & safe network!'
+			]
+			const addFact = () => {
+				const p = document.createElement('p')
+				p.innerHTML = facts.shift()
+				const nextFact = document.createElement('button')
+				nextFact.innerText = 'Next'
+				facts.length && p.appendChild(nextFact)
+				nextFact.addEventListener('click', e => addFact(nextFact.remove()))
+				$('facts').appendChild(p)
+			}
+			addFact()
+		</script>
+	</body>
+</html>
