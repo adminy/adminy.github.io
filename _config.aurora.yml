@@ -113,7 +113,7 @@ giscus:
   enable: false
   repo: 'adminy/adminy.github.io'
   repoId: 'MDEwOlJlcG9zaXRvcnk5ODA4NzE5NA=='
-  category: General'
+  category: 'General'
   categoryId: 'DIC_kwDOBdixGs4CSQhK'
   # Available values: pathname | url | title | og:title
   mapping: pathname
