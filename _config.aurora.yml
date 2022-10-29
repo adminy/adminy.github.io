@@ -19,8 +19,8 @@ site:
 #! ---------------------------------------------------------------
 authors:
   ##! example
-  # adminy:
-  #   name: Marin Bivol
+  adminy:
+    name: Marin Bivol
     avatar: https://avatars.githubusercontent.com/u/22717869?v=4
     link: https://github.com/adminy
     description: "Beat me in simplicity and I'll tell you all the secrets!"
@@ -111,11 +111,11 @@ site_meta:
 
 # For local development only!
 gitalk:
-  enable: true
+  enable: false
   autoExpand: true
   clientID: '9e9f01173af30c7fd8b7'
   clientSecret: 'eda4a72205ae299b48a6164359580d24813229c8'
-  repo: 'https://github.com/adminy/adminy.github.io'
+  repo: 'adminy.github.io'
   owner: 'adminy'
   admin: ['adminy']
   id: uid
@@ -127,18 +127,18 @@ gitalk:
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
 valine:
-  enable: false
-#   app_id:
-#   app_key:
-#   avatar: ''
-#   placeholder: Leave your thoughts behind~
-#   visitor: true
-#   lang: en
-#   avatarForce: false
-#   meta: ['nick', 'mail']
-#   requiredFields: []
-#   admin: 'adminy'
-#   recentComment: true
+  enable: true
+  app_id: 'YXlOIn8hlvxBB63rZCkPhV8H-MdYXbMMI'
+  app_key: 'd3PCTKckIvJc0sa7rIr8DRkH'
+  lang: en
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  meta: ['nick', 'mail']
+  requiredFields: []
+  admin: 'adminy'
+  avatarForce: false
+  avatar: 'retro'
+  recentComment: true
 
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/

@@ -2,15 +2,6 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
-title: Marin's Blog
-subtitle: ''
-description: ''
-keywords:
-author: Marin Bivol
-language: en
-timezone: ''
-
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://codeismagic.com
