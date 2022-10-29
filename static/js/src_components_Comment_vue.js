@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 const _hoisted_1 = {
   class: "bg-ob-deep-800 p-4 mt-8 lg:px-14 lg:py-10 rounded-2xl shadow-xl mb-8 lg:mb-0"
 };
-const _hoisted_2 = ["repo", "repoId", "category", "categoryId", "mapping", "term", "reactionsEnabled", "emitMetadata", "theme", "lang", "crossorigin", "inputPosition", "loading"];
+const _hoisted_2 = ["repo", "repoId", "category", "categoryId", "mapping", "reactionsEnabled", "emitMetadata", "theme", "lang", "crossorigin", "inputPosition", "loading"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_SubTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SubTitle");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubTitle, {
@@ -118,7 +118,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     category: _ctx.giscusProps.category,
     categoryId: _ctx.giscusProps.categoryId,
     mapping: _ctx.giscusProps.mapping,
-    term: _ctx.giscusProps.term,
     reactionsEnabled: _ctx.giscusProps.reactionsEnabled,
     emitMetadata: _ctx.giscusProps.emitMetadata,
     theme: _ctx.theme,
