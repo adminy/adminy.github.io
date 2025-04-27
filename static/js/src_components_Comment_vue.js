@@ -1,189 +1,6 @@
 "use strict";
 (self["webpackChunkaurora"] = self["webpackChunkaurora"] || []).push([["src_components_Comment_vue"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts ***!
-  \***************************************************************************************************************************************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
-/* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
-/* harmony import */ var giscus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! giscus */ "./node_modules/giscus/dist/giscus.js");
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_1__.defineComponent)({
-  name: 'ObComment',
-  props: {
-    /** Used for create issue title by giscus */
-    title: {
-      type: String,
-      default: ''
-    },
-    /** Used for create issue body content by giscus */
-    body: {
-      type: String,
-      default: ''
-    },
-    /** Unique ID used by giscus */
-    uid: {
-      type: String,
-      default: ''
-    }
-  },
-  components: {
-    SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_2__.SubTitle
-  },
-  setup(props) {
-    const postTitle = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).title;
-    const postBody = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).body;
-    const postUid = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).uid;
-    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_0__.useAppStore)();
-    const postStore = (0,_stores_post__WEBPACK_IMPORTED_MODULE_3__.usePostStore)();
-    const enabledComment = (postTitle, postBody, postUid) => {
-      /**
-       * Generate the data needed for giscus to generate the issue.
-       */
-      // const title = !postTitle || postTitle === '' ? '' : postTitle
-      // const body =
-      //   !postBody || postBody === ''
-      //     ? window.location.href
-      //     : `${window.location.href} \n ${postBody}`
-      // const uid =
-      //   appStore.themeConfig.plugins.giscus.id === 'pathname'
-      //     ? window.location.pathname
-      //     : postUid
-      /**
-       * Caching the current post data, used
-       * when config changes on render updates.
-       */
-      postStore.setCache({
-        title: postTitle,
-        body: postBody,
-        uid: postUid
-      });
-      if (!appStore.configReady) return;
-    };
-    /** Wait for config is ready */
-    (0,vue__WEBPACK_IMPORTED_MODULE_1__.watch)(() => appStore.configReady, (newValue, oldValue) => {
-      if (!oldValue && newValue) {
-        const cachePost = postStore.cachePost;
-        enabledComment(cachePost.title, cachePost.body, cachePost.uid);
-      }
-    });
-    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(() => {
-      enabledComment(postTitle.value, postBody.value, postUid.value);
-    });
-    return {
-      giscusProps: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => ({
-        ...appStore.themeConfig.plugins.giscus
-      })),
-      theme: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => appStore.theme === 'theme-dark' ? 'dark' : 'light')
-    };
-  }
-}));
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": function() { return /* binding */ render; }
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-
-const _hoisted_1 = {
-  class: "bg-ob-deep-800 p-4 mt-8 lg:px-14 lg:py-10 rounded-2xl shadow-xl mb-8 lg:mb-0"
-};
-const _hoisted_2 = ["repo", "repoId", "category", "categoryId", "mapping", "reactionsEnabled", "emitMetadata", "theme", "lang", "crossorigin", "inputPosition", "loading"];
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_SubTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SubTitle");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubTitle, {
-    title: 'titles.comment'
-  }, null, 8 /* PROPS */, ["title"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("giscus-widget", {
-    id: "comments",
-    repo: _ctx.giscusProps.repo,
-    repoId: _ctx.giscusProps.repoId,
-    category: _ctx.giscusProps.category,
-    categoryId: _ctx.giscusProps.categoryId,
-    mapping: _ctx.giscusProps.mapping,
-    reactionsEnabled: _ctx.giscusProps.reactionsEnabled,
-    emitMetadata: _ctx.giscusProps.emitMetadata,
-    theme: _ctx.theme,
-    lang: _ctx.giscusProps.lang,
-    crossorigin: _ctx.giscusProps.crossorigin,
-    inputPosition: _ctx.giscusProps.inputPosition,
-    loading: _ctx.giscusProps.loading
-  }, null, 8 /* PROPS */, _hoisted_2)]);
-}
-
-/***/ }),
-
-/***/ "./src/components/Comment.vue":
-/*!************************************!*\
-  !*** ./src/components/Comment.vue ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
-/* harmony import */ var _Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Comment.vue?vue&type=script&lang=ts */ "./src/components/Comment.vue?vue&type=script&lang=ts");
-/* harmony import */ var _home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,_home_runner_work_adminy_github_io_adminy_github_io_themes_aurora_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/components/Comment.vue"]])
-/* hot reload */
-if (false) {}
-
-
-/* harmony default export */ __webpack_exports__["default"] = (__exports__);
-
-/***/ }),
-
-/***/ "./src/components/Comment.vue?vue&type=script&lang=ts":
-/*!************************************************************!*\
-  !*** ./src/components/Comment.vue?vue&type=script&lang=ts ***!
-  \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__["default"]; }
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=script&lang=ts */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts");
- 
-
-/***/ }),
-
-/***/ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
-/*!**************************************************************************!*\
-  !*** ./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
-  \**************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render; }
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
-
-
-/***/ }),
-
 /***/ "./node_modules/@lit/reactive-element/development/css-tag.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@lit/reactive-element/development/css-tag.js ***!
@@ -192,12 +9,12 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CSSResult": function() { return /* binding */ CSSResult; },
-/* harmony export */   "adoptStyles": function() { return /* binding */ adoptStyles; },
-/* harmony export */   "css": function() { return /* binding */ css; },
-/* harmony export */   "getCompatibleStyle": function() { return /* binding */ getCompatibleStyle; },
-/* harmony export */   "supportsAdoptingStyleSheets": function() { return /* binding */ supportsAdoptingStyleSheets; },
-/* harmony export */   "unsafeCSS": function() { return /* binding */ unsafeCSS; }
+/* harmony export */   CSSResult: function() { return /* binding */ CSSResult; },
+/* harmony export */   adoptStyles: function() { return /* binding */ adoptStyles; },
+/* harmony export */   css: function() { return /* binding */ css; },
+/* harmony export */   getCompatibleStyle: function() { return /* binding */ getCompatibleStyle; },
+/* harmony export */   supportsAdoptingStyleSheets: function() { return /* binding */ supportsAdoptingStyleSheets; },
+/* harmony export */   unsafeCSS: function() { return /* binding */ unsafeCSS; }
 /* harmony export */ });
 /**
  * @license
@@ -205,7 +22,8 @@ __webpack_require__.r(__webpack_exports__);
  * SPDX-License-Identifier: BSD-3-Clause
  */
 const NODE_MODE = false;
-const global = NODE_MODE ? globalThis : window;
+// Allows minifiers to rename references to globalThis
+const global = globalThis;
 /**
  * Whether the current browser supports `adoptedStyleSheets`.
  */
@@ -296,7 +114,7 @@ const css = (strings, ...values) => {
 /**
  * Applies the given styles to a `shadowRoot`. When Shadow DOM is
  * available but `adoptedStyleSheets` is not, styles are appended to the
- * `shadowRoot` to [mimic spec behavior](https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets).
+ * `shadowRoot` to [mimic the native feature](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/adoptedStyleSheets).
  * Note, when shimming is used, any styles that are subsequently placed into
  * the shadowRoot should be placed *before* any shimmed adopted styles. This
  * will match spec behavior that gives adopted sheets precedence over styles in
@@ -307,7 +125,7 @@ const adoptStyles = (renderRoot, styles) => {
         renderRoot.adoptedStyleSheets = styles.map((s) => s instanceof CSSStyleSheet ? s : s.styleSheet);
     }
     else {
-        styles.forEach((s) => {
+        for (const s of styles) {
             const style = document.createElement('style');
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const nonce = global['litNonce'];
@@ -316,7 +134,7 @@ const adoptStyles = (renderRoot, styles) => {
             }
             style.textContent = s.cssText;
             renderRoot.appendChild(style);
-        });
+        }
     }
 };
 const cssResultFromStyleSheet = (sheet) => {
@@ -342,73 +160,38 @@ const getCompatibleStyle = supportsAdoptingStyleSheets ||
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "decorateProperty": function() { return /* binding */ decorateProperty; },
-/* harmony export */   "legacyPrototypeMethod": function() { return /* binding */ legacyPrototypeMethod; },
-/* harmony export */   "standardPrototypeMethod": function() { return /* binding */ standardPrototypeMethod; }
+/* harmony export */   desc: function() { return /* binding */ desc; }
 /* harmony export */ });
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const legacyPrototypeMethod = (descriptor, proto, name) => {
-    Object.defineProperty(proto, name, descriptor);
-};
-const standardPrototypeMethod = (descriptor, element) => ({
-    kind: 'method',
-    placement: 'prototype',
-    key: element.key,
-    descriptor,
-});
 /**
- * Helper for decorating a property that is compatible with both TypeScript
- * and Babel decorators. The optional `finisher` can be used to perform work on
- * the class. The optional `descriptor` should return a PropertyDescriptor
- * to install for the given property.
+ * Wraps up a few best practices when returning a property descriptor from a
+ * decorator.
  *
- * @param finisher {function} Optional finisher method; receives the element
- * constructor and property key as arguments and has no return value.
- * @param descriptor {function} Optional descriptor method; receives the
- * property key as an argument and returns a property descriptor to define for
- * the given property.
- * @returns {ClassElement|void}
+ * Marks the defined property as configurable, and enumerable, and handles
+ * the case where we have a busted Reflect.decorate zombiefill (e.g. in Angular
+ * apps).
+ *
+ * @internal
  */
-const decorateProperty = ({ finisher, descriptor, }) => (protoOrDescriptor, name
-// Note TypeScript requires the return type to be `void|any`
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-) => {
-    var _a;
-    // TypeScript / Babel legacy mode
-    if (name !== undefined) {
-        const ctor = protoOrDescriptor
-            .constructor;
-        if (descriptor !== undefined) {
-            Object.defineProperty(protoOrDescriptor, name, descriptor(name));
-        }
-        finisher === null || finisher === void 0 ? void 0 : finisher(ctor, name);
-        // Babel standard mode
+const desc = (obj, name, descriptor) => {
+    // For backwards compatibility, we keep them configurable and enumerable.
+    descriptor.configurable = true;
+    descriptor.enumerable = true;
+    if (
+    // We check for Reflect.decorate each time, in case the zombiefill
+    // is applied via lazy loading some Angular code.
+    Reflect.decorate &&
+        typeof name !== 'object') {
+        // If we're called as a legacy decorator, and Reflect.decorate is present
+        // then we have no guarantees that the returned descriptor will be
+        // defined on the class, so we must apply it directly ourselves.
+        Object.defineProperty(obj, name, descriptor);
     }
-    else {
-        // Note, the @property decorator saves `key` as `originalKey`
-        // so try to use it here.
-        const key = 
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (_a = protoOrDescriptor.originalKey) !== null && _a !== void 0 ? _a : protoOrDescriptor.key;
-        const info = descriptor != undefined
-            ? {
-                kind: 'method',
-                placement: 'prototype',
-                key,
-                descriptor: descriptor(protoOrDescriptor.key),
-            }
-            : { ...protoOrDescriptor, key };
-        if (finisher != undefined) {
-            info.finisher = function (ctor) {
-                finisher(ctor, key);
-            };
-        }
-        return info;
-    }
+    return descriptor;
 };
 //# sourceMappingURL=base.js.map
 
@@ -422,34 +205,13 @@ const decorateProperty = ({ finisher, descriptor, }) => (protoOrDescriptor, name
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "customElement": function() { return /* binding */ customElement; }
+/* harmony export */   customElement: function() { return /* binding */ customElement; }
 /* harmony export */ });
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const legacyCustomElement = (tagName, clazz) => {
-    customElements.define(tagName, clazz);
-    // Cast as any because TS doesn't recognize the return type as being a
-    // subtype of the decorated class when clazz is typed as
-    // `Constructor<HTMLElement>` for some reason.
-    // `Constructor<HTMLElement>` is helpful to make sure the decorator is
-    // applied to elements however.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return clazz;
-};
-const standardCustomElement = (tagName, descriptor) => {
-    const { kind, elements } = descriptor;
-    return {
-        kind,
-        elements,
-        // This callback is called once the class is otherwise fully defined
-        finisher(clazz) {
-            customElements.define(tagName, clazz);
-        },
-    };
-};
 /**
  * Class decorator factory that defines the decorated class as a custom element.
  *
@@ -464,9 +226,16 @@ const standardCustomElement = (tagName, descriptor) => {
  * @category Decorator
  * @param tagName The tag name of the custom element to define.
  */
-const customElement = (tagName) => (classOrDescriptor) => typeof classOrDescriptor === 'function'
-    ? legacyCustomElement(tagName, classOrDescriptor)
-    : standardCustomElement(tagName, classOrDescriptor);
+const customElement = (tagName) => (classOrTarget, context) => {
+    if (context !== undefined) {
+        context.addInitializer(() => {
+            customElements.define(tagName, classOrTarget);
+        });
+    }
+    else {
+        customElements.define(tagName, classOrTarget);
+    }
+};
 //# sourceMappingURL=custom-element.js.map
 
 /***/ }),
@@ -479,15 +248,13 @@ const customElement = (tagName) => (classOrDescriptor) => typeof classOrDescript
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "eventOptions": function() { return /* binding */ eventOptions; }
+/* harmony export */   eventOptions: function() { return /* binding */ eventOptions; }
 /* harmony export */ });
-/* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base.js */ "./node_modules/@lit/reactive-element/development/decorators/base.js");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
 /**
  * Adds event listener options to a method used as an event listener in a
  * lit-html template.
@@ -519,12 +286,12 @@ __webpack_require__.r(__webpack_exports__);
  * @category Decorator
  */
 function eventOptions(options) {
-    return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.decorateProperty)({
-        finisher: (ctor, name) => {
-            Object.assign(
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            ctor.prototype[name], options);
-        },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return ((protoOrValue, nameOrContext) => {
+        const method = typeof protoOrValue === 'function'
+            ? protoOrValue
+            : protoOrValue[nameOrContext];
+        Object.assign(method, options);
     });
 }
 //# sourceMappingURL=event-options.js.map
@@ -539,64 +306,118 @@ function eventOptions(options) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "property": function() { return /* binding */ property; }
+/* harmony export */   property: function() { return /* binding */ property; },
+/* harmony export */   standardProperty: function() { return /* binding */ standardProperty; }
 /* harmony export */ });
+/* harmony import */ var _reactive_element_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../reactive-element.js */ "./node_modules/@lit/reactive-element/development/reactive-element.js");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const standardProperty = (options, element) => {
-    // When decorating an accessor, pass it through and add property metadata.
-    // Note, the `hasOwnProperty` check in `createProperty` ensures we don't
-    // stomp over the user's accessor.
-    if (element.kind === 'method' &&
-        element.descriptor &&
-        !('value' in element.descriptor)) {
-        return {
-            ...element,
-            finisher(clazz) {
-                clazz.createProperty(element.key, options);
-            },
-        };
-    }
-    else {
-        // createProperty() takes care of defining the property, but we still
-        // must return some kind of descriptor, so return a descriptor for an
-        // unused prototype field. The finisher calls createProperty().
-        return {
-            kind: 'field',
-            key: Symbol(),
-            placement: 'own',
-            descriptor: {},
-            // store the original key so subsequent decorators have access to it.
-            originalKey: element.key,
-            // When @babel/plugin-proposal-decorators implements initializers,
-            // do this instead of the initializer below. See:
-            // https://github.com/babel/babel/issues/9260 extras: [
-            //   {
-            //     kind: 'initializer',
-            //     placement: 'own',
-            //     initializer: descriptor.initializer,
-            //   }
-            // ],
-            initializer() {
-                if (typeof element.initializer === 'function') {
-                    this[element.key] = element.initializer.call(this);
-                }
-            },
-            finisher(clazz) {
-                clazz.createProperty(element.key, options);
-            },
-        };
-    }
-};
+/*
+ * IMPORTANT: For compatibility with tsickle and the Closure JS compiler, all
+ * property decorators (but not class decorators) in this file that have
+ * an @ExportDecoratedItems annotation must be defined as a regular function,
+ * not an arrow function.
+ */
+
+const DEV_MODE = true;
+let issueWarning;
+if (DEV_MODE) {
+    // Ensure warnings are issued only 1x, even if multiple versions of Lit
+    // are loaded.
+    globalThis.litIssuedWarnings ??= new Set();
+    /**
+     * Issue a warning if we haven't already, based either on `code` or `warning`.
+     * Warnings are disabled automatically only by `warning`; disabling via `code`
+     * can be done by users.
+     */
+    issueWarning = (code, warning) => {
+        warning += ` See https://lit.dev/msg/${code} for more information.`;
+        if (!globalThis.litIssuedWarnings.has(warning) &&
+            !globalThis.litIssuedWarnings.has(code)) {
+            console.warn(warning);
+            globalThis.litIssuedWarnings.add(warning);
+        }
+    };
+}
 const legacyProperty = (options, proto, name) => {
+    const hasOwnProperty = proto.hasOwnProperty(name);
     proto.constructor.createProperty(name, options);
+    // For accessors (which have a descriptor on the prototype) we need to
+    // return a descriptor, otherwise TypeScript overwrites the descriptor we
+    // define in createProperty() with the original descriptor. We don't do this
+    // for fields, which don't have a descriptor, because this could overwrite
+    // descriptor defined by other decorators.
+    return hasOwnProperty
+        ? Object.getOwnPropertyDescriptor(proto, name)
+        : undefined;
+};
+// This is duplicated from a similar variable in reactive-element.ts, but
+// actually makes sense to have this default defined with the decorator, so
+// that different decorators could have different defaults.
+const defaultPropertyDeclaration = {
+    attribute: true,
+    type: String,
+    converter: _reactive_element_js__WEBPACK_IMPORTED_MODULE_0__.defaultConverter,
+    reflect: false,
+    hasChanged: _reactive_element_js__WEBPACK_IMPORTED_MODULE_0__.notEqual,
 };
 /**
- * A property decorator which creates a reactive property that reflects a
- * corresponding attribute value. When a decorated property is set
+ * Wraps a class accessor or setter so that `requestUpdate()` is called with the
+ * property name and old value when the accessor is set.
+ */
+const standardProperty = (options = defaultPropertyDeclaration, target, context) => {
+    const { kind, metadata } = context;
+    if (DEV_MODE && metadata == null) {
+        issueWarning('missing-class-metadata', `The class ${target} is missing decorator metadata. This ` +
+            `could mean that you're using a compiler that supports decorators ` +
+            `but doesn't support decorator metadata, such as TypeScript 5.1. ` +
+            `Please update your compiler.`);
+    }
+    // Store the property options
+    let properties = globalThis.litPropertyMetadata.get(metadata);
+    if (properties === undefined) {
+        globalThis.litPropertyMetadata.set(metadata, (properties = new Map()));
+    }
+    if (kind === 'setter') {
+        options = Object.create(options);
+        options.wrapped = true;
+    }
+    properties.set(context.name, options);
+    if (kind === 'accessor') {
+        // Standard decorators cannot dynamically modify the class, so we can't
+        // replace a field with accessors. The user must use the new `accessor`
+        // keyword instead.
+        const { name } = context;
+        return {
+            set(v) {
+                const oldValue = target.get.call(this);
+                target.set.call(this, v);
+                this.requestUpdate(name, oldValue, options);
+            },
+            init(v) {
+                if (v !== undefined) {
+                    this._$changeProperty(name, undefined, options, v);
+                }
+                return v;
+            },
+        };
+    }
+    else if (kind === 'setter') {
+        const { name } = context;
+        return function (value) {
+            const oldValue = this[name];
+            target.call(this, value);
+            this.requestUpdate(name, oldValue, options);
+        };
+    }
+    throw new Error(`Unsupported decorator location: ${kind}`);
+};
+/**
+ * A class field or accessor decorator which creates a reactive property that
+ * reflects a corresponding attribute value. When a decorated property is set
  * the element will update and render. A {@linkcode PropertyDeclaration} may
  * optionally be supplied to configure property features.
  *
@@ -627,10 +448,13 @@ const legacyProperty = (options, proto, name) => {
  * @ExportDecoratedItems
  */
 function property(options) {
+    return (protoOrTarget, nameOrContext
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return (protoOrDescriptor, name) => name !== undefined
-        ? legacyProperty(options, protoOrDescriptor, name)
-        : standardProperty(options, protoOrDescriptor);
+    ) => {
+        return (typeof nameOrContext === 'object'
+            ? standardProperty(options, protoOrTarget, nameOrContext)
+            : legacyProperty(options, protoOrTarget, nameOrContext));
+    };
 }
 //# sourceMappingURL=property.js.map
 
@@ -644,7 +468,7 @@ function property(options) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "queryAll": function() { return /* binding */ queryAll; }
+/* harmony export */   queryAll: function() { return /* binding */ queryAll; }
 /* harmony export */ });
 /* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base.js */ "./node_modules/@lit/reactive-element/development/decorators/base.js");
 /**
@@ -653,6 +477,9 @@ __webpack_require__.r(__webpack_exports__);
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+// Shared fragment used to generate empty NodeLists when a render root is
+// undefined
+let fragment;
 /**
  * A property decorator that converts a class property into a getter
  * that executes a querySelectorAll on the element's renderRoot.
@@ -678,15 +505,13 @@ __webpack_require__.r(__webpack_exports__);
  * @category Decorator
  */
 function queryAll(selector) {
-    return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.decorateProperty)({
-        descriptor: (_name) => ({
+    return ((obj, name) => {
+        return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(obj, name, {
             get() {
-                var _a, _b;
-                return (_b = (_a = this.renderRoot) === null || _a === void 0 ? void 0 : _a.querySelectorAll(selector)) !== null && _b !== void 0 ? _b : [];
+                const container = this.renderRoot ?? (fragment ??= document.createDocumentFragment());
+                return container.querySelectorAll(selector);
             },
-            enumerable: true,
-            configurable: true,
-        }),
+        });
     });
 }
 //# sourceMappingURL=query-all.js.map
@@ -701,7 +526,7 @@ function queryAll(selector) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "queryAssignedElements": function() { return /* binding */ queryAssignedElements; }
+/* harmony export */   queryAssignedElements: function() { return /* binding */ queryAssignedElements; }
 /* harmony export */ });
 /* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base.js */ "./node_modules/@lit/reactive-element/development/decorators/base.js");
 /**
@@ -709,24 +534,7 @@ __webpack_require__.r(__webpack_exports__);
  * Copyright 2021 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var _a;
-/*
- * IMPORTANT: For compatibility with tsickle and the Closure JS compiler, all
- * property decorators (but not class decorators) in this file that have
- * an @ExportDecoratedItems annotation must be defined as a regular function,
- * not an arrow function.
- */
 
-const NODE_MODE = false;
-const global = NODE_MODE ? globalThis : window;
-/**
- * A tiny module scoped polyfill for HTMLSlotElement.assignedElements.
- */
-const slotAssignedElements = ((_a = global.HTMLSlotElement) === null || _a === void 0 ? void 0 : _a.prototype.assignedElements) != null
-    ? (slot, opts) => slot.assignedElements(opts)
-    : (slot, opts) => slot
-        .assignedNodes(opts)
-        .filter((node) => node.nodeType === Node.ELEMENT_NODE);
 /**
  * A property decorator that converts a class property into a getter that
  * returns the `assignedElements` of the given `slot`. Provides a declarative
@@ -757,22 +565,18 @@ const slotAssignedElements = ((_a = global.HTMLSlotElement) === null || _a === v
  * @category Decorator
  */
 function queryAssignedElements(options) {
-    const { slot, selector } = options !== null && options !== void 0 ? options : {};
-    return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.decorateProperty)({
-        descriptor: (_name) => ({
+    return ((obj, name) => {
+        const { slot, selector } = options ?? {};
+        const slotSelector = `slot${slot ? `[name=${slot}]` : ':not([name])'}`;
+        return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(obj, name, {
             get() {
-                var _a;
-                const slotSelector = `slot${slot ? `[name=${slot}]` : ':not([name])'}`;
-                const slotEl = (_a = this.renderRoot) === null || _a === void 0 ? void 0 : _a.querySelector(slotSelector);
-                const elements = slotEl != null ? slotAssignedElements(slotEl, options) : [];
-                if (selector) {
-                    return elements.filter((node) => node.matches(selector));
-                }
-                return elements;
+                const slotEl = this.renderRoot?.querySelector(slotSelector);
+                const elements = slotEl?.assignedElements(options) ?? [];
+                return (selector === undefined
+                    ? elements
+                    : elements.filter((node) => node.matches(selector)));
             },
-            enumerable: true,
-            configurable: true,
-        }),
+        });
     });
 }
 //# sourceMappingURL=query-assigned-elements.js.map
@@ -787,54 +591,52 @@ function queryAssignedElements(options) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "queryAssignedNodes": function() { return /* binding */ queryAssignedNodes; }
+/* harmony export */   queryAssignedNodes: function() { return /* binding */ queryAssignedNodes; }
 /* harmony export */ });
 /* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base.js */ "./node_modules/@lit/reactive-element/development/decorators/base.js");
-/* harmony import */ var _query_assigned_elements_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./query-assigned-elements.js */ "./node_modules/@lit/reactive-element/development/decorators/query-assigned-elements.js");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-/*
- * IMPORTANT: For compatibility with tsickle and the Closure JS compiler, all
- * property decorators (but not class decorators) in this file that have
- * an @ExportDecoratedItems annotation must be defined as a regular function,
- * not an arrow function.
+
+/**
+ * A property decorator that converts a class property into a getter that
+ * returns the `assignedNodes` of the given `slot`.
+ *
+ * Can be passed an optional {@linkcode QueryAssignedNodesOptions} object.
+ *
+ * Example usage:
+ * ```ts
+ * class MyElement {
+ *   @queryAssignedNodes({slot: 'list', flatten: true})
+ *   listItems!: Array<Node>;
+ *
+ *   render() {
+ *     return html`
+ *       <slot name="list"></slot>
+ *     `;
+ *   }
+ * }
+ * ```
+ *
+ * Note the type of this property should be annotated as `Array<Node>`. Use the
+ * queryAssignedElements decorator to list only elements, and optionally filter
+ * the element list using a CSS selector.
+ *
+ * @category Decorator
  */
-
-
-function queryAssignedNodes(slotOrOptions, flatten, selector) {
-    // Normalize the overloaded arguments.
-    let slot = slotOrOptions;
-    let assignedNodesOptions;
-    if (typeof slotOrOptions === 'object') {
-        slot = slotOrOptions.slot;
-        assignedNodesOptions = slotOrOptions;
-    }
-    else {
-        assignedNodesOptions = { flatten };
-    }
-    // For backwards compatibility, queryAssignedNodes with a selector behaves
-    // exactly like queryAssignedElements with a selector.
-    if (selector) {
-        return (0,_query_assigned_elements_js__WEBPACK_IMPORTED_MODULE_1__.queryAssignedElements)({
-            slot: slot,
-            flatten,
-            selector,
-        });
-    }
-    return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.decorateProperty)({
-        descriptor: (_name) => ({
+function queryAssignedNodes(options) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return ((obj, name) => {
+        const { slot } = options ?? {};
+        const slotSelector = `slot${slot ? `[name=${slot}]` : ':not([name])'}`;
+        return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(obj, name, {
             get() {
-                var _a, _b;
-                const slotSelector = `slot${slot ? `[name=${slot}]` : ':not([name])'}`;
-                const slotEl = (_a = this.renderRoot) === null || _a === void 0 ? void 0 : _a.querySelector(slotSelector);
-                return (_b = slotEl === null || slotEl === void 0 ? void 0 : slotEl.assignedNodes(assignedNodesOptions)) !== null && _b !== void 0 ? _b : [];
+                const slotEl = this.renderRoot?.querySelector(slotSelector);
+                return (slotEl?.assignedNodes(options) ?? []);
             },
-            enumerable: true,
-            configurable: true,
-        }),
+        });
     });
 }
 //# sourceMappingURL=query-assigned-nodes.js.map
@@ -849,7 +651,7 @@ function queryAssignedNodes(slotOrOptions, flatten, selector) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "queryAsync": function() { return /* binding */ queryAsync; }
+/* harmony export */   queryAsync: function() { return /* binding */ queryAsync; }
 /* harmony export */ });
 /* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base.js */ "./node_modules/@lit/reactive-element/development/decorators/base.js");
 /**
@@ -896,16 +698,13 @@ __webpack_require__.r(__webpack_exports__);
  * @category Decorator
  */
 function queryAsync(selector) {
-    return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.decorateProperty)({
-        descriptor: (_name) => ({
+    return ((obj, name) => {
+        return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(obj, name, {
             async get() {
-                var _a;
                 await this.updateComplete;
-                return (_a = this.renderRoot) === null || _a === void 0 ? void 0 : _a.querySelector(selector);
+                return this.renderRoot?.querySelector(selector) ?? null;
             },
-            enumerable: true,
-            configurable: true,
-        }),
+        });
     });
 }
 //# sourceMappingURL=query-async.js.map
@@ -920,7 +719,7 @@ function queryAsync(selector) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "query": function() { return /* binding */ query; }
+/* harmony export */   query: function() { return /* binding */ query; }
 /* harmony export */ });
 /* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base.js */ "./node_modules/@lit/reactive-element/development/decorators/base.js");
 /**
@@ -929,6 +728,28 @@ __webpack_require__.r(__webpack_exports__);
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+const DEV_MODE = true;
+let issueWarning;
+if (DEV_MODE) {
+    // Ensure warnings are issued only 1x, even if multiple versions of Lit
+    // are loaded.
+    globalThis.litIssuedWarnings ??= new Set();
+    /**
+     * Issue a warning if we haven't already, based either on `code` or `warning`.
+     * Warnings are disabled automatically only by `warning`; disabling via `code`
+     * can be done by users.
+     */
+    issueWarning = (code, warning) => {
+        warning += code
+            ? ` See https://lit.dev/msg/${code} for more information.`
+            : '';
+        if (!globalThis.litIssuedWarnings.has(warning) &&
+            !globalThis.litIssuedWarnings.has(code)) {
+            console.warn(warning);
+            globalThis.litIssuedWarnings.add(warning);
+        }
+    };
+}
 /**
  * A property decorator that converts a class property into a getter that
  * executes a querySelector on the element's renderRoot.
@@ -955,28 +776,69 @@ __webpack_require__.r(__webpack_exports__);
  * @category Decorator
  */
 function query(selector, cache) {
-    return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.decorateProperty)({
-        descriptor: (name) => {
-            const descriptor = {
-                get() {
-                    var _a, _b;
-                    return (_b = (_a = this.renderRoot) === null || _a === void 0 ? void 0 : _a.querySelector(selector)) !== null && _b !== void 0 ? _b : null;
-                },
-                enumerable: true,
-                configurable: true,
-            };
-            if (cache) {
-                const key = typeof name === 'symbol' ? Symbol() : `__${name}`;
-                descriptor.get = function () {
-                    var _a, _b;
-                    if (this[key] === undefined) {
-                        this[key] = (_b = (_a = this.renderRoot) === null || _a === void 0 ? void 0 : _a.querySelector(selector)) !== null && _b !== void 0 ? _b : null;
-                    }
-                    return this[key];
-                };
+    return ((protoOrTarget, nameOrContext, descriptor) => {
+        const doQuery = (el) => {
+            const result = (el.renderRoot?.querySelector(selector) ?? null);
+            if (DEV_MODE && result === null && cache && !el.hasUpdated) {
+                const name = typeof nameOrContext === 'object'
+                    ? nameOrContext.name
+                    : nameOrContext;
+                issueWarning('', `@query'd field ${JSON.stringify(String(name))} with the 'cache' ` +
+                    `flag set for selector '${selector}' has been accessed before ` +
+                    `the first update and returned null. This is expected if the ` +
+                    `renderRoot tree has not been provided beforehand (e.g. via ` +
+                    `Declarative Shadow DOM). Therefore the value hasn't been cached.`);
             }
-            return descriptor;
-        },
+            // TODO: if we want to allow users to assert that the query will never
+            // return null, we need a new option and to throw here if the result
+            // is null.
+            return result;
+        };
+        if (cache) {
+            // Accessors to wrap from either:
+            //   1. The decorator target, in the case of standard decorators
+            //   2. The property descriptor, in the case of experimental decorators
+            //      on auto-accessors.
+            //   3. Functions that access our own cache-key property on the instance,
+            //      in the case of experimental decorators on fields.
+            const { get, set } = typeof nameOrContext === 'object'
+                ? protoOrTarget
+                : descriptor ??
+                    (() => {
+                        const key = DEV_MODE
+                            ? Symbol(`${String(nameOrContext)} (@query() cache)`)
+                            : Symbol();
+                        return {
+                            get() {
+                                return this[key];
+                            },
+                            set(v) {
+                                this[key] = v;
+                            },
+                        };
+                    })();
+            return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(protoOrTarget, nameOrContext, {
+                get() {
+                    let result = get.call(this);
+                    if (result === undefined) {
+                        result = doQuery(this);
+                        if (result !== null || this.hasUpdated) {
+                            set.call(this, result);
+                        }
+                    }
+                    return result;
+                },
+            });
+        }
+        else {
+            // This object works as the return type for both standard and
+            // experimental decorators.
+            return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(protoOrTarget, nameOrContext, {
+                get() {
+                    return doQuery(this);
+                },
+            });
+        }
     });
 }
 //# sourceMappingURL=query.js.map
@@ -991,7 +853,7 @@ function query(selector, cache) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "state": function() { return /* binding */ state; }
+/* harmony export */   state: function() { return /* binding */ state; }
 /* harmony export */ });
 /* harmony import */ var _property_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./property.js */ "./node_modules/@lit/reactive-element/development/decorators/property.js");
 /**
@@ -1019,7 +881,11 @@ __webpack_require__.r(__webpack_exports__);
 function state(options) {
     return (0,_property_js__WEBPACK_IMPORTED_MODULE_0__.property)({
         ...options,
+        // Add both `state` and `attribute` because we found a third party
+        // controller that is keying off of PropertyOptions.state to determine
+        // whether a field is a private internal property or not.
         state: true,
+        attribute: false,
     });
 }
 //# sourceMappingURL=state.js.map
@@ -1034,15 +900,15 @@ function state(options) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CSSResult": function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.CSSResult; },
-/* harmony export */   "ReactiveElement": function() { return /* binding */ ReactiveElement; },
-/* harmony export */   "adoptStyles": function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.adoptStyles; },
-/* harmony export */   "css": function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.css; },
-/* harmony export */   "defaultConverter": function() { return /* binding */ defaultConverter; },
-/* harmony export */   "getCompatibleStyle": function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle; },
-/* harmony export */   "notEqual": function() { return /* binding */ notEqual; },
-/* harmony export */   "supportsAdoptingStyleSheets": function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.supportsAdoptingStyleSheets; },
-/* harmony export */   "unsafeCSS": function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.unsafeCSS; }
+/* harmony export */   CSSResult: function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.CSSResult; },
+/* harmony export */   ReactiveElement: function() { return /* binding */ ReactiveElement; },
+/* harmony export */   adoptStyles: function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.adoptStyles; },
+/* harmony export */   css: function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.css; },
+/* harmony export */   defaultConverter: function() { return /* binding */ defaultConverter; },
+/* harmony export */   getCompatibleStyle: function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle; },
+/* harmony export */   notEqual: function() { return /* binding */ notEqual; },
+/* harmony export */   supportsAdoptingStyleSheets: function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.supportsAdoptingStyleSheets; },
+/* harmony export */   unsafeCSS: function() { return /* reexport safe */ _css_tag_js__WEBPACK_IMPORTED_MODULE_0__.unsafeCSS; }
 /* harmony export */ });
 /* harmony import */ var _css_tag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css-tag.js */ "./node_modules/@lit/reactive-element/development/css-tag.js");
 /**
@@ -1050,24 +916,24 @@ __webpack_require__.r(__webpack_exports__);
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var _a, _b, _c, _d;
-var _e;
 /**
  * Use this module if you want to create your own base class extending
  * {@link ReactiveElement}.
  * @packageDocumentation
  */
 
+// In the Node build, this import will be injected by Rollup:
+// import {HTMLElement, customElements} from '@lit-labs/ssr-dom-shim';
 
+// TODO (justinfagnani): Add `hasOwn` here when we ship ES2022
+const { is, defineProperty, getOwnPropertyDescriptor, getOwnPropertyNames, getOwnPropertySymbols, getPrototypeOf, } = Object;
 const NODE_MODE = false;
-const global = NODE_MODE ? globalThis : window;
+// Lets a minifier replace globalThis references with a minified name
+const global = globalThis;
 if (NODE_MODE) {
-    (_a = global.customElements) !== null && _a !== void 0 ? _a : (global.customElements = {
-        define() { },
-    });
+    global.customElements ??= customElements;
 }
 const DEV_MODE = true;
-let requestUpdateThenable;
 let issueWarning;
 const trustedTypes = global
     .trustedTypes;
@@ -1084,29 +950,27 @@ const polyfillSupport = DEV_MODE
 if (DEV_MODE) {
     // Ensure warnings are issued only 1x, even if multiple versions of Lit
     // are loaded.
-    const issuedWarnings = ((_b = global.litIssuedWarnings) !== null && _b !== void 0 ? _b : (global.litIssuedWarnings = new Set()));
-    // Issue a warning, if we haven't already.
+    global.litIssuedWarnings ??= new Set();
+    /**
+     * Issue a warning if we haven't already, based either on `code` or `warning`.
+     * Warnings are disabled automatically only by `warning`; disabling via `code`
+     * can be done by users.
+     */
     issueWarning = (code, warning) => {
         warning += ` See https://lit.dev/msg/${code} for more information.`;
-        if (!issuedWarnings.has(warning)) {
+        if (!global.litIssuedWarnings.has(warning) &&
+            !global.litIssuedWarnings.has(code)) {
             console.warn(warning);
-            issuedWarnings.add(warning);
+            global.litIssuedWarnings.add(warning);
         }
     };
-    issueWarning('dev-mode', `Lit is in dev mode. Not recommended for production!`);
-    // Issue polyfill support warning.
-    if (((_c = global.ShadyDOM) === null || _c === void 0 ? void 0 : _c.inUse) && polyfillSupport === undefined) {
-        issueWarning('polyfill-support-missing', `Shadow DOM is being polyfilled via \`ShadyDOM\` but ` +
-            `the \`polyfill-support\` module has not been loaded.`);
-    }
-    requestUpdateThenable = (name) => ({
-        then: (onfulfilled, _onrejected) => {
-            issueWarning('request-update-promise', `The \`requestUpdate\` method should no longer return a Promise but ` +
-                `does so on \`${name}\`. Use \`updateComplete\` instead.`);
-            if (onfulfilled !== undefined) {
-                onfulfilled(false);
-            }
-        },
+    queueMicrotask(() => {
+        issueWarning('dev-mode', `Lit is in dev mode. Not recommended for production!`);
+        // Issue polyfill support warning.
+        if (global.ShadyDOM?.inUse && polyfillSupport === undefined) {
+            issueWarning('polyfill-support-missing', `Shadow DOM is being polyfilled via \`ShadyDOM\` but ` +
+                `the \`polyfill-support\` module has not been loaded.`);
+        }
     });
 }
 /**
@@ -1179,57 +1043,38 @@ const defaultConverter = {
  * Change function that returns true if `value` is different from `oldValue`.
  * This method is used as the default for a property's `hasChanged` function.
  */
-const notEqual = (value, old) => {
-    // This ensures (old==NaN, value==NaN) always returns false
-    return old !== value && (old === old || value === value);
-};
+const notEqual = (value, old) => !is(value, old);
 const defaultPropertyDeclaration = {
     attribute: true,
     type: String,
     converter: defaultConverter,
     reflect: false,
+    useDefault: false,
     hasChanged: notEqual,
 };
-/**
- * The Closure JS Compiler doesn't currently have good support for static
- * property semantics where "this" is dynamic (e.g.
- * https://github.com/google/closure-compiler/issues/3177 and others) so we use
- * this hack to bypass any rewriting by the compiler.
- */
-const finalized = 'finalized';
-const htmlElementShimNeeded = NODE_MODE && global.HTMLElement === undefined;
-if (htmlElementShimNeeded) {
-    global.HTMLElement = class HTMLElement {
-    };
-}
+// Ensure metadata is enabled. TypeScript does not polyfill
+// Symbol.metadata, so we must ensure that it exists.
+Symbol.metadata ??= Symbol('metadata');
+// Map from a class's metadata object to property options
+// Note that we must use nullish-coalescing assignment so that we only use one
+// map even if we load multiple version of this module.
+global.litPropertyMetadata ??= new WeakMap();
 /**
  * Base element class which manages element properties and attributes. When
  * properties change, the `update` method is asynchronously called. This method
- * should be supplied by subclassers to render updates as desired.
+ * should be supplied by subclasses to render updates as desired.
  * @noInheritDoc
  */
-class ReactiveElement extends HTMLElement {
-    constructor() {
-        super();
-        this.__instanceProperties = new Map();
-        /**
-         * True if there is a pending update as a result of calling `requestUpdate()`.
-         * Should only be read.
-         * @category updates
-         */
-        this.isUpdatePending = false;
-        /**
-         * Is set to `true` after the first update. The element code cannot assume
-         * that `renderRoot` exists before the element `hasUpdated`.
-         * @category updates
-         */
-        this.hasUpdated = false;
-        /**
-         * Name of currently reflecting property
-         */
-        this.__reflectingProperty = null;
-        this._initialize();
-    }
+class ReactiveElement
+// In the Node build, this `extends` clause will be substituted with
+// `(globalThis.HTMLElement ?? HTMLElement)`.
+//
+// This way, we will first prefer any global `HTMLElement` polyfill that the
+// user has assigned, and then fall back to the `HTMLElement` shim which has
+// been imported (see note at the top of this file about how this import is
+// generated by Rollup). Note that the `HTMLElement` variable has been
+// shadowed by this import, so it no longer refers to the global.
+ extends HTMLElement {
     /**
      * Adds an initializer function to the class that is called during instance
      * construction.
@@ -1264,9 +1109,8 @@ class ReactiveElement extends HTMLElement {
      * @nocollapse
      */
     static addInitializer(initializer) {
-        var _a;
-        (_a = this._initializers) !== null && _a !== void 0 ? _a : (this._initializers = []);
-        this._initializers.push(initializer);
+        this.__prepare();
+        (this._initializers ??= []).push(initializer);
     }
     /**
      * Returns a list of attributes corresponding to the registered properties.
@@ -1274,19 +1118,13 @@ class ReactiveElement extends HTMLElement {
      * @category attributes
      */
     static get observedAttributes() {
-        // note: piggy backing on this to ensure we're finalized.
+        // Ensure we've created all properties
         this.finalize();
-        const attributes = [];
-        // Use forEach so this works even if for/of loops are compiled to for loops
-        // expecting arrays
-        this.elementProperties.forEach((v, p) => {
-            const attr = this.__attributeNameForProperty(p, v);
-            if (attr !== undefined) {
-                this.__attributeToPropertyMap.set(attr, p);
-                attributes.push(attr);
-            }
-        });
-        return attributes;
+        // this.__attributeToPropertyMap is only undefined after finalize() in
+        // ReactiveElement itself. ReactiveElement.observedAttributes is only
+        // accessed with ReactiveElement as the receiver when a subclass or mixin
+        // calls super.observedAttributes
+        return (this.__attributeToPropertyMap && [...this.__attributeToPropertyMap.keys()]);
     }
     /**
      * Creates a property accessor on the element prototype if one does not exist
@@ -1314,35 +1152,27 @@ class ReactiveElement extends HTMLElement {
      * @category properties
      */
     static createProperty(name, options = defaultPropertyDeclaration) {
-        var _a;
-        // if this is a state property, force the attribute to false.
+        // If this is a state property, force the attribute to false.
         if (options.state) {
-            // Cast as any since this is readonly.
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             options.attribute = false;
         }
-        // Note, since this can be called by the `@property` decorator which
-        // is called before `finalize`, we ensure finalization has been kicked off.
-        this.finalize();
+        this.__prepare();
+        // Whether this property is wrapping accessors.
+        // Helps control the initial value change and reflection logic.
+        if (this.prototype.hasOwnProperty(name)) {
+            options = Object.create(options);
+            options.wrapped = true;
+        }
         this.elementProperties.set(name, options);
-        // Do not generate an accessor if the prototype already has one, since
-        // it would be lost otherwise and that would never be the user's intention;
-        // Instead, we expect users to call `requestUpdate` themselves from
-        // user-defined accessors. Note that if the super has an accessor we will
-        // still overwrite it
-        if (!options.noAccessor && !this.prototype.hasOwnProperty(name)) {
-            const key = typeof name === 'symbol' ? Symbol() : `__${name}`;
+        if (!options.noAccessor) {
+            const key = DEV_MODE
+                ? // Use Symbol.for in dev mode to make it easier to maintain state
+                    // when doing HMR.
+                    Symbol.for(`${String(name)} (@property() cache)`)
+                : Symbol();
             const descriptor = this.getPropertyDescriptor(name, key, options);
             if (descriptor !== undefined) {
-                Object.defineProperty(this.prototype, name, descriptor);
-                if (DEV_MODE) {
-                    // If this class doesn't have its own set, create one and initialize
-                    // with the values in the set from the nearest ancestor class, if any.
-                    if (!this.hasOwnProperty('__reactivePropertyKeys')) {
-                        this.__reactivePropertyKeys = new Set((_a = this.__reactivePropertyKeys) !== null && _a !== void 0 ? _a : []);
-                    }
-                    this.__reactivePropertyKeys.add(name);
-                }
+                defineProperty(this.prototype, name, descriptor);
             }
         }
     }
@@ -1374,14 +1204,31 @@ class ReactiveElement extends HTMLElement {
      * @category properties
      */
     static getPropertyDescriptor(name, key, options) {
-        return {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const { get, set } = getOwnPropertyDescriptor(this.prototype, name) ?? {
             get() {
                 return this[key];
             },
+            set(v) {
+                this[key] = v;
+            },
+        };
+        if (DEV_MODE && get == null) {
+            if ('value' in (getOwnPropertyDescriptor(this.prototype, name) ?? {})) {
+                throw new Error(`Field ${JSON.stringify(String(name))} on ` +
+                    `${this.name} was declared as a reactive property ` +
+                    `but it's actually declared as a value on the prototype. ` +
+                    `Usually this is due to using @property or @state on a method.`);
+            }
+            issueWarning('reactive-property-without-getter', `Field ${JSON.stringify(String(name))} on ` +
+                `${this.name} was declared as a reactive property ` +
+                `but it does not have a getter. This will be an error in a ` +
+                `future version of Lit.`);
+        }
+        return {
+            get,
             set(value) {
-                const oldValue = this[name];
-                this[key] = value;
+                const oldValue = get?.call(this);
+                set?.call(this, value);
                 this.requestUpdate(name, oldValue, options);
             },
             configurable: true,
@@ -1403,59 +1250,93 @@ class ReactiveElement extends HTMLElement {
      * @category properties
      */
     static getPropertyOptions(name) {
-        return this.elementProperties.get(name) || defaultPropertyDeclaration;
+        return this.elementProperties.get(name) ?? defaultPropertyDeclaration;
     }
     /**
-     * Creates property accessors for registered properties, sets up element
-     * styling, and ensures any superclasses are also finalized. Returns true if
-     * the element was finalized.
+     * Initializes static own properties of the class used in bookkeeping
+     * for element properties, initializers, etc.
+     *
+     * Can be called multiple times by code that needs to ensure these
+     * properties exist before using them.
+     *
+     * This method ensures the superclass is finalized so that inherited
+     * property metadata can be copied down.
+     * @nocollapse
+     */
+    static __prepare() {
+        if (this.hasOwnProperty(JSCompiler_renameProperty('elementProperties', this))) {
+            // Already prepared
+            return;
+        }
+        // Finalize any superclasses
+        const superCtor = getPrototypeOf(this);
+        superCtor.finalize();
+        // Create own set of initializers for this class if any exist on the
+        // superclass and copy them down. Note, for a small perf boost, avoid
+        // creating initializers unless needed.
+        if (superCtor._initializers !== undefined) {
+            this._initializers = [...superCtor._initializers];
+        }
+        // Initialize elementProperties from the superclass
+        this.elementProperties = new Map(superCtor.elementProperties);
+    }
+    /**
+     * Finishes setting up the class so that it's ready to be registered
+     * as a custom element and instantiated.
+     *
+     * This method is called by the ReactiveElement.observedAttributes getter.
+     * If you override the observedAttributes getter, you must either call
+     * super.observedAttributes to trigger finalization, or call finalize()
+     * yourself.
+     *
      * @nocollapse
      */
     static finalize() {
-        if (this.hasOwnProperty(finalized)) {
-            return false;
+        if (this.hasOwnProperty(JSCompiler_renameProperty('finalized', this))) {
+            return;
         }
-        this[finalized] = true;
-        // finalize any superclasses
-        const superCtor = Object.getPrototypeOf(this);
-        superCtor.finalize();
-        this.elementProperties = new Map(superCtor.elementProperties);
-        // initialize Map populated in observedAttributes
-        this.__attributeToPropertyMap = new Map();
-        // make any properties
-        // Note, only process "own" properties since this element will inherit
-        // any properties defined on the superClass, and finalization ensures
-        // the entire prototype chain is finalized.
+        this.finalized = true;
+        this.__prepare();
+        // Create properties from the static properties block:
         if (this.hasOwnProperty(JSCompiler_renameProperty('properties', this))) {
             const props = this.properties;
-            // support symbols in properties (IE11 does not support this)
             const propKeys = [
-                ...Object.getOwnPropertyNames(props),
-                ...Object.getOwnPropertySymbols(props),
+                ...getOwnPropertyNames(props),
+                ...getOwnPropertySymbols(props),
             ];
-            // This for/of is ok because propKeys is an array
             for (const p of propKeys) {
-                // note, use of `any` is due to TypeScript lack of support for symbol in
-                // index types
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 this.createProperty(p, props[p]);
             }
         }
-        this.elementStyles = this.finalizeStyles(this.styles);
-        // DEV mode warnings
-        if (DEV_MODE) {
-            const warnRemovedOrRenamed = (name, renamed = false) => {
-                if (this.prototype.hasOwnProperty(name)) {
-                    issueWarning(renamed ? 'renamed-api' : 'removed-api', `\`${name}\` is implemented on class ${this.name}. It ` +
-                        `has been ${renamed ? 'renamed' : 'removed'} ` +
-                        `in this version of LitElement.`);
+        // Create properties from standard decorator metadata:
+        const metadata = this[Symbol.metadata];
+        if (metadata !== null) {
+            const properties = litPropertyMetadata.get(metadata);
+            if (properties !== undefined) {
+                for (const [p, options] of properties) {
+                    this.elementProperties.set(p, options);
                 }
-            };
-            warnRemovedOrRenamed('initialize');
-            warnRemovedOrRenamed('requestUpdateInternal');
-            warnRemovedOrRenamed('_getUpdateComplete', true);
+            }
         }
-        return true;
+        // Create the attribute-to-property map
+        this.__attributeToPropertyMap = new Map();
+        for (const [p, options] of this.elementProperties) {
+            const attr = this.__attributeNameForProperty(p, options);
+            if (attr !== undefined) {
+                this.__attributeToPropertyMap.set(attr, p);
+            }
+        }
+        this.elementStyles = this.finalizeStyles(this.styles);
+        if (DEV_MODE) {
+            if (this.hasOwnProperty('createProperty')) {
+                issueWarning('no-override-create-property', 'Overriding ReactiveElement.createProperty() is deprecated. ' +
+                    'The override will not be called with standard decorators');
+            }
+            if (this.hasOwnProperty('getPropertyDescriptor')) {
+                issueWarning('no-override-get-property-descriptor', 'Overriding ReactiveElement.getPropertyDescriptor() is deprecated. ' +
+                    'The override will not be called with standard decorators');
+            }
+        }
     }
     /**
      * Takes the styles the user supplied via the `static styles` property and
@@ -1502,21 +1383,41 @@ class ReactiveElement extends HTMLElement {
                     ? name.toLowerCase()
                     : undefined;
     }
+    constructor() {
+        super();
+        this.__instanceProperties = undefined;
+        /**
+         * True if there is a pending update as a result of calling `requestUpdate()`.
+         * Should only be read.
+         * @category updates
+         */
+        this.isUpdatePending = false;
+        /**
+         * Is set to `true` after the first update. The element code cannot assume
+         * that `renderRoot` exists before the element `hasUpdated`.
+         * @category updates
+         */
+        this.hasUpdated = false;
+        /**
+         * Name of currently reflecting property
+         */
+        this.__reflectingProperty = null;
+        this.__initialize();
+    }
     /**
      * Internal only override point for customizing work done when elements
      * are constructed.
-     *
-     * @internal
      */
-    _initialize() {
-        var _a;
+    __initialize() {
         this.__updatePromise = new Promise((res) => (this.enableUpdating = res));
         this._$changedProperties = new Map();
+        // This enqueues a microtask that must run before the first update, so it
+        // must be called before requestUpdate()
         this.__saveInstanceProperties();
         // ensures first update will be caught by an early access of
         // `updateComplete`
         this.requestUpdate();
-        (_a = this.constructor._initializers) === null || _a === void 0 ? void 0 : _a.forEach((i) => i(this));
+        this.constructor._initializers?.forEach((i) => i(this));
     }
     /**
      * Registers a `ReactiveController` to participate in the element's reactive
@@ -1528,14 +1429,13 @@ class ReactiveElement extends HTMLElement {
      * @category controllers
      */
     addController(controller) {
-        var _a, _b;
-        ((_a = this.__controllers) !== null && _a !== void 0 ? _a : (this.__controllers = [])).push(controller);
+        (this.__controllers ??= new Set()).add(controller);
         // If a controller is added after the element has been connected,
         // call hostConnected. Note, re-using existence of `renderRoot` here
         // (which is set in connectedCallback) to avoid the need to track a
         // first connected state.
         if (this.renderRoot !== undefined && this.isConnected) {
-            (_b = controller.hostConnected) === null || _b === void 0 ? void 0 : _b.call(controller);
+            controller.hostConnected?.();
         }
     }
     /**
@@ -1543,32 +1443,27 @@ class ReactiveElement extends HTMLElement {
      * @category controllers
      */
     removeController(controller) {
-        var _a;
-        // Note, if the indexOf is -1, the >>> will flip the sign which makes the
-        // splice do nothing.
-        (_a = this.__controllers) === null || _a === void 0 ? void 0 : _a.splice(this.__controllers.indexOf(controller) >>> 0, 1);
+        this.__controllers?.delete(controller);
     }
     /**
      * Fixes any properties set on the instance before upgrade time.
      * Otherwise these would shadow the accessor and break these properties.
      * The properties are stored in a Map which is played back after the
-     * constructor runs. Note, on very old versions of Safari (<=9) or Chrome
-     * (<=41), properties created for native platform properties like (`id` or
-     * `name`) may not have default values set in the element constructor. On
-     * these browsers native properties appear on instances and therefore their
-     * default value will overwrite any element default (e.g. if the element sets
-     * this.id = 'id' in the constructor, the 'id' will become '' since this is
-     * the native platform default).
+     * constructor runs.
      */
     __saveInstanceProperties() {
-        // Use forEach so this works even if for/of loops are compiled to for loops
-        // expecting arrays
-        this.constructor.elementProperties.forEach((_v, p) => {
+        const instanceProperties = new Map();
+        const elementProperties = this.constructor
+            .elementProperties;
+        for (const p of elementProperties.keys()) {
             if (this.hasOwnProperty(p)) {
-                this.__instanceProperties.set(p, this[p]);
+                instanceProperties.set(p, this[p]);
                 delete this[p];
             }
-        });
+        }
+        if (instanceProperties.size > 0) {
+            this.__instanceProperties = instanceProperties;
+        }
     }
     /**
      * Returns the node into which the element should render and by default
@@ -1580,8 +1475,8 @@ class ReactiveElement extends HTMLElement {
      * @category rendering
      */
     createRenderRoot() {
-        var _a;
-        const renderRoot = (_a = this.shadowRoot) !== null && _a !== void 0 ? _a : this.attachShadow(this.constructor.shadowRootOptions);
+        const renderRoot = this.shadowRoot ??
+            this.attachShadow(this.constructor.shadowRootOptions);
         (0,_css_tag_js__WEBPACK_IMPORTED_MODULE_0__.adoptStyles)(renderRoot, this.constructor.elementStyles);
         return renderRoot;
     }
@@ -1591,13 +1486,11 @@ class ReactiveElement extends HTMLElement {
      * @category lifecycle
      */
     connectedCallback() {
-        var _a;
-        // create renderRoot before first update.
-        if (this.renderRoot === undefined) {
-            this.renderRoot = this.createRenderRoot();
-        }
+        // Create renderRoot before controllers `hostConnected`
+        this.renderRoot ??=
+            this.createRenderRoot();
         this.enableUpdating(true);
-        (_a = this.__controllers) === null || _a === void 0 ? void 0 : _a.forEach((c) => { var _a; return (_a = c.hostConnected) === null || _a === void 0 ? void 0 : _a.call(c); });
+        this.__controllers?.forEach((c) => c.hostConnected?.());
     }
     /**
      * Note, this method should be considered final and not overridden. It is
@@ -1613,8 +1506,7 @@ class ReactiveElement extends HTMLElement {
      * @category lifecycle
      */
     disconnectedCallback() {
-        var _a;
-        (_a = this.__controllers) === null || _a === void 0 ? void 0 : _a.forEach((c) => { var _a; return (_a = c.hostDisconnected) === null || _a === void 0 ? void 0 : _a.call(c); });
+        this.__controllers?.forEach((c) => c.hostDisconnected?.());
     }
     /**
      * Synchronizes property values when attributes change.
@@ -1624,24 +1516,25 @@ class ReactiveElement extends HTMLElement {
      * overridden, `super.attributeChangedCallback(name, _old, value)` must be
      * called.
      *
-     * See [using the lifecycle callbacks](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks)
+     * See [responding to attribute changes](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements#responding_to_attribute_changes)
      * on MDN for more information about the `attributeChangedCallback`.
      * @category attributes
      */
     attributeChangedCallback(name, _old, value) {
         this._$attributeToProperty(name, value);
     }
-    __propertyToAttribute(name, value, options = defaultPropertyDeclaration) {
-        var _a;
+    __propertyToAttribute(name, value) {
+        const elemProperties = this.constructor.elementProperties;
+        const options = elemProperties.get(name);
         const attr = this.constructor.__attributeNameForProperty(name, options);
         if (attr !== undefined && options.reflect === true) {
-            const converter = ((_a = options.converter) === null || _a === void 0 ? void 0 : _a.toAttribute) !==
+            const converter = options.converter?.toAttribute !==
                 undefined
                 ? options.converter
                 : defaultConverter;
             const attrValue = converter.toAttribute(value, options.type);
             if (DEV_MODE &&
-                this.constructor.enabledWarnings.indexOf('migration') >= 0 &&
+                this.constructor.enabledWarnings.includes('migration') &&
                 attrValue === undefined) {
                 issueWarning('undefined-attribute-value', `The attribute value for the ${name} property is ` +
                     `undefined on element ${this.localName}. The attribute will be ` +
@@ -1669,7 +1562,6 @@ class ReactiveElement extends HTMLElement {
     }
     /** @internal */
     _$attributeToProperty(name, value) {
-        var _a;
         const ctor = this.constructor;
         // Note, hint this as an `AttributeMap` so closure clearly understands
         // the type; it has issues with tracking types through statics
@@ -1680,14 +1572,16 @@ class ReactiveElement extends HTMLElement {
             const options = ctor.getPropertyOptions(propName);
             const converter = typeof options.converter === 'function'
                 ? { fromAttribute: options.converter }
-                : ((_a = options.converter) === null || _a === void 0 ? void 0 : _a.fromAttribute) !== undefined
+                : options.converter?.fromAttribute !== undefined
                     ? options.converter
                     : defaultConverter;
             // mark state reflecting
             this.__reflectingProperty = propName;
-            this[propName] = converter.fromAttribute(value, options.type
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            );
+            this[propName] =
+                converter.fromAttribute(value, options.type) ??
+                    this.__defaultValues?.get(propName) ??
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    null;
             // mark state not reflecting
             this.__reflectingProperty = null;
         }
@@ -1707,41 +1601,68 @@ class ReactiveElement extends HTMLElement {
      * @category updates
      */
     requestUpdate(name, oldValue, options) {
-        let shouldRequestUpdate = true;
         // If we have a property key, perform property update steps.
         if (name !== undefined) {
-            options =
-                options ||
-                    this.constructor.getPropertyOptions(name);
-            const hasChanged = options.hasChanged || notEqual;
-            if (hasChanged(this[name], oldValue)) {
-                if (!this._$changedProperties.has(name)) {
-                    this._$changedProperties.set(name, oldValue);
-                }
-                // Add to reflecting properties set.
-                // Note, it's important that every change has a chance to add the
-                // property to `_reflectingProperties`. This ensures setting
-                // attribute + property reflects correctly.
-                if (options.reflect === true && this.__reflectingProperty !== name) {
-                    if (this.__reflectingProperties === undefined) {
-                        this.__reflectingProperties = new Map();
-                    }
-                    this.__reflectingProperties.set(name, options);
-                }
+            if (DEV_MODE && name instanceof Event) {
+                issueWarning(``, `The requestUpdate() method was called with an Event as the property name. This is probably a mistake caused by binding this.requestUpdate as an event listener. Instead bind a function that will call it with no arguments: () => this.requestUpdate()`);
+            }
+            const ctor = this.constructor;
+            const newValue = this[name];
+            options ??= ctor.getPropertyOptions(name);
+            const changed = (options.hasChanged ?? notEqual)(newValue, oldValue) ||
+                // When there is no change, check a corner case that can occur when
+                // 1. there's a initial value which was not reflected
+                // 2. the property is subsequently set to this value.
+                // For example, `prop: {useDefault: true, reflect: true}`
+                // and el.prop = 'foo'. This should be considered a change if the
+                // attribute is not set because we will now reflect the property to the attribute.
+                (options.useDefault &&
+                    options.reflect &&
+                    newValue === this.__defaultValues?.get(name) &&
+                    !this.hasAttribute(ctor.__attributeNameForProperty(name, options)));
+            if (changed) {
+                this._$changeProperty(name, oldValue, options);
             }
             else {
                 // Abort the request if the property should not be considered changed.
-                shouldRequestUpdate = false;
+                return;
             }
         }
-        if (!this.isUpdatePending && shouldRequestUpdate) {
+        if (this.isUpdatePending === false) {
             this.__updatePromise = this.__enqueueUpdate();
         }
-        // Note, since this no longer returns a promise, in dev mode we return a
-        // thenable which warns if it's called.
-        return DEV_MODE
-            ? requestUpdateThenable(this.localName)
-            : undefined;
+    }
+    /**
+     * @internal
+     */
+    _$changeProperty(name, oldValue, { useDefault, reflect, wrapped }, initializeValue) {
+        // Record default value when useDefault is used. This allows us to
+        // restore this value when the attribute is removed.
+        if (useDefault && !(this.__defaultValues ??= new Map()).has(name)) {
+            this.__defaultValues.set(name, initializeValue ?? oldValue ?? this[name]);
+            // if this is not wrapping an accessor, it must be an initial setting
+            // and in this case we do not want to record the change or reflect.
+            if (wrapped !== true || initializeValue !== undefined) {
+                return;
+            }
+        }
+        // TODO (justinfagnani): Create a benchmark of Map.has() + Map.set(
+        // vs just Map.set()
+        if (!this._$changedProperties.has(name)) {
+            // On the initial change, the old value should be `undefined`, except
+            // with `useDefault`
+            if (!this.hasUpdated && !useDefault) {
+                oldValue = undefined;
+            }
+            this._$changedProperties.set(name, oldValue);
+        }
+        // Add to reflecting properties set.
+        // Note, it's important that every change has a chance to add the
+        // property to `__reflectingProperties`. This ensures setting
+        // attribute + property reflects correctly.
+        if (reflect === true && this.__reflectingProperty !== name) {
+            (this.__reflectingProperties ??= new Set()).add(name);
+        }
     }
     /**
      * Sets up the element to asynchronously update.
@@ -1787,7 +1708,16 @@ class ReactiveElement extends HTMLElement {
      * @category updates
      */
     scheduleUpdate() {
-        return this.performUpdate();
+        const result = this.performUpdate();
+        if (DEV_MODE &&
+            this.constructor.enabledWarnings.includes('async-perform-update') &&
+            typeof result?.then ===
+                'function') {
+            issueWarning('async-perform-update', `Element ${this.localName} returned a Promise from performUpdate(). ` +
+                `This behavior is deprecated and will be removed in a future ` +
+                `version of ReactiveElement.`);
+        }
+        return result;
     }
     /**
      * Performs an element update. Note, if an exception is thrown during the
@@ -1797,35 +1727,28 @@ class ReactiveElement extends HTMLElement {
      * generally not be needed, but it can be done in rare cases when you need to
      * update synchronously.
      *
-     * Note: To ensure `performUpdate()` synchronously completes a pending update,
-     * it should not be overridden. In LitElement 2.x it was suggested to override
-     * `performUpdate()` to also customizing update scheduling. Instead, you should now
-     * override `scheduleUpdate()`. For backwards compatibility with LitElement 2.x,
-     * scheduling updates via `performUpdate()` continues to work, but will make
-     * also calling `performUpdate()` to synchronously process updates difficult.
-     *
      * @category updates
      */
     performUpdate() {
-        var _a, _b;
         // Abort any update if one is not pending when this is called.
         // This can happen if `performUpdate` is called early to "flush"
         // the update.
         if (!this.isUpdatePending) {
             return;
         }
-        debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({ kind: 'update' });
-        // create renderRoot before first update.
+        debugLogEvent?.({ kind: 'update' });
         if (!this.hasUpdated) {
-            // Produce warning if any class properties are shadowed by class fields
+            // Create renderRoot before first update. This occurs in `connectedCallback`
+            // but is done here to support out of tree calls to `enableUpdating`/`performUpdate`.
+            this.renderRoot ??=
+                this.createRenderRoot();
             if (DEV_MODE) {
-                const shadowedProperties = [];
-                (_a = this.constructor.__reactivePropertyKeys) === null || _a === void 0 ? void 0 : _a.forEach((p) => {
-                    var _a;
-                    if (this.hasOwnProperty(p) && !((_a = this.__instanceProperties) === null || _a === void 0 ? void 0 : _a.has(p))) {
-                        shadowedProperties.push(p);
-                    }
-                });
+                // Produce warning if any reactive properties on the prototype are
+                // shadowed by class fields. Instance fields set before upgrade are
+                // deleted by this point, so any own property is caused by class field
+                // initialization in the constructor.
+                const ctor = this.constructor;
+                const shadowedProperties = [...ctor.elementProperties.keys()].filter((p) => this.hasOwnProperty(p) && p in getPrototypeOf(this));
                 if (shadowedProperties.length) {
                     throw new Error(`The following properties on element ${this.localName} will not ` +
                         `trigger updates as expected because they are set using class ` +
@@ -1836,14 +1759,37 @@ class ReactiveElement extends HTMLElement {
                         `for more information.`);
                 }
             }
-        }
-        // Mixin instance properties once, if they exist.
-        if (this.__instanceProperties) {
-            // Use forEach so this works even if for/of loops are compiled to for loops
-            // expecting arrays
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            this.__instanceProperties.forEach((v, p) => (this[p] = v));
-            this.__instanceProperties = undefined;
+            // Mixin instance properties once, if they exist.
+            if (this.__instanceProperties) {
+                // TODO (justinfagnani): should we use the stored value? Could a new value
+                // have been set since we stored the own property value?
+                for (const [p, value] of this.__instanceProperties) {
+                    this[p] = value;
+                }
+                this.__instanceProperties = undefined;
+            }
+            // Trigger initial value reflection and populate the initial
+            // `changedProperties` map, but only for the case of properties created
+            // via `createProperty` on accessors, which will not have already
+            // populated the `changedProperties` map since they are not set.
+            // We can't know if these accessors had initializers, so we just set
+            // them anyway - a difference from experimental decorators on fields and
+            // standard decorators on auto-accessors.
+            // For context see:
+            // https://github.com/lit/lit/pull/4183#issuecomment-1711959635
+            const elementProperties = this.constructor
+                .elementProperties;
+            if (elementProperties.size > 0) {
+                for (const [p, options] of elementProperties) {
+                    const { wrapped } = options;
+                    const value = this[p];
+                    if (wrapped === true &&
+                        !this._$changedProperties.has(p) &&
+                        value !== undefined) {
+                        this._$changeProperty(p, undefined, options, value);
+                    }
+                }
+            }
         }
         let shouldUpdate = false;
         const changedProperties = this._$changedProperties;
@@ -1851,7 +1797,7 @@ class ReactiveElement extends HTMLElement {
             shouldUpdate = this.shouldUpdate(changedProperties);
             if (shouldUpdate) {
                 this.willUpdate(changedProperties);
-                (_b = this.__controllers) === null || _b === void 0 ? void 0 : _b.forEach((c) => { var _a; return (_a = c.hostUpdate) === null || _a === void 0 ? void 0 : _a.call(c); });
+                this.__controllers?.forEach((c) => c.hostUpdate?.());
                 this.update(changedProperties);
             }
             else {
@@ -1896,8 +1842,7 @@ class ReactiveElement extends HTMLElement {
     // Note, this is an override point for polyfill-support.
     // @internal
     _$didUpdate(changedProperties) {
-        var _a;
-        (_a = this.__controllers) === null || _a === void 0 ? void 0 : _a.forEach((c) => { var _a; return (_a = c.hostUpdated) === null || _a === void 0 ? void 0 : _a.call(c); });
+        this.__controllers?.forEach((c) => c.hostUpdated?.());
         if (!this.hasUpdated) {
             this.hasUpdated = true;
             this.firstUpdated(changedProperties);
@@ -1905,7 +1850,7 @@ class ReactiveElement extends HTMLElement {
         this.updated(changedProperties);
         if (DEV_MODE &&
             this.isUpdatePending &&
-            this.constructor.enabledWarnings.indexOf('change-in-update') >= 0) {
+            this.constructor.enabledWarnings.includes('change-in-update')) {
             issueWarning('change-in-update', `Element ${this.localName} scheduled an update ` +
                 `(generally because a property was set) ` +
                 `after an update completed, causing a new update to be scheduled. ` +
@@ -1983,12 +1928,10 @@ class ReactiveElement extends HTMLElement {
      * @category updates
      */
     update(_changedProperties) {
-        if (this.__reflectingProperties !== undefined) {
-            // Use forEach so this works even if for/of loops are compiled to for
-            // loops expecting arrays
-            this.__reflectingProperties.forEach((v, k) => this.__propertyToAttribute(k, this[k], v));
-            this.__reflectingProperties = undefined;
-        }
+        // The forEach() expression will only run when __reflectingProperties is
+        // defined, and it returns undefined, setting __reflectingProperties to
+        // undefined
+        this.__reflectingProperties &&= this.__reflectingProperties.forEach((p) => this.__propertyToAttribute(p, this[p]));
         this.__markUpdated();
     }
     /**
@@ -2020,18 +1963,6 @@ class ReactiveElement extends HTMLElement {
      */
     firstUpdated(_changedProperties) { }
 }
-_e = finalized;
-/**
- * Marks class as having finished creating properties.
- */
-ReactiveElement[_e] = true;
-/**
- * Memoized list of all element properties, including any superclass properties.
- * Created lazily on user subclasses when finalizing the class.
- * @nocollapse
- * @category properties
- */
-ReactiveElement.elementProperties = new Map();
 /**
  * Memoized list of all element styles.
  * Created lazily on user subclasses when finalizing the class.
@@ -2050,15 +1981,20 @@ ReactiveElement.elementStyles = [];
  * @category rendering
  */
 ReactiveElement.shadowRootOptions = { mode: 'open' };
-if (htmlElementShimNeeded) {
-    delete global.HTMLElement;
-}
+// Assigned here to work around a jscompiler bug with static fields
+// when compiling to ES5.
+// https://github.com/google/closure-compiler/issues/3177
+ReactiveElement[JSCompiler_renameProperty('elementProperties', ReactiveElement)] = new Map();
+ReactiveElement[JSCompiler_renameProperty('finalized', ReactiveElement)] = new Map();
 // Apply polyfills if available
-polyfillSupport === null || polyfillSupport === void 0 ? void 0 : polyfillSupport({ ReactiveElement });
+polyfillSupport?.({ ReactiveElement });
 // Dev mode warnings...
 if (DEV_MODE) {
     // Default warning set.
-    ReactiveElement.enabledWarnings = ['change-in-update'];
+    ReactiveElement.enabledWarnings = [
+        'change-in-update',
+        'async-perform-update',
+    ];
     const ensureOwnWarnings = function (ctor) {
         if (!ctor.hasOwnProperty(JSCompiler_renameProperty('enabledWarnings', ctor))) {
             ctor.enabledWarnings = ctor.enabledWarnings.slice();
@@ -2066,7 +2002,7 @@ if (DEV_MODE) {
     };
     ReactiveElement.enableWarning = function (warning) {
         ensureOwnWarnings(this);
-        if (this.enabledWarnings.indexOf(warning) < 0) {
+        if (!this.enabledWarnings.includes(warning)) {
             this.enabledWarnings.push(warning);
         }
     };
@@ -2080,24 +2016,155 @@ if (DEV_MODE) {
 }
 // IMPORTANT: do not change the property name or the assignment expression.
 // This line will be used in regexes to search for ReactiveElement usage.
-((_d = global.reactiveElementVersions) !== null && _d !== void 0 ? _d : (global.reactiveElementVersions = [])).push('1.4.1');
+(global.reactiveElementVersions ??= []).push('2.1.0');
 if (DEV_MODE && global.reactiveElementVersions.length > 1) {
-    issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +
-        `is not recommended.`);
+    queueMicrotask(() => {
+        issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +
+            `is not recommended.`);
+    });
 }
 //# sourceMappingURL=reactive-element.js.map
 
 /***/ }),
 
-/***/ "./node_modules/giscus/dist/giscus.js":
-/*!********************************************!*\
-  !*** ./node_modules/giscus/dist/giscus.js ***!
-  \********************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
+/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
+/* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
+/* harmony import */ var giscus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! giscus */ "./node_modules/giscus/dist/giscus.mjs");
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_1__.defineComponent)({
+  name: 'ObComment',
+  props: {
+    /** Used for create issue title by giscus */
+    title: {
+      type: String,
+      default: ''
+    },
+    /** Used for create issue body content by giscus */
+    body: {
+      type: String,
+      default: ''
+    },
+    /** Unique ID used by giscus */
+    uid: {
+      type: String,
+      default: ''
+    }
+  },
+  components: {
+    SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_2__.SubTitle
+  },
+  setup(props) {
+    const postTitle = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).title;
+    const postBody = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).body;
+    const postUid = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).uid;
+    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_0__.useAppStore)();
+    const postStore = (0,_stores_post__WEBPACK_IMPORTED_MODULE_3__.usePostStore)();
+    const enabledComment = (postTitle, postBody, postUid) => {
+      /**
+       * Generate the data needed for giscus to generate the issue.
+       */
+      // const title = !postTitle || postTitle === '' ? '' : postTitle
+      // const body =
+      //   !postBody || postBody === ''
+      //     ? window.location.href
+      //     : `${window.location.href} \n ${postBody}`
+      // const uid =
+      //   appStore.themeConfig.plugins.giscus.id === 'pathname'
+      //     ? window.location.pathname
+      //     : postUid
+      /**
+       * Caching the current post data, used
+       * when config changes on render updates.
+       */
+      postStore.setCache({
+        title: postTitle,
+        body: postBody,
+        uid: postUid
+      });
+      if (!appStore.configReady) return;
+    };
+    /** Wait for config is ready */
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.watch)(() => appStore.configReady, (newValue, oldValue) => {
+      if (!oldValue && newValue) {
+        const cachePost = postStore.cachePost;
+        enabledComment(cachePost.title, cachePost.body, cachePost.uid);
+      }
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(() => {
+      enabledComment(postTitle.value, postBody.value, postUid.value);
+    });
+    return {
+      giscusProps: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => ({
+        ...appStore.themeConfig.plugins.giscus
+      })),
+      theme: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => appStore.theme === 'theme-dark' ? 'dark' : 'light')
+    };
+  }
+}));
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: function() { return /* binding */ render; }
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
+
+const _hoisted_1 = {
+  class: "bg-ob-deep-800 p-4 mt-8 lg:px-14 lg:py-10 rounded-2xl shadow-xl mb-8 lg:mb-0"
+};
+const _hoisted_2 = ["repo", "repoId", "category", "categoryId", "mapping", "reactionsEnabled", "emitMetadata", "theme", "lang", "crossorigin", "inputPosition", "loading"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_SubTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SubTitle");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubTitle, {
+    title: 'titles.comment'
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("giscus-widget", {
+    id: "comments",
+    repo: _ctx.giscusProps.repo,
+    repoId: _ctx.giscusProps.repoId,
+    category: _ctx.giscusProps.category,
+    categoryId: _ctx.giscusProps.categoryId,
+    mapping: _ctx.giscusProps.mapping,
+    reactionsEnabled: _ctx.giscusProps.reactionsEnabled,
+    emitMetadata: _ctx.giscusProps.emitMetadata,
+    theme: _ctx.theme,
+    lang: _ctx.giscusProps.lang,
+    crossorigin: _ctx.giscusProps.crossorigin,
+    inputPosition: _ctx.giscusProps.inputPosition,
+    loading: _ctx.giscusProps.loading
+  }, null, 8 /* PROPS */, _hoisted_2)]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/giscus/dist/giscus.mjs":
+/*!*********************************************!*\
+  !*** ./node_modules/giscus/dist/giscus.mjs ***!
+  \*********************************************/
 /***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "GiscusWidget": function() { return /* binding */ r; }
+/* harmony export */   GiscusWidget: function() { return /* binding */ r; }
 /* harmony export */ });
 /* harmony import */ var lit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit */ "./node_modules/lit/index.js");
 /* harmony import */ var lit_decorators_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lit/decorators.js */ "./node_modules/lit/decorators.js");
@@ -2105,20 +2172,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var f = Object.defineProperty, S = Object.getOwnPropertyDescriptor, i = (e, t, s, n) => {
-  for (var a = n > 1 ? void 0 : n ? S(t, s) : t, c = e.length - 1, h; c >= 0; c--)
+var S = Object.defineProperty, _ = Object.getOwnPropertyDescriptor, i = (e, t, s, n) => {
+  for (var a = n > 1 ? void 0 : n ? _(t, s) : t, c = e.length - 1, h; c >= 0; c--)
     (h = e[c]) && (a = (n ? h(t, s, a) : h(a)) || a);
-  return n && a && f(t, s, a), a;
+  return n && a && S(t, s, a), a;
 };
+function E(e) {
+  return customElements.get(e) ? (t) => t : (0,lit_decorators_js__WEBPACK_IMPORTED_MODULE_1__.customElement)(e);
+}
 let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
   constructor() {
-    super(), this.GISCUS_SESSION_KEY = "giscus-session", this.GISCUS_DEFAULT_HOST = "https://giscus.app", this.ERROR_SUGGESTION = "Please consider reporting this error at https://github.com/giscus/giscus/issues/new.", this.__session = "", this._iframeRef = (0,lit_directives_ref_js__WEBPACK_IMPORTED_MODULE_2__.createRef)(), this.messageEventHandler = this.handleMessageEvent.bind(this), this.host = this.GISCUS_DEFAULT_HOST, this.strict = "0", this.reactionsEnabled = "1", this.emitMetadata = "0", this.inputPosition = "bottom", this.theme = "light", this.lang = "en", this.loading = "eager", this.setupSession(), window.addEventListener("message", this.messageEventHandler);
+    super(), this.GISCUS_SESSION_KEY = "giscus-session", this.GISCUS_DEFAULT_HOST = "https://giscus.app", this.ERROR_SUGGESTION = "Please consider reporting this error at https://github.com/giscus/giscus/issues/new.", this.__session = "", this._iframeRef = (0,lit_directives_ref_js__WEBPACK_IMPORTED_MODULE_2__.createRef)(), this.messageEventHandler = this.handleMessageEvent.bind(this), this.hasLoaded = !1, this.host = this.GISCUS_DEFAULT_HOST, this.strict = "0", this.reactionsEnabled = "1", this.emitMetadata = "0", this.inputPosition = "bottom", this.theme = "light", this.lang = "en", this.loading = "eager", this.setupSession(), window.addEventListener("message", this.messageEventHandler);
   }
   get iframeRef() {
-    return this._iframeRef.value;
+    var e;
+    return (e = this._iframeRef) == null ? void 0 : e.value;
   }
-  connectedCallback() {
-    super.connectedCallback();
+  get _host() {
+    try {
+      return new URL(this.host), this.host;
+    } catch {
+      return this.GISCUS_DEFAULT_HOST;
+    }
   }
   disconnectedCallback() {
     super.disconnectedCallback(), window.removeEventListener("message", this.messageEventHandler);
@@ -2127,30 +2202,38 @@ let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
     return `[giscus] An error occurred. Error message: "${e}".`;
   }
   setupSession() {
-    const e = location.href, t = new URL(e), s = localStorage.getItem(this.GISCUS_SESSION_KEY), n = t.searchParams.get("giscus") || "";
-    if (n) {
-      localStorage.setItem(this.GISCUS_SESSION_KEY, JSON.stringify(n)), this.__session = n, t.searchParams.delete("giscus"), history.replaceState(void 0, document.title, t.toString());
+    const e = location.href, t = new URL(e), s = localStorage.getItem(this.GISCUS_SESSION_KEY), n = t.searchParams.get("giscus") ?? "";
+    if (this.__session = "", n) {
+      localStorage.setItem(this.GISCUS_SESSION_KEY, JSON.stringify(n)), this.__session = n, t.searchParams.delete("giscus"), t.hash = "", history.replaceState(void 0, document.title, t.toString());
       return;
     }
     if (s)
       try {
-        this.__session = JSON.parse(s || "") || "";
+        this.__session = JSON.parse(s);
       } catch (a) {
-        this.__session = "", localStorage.removeItem(this.GISCUS_SESSION_KEY), console.warn(
-          `${this._formatError(a == null ? void 0 : a.message)} Session has been cleared.`
+        localStorage.removeItem(this.GISCUS_SESSION_KEY), console.warn(
+          `${this._formatError(
+            a == null ? void 0 : a.message
+          )} Session has been cleared.`
         );
       }
   }
+  signOut() {
+    localStorage.removeItem(this.GISCUS_SESSION_KEY), this.__session = "", this.update(/* @__PURE__ */ new Map());
+  }
   handleMessageEvent(e) {
-    if (e.origin !== this.host)
-      return;
+    if (e.origin !== this._host) return;
     const { data: t } = e;
-    if (!(typeof t == "object" && t.giscus) || (this.iframeRef && t.giscus.resizeHeight && (this.iframeRef.style.height = `${t.giscus.resizeHeight}px`), !t.giscus.error))
+    if (!(typeof t == "object" && t.giscus)) return;
+    if (this.iframeRef && t.giscus.resizeHeight && (this.iframeRef.style.height = `${t.giscus.resizeHeight}px`), t.giscus.signOut) {
+      console.info("[giscus] User has logged out. Session has been cleared."), this.signOut();
       return;
+    }
+    if (!t.giscus.error) return;
     const s = t.giscus.error;
-    if (s.includes("Bad credentials") || s.includes("Invalid state value")) {
+    if (s.includes("Bad credentials") || s.includes("Invalid state value") || s.includes("State has expired")) {
       if (localStorage.getItem(this.GISCUS_SESSION_KEY) !== null) {
-        localStorage.removeItem(this.GISCUS_SESSION_KEY), this.__session = "", console.warn(`${this._formatError(s)} Session has been cleared.`), this.update(/* @__PURE__ */ new Map());
+        console.warn(`${this._formatError(s)} Session has been cleared.`), this.signOut();
         return;
       }
       console.error(
@@ -2166,8 +2249,8 @@ let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
     console.error(`${this._formatError(s)} ${this.ERROR_SUGGESTION}`);
   }
   sendMessage(e) {
-    var t, s;
-    (s = (t = this.iframeRef) == null ? void 0 : t.contentWindow) == null || s.postMessage({ giscus: e }, this.host);
+    var t;
+    !((t = this.iframeRef) != null && t.contentWindow) || !this.hasLoaded || this.iframeRef.contentWindow.postMessage({ giscus: e }, this._host);
   }
   updateConfig() {
     const e = {
@@ -2188,6 +2271,13 @@ let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
     };
     this.sendMessage(e);
   }
+  firstUpdated() {
+    var e;
+    (e = this.iframeRef) == null || e.addEventListener("load", () => {
+      var t;
+      (t = this.iframeRef) == null || t.classList.remove("loading"), this.hasLoaded = !0, this.updateConfig();
+    });
+  }
   requestUpdate(e, t, s) {
     if (!this.hasUpdated || e === "host") {
       super.requestUpdate(e, t, s);
@@ -2203,18 +2293,18 @@ let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
   }
   _getCleanedUrl() {
     const e = new URL(location.href);
-    return e.searchParams.delete("giscus"), e;
+    return e.searchParams.delete("giscus"), e.hash = "", e;
   }
   getTerm() {
     switch (this.mapping) {
       case "url":
-        return `${this._getCleanedUrl()}`;
+        return this._getCleanedUrl().toString();
       case "title":
         return document.title;
       case "og:title":
         return this.getMetaContent("title", !0);
       case "specific":
-        return this.term || "";
+        return this.term ?? "";
       case "number":
         return "";
       case "pathname":
@@ -2223,16 +2313,16 @@ let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
     }
   }
   getNumber() {
-    return this.mapping === "number" && this.term || "";
+    return this.mapping === "number" ? this.term ?? "" : "";
   }
   getIframeSrc() {
     const e = this._getCleanedUrl().toString(), t = `${e}${this.id ? "#" + this.id : ""}`, s = this.getMetaContent("description", !0), n = this.getMetaContent("giscus:backlink") || e, a = {
       origin: t,
       session: this.__session,
       repo: this.repo,
-      repoId: this.repoId || "",
-      category: this.category || "",
-      categoryId: this.categoryId || "",
+      repoId: this.repoId ?? "",
+      category: this.category ?? "",
+      categoryId: this.categoryId ?? "",
       term: this.getTerm(),
       number: this.getNumber(),
       strict: this.strict,
@@ -2242,29 +2332,35 @@ let r = class extends lit__WEBPACK_IMPORTED_MODULE_0__.LitElement {
       theme: this.theme,
       description: s,
       backLink: n
-    }, c = this.lang ? `/${this.lang}` : "", h = new URLSearchParams(a);
-    return `${this.host}${c}/widget?${h}`;
+    }, c = this._host, h = this.lang ? `/${this.lang}` : "", l = new URLSearchParams(a);
+    return `${c}${h}/widget?${l.toString()}`;
   }
   render() {
-    return lit__WEBPACK_IMPORTED_MODULE_0__.html`
+    return (0,lit__WEBPACK_IMPORTED_MODULE_0__.html)`
       <iframe
         title="Comments"
         scrolling="no"
+        class="loading"
         ${(0,lit_directives_ref_js__WEBPACK_IMPORTED_MODULE_2__.ref)(this._iframeRef)}
         src=${this.getIframeSrc()}
         loading=${this.loading}
+        allow="clipboard-write"
         part="iframe"
       ></iframe>
     `;
   }
 };
-r.styles = lit__WEBPACK_IMPORTED_MODULE_0__.css`
+r.styles = (0,lit__WEBPACK_IMPORTED_MODULE_0__.css)`
     :host,
     iframe {
       width: 100%;
       border: none;
-      color-scheme: normal;
       min-height: 150px;
+      color-scheme: light dark;
+    }
+
+    iframe.loading {
+      opacity: 0;
     }
   `;
 i([
@@ -2310,7 +2406,7 @@ i([
   (0,lit_decorators_js__WEBPACK_IMPORTED_MODULE_1__.property)({ reflect: !0 })
 ], r.prototype, "loading", 2);
 r = i([
-  (0,lit_decorators_js__WEBPACK_IMPORTED_MODULE_1__.customElement)("giscus-widget")
+  E("giscus-widget")
 ], r);
 
 
@@ -2325,24 +2421,24 @@ r = i([
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CSSResult": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.CSSResult; },
-/* harmony export */   "LitElement": function() { return /* binding */ LitElement; },
-/* harmony export */   "ReactiveElement": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.ReactiveElement; },
-/* harmony export */   "UpdatingElement": function() { return /* binding */ UpdatingElement; },
-/* harmony export */   "_$LE": function() { return /* binding */ _$LE; },
-/* harmony export */   "_$LH": function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__._$LH; },
-/* harmony export */   "adoptStyles": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.adoptStyles; },
-/* harmony export */   "css": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.css; },
-/* harmony export */   "defaultConverter": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.defaultConverter; },
-/* harmony export */   "getCompatibleStyle": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle; },
-/* harmony export */   "html": function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.html; },
-/* harmony export */   "noChange": function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.noChange; },
-/* harmony export */   "notEqual": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.notEqual; },
-/* harmony export */   "nothing": function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.nothing; },
-/* harmony export */   "render": function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.render; },
-/* harmony export */   "supportsAdoptingStyleSheets": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.supportsAdoptingStyleSheets; },
-/* harmony export */   "svg": function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.svg; },
-/* harmony export */   "unsafeCSS": function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.unsafeCSS; }
+/* harmony export */   CSSResult: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.CSSResult; },
+/* harmony export */   LitElement: function() { return /* binding */ LitElement; },
+/* harmony export */   ReactiveElement: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.ReactiveElement; },
+/* harmony export */   _$LE: function() { return /* binding */ _$LE; },
+/* harmony export */   _$LH: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__._$LH; },
+/* harmony export */   adoptStyles: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.adoptStyles; },
+/* harmony export */   css: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.css; },
+/* harmony export */   defaultConverter: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.defaultConverter; },
+/* harmony export */   getCompatibleStyle: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.getCompatibleStyle; },
+/* harmony export */   html: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.html; },
+/* harmony export */   mathml: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.mathml; },
+/* harmony export */   noChange: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.noChange; },
+/* harmony export */   notEqual: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.notEqual; },
+/* harmony export */   nothing: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.nothing; },
+/* harmony export */   render: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.render; },
+/* harmony export */   supportsAdoptingStyleSheets: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.supportsAdoptingStyleSheets; },
+/* harmony export */   svg: function() { return /* reexport safe */ lit_html__WEBPACK_IMPORTED_MODULE_1__.svg; },
+/* harmony export */   unsafeCSS: function() { return /* reexport safe */ _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.unsafeCSS; }
 /* harmony export */ });
 /* harmony import */ var _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lit/reactive-element */ "./node_modules/@lit/reactive-element/development/reactive-element.js");
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
@@ -2351,16 +2447,15 @@ __webpack_require__.r(__webpack_exports__);
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var _a, _b, _c;
 /**
  * The main LitElement module, which defines the {@linkcode LitElement} base
  * class and related APIs.
  *
- *  LitElement components can define a template and a set of observed
+ * LitElement components can define a template and a set of observed
  * properties. Changing an observed property triggers a re-render of the
  * element.
  *
- *  Import {@linkcode LitElement} and {@linkcode html} from this module to
+ * Import {@linkcode LitElement} and {@linkcode html} from this module to
  * create a component:
  *
  *  ```js
@@ -2398,21 +2493,33 @@ var _a, _b, _c;
 
 
 
-// For backwards compatibility export ReactiveElement as UpdatingElement. Note,
-// IE transpilation requires exporting like this.
-const UpdatingElement = _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.ReactiveElement;
+/*
+ * When using Closure Compiler, JSCompiler_renameProperty(property, object) is
+ * replaced at compile time by the munged name for object[property]. We cannot
+ * alias this function, so we have to use a small shim that has the same
+ * behavior when not compiling.
+ */
+/*@__INLINE__*/
+const JSCompiler_renameProperty = (prop, _obj) => prop;
 const DEV_MODE = true;
+// Allows minifiers to rename references to globalThis
+const global = globalThis;
 let issueWarning;
 if (DEV_MODE) {
     // Ensure warnings are issued only 1x, even if multiple versions of Lit
     // are loaded.
-    const issuedWarnings = ((_a = globalThis.litIssuedWarnings) !== null && _a !== void 0 ? _a : (globalThis.litIssuedWarnings = new Set()));
-    // Issue a warning, if we haven't already.
+    global.litIssuedWarnings ??= new Set();
+    /**
+     * Issue a warning if we haven't already, based either on `code` or `warning`.
+     * Warnings are disabled automatically only by `warning`; disabling via `code`
+     * can be done by users.
+     */
     issueWarning = (code, warning) => {
         warning += ` See https://lit.dev/msg/${code} for more information.`;
-        if (!issuedWarnings.has(warning)) {
+        if (!global.litIssuedWarnings.has(warning) &&
+            !global.litIssuedWarnings.has(code)) {
             console.warn(warning);
-            issuedWarnings.add(warning);
+            global.litIssuedWarnings.add(warning);
         }
     };
 }
@@ -2438,15 +2545,13 @@ class LitElement extends _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.Reac
      * @category rendering
      */
     createRenderRoot() {
-        var _a;
-        var _b;
         const renderRoot = super.createRenderRoot();
         // When adoptedStyleSheets are shimmed, they are inserted into the
         // shadowRoot by createRenderRoot. Adjust the renderBefore node so that
         // any styles in Lit content render before adoptedStyleSheets. This is
         // important so that adoptedStyleSheets have precedence over styles in
         // the shadowRoot.
-        (_a = (_b = this.renderOptions).renderBefore) !== null && _a !== void 0 ? _a : (_b.renderBefore = renderRoot.firstChild);
+        this.renderOptions.renderBefore ??= renderRoot.firstChild;
         return renderRoot;
     }
     /**
@@ -2488,9 +2593,8 @@ class LitElement extends _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.Reac
      * @category lifecycle
      */
     connectedCallback() {
-        var _a;
         super.connectedCallback();
-        (_a = this.__childPart) === null || _a === void 0 ? void 0 : _a.setConnected(true);
+        this.__childPart?.setConnected(true);
     }
     /**
      * Invoked when the component is removed from the document's DOM.
@@ -2512,9 +2616,8 @@ class LitElement extends _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.Reac
      * @category lifecycle
      */
     disconnectedCallback() {
-        var _a;
         super.disconnectedCallback();
-        (_a = this.__childPart) === null || _a === void 0 ? void 0 : _a.setConnected(false);
+        this.__childPart?.setConnected(false);
     }
     /**
      * Invoked on each update to perform rendering tasks. This method may return
@@ -2527,6 +2630,8 @@ class LitElement extends _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.Reac
         return lit_html__WEBPACK_IMPORTED_MODULE_1__.noChange;
     }
 }
+// This property needs to remain unminified.
+LitElement['_$litElement$'] = true;
 /**
  * Ensure this class is marked as `finalized` as an optimization ensuring
  * it will not needlessly try to `finalize`.
@@ -2534,42 +2639,14 @@ class LitElement extends _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.Reac
  * Note this property name is a string to prevent breaking Closure JS Compiler
  * optimizations. See @lit/reactive-element for more information.
  */
-LitElement['finalized'] = true;
-// This property needs to remain unminified.
-LitElement['_$litElement$'] = true;
+LitElement[JSCompiler_renameProperty('finalized', LitElement)] = true;
 // Install hydration if available
-(_b = globalThis.litElementHydrateSupport) === null || _b === void 0 ? void 0 : _b.call(globalThis, { LitElement });
+global.litElementHydrateSupport?.({ LitElement });
 // Apply polyfills if available
 const polyfillSupport = DEV_MODE
-    ? globalThis.litElementPolyfillSupportDevMode
-    : globalThis.litElementPolyfillSupport;
-polyfillSupport === null || polyfillSupport === void 0 ? void 0 : polyfillSupport({ LitElement });
-// DEV mode warnings
-if (DEV_MODE) {
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-    // Note, for compatibility with closure compilation, this access
-    // needs to be as a string property index.
-    LitElement['finalize'] = function () {
-        const finalized = _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__.ReactiveElement.finalize.call(this);
-        if (!finalized) {
-            return false;
-        }
-        const warnRemovedOrRenamed = (obj, name, renamed = false) => {
-            if (obj.hasOwnProperty(name)) {
-                const ctorName = (typeof obj === 'function' ? obj : obj.constructor)
-                    .name;
-                issueWarning(renamed ? 'renamed-api' : 'removed-api', `\`${name}\` is implemented on class ${ctorName}. It ` +
-                    `has been ${renamed ? 'renamed' : 'removed'} ` +
-                    `in this version of LitElement.`);
-            }
-        };
-        warnRemovedOrRenamed(this, 'render');
-        warnRemovedOrRenamed(this, 'getStyles', true);
-        warnRemovedOrRenamed(this.prototype, 'adoptStyles');
-        return true;
-    };
-    /* eslint-enable @typescript-eslint/no-explicit-any */
-}
+    ? global.litElementPolyfillSupportDevMode
+    : global.litElementPolyfillSupport;
+polyfillSupport?.({ LitElement });
 /**
  * END USERS SHOULD NOT RELY ON THIS OBJECT.
  *
@@ -2598,10 +2675,12 @@ const _$LE = {
 };
 // IMPORTANT: do not change the property name or the assignment expression.
 // This line will be used in regexes to search for LitElement usage.
-((_c = globalThis.litElementVersions) !== null && _c !== void 0 ? _c : (globalThis.litElementVersions = [])).push('3.2.2');
-if (DEV_MODE && globalThis.litElementVersions.length > 1) {
-    issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +
-        `is not recommended.`);
+(global.litElementVersions ??= []).push('4.2.0');
+if (DEV_MODE && global.litElementVersions.length > 1) {
+    queueMicrotask(() => {
+        issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +
+            `is not recommended.`);
+    });
 }
 //# sourceMappingURL=lit-element.js.map
 
@@ -2615,10 +2694,10 @@ if (DEV_MODE && globalThis.litElementVersions.length > 1) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AsyncDirective": function() { return /* binding */ AsyncDirective; },
-/* harmony export */   "Directive": function() { return /* reexport safe */ _directive_js__WEBPACK_IMPORTED_MODULE_1__.Directive; },
-/* harmony export */   "PartType": function() { return /* reexport safe */ _directive_js__WEBPACK_IMPORTED_MODULE_1__.PartType; },
-/* harmony export */   "directive": function() { return /* reexport safe */ _directive_js__WEBPACK_IMPORTED_MODULE_1__.directive; }
+/* harmony export */   AsyncDirective: function() { return /* binding */ AsyncDirective; },
+/* harmony export */   Directive: function() { return /* reexport safe */ _directive_js__WEBPACK_IMPORTED_MODULE_1__.Directive; },
+/* harmony export */   PartType: function() { return /* reexport safe */ _directive_js__WEBPACK_IMPORTED_MODULE_1__.PartType; },
+/* harmony export */   directive: function() { return /* reexport safe */ _directive_js__WEBPACK_IMPORTED_MODULE_1__.directive; }
 /* harmony export */ });
 /* harmony import */ var _directive_helpers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./directive-helpers.js */ "./node_modules/lit-html/development/directive-helpers.js");
 /* harmony import */ var _directive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./directive.js */ "./node_modules/lit-html/development/directive.js");
@@ -2639,7 +2718,6 @@ const DEV_MODE = true;
  * @return True if there were children to disconnect; false otherwise
  */
 const notifyChildrenConnectedChanged = (parent, isConnected) => {
-    var _a, _b;
     const children = parent._$disconnectableChildren;
     if (children === undefined) {
         return false;
@@ -2653,7 +2731,7 @@ const notifyChildrenConnectedChanged = (parent, isConnected) => {
         // this list
         // Disconnect Directive (and any nested directives contained within)
         // This property needs to remain unminified.
-        (_b = (_a = obj)['_$notifyDirectiveConnectionChanged']) === null || _b === void 0 ? void 0 : _b.call(_a, isConnected, false);
+        obj['_$notifyDirectiveConnectionChanged']?.(isConnected, false);
         // Disconnect Part/TemplateInstance
         notifyChildrenConnectedChanged(obj, isConnected);
     }
@@ -2674,7 +2752,7 @@ const removeDisconnectableFromParent = (obj) => {
         children = parent._$disconnectableChildren;
         children.delete(obj);
         obj = parent;
-    } while ((children === null || children === void 0 ? void 0 : children.size) === 0);
+    } while (children?.size === 0);
 };
 const addDisconnectableToParent = (obj) => {
     // Climb the parent tree, creating a sparse tree of children needing
@@ -2763,11 +2841,10 @@ function notifyChildPartConnectedChanged(isConnected, isClearingValue = false, f
  * Patches disconnection API onto ChildParts.
  */
 const installDisconnectAPI = (obj) => {
-    var _a, _b;
-    var _c, _d;
     if (obj.type == _directive_js__WEBPACK_IMPORTED_MODULE_1__.PartType.CHILD) {
-        (_a = (_c = obj)._$notifyConnectionChanged) !== null && _a !== void 0 ? _a : (_c._$notifyConnectionChanged = notifyChildPartConnectedChanged);
-        (_b = (_d = obj)._$reparentDisconnectables) !== null && _b !== void 0 ? _b : (_d._$reparentDisconnectables = reparentDisconnectables);
+        obj._$notifyConnectionChanged ??=
+            notifyChildPartConnectedChanged;
+        obj._$reparentDisconnectables ??= reparentDisconnectables;
     }
 };
 /**
@@ -2818,14 +2895,13 @@ class AsyncDirective extends _directive_js__WEBPACK_IMPORTED_MODULE_1__.Directiv
      * @internal
      */
     ['_$notifyDirectiveConnectionChanged'](isConnected, isClearingDirective = true) {
-        var _a, _b;
         if (isConnected !== this.isConnected) {
             this.isConnected = isConnected;
             if (isConnected) {
-                (_a = this.reconnected) === null || _a === void 0 ? void 0 : _a.call(this);
+                this.reconnected?.();
             }
             else {
-                (_b = this.disconnected) === null || _b === void 0 ? void 0 : _b.call(this);
+                this.disconnected?.();
             }
         }
         if (isClearingDirective) {
@@ -2879,18 +2955,19 @@ class AsyncDirective extends _directive_js__WEBPACK_IMPORTED_MODULE_1__.Directiv
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "TemplateResultType": function() { return /* binding */ TemplateResultType; },
-/* harmony export */   "clearPart": function() { return /* binding */ clearPart; },
-/* harmony export */   "getCommittedValue": function() { return /* binding */ getCommittedValue; },
-/* harmony export */   "getDirectiveClass": function() { return /* binding */ getDirectiveClass; },
-/* harmony export */   "insertPart": function() { return /* binding */ insertPart; },
-/* harmony export */   "isDirectiveResult": function() { return /* binding */ isDirectiveResult; },
-/* harmony export */   "isPrimitive": function() { return /* binding */ isPrimitive; },
-/* harmony export */   "isSingleExpression": function() { return /* binding */ isSingleExpression; },
-/* harmony export */   "isTemplateResult": function() { return /* binding */ isTemplateResult; },
-/* harmony export */   "removePart": function() { return /* binding */ removePart; },
-/* harmony export */   "setChildPartValue": function() { return /* binding */ setChildPartValue; },
-/* harmony export */   "setCommittedValue": function() { return /* binding */ setCommittedValue; }
+/* harmony export */   TemplateResultType: function() { return /* binding */ TemplateResultType; },
+/* harmony export */   clearPart: function() { return /* binding */ clearPart; },
+/* harmony export */   getCommittedValue: function() { return /* binding */ getCommittedValue; },
+/* harmony export */   getDirectiveClass: function() { return /* binding */ getDirectiveClass; },
+/* harmony export */   insertPart: function() { return /* binding */ insertPart; },
+/* harmony export */   isCompiledTemplateResult: function() { return /* binding */ isCompiledTemplateResult; },
+/* harmony export */   isDirectiveResult: function() { return /* binding */ isDirectiveResult; },
+/* harmony export */   isPrimitive: function() { return /* binding */ isPrimitive; },
+/* harmony export */   isSingleExpression: function() { return /* binding */ isSingleExpression; },
+/* harmony export */   isTemplateResult: function() { return /* binding */ isTemplateResult; },
+/* harmony export */   removePart: function() { return /* binding */ removePart; },
+/* harmony export */   setChildPartValue: function() { return /* binding */ setChildPartValue; },
+/* harmony export */   setCommittedValue: function() { return /* binding */ setCommittedValue; }
 /* harmony export */ });
 /* harmony import */ var _lit_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lit-html.js */ "./node_modules/lit-html/development/lit-html.js");
 /**
@@ -2898,13 +2975,12 @@ __webpack_require__.r(__webpack_exports__);
  * Copyright 2020 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var _a, _b;
 
 const { _ChildPart: ChildPart } = _lit_html_js__WEBPACK_IMPORTED_MODULE_0__._$LH;
 const ENABLE_SHADYDOM_NOPATCH = true;
 const wrap = ENABLE_SHADYDOM_NOPATCH &&
-    ((_a = window.ShadyDOM) === null || _a === void 0 ? void 0 : _a.inUse) &&
-    ((_b = window.ShadyDOM) === null || _b === void 0 ? void 0 : _b.noPatch) === true
+    window.ShadyDOM?.inUse &&
+    window.ShadyDOM?.noPatch === true
     ? window.ShadyDOM.wrap
     : (node) => node;
 /**
@@ -2916,26 +2992,33 @@ const isPrimitive = (value) => value === null || (typeof value != 'object' && ty
 const TemplateResultType = {
     HTML: 1,
     SVG: 2,
+    MATHML: 3,
 };
 /**
- * Tests if a value is a TemplateResult.
+ * Tests if a value is a TemplateResult or a CompiledTemplateResult.
  */
 const isTemplateResult = (value, type) => type === undefined
     ? // This property needs to remain unminified.
-        (value === null || value === void 0 ? void 0 : value['_$litType$']) !== undefined
-    : (value === null || value === void 0 ? void 0 : value['_$litType$']) === type;
+        value?.['_$litType$'] !== undefined
+    : value?.['_$litType$'] === type;
+/**
+ * Tests if a value is a CompiledTemplateResult.
+ */
+const isCompiledTemplateResult = (value) => {
+    return value?.['_$litType$']?.h != null;
+};
 /**
  * Tests if a value is a DirectiveResult.
  */
 const isDirectiveResult = (value) => 
 // This property needs to remain unminified.
-(value === null || value === void 0 ? void 0 : value['_$litDirective$']) !== undefined;
+value?.['_$litDirective$'] !== undefined;
 /**
  * Retrieves the Directive class for a DirectiveResult
  */
 const getDirectiveClass = (value) => 
 // This property needs to remain unminified.
-value === null || value === void 0 ? void 0 : value['_$litDirective$'];
+value?.['_$litDirective$'];
 /**
  * Tests whether a part has only a single-expression with no strings to
  * interpolate between.
@@ -2959,7 +3042,6 @@ const createMarker = () => document.createComment('');
  * @param part Part to insert, or undefined to create a new part
  */
 const insertPart = (containerPart, refPart, part) => {
-    var _a;
     const container = wrap(containerPart._$startNode).parentNode;
     const refNode = refPart === undefined ? containerPart._$endNode : refPart._$startNode;
     if (part === undefined) {
@@ -2972,7 +3054,7 @@ const insertPart = (containerPart, refPart, part) => {
         const oldParent = part._$parent;
         const parentChanged = oldParent !== containerPart;
         if (parentChanged) {
-            (_a = part._$reparentDisconnectables) === null || _a === void 0 ? void 0 : _a.call(part, containerPart);
+            part._$reparentDisconnectables?.(containerPart);
             // Note that although `_$reparentDisconnectables` updates the part's
             // `_$parent` reference after unlinking from its current parent, that
             // method only exists if Disconnectables are present, so we need to
@@ -3019,7 +3101,7 @@ const setChildPartValue = (part, value, directiveParent = part) => {
     part._$setValue(value, directiveParent);
     return part;
 };
-// A sentinal value that can never appear as a part value except when set by
+// A sentinel value that can never appear as a part value except when set by
 // live(). Used to force a dirty-check to fail and cause a re-render.
 const RESET_VALUE = {};
 /**
@@ -3039,7 +3121,7 @@ const setCommittedValue = (part, value = RESET_VALUE) => (part._$committedValue 
  *
  * The committed value is used for change detection and efficient updates of
  * the part. It can differ from the value set by the template or directive in
- * cases where the template value is transformed before being commited.
+ * cases where the template value is transformed before being committed.
  *
  * - `TemplateResult`s are committed as a `TemplateInstance`
  * - Iterables are committed as `Array<ChildPart>`
@@ -3055,8 +3137,7 @@ const getCommittedValue = (part) => part._$committedValue;
  * @param part The Part to remove
  */
 const removePart = (part) => {
-    var _a;
-    (_a = part._$notifyConnectionChanged) === null || _a === void 0 ? void 0 : _a.call(part, false, true);
+    part._$notifyConnectionChanged?.(false, true);
     let start = part._$startNode;
     const end = wrap(part._$endNode).nextSibling;
     while (start !== end) {
@@ -3080,9 +3161,9 @@ const clearPart = (part) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Directive": function() { return /* binding */ Directive; },
-/* harmony export */   "PartType": function() { return /* binding */ PartType; },
-/* harmony export */   "directive": function() { return /* binding */ directive; }
+/* harmony export */   Directive: function() { return /* binding */ Directive; },
+/* harmony export */   PartType: function() { return /* binding */ PartType; },
+/* harmony export */   directive: function() { return /* binding */ directive; }
 /* harmony export */ });
 /**
  * @license
@@ -3143,8 +3224,8 @@ class Directive {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createRef": function() { return /* binding */ createRef; },
-/* harmony export */   "ref": function() { return /* binding */ ref; }
+/* harmony export */   createRef: function() { return /* binding */ createRef; },
+/* harmony export */   ref: function() { return /* binding */ ref; }
 /* harmony export */ });
 /* harmony import */ var _lit_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lit-html.js */ "./node_modules/lit-html/development/lit-html.js");
 /* harmony import */ var _async_directive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../async-directive.js */ "./node_modules/lit-html/development/async-directive.js");
@@ -3175,7 +3256,6 @@ class RefDirective extends _async_directive_js__WEBPACK_IMPORTED_MODULE_1__.Asyn
         return _lit_html_js__WEBPACK_IMPORTED_MODULE_0__.nothing;
     }
     update(part, [ref]) {
-        var _a;
         const refChanged = ref !== this._ref;
         if (refChanged && this._ref !== undefined) {
             // The ref passed to the directive has changed;
@@ -3186,13 +3266,15 @@ class RefDirective extends _async_directive_js__WEBPACK_IMPORTED_MODULE_1__.Asyn
             // We either got a new ref or this is the first render;
             // store the ref/element & update the ref value
             this._ref = ref;
-            this._context = (_a = part.options) === null || _a === void 0 ? void 0 : _a.host;
+            this._context = part.options?.host;
             this._updateRefValue((this._element = part.element));
         }
         return _lit_html_js__WEBPACK_IMPORTED_MODULE_0__.nothing;
     }
     _updateRefValue(element) {
-        var _a;
+        if (!this.isConnected) {
+            element = undefined;
+        }
         if (typeof this._ref === 'function') {
             // If the current ref was called with a previous value, call with
             // `undefined`; We do this to ensure callbacks are called in a consistent
@@ -3203,7 +3285,7 @@ class RefDirective extends _async_directive_js__WEBPACK_IMPORTED_MODULE_1__.Asyn
             // both the context and the callback, since we allow passing unbound
             // functions that are called on options.host, and we want to treat
             // these as unique "instances" of a function.
-            const context = (_a = this._context) !== null && _a !== void 0 ? _a : globalThis;
+            const context = this._context ?? globalThis;
             let lastElementForCallback = lastElementForContextAndCallback.get(context);
             if (lastElementForCallback === undefined) {
                 lastElementForCallback = new WeakMap();
@@ -3223,11 +3305,11 @@ class RefDirective extends _async_directive_js__WEBPACK_IMPORTED_MODULE_1__.Asyn
         }
     }
     get _lastElementForRef() {
-        var _a, _b, _c;
         return typeof this._ref === 'function'
-            ? (_b = lastElementForContextAndCallback
-                .get((_a = this._context) !== null && _a !== void 0 ? _a : globalThis)) === null || _b === void 0 ? void 0 : _b.get(this._ref)
-            : (_c = this._ref) === null || _c === void 0 ? void 0 : _c.value;
+            ? lastElementForContextAndCallback
+                .get(this._context ?? globalThis)
+                ?.get(this._ref)
+            : this._ref?.value;
     }
     disconnected() {
         // Only clear the box if our element is still the one in it (i.e. another
@@ -3282,7 +3364,7 @@ const ref = (0,_async_directive_js__WEBPACK_IMPORTED_MODULE_1__.directive)(RefDi
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "isServer": function() { return /* binding */ isServer; }
+/* harmony export */   isServer: function() { return /* binding */ isServer; }
 /* harmony export */ });
 /**
  * @license
@@ -3317,25 +3399,25 @@ const isServer = NODE_MODE;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "_$LH": function() { return /* binding */ _$LH; },
-/* harmony export */   "html": function() { return /* binding */ html; },
-/* harmony export */   "noChange": function() { return /* binding */ noChange; },
-/* harmony export */   "nothing": function() { return /* binding */ nothing; },
-/* harmony export */   "render": function() { return /* binding */ render; },
-/* harmony export */   "svg": function() { return /* binding */ svg; }
+/* harmony export */   _$LH: function() { return /* binding */ _$LH; },
+/* harmony export */   html: function() { return /* binding */ html; },
+/* harmony export */   mathml: function() { return /* binding */ mathml; },
+/* harmony export */   noChange: function() { return /* binding */ noChange; },
+/* harmony export */   nothing: function() { return /* binding */ nothing; },
+/* harmony export */   render: function() { return /* binding */ render; },
+/* harmony export */   svg: function() { return /* binding */ svg; }
 /* harmony export */ });
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var _a, _b, _c, _d;
 const DEV_MODE = true;
 const ENABLE_EXTRA_SECURITY_HOOKS = true;
 const ENABLE_SHADYDOM_NOPATCH = true;
 const NODE_MODE = false;
-// Use window for browser builds because IE11 doesn't have globalThis.
-const global = NODE_MODE ? globalThis : window;
+// Allows minifiers to rename references to globalThis
+const global = globalThis;
 /**
  * Useful for visualizing and logging insights into what the Lit template system is doing.
  *
@@ -3359,22 +3441,29 @@ const debugLogEvent = DEV_MODE
 let debugLogRenderId = 0;
 let issueWarning;
 if (DEV_MODE) {
-    (_a = global.litIssuedWarnings) !== null && _a !== void 0 ? _a : (global.litIssuedWarnings = new Set());
-    // Issue a warning, if we haven't already.
+    global.litIssuedWarnings ??= new Set();
+    /**
+     * Issue a warning if we haven't already, based either on `code` or `warning`.
+     * Warnings are disabled automatically only by `warning`; disabling via `code`
+     * can be done by users.
+     */
     issueWarning = (code, warning) => {
         warning += code
             ? ` See https://lit.dev/msg/${code} for more information.`
             : '';
-        if (!global.litIssuedWarnings.has(warning)) {
+        if (!global.litIssuedWarnings.has(warning) &&
+            !global.litIssuedWarnings.has(code)) {
             console.warn(warning);
             global.litIssuedWarnings.add(warning);
         }
     };
-    issueWarning('dev-mode', `Lit is in dev mode. Not recommended for production!`);
+    queueMicrotask(() => {
+        issueWarning('dev-mode', `Lit is in dev mode. Not recommended for production!`);
+    });
 }
 const wrap = ENABLE_SHADYDOM_NOPATCH &&
-    ((_b = global.ShadyDOM) === null || _b === void 0 ? void 0 : _b.inUse) &&
-    ((_c = global.ShadyDOM) === null || _c === void 0 ? void 0 : _c.noPatch) === true
+    global.ShadyDOM?.inUse &&
+    global.ShadyDOM?.noPatch === true
     ? global.ShadyDOM.wrap
     : (node) => node;
 const trustedTypes = global.trustedTypes;
@@ -3420,7 +3509,7 @@ const boundAttributeSuffix = '$lit$';
 // a valid element name and attribute name. We don't support dynamic names (yet)
 // but this at least ensures that the parse tree is closer to the template
 // intention.
-const marker = `lit$${String(Math.random()).slice(9)}$`;
+const marker = `lit$${Math.random().toFixed(9).slice(2)}$`;
 // String used to tell if a comment is a marker comment
 const markerMatch = '?' + marker;
 // Text used to insert a comment marker node. We use processing instruction
@@ -3434,12 +3523,12 @@ const d = NODE_MODE && global.document === undefined
     }
     : document;
 // Creates a dynamic marker. We never have to search for these in the DOM.
-const createMarker = (v = '') => d.createComment(v);
+const createMarker = () => d.createComment('');
 const isPrimitive = (value) => value === null || (typeof value != 'object' && typeof value != 'function');
 const isArray = Array.isArray;
 const isIterable = (value) => isArray(value) ||
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    typeof (value === null || value === void 0 ? void 0 : value[Symbol.iterator]) === 'function';
+    typeof value?.[Symbol.iterator] === 'function';
 const SPACE_CHAR = `[ \t\n\f\r]`;
 const ATTR_VALUE_CHAR = `[^ \t\n\f\r"'\`<>=]`;
 const NAME_CHAR = `[^\\s"'>=/]`;
@@ -3504,6 +3593,7 @@ const rawTextElement = /^(?:script|style|textarea|title)$/i;
 /** TemplateResult types */
 const HTML_RESULT = 1;
 const SVG_RESULT = 2;
+const MATHML_RESULT = 3;
 // TemplatePart types
 // IMPORTANT: these must match the values in PartType
 const ATTRIBUTE_PART = 1;
@@ -3524,6 +3614,15 @@ const tag = (type) => (strings, ...values) => {
     if (DEV_MODE && strings.some((s) => s === undefined)) {
         console.warn('Some template strings are undefined.\n' +
             'This is probably caused by illegal octal escape sequences.');
+    }
+    if (DEV_MODE) {
+        // Import static-html.js results in a circular dependency which g3 doesn't
+        // handle. Instead we know that static values must have the field
+        // `_$litStatic$`.
+        if (values.some((val) => val?.['_$litStatic$'])) {
+            issueWarning('', `Static values 'literal' or 'unsafeStatic' cannot be used as values to non-static templates.\n` +
+                `Please use the static 'html' tag function. See https://lit.dev/docs/templates/expressions/#static-expressions`);
+        }
     }
     return {
         // This property needs to remain unminified.
@@ -3547,8 +3646,8 @@ const tag = (type) => (strings, ...values) => {
  */
 const html = tag(HTML_RESULT);
 /**
- * Interprets a template literal as an SVG fragment that can efficiently
- * render to and update a container.
+ * Interprets a template literal as an SVG fragment that can efficiently render
+ * to and update a container.
  *
  * ```ts
  * const rect = svg`<rect width="10" height="10"></rect>`;
@@ -3567,9 +3666,35 @@ const html = tag(HTML_RESULT);
  *
  * In LitElement usage, it's invalid to return an SVG fragment from the
  * `render()` method, as the SVG fragment will be contained within the element's
- * shadow root and thus cannot be used within an `<svg>` HTML element.
+ * shadow root and thus not be properly contained within an `<svg>` HTML
+ * element.
  */
 const svg = tag(SVG_RESULT);
+/**
+ * Interprets a template literal as MathML fragment that can efficiently render
+ * to and update a container.
+ *
+ * ```ts
+ * const num = mathml`<mn>1</mn>`;
+ *
+ * const eq = html`
+ *   <math>
+ *     ${num}
+ *   </math>`;
+ * ```
+ *
+ * The `mathml` *tag function* should only be used for MathML fragments, or
+ * elements that would be contained **inside** a `<math>` HTML element. A common
+ * error is placing a `<math>` *element* in a template tagged with the `mathml`
+ * tag function. The `<math>` element is an HTML element and should be used
+ * within a template tagged with the {@linkcode html} tag function.
+ *
+ * In LitElement usage, it's invalid to return an MathML fragment from the
+ * `render()` method, as the MathML fragment will be contained within the
+ * element's shadow root and thus not be properly contained within a `<math>`
+ * HTML element.
+ */
+const mathml = tag(MATHML_RESULT);
 /**
  * A sentinel value that signals that a value was handled by a directive and
  * should not be written to the DOM.
@@ -3598,13 +3723,42 @@ const nothing = Symbol.for('lit-nothing');
 /**
  * The cache of prepared templates, keyed by the tagged TemplateStringsArray
  * and _not_ accounting for the specific template tag used. This means that
- * template tags cannot be dynamic - the must statically be one of html, svg,
+ * template tags cannot be dynamic - they must statically be one of html, svg,
  * or attr. This restriction simplifies the cache lookup, which is on the hot
  * path for rendering.
  */
 const templateCache = new WeakMap();
-const walker = d.createTreeWalker(d, 129 /* NodeFilter.SHOW_{ELEMENT|COMMENT} */, null, false);
+const walker = d.createTreeWalker(d, 129 /* NodeFilter.SHOW_{ELEMENT|COMMENT} */);
 let sanitizerFactoryInternal = noopSanitizer;
+function trustFromTemplateString(tsa, stringFromTSA) {
+    // A security check to prevent spoofing of Lit template results.
+    // In the future, we may be able to replace this with Array.isTemplateObject,
+    // though we might need to make that check inside of the html and svg
+    // functions, because precompiled templates don't come in as
+    // TemplateStringArray objects.
+    if (!isArray(tsa) || !tsa.hasOwnProperty('raw')) {
+        let message = 'invalid template strings array';
+        if (DEV_MODE) {
+            message = `
+          Internal Error: expected template strings to be an array
+          with a 'raw' field. Faking a template strings array by
+          calling html or svg like an ordinary function is effectively
+          the same as calling unsafeHtml and can lead to major security
+          issues, e.g. opening your code up to XSS attacks.
+          If you're using the html or svg tagged template functions normally
+          and still seeing this error, please file a bug at
+          https://github.com/lit/lit/issues/new?template=bug_report.md
+          and include information about your build tooling, if any.
+        `
+                .trim()
+                .replace(/\n */g, '\n');
+        }
+        throw new Error(message);
+    }
+    return policy !== undefined
+        ? policy.createHTML(stringFromTSA)
+        : stringFromTSA;
+}
 /**
  * Returns an HTML string for the given TemplateStringsArray and result type
  * (HTML or SVG), along with the case-sensitive bound attribute names in
@@ -3629,7 +3783,7 @@ const getTemplateHtml = (strings, type) => {
     // parts. ElementParts are also reflected in this array as undefined
     // rather than a string, to disambiguate from attribute bindings.
     const attrNames = [];
-    let html = type === SVG_RESULT ? '<svg>' : '';
+    let html = type === SVG_RESULT ? '<svg>' : type === MATHML_RESULT ? '<math>' : '';
     // When we're inside a raw text tag (not it's text content), the regex
     // will still be tagRegex so we can find attributes, but will switch to
     // this regex when the tag ends.
@@ -3686,7 +3840,7 @@ const getTemplateHtml = (strings, type) => {
                 if (match[ENTIRE_MATCH] === '>') {
                     // End of a tag. If we had started a raw-text element, use that
                     // regex
-                    regex = rawTextEndRegex !== null && rawTextEndRegex !== void 0 ? rawTextEndRegex : textEndRegex;
+                    regex = rawTextEndRegex ?? textEndRegex;
                     // We may be ending an unquoted attribute value, so make sure we
                     // clear any pending attrNameEndIndex
                     attrNameEndIndex = -1;
@@ -3752,49 +3906,18 @@ const getTemplateHtml = (strings, type) => {
                             s.slice(attrNameEndIndex)) +
                         marker +
                         end
-                    : s +
-                        marker +
-                        (attrNameEndIndex === -2 ? (attrNames.push(undefined), i) : end);
+                    : s + marker + (attrNameEndIndex === -2 ? i : end);
     }
-    const htmlResult = html + (strings[l] || '<?>') + (type === SVG_RESULT ? '</svg>' : '');
-    // A security check to prevent spoofing of Lit template results.
-    // In the future, we may be able to replace this with Array.isTemplateObject,
-    // though we might need to make that check inside of the html and svg
-    // functions, because precompiled templates don't come in as
-    // TemplateStringArray objects.
-    if (!Array.isArray(strings) || !strings.hasOwnProperty('raw')) {
-        let message = 'invalid template strings array';
-        if (DEV_MODE) {
-            message = `
-          Internal Error: expected template strings to be an array
-          with a 'raw' field. Faking a template strings array by
-          calling html or svg like an ordinary function is effectively
-          the same as calling unsafeHtml and can lead to major security
-          issues, e.g. opening your code up to XSS attacks.
-
-          If you're using the html or svg tagged template functions normally
-          and and still seeing this error, please file a bug at
-          https://github.com/lit/lit/issues/new?template=bug_report.md
-          and include information about your build tooling, if any.
-        `
-                .trim()
-                .replace(/\n */g, '\n');
-        }
-        throw new Error(message);
-    }
+    const htmlResult = html +
+        (strings[l] || '<?>') +
+        (type === SVG_RESULT ? '</svg>' : type === MATHML_RESULT ? '</math>' : '');
     // Returned as an array for terseness
-    return [
-        policy !== undefined
-            ? policy.createHTML(htmlResult)
-            : htmlResult,
-        attrNames,
-    ];
+    return [trustFromTemplateString(strings, htmlResult), attrNames];
 };
 class Template {
     constructor(
     // This property needs to remain unminified.
     { strings, ['_$litType$']: type }, options) {
-        /** @internal */
         this.parts = [];
         let node;
         let nodeIndex = 0;
@@ -3805,12 +3928,10 @@ class Template {
         const [html, attrNames] = getTemplateHtml(strings, type);
         this.el = Template.createElement(html, options);
         walker.currentNode = this.el.content;
-        // Reparent SVG nodes into template root
-        if (type === SVG_RESULT) {
-            const content = this.el.content;
-            const svgElement = content.firstChild;
-            svgElement.remove();
-            content.append(...svgElement.childNodes);
+        // Re-parent SVG or MathML nodes into template root
+        if (type === SVG_RESULT || type === MATHML_RESULT) {
+            const wrapper = this.el.content.firstChild;
+            wrapper.replaceWith(...wrapper.childNodes);
         }
         // Walk the template to find binding markers and create TemplateParts
         while ((node = walker.nextNode()) !== null && parts.length < partCount) {
@@ -3837,51 +3958,34 @@ class Template {
                 // increment the bindingIndex, and it'll be off by 1 in the element
                 // and off by two after it.
                 if (node.hasAttributes()) {
-                    // We defer removing bound attributes because on IE we might not be
-                    // iterating attributes in their template order, and would sometimes
-                    // remove an attribute that we still need to create a part for.
-                    const attrsToRemove = [];
                     for (const name of node.getAttributeNames()) {
-                        // `name` is the name of the attribute we're iterating over, but not
-                        // _neccessarily_ the name of the attribute we will create a part
-                        // for. They can be different in browsers that don't iterate on
-                        // attributes in source order. In that case the attrNames array
-                        // contains the attribute name we'll process next. We only need the
-                        // attribute name here to know if we should process a bound attribute
-                        // on this element.
-                        if (name.endsWith(boundAttributeSuffix) ||
-                            name.startsWith(marker)) {
+                        if (name.endsWith(boundAttributeSuffix)) {
                             const realName = attrNames[attrNameIndex++];
-                            attrsToRemove.push(name);
-                            if (realName !== undefined) {
-                                // Lowercase for case-sensitive SVG attributes like viewBox
-                                const value = node.getAttribute(realName.toLowerCase() + boundAttributeSuffix);
-                                const statics = value.split(marker);
-                                const m = /([.?@])?(.*)/.exec(realName);
-                                parts.push({
-                                    type: ATTRIBUTE_PART,
-                                    index: nodeIndex,
-                                    name: m[2],
-                                    strings: statics,
-                                    ctor: m[1] === '.'
-                                        ? PropertyPart
-                                        : m[1] === '?'
-                                            ? BooleanAttributePart
-                                            : m[1] === '@'
-                                                ? EventPart
-                                                : AttributePart,
-                                });
-                            }
-                            else {
-                                parts.push({
-                                    type: ELEMENT_PART,
-                                    index: nodeIndex,
-                                });
-                            }
+                            const value = node.getAttribute(name);
+                            const statics = value.split(marker);
+                            const m = /([.?@])?(.*)/.exec(realName);
+                            parts.push({
+                                type: ATTRIBUTE_PART,
+                                index: nodeIndex,
+                                name: m[2],
+                                strings: statics,
+                                ctor: m[1] === '.'
+                                    ? PropertyPart
+                                    : m[1] === '?'
+                                        ? BooleanAttributePart
+                                        : m[1] === '@'
+                                            ? EventPart
+                                            : AttributePart,
+                            });
+                            node.removeAttribute(name);
                         }
-                    }
-                    for (const name of attrsToRemove) {
-                        node.removeAttribute(name);
+                        else if (name.startsWith(marker)) {
+                            parts.push({
+                                type: ELEMENT_PART,
+                                index: nodeIndex,
+                            });
+                            node.removeAttribute(name);
+                        }
                     }
                 }
                 // TODO (justinfagnani): benchmark the regex against testing for each
@@ -3897,10 +4001,7 @@ class Template {
                             ? trustedTypes.emptyScript
                             : '';
                         // Generate a new text node for each literal section
-                        // These nodes are also used as the markers for node parts
-                        // We can't use empty text nodes as markers because they're
-                        // normalized when cloning in IE (could simplify when
-                        // IE is no longer supported)
+                        // These nodes are also used as the markers for child parts
                         for (let i = 0; i < lastIndex; i++) {
                             node.append(strings[i], createMarker());
                             // Walk past the marker node we just added
@@ -3932,13 +4033,35 @@ class Template {
             }
             nodeIndex++;
         }
-        debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-            kind: 'template prep',
-            template: this,
-            clonableTemplate: this.el,
-            parts: this.parts,
-            strings,
-        });
+        if (DEV_MODE) {
+            // If there was a duplicate attribute on a tag, then when the tag is
+            // parsed into an element the attribute gets de-duplicated. We can detect
+            // this mismatch if we haven't precisely consumed every attribute name
+            // when preparing the template. This works because `attrNames` is built
+            // from the template string and `attrNameIndex` comes from processing the
+            // resulting DOM.
+            if (attrNames.length !== attrNameIndex) {
+                throw new Error(`Detected duplicate attribute bindings. This occurs if your template ` +
+                    `has duplicate attributes on an element tag. For example ` +
+                    `"<input ?disabled=\${true} ?disabled=\${false}>" contains a ` +
+                    `duplicate "disabled" attribute. The error was detected in ` +
+                    `the following template: \n` +
+                    '`' +
+                    strings.join('${...}') +
+                    '`');
+            }
+        }
+        // We could set walker.currentNode to another node here to prevent a memory
+        // leak, but every time we prepare a template, we immediately render it
+        // and re-use the walker in new TemplateInstance._clone().
+        debugLogEvent &&
+            debugLogEvent({
+                kind: 'template prep',
+                template: this,
+                clonableTemplate: this.el,
+                parts: this.parts,
+                strings,
+            });
     }
     // Overridden via `litHtmlPolyfillSupport` to provide platform support.
     /** @nocollapse */
@@ -3949,23 +4072,21 @@ class Template {
     }
 }
 function resolveDirective(part, value, parent = part, attributeIndex) {
-    var _a, _b, _c;
-    var _d;
     // Bail early if the value is explicitly noChange. Note, this means any
     // nested directive is still attached and is not run.
     if (value === noChange) {
         return value;
     }
     let currentDirective = attributeIndex !== undefined
-        ? (_a = parent.__directives) === null || _a === void 0 ? void 0 : _a[attributeIndex]
+        ? parent.__directives?.[attributeIndex]
         : parent.__directive;
     const nextDirectiveConstructor = isPrimitive(value)
         ? undefined
         : // This property needs to remain unminified.
             value['_$litDirective$'];
-    if ((currentDirective === null || currentDirective === void 0 ? void 0 : currentDirective.constructor) !== nextDirectiveConstructor) {
+    if (currentDirective?.constructor !== nextDirectiveConstructor) {
         // This property needs to remain unminified.
-        (_b = currentDirective === null || currentDirective === void 0 ? void 0 : currentDirective['_$notifyDirectiveConnectionChanged']) === null || _b === void 0 ? void 0 : _b.call(currentDirective, false);
+        currentDirective?.['_$notifyDirectiveConnectionChanged']?.(false);
         if (nextDirectiveConstructor === undefined) {
             currentDirective = undefined;
         }
@@ -3974,7 +4095,7 @@ function resolveDirective(part, value, parent = part, attributeIndex) {
             currentDirective._$initialize(part, parent, attributeIndex);
         }
         if (attributeIndex !== undefined) {
-            ((_c = (_d = parent).__directives) !== null && _c !== void 0 ? _c : (_d.__directives = []))[attributeIndex] =
+            (parent.__directives ??= [])[attributeIndex] =
                 currentDirective;
         }
         else {
@@ -3992,8 +4113,7 @@ function resolveDirective(part, value, parent = part, attributeIndex) {
  */
 class TemplateInstance {
     constructor(template, parent) {
-        /** @internal */
-        this._parts = [];
+        this._$parts = [];
         /** @internal */
         this._$disconnectableChildren = undefined;
         this._$template = template;
@@ -4010,9 +4130,8 @@ class TemplateInstance {
     // This method is separate from the constructor because we need to return a
     // DocumentFragment and we don't want to hold onto it with an instance field.
     _clone(options) {
-        var _a;
         const { el: { content }, parts: parts, } = this._$template;
-        const fragment = ((_a = options === null || options === void 0 ? void 0 : options.creationScope) !== null && _a !== void 0 ? _a : d).importNode(content, true);
+        const fragment = (options?.creationScope ?? d).importNode(content, true);
         walker.currentNode = fragment;
         let node = walker.nextNode();
         let nodeIndex = 0;
@@ -4030,28 +4149,33 @@ class TemplateInstance {
                 else if (templatePart.type === ELEMENT_PART) {
                     part = new ElementPart(node, this, options);
                 }
-                this._parts.push(part);
+                this._$parts.push(part);
                 templatePart = parts[++partIndex];
             }
-            if (nodeIndex !== (templatePart === null || templatePart === void 0 ? void 0 : templatePart.index)) {
+            if (nodeIndex !== templatePart?.index) {
                 node = walker.nextNode();
                 nodeIndex++;
             }
         }
+        // We need to set the currentNode away from the cloned tree so that we
+        // don't hold onto the tree even if the tree is detached and should be
+        // freed.
+        walker.currentNode = d;
         return fragment;
     }
     _update(values) {
         let i = 0;
-        for (const part of this._parts) {
+        for (const part of this._$parts) {
             if (part !== undefined) {
-                debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                    kind: 'set part',
-                    part,
-                    value: values[i],
-                    valueIndex: i,
-                    values,
-                    templateInstance: this,
-                });
+                debugLogEvent &&
+                    debugLogEvent({
+                        kind: 'set part',
+                        part,
+                        value: values[i],
+                        valueIndex: i,
+                        values,
+                        templateInstance: this,
+                    });
                 if (part.strings !== undefined) {
                     part._$setValue(values, part, i);
                     // The number of values the part consumes is part.strings.length - 1
@@ -4068,8 +4192,14 @@ class TemplateInstance {
     }
 }
 class ChildPart {
+    // See comment in Disconnectable interface for why this is a getter
+    get _$isConnected() {
+        // ChildParts that are not at the root should always be created with a
+        // parent; only RootChildNode's won't, so they return the local isConnected
+        // state
+        return this._$parent?._$isConnected ?? this.__isConnected;
+    }
     constructor(startNode, endNode, parent, options) {
-        var _a;
         this.type = CHILD_PART;
         this._$committedValue = nothing;
         // The following fields will be patched onto ChildParts when required by
@@ -4083,19 +4213,11 @@ class ChildPart {
         // Note __isConnected is only ever accessed on RootParts (i.e. when there is
         // no _$parent); the value on a non-root-part is "don't care", but checking
         // for parent would be more code
-        this.__isConnected = (_a = options === null || options === void 0 ? void 0 : options.isConnected) !== null && _a !== void 0 ? _a : true;
+        this.__isConnected = options?.isConnected ?? true;
         if (ENABLE_EXTRA_SECURITY_HOOKS) {
             // Explicitly initialize for consistent class shape.
             this._textSanitizer = undefined;
         }
-    }
-    // See comment in Disconnectable interface for why this is a getter
-    get _$isConnected() {
-        var _a, _b;
-        // ChildParts that are not at the root should always be created with a
-        // parent; only RootChildNode's won't, so they return the local isConnected
-        // state
-        return (_b = (_a = this._$parent) === null || _a === void 0 ? void 0 : _a._$isConnected) !== null && _b !== void 0 ? _b : this.__isConnected;
     }
     /**
      * The parent node into which the part renders its content.
@@ -4119,7 +4241,7 @@ class ChildPart {
         let parentNode = wrap(this._$startNode).parentNode;
         const parent = this._$parent;
         if (parent !== undefined &&
-            parentNode.nodeType === 11 /* Node.DOCUMENT_FRAGMENT */) {
+            parentNode?.nodeType === 11 /* Node.DOCUMENT_FRAGMENT */) {
             // If the parentNode is a DocumentFragment, it may be because the DOM is
             // still in the cloned fragment during initial render; if so, get the real
             // parentNode the part will be committed into by asking the parent.
@@ -4142,7 +4264,6 @@ class ChildPart {
         return this._$endNode;
     }
     _$setValue(value, directiveParent = this) {
-        var _a;
         if (DEV_MODE && this.parentNode === null) {
             throw new Error(`This \`ChildPart\` has no \`parentNode\` and therefore cannot accept a value. This likely means the element containing the part was manipulated in an unsupported way outside of Lit's control such that the part's marker nodes were ejected from DOM. For example, setting the element's \`innerHTML\` or \`textContent\` can do this.`);
         }
@@ -4153,13 +4274,14 @@ class ChildPart {
             // fallback content.
             if (value === nothing || value == null || value === '') {
                 if (this._$committedValue !== nothing) {
-                    debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                        kind: 'commit nothing to child',
-                        start: this._$startNode,
-                        end: this._$endNode,
-                        parent: this._$parent,
-                        options: this.options,
-                    });
+                    debugLogEvent &&
+                        debugLogEvent({
+                            kind: 'commit nothing to child',
+                            start: this._$startNode,
+                            end: this._$endNode,
+                            parent: this._$parent,
+                            options: this.options,
+                        });
                     this._$clear();
                 }
                 this._$committedValue = nothing;
@@ -4173,7 +4295,7 @@ class ChildPart {
             this._commitTemplateResult(value);
         }
         else if (value.nodeType !== undefined) {
-            if (DEV_MODE && ((_a = this.options) === null || _a === void 0 ? void 0 : _a.host) === value) {
+            if (DEV_MODE && this.options?.host === value) {
                 this._commitText(`[probable mistake: rendered a template's host in itself ` +
                     `(commonly caused by writing \${this} in a template]`);
                 console.warn(`Attempted to render the template host`, value, `inside itself. This is almost always a mistake, and in dev mode `, `we render some warning text. In production however, we'll `, `render it, which will usually result in an error, and sometimes `, `in the element disappearing from the DOM.`);
@@ -4189,16 +4311,15 @@ class ChildPart {
             this._commitText(value);
         }
     }
-    _insert(node, ref = this._$endNode) {
-        return wrap(wrap(this._$startNode).parentNode).insertBefore(node, ref);
+    _insert(node) {
+        return wrap(wrap(this._$startNode).parentNode).insertBefore(node, this._$endNode);
     }
     _commitNode(value) {
-        var _a;
         if (this._$committedValue !== value) {
             this._$clear();
             if (ENABLE_EXTRA_SECURITY_HOOKS &&
                 sanitizerFactoryInternal !== noopSanitizer) {
-                const parentNodeName = (_a = this._$startNode.parentNode) === null || _a === void 0 ? void 0 : _a.nodeName;
+                const parentNodeName = this._$startNode.parentNode?.nodeName;
                 if (parentNodeName === 'STYLE' || parentNodeName === 'SCRIPT') {
                     let message = 'Forbidden';
                     if (DEV_MODE) {
@@ -4208,7 +4329,7 @@ class ChildPart {
                                     `This is a security risk, as style injection attacks can ` +
                                     `exfiltrate data and spoof UIs. ` +
                                     `Consider instead using css\`...\` literals ` +
-                                    `to compose styles, and make do dynamic styling with ` +
+                                    `to compose styles, and do dynamic styling with ` +
                                     `css custom properties, ::parts, <slot>s, ` +
                                     `and by mutating the DOM rather than stylesheets.`;
                         }
@@ -4222,13 +4343,14 @@ class ChildPart {
                     throw new Error(message);
                 }
             }
-            debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                kind: 'commit node',
-                start: this._$startNode,
-                parent: this._$parent,
-                value: value,
-                options: this.options,
-            });
+            debugLogEvent &&
+                debugLogEvent({
+                    kind: 'commit node',
+                    start: this._$startNode,
+                    parent: this._$parent,
+                    value: value,
+                    options: this.options,
+                });
             this._$committedValue = this._insert(value);
         }
     }
@@ -4245,17 +4367,18 @@ class ChildPart {
                 }
                 value = this._textSanitizer(value);
             }
-            debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                kind: 'commit text',
-                node,
-                value,
-                options: this.options,
-            });
+            debugLogEvent &&
+                debugLogEvent({
+                    kind: 'commit text',
+                    node,
+                    value,
+                    options: this.options,
+                });
             node.data = value;
         }
         else {
             if (ENABLE_EXTRA_SECURITY_HOOKS) {
-                const textNode = document.createTextNode('');
+                const textNode = d.createTextNode('');
                 this._commitNode(textNode);
                 // When setting text content, for security purposes it matters a lot
                 // what the parent is. For example, <style> and <script> need to be
@@ -4265,28 +4388,29 @@ class ChildPart {
                     this._textSanitizer = createSanitizer(textNode, 'data', 'property');
                 }
                 value = this._textSanitizer(value);
-                debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                    kind: 'commit text',
-                    node: textNode,
-                    value,
-                    options: this.options,
-                });
+                debugLogEvent &&
+                    debugLogEvent({
+                        kind: 'commit text',
+                        node: textNode,
+                        value,
+                        options: this.options,
+                    });
                 textNode.data = value;
             }
             else {
                 this._commitNode(d.createTextNode(value));
-                debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                    kind: 'commit text',
-                    node: wrap(this._$startNode).nextSibling,
-                    value,
-                    options: this.options,
-                });
+                debugLogEvent &&
+                    debugLogEvent({
+                        kind: 'commit text',
+                        node: wrap(this._$startNode).nextSibling,
+                        value,
+                        options: this.options,
+                    });
             }
         }
         this._$committedValue = value;
     }
     _commitTemplateResult(result) {
-        var _a;
         // This property needs to remain unminified.
         const { values, ['_$litType$']: type } = result;
         // If $litType$ is a number, result is a plain TemplateResult and we get
@@ -4296,41 +4420,44 @@ class ChildPart {
         const template = typeof type === 'number'
             ? this._$getTemplate(result)
             : (type.el === undefined &&
-                (type.el = Template.createElement(type.h, this.options)),
+                (type.el = Template.createElement(trustFromTemplateString(type.h, type.h[0]), this.options)),
                 type);
-        if (((_a = this._$committedValue) === null || _a === void 0 ? void 0 : _a._$template) === template) {
-            debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                kind: 'template updating',
-                template,
-                instance: this._$committedValue,
-                parts: this._$committedValue._parts,
-                options: this.options,
-                values,
-            });
+        if (this._$committedValue?._$template === template) {
+            debugLogEvent &&
+                debugLogEvent({
+                    kind: 'template updating',
+                    template,
+                    instance: this._$committedValue,
+                    parts: this._$committedValue._$parts,
+                    options: this.options,
+                    values,
+                });
             this._$committedValue._update(values);
         }
         else {
             const instance = new TemplateInstance(template, this);
             const fragment = instance._clone(this.options);
-            debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                kind: 'template instantiated',
-                template,
-                instance,
-                parts: instance._parts,
-                options: this.options,
-                fragment,
-                values,
-            });
+            debugLogEvent &&
+                debugLogEvent({
+                    kind: 'template instantiated',
+                    template,
+                    instance,
+                    parts: instance._$parts,
+                    options: this.options,
+                    fragment,
+                    values,
+                });
             instance._update(values);
-            debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                kind: 'template instantiated and updated',
-                template,
-                instance,
-                parts: instance._parts,
-                options: this.options,
-                fragment,
-                values,
-            });
+            debugLogEvent &&
+                debugLogEvent({
+                    kind: 'template instantiated and updated',
+                    template,
+                    instance,
+                    parts: instance._$parts,
+                    options: this.options,
+                    fragment,
+                    values,
+                });
             this._commitNode(fragment);
             this._$committedValue = instance;
         }
@@ -4397,8 +4524,7 @@ class ChildPart {
      * @internal
      */
     _$clear(start = wrap(this._$startNode).nextSibling, from) {
-        var _a;
-        (_a = this._$notifyConnectionChanged) === null || _a === void 0 ? void 0 : _a.call(this, false, true, from);
+        this._$notifyConnectionChanged?.(false, true, from);
         while (start && start !== this._$endNode) {
             const n = wrap(start).nextSibling;
             wrap(start).remove();
@@ -4406,17 +4532,16 @@ class ChildPart {
         }
     }
     /**
-     * Implementation of RootPart's `isConnected`. Note that this metod
+     * Implementation of RootPart's `isConnected`. Note that this method
      * should only be called on `RootPart`s (the `ChildPart` returned from a
      * top-level `render()` call). It has no effect on non-root ChildParts.
      * @param isConnected Whether to set
      * @internal
      */
     setConnected(isConnected) {
-        var _a;
         if (this._$parent === undefined) {
             this.__isConnected = isConnected;
-            (_a = this._$notifyConnectionChanged) === null || _a === void 0 ? void 0 : _a.call(this, isConnected);
+            this._$notifyConnectionChanged?.(isConnected);
         }
         else if (DEV_MODE) {
             throw new Error('part.setConnected() may only be called on a ' +
@@ -4425,6 +4550,13 @@ class ChildPart {
     }
 }
 class AttributePart {
+    get tagName() {
+        return this.element.tagName;
+    }
+    // See comment in Disconnectable interface for why this is a getter
+    get _$isConnected() {
+        return this._$parent._$isConnected;
+    }
     constructor(element, name, strings, parent, options) {
         this.type = ATTRIBUTE_PART;
         /** @internal */
@@ -4445,13 +4577,6 @@ class AttributePart {
         if (ENABLE_EXTRA_SECURITY_HOOKS) {
             this._sanitizer = undefined;
         }
-    }
-    get tagName() {
-        return this.element.tagName;
-    }
-    // See comment in Disconnectable interface for why this is a getter
-    get _$isConnected() {
-        return this._$parent._$isConnected;
     }
     /**
      * Sets the value of this part by resolving the value from possibly multiple
@@ -4500,12 +4625,13 @@ class AttributePart {
                     // If the user-provided value is `noChange`, use the previous value
                     v = this._$committedValue[i];
                 }
-                change || (change = !isPrimitive(v) || v !== this._$committedValue[i]);
+                change ||=
+                    !isPrimitive(v) || v !== this._$committedValue[i];
                 if (v === nothing) {
                     value = nothing;
                 }
                 else if (value !== nothing) {
-                    value += (v !== null && v !== void 0 ? v : '') + strings[i + 1];
+                    value += (v ?? '') + strings[i + 1];
                 }
                 // We always record each value, even if one is `nothing`, for future
                 // change detection.
@@ -4526,16 +4652,17 @@ class AttributePart {
                 if (this._sanitizer === undefined) {
                     this._sanitizer = sanitizerFactoryInternal(this.element, this.name, 'attribute');
                 }
-                value = this._sanitizer(value !== null && value !== void 0 ? value : '');
+                value = this._sanitizer(value ?? '');
             }
-            debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-                kind: 'commit attribute',
-                element: this.element,
-                name: this.name,
-                value,
-                options: this.options,
-            });
-            wrap(this.element).setAttribute(this.name, (value !== null && value !== void 0 ? value : ''));
+            debugLogEvent &&
+                debugLogEvent({
+                    kind: 'commit attribute',
+                    element: this.element,
+                    name: this.name,
+                    value,
+                    options: this.options,
+                });
+            wrap(this.element).setAttribute(this.name, (value ?? ''));
         }
     }
 }
@@ -4552,24 +4679,18 @@ class PropertyPart extends AttributePart {
             }
             value = this._sanitizer(value);
         }
-        debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-            kind: 'commit property',
-            element: this.element,
-            name: this.name,
-            value,
-            options: this.options,
-        });
+        debugLogEvent &&
+            debugLogEvent({
+                kind: 'commit property',
+                element: this.element,
+                name: this.name,
+                value,
+                options: this.options,
+            });
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         this.element[this.name] = value === nothing ? undefined : value;
     }
 }
-// Temporary workaround for https://crbug.com/993268
-// Currently, any attribute starting with "on" is considered to be a
-// TrustedScript source. Such boolean attributes must be set to the equivalent
-// trusted emptyScript value.
-const emptyStringForBooleanAttribute = trustedTypes
-    ? trustedTypes.emptyScript
-    : '';
 class BooleanAttributePart extends AttributePart {
     constructor() {
         super(...arguments);
@@ -4577,19 +4698,15 @@ class BooleanAttributePart extends AttributePart {
     }
     /** @internal */
     _commitValue(value) {
-        debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-            kind: 'commit boolean attribute',
-            element: this.element,
-            name: this.name,
-            value: !!(value && value !== nothing),
-            options: this.options,
-        });
-        if (value && value !== nothing) {
-            wrap(this.element).setAttribute(this.name, emptyStringForBooleanAttribute);
-        }
-        else {
-            wrap(this.element).removeAttribute(this.name);
-        }
+        debugLogEvent &&
+            debugLogEvent({
+                kind: 'commit boolean attribute',
+                element: this.element,
+                name: this.name,
+                value: !!(value && value !== nothing),
+                options: this.options,
+            });
+        wrap(this.element).toggleAttribute(this.name, !!value && value !== nothing);
     }
 }
 class EventPart extends AttributePart {
@@ -4606,9 +4723,8 @@ class EventPart extends AttributePart {
     // since the dirty checking is more complex
     /** @internal */
     _$setValue(newListener, directiveParent = this) {
-        var _a;
         newListener =
-            (_a = resolveDirective(this, newListener, directiveParent, 0)) !== null && _a !== void 0 ? _a : nothing;
+            resolveDirective(this, newListener, directiveParent, 0) ?? nothing;
         if (newListener === noChange) {
             return;
         }
@@ -4626,31 +4742,28 @@ class EventPart extends AttributePart {
         // to add the part as a listener.
         const shouldAddListener = newListener !== nothing &&
             (oldListener === nothing || shouldRemoveListener);
-        debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-            kind: 'commit event listener',
-            element: this.element,
-            name: this.name,
-            value: newListener,
-            options: this.options,
-            removeListener: shouldRemoveListener,
-            addListener: shouldAddListener,
-            oldListener,
-        });
+        debugLogEvent &&
+            debugLogEvent({
+                kind: 'commit event listener',
+                element: this.element,
+                name: this.name,
+                value: newListener,
+                options: this.options,
+                removeListener: shouldRemoveListener,
+                addListener: shouldAddListener,
+                oldListener,
+            });
         if (shouldRemoveListener) {
             this.element.removeEventListener(this.name, this, oldListener);
         }
         if (shouldAddListener) {
-            // Beware: IE11 and Chrome 41 don't like using the listener as the
-            // options object. Figure out how to deal w/ this in IE11 - maybe
-            // patch addEventListener?
             this.element.addEventListener(this.name, this, newListener);
         }
         this._$committedValue = newListener;
     }
     handleEvent(event) {
-        var _a, _b;
         if (typeof this._$committedValue === 'function') {
-            this._$committedValue.call((_b = (_a = this.options) === null || _a === void 0 ? void 0 : _a.host) !== null && _b !== void 0 ? _b : this.element, event);
+            this._$committedValue.call(this.options?.host ?? this.element, event);
         }
         else {
             this._$committedValue.handleEvent(event);
@@ -4671,12 +4784,13 @@ class ElementPart {
         return this._$parent._$isConnected;
     }
     _$setValue(value) {
-        debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-            kind: 'commit to element binding',
-            element: this.element,
-            value,
-            options: this.options,
-        });
+        debugLogEvent &&
+            debugLogEvent({
+                kind: 'commit to element binding',
+                element: this.element,
+                value,
+                options: this.options,
+            });
         resolveDirective(this, value);
     }
 }
@@ -4687,7 +4801,7 @@ class ElementPart {
  * external users.
  *
  * We currently do not make a mangled rollup build of the lit-ssr code. In order
- * to keep a number of (otherwise private) top-level exports  mangled in the
+ * to keep a number of (otherwise private) top-level exports mangled in the
  * client side code, we export a _$LH object containing those members (or
  * helper methods for accessing private fields of those members), and then
  * re-export them for use in lit-ssr. This keeps lit-ssr agnostic to whether the
@@ -4705,11 +4819,10 @@ const _$LH = {
     _markerMatch: markerMatch,
     _HTML_RESULT: HTML_RESULT,
     _getTemplateHtml: getTemplateHtml,
-    // Used in hydrate
+    // Used in tests and private-ssr-support
     _TemplateInstance: TemplateInstance,
     _isIterable: isIterable,
     _resolveDirective: resolveDirective,
-    // Used in tests and private-ssr-support
     _ChildPart: ChildPart,
     _AttributePart: AttributePart,
     _BooleanAttributePart: BooleanAttributePart,
@@ -4721,13 +4834,15 @@ const _$LH = {
 const polyfillSupport = DEV_MODE
     ? global.litHtmlPolyfillSupportDevMode
     : global.litHtmlPolyfillSupport;
-polyfillSupport === null || polyfillSupport === void 0 ? void 0 : polyfillSupport(Template, ChildPart);
+polyfillSupport?.(Template, ChildPart);
 // IMPORTANT: do not change the property name or the assignment expression.
 // This line will be used in regexes to search for lit-html usage.
-((_d = global.litHtmlVersions) !== null && _d !== void 0 ? _d : (global.litHtmlVersions = [])).push('2.4.0');
+(global.litHtmlVersions ??= []).push('3.3.0');
 if (DEV_MODE && global.litHtmlVersions.length > 1) {
-    issueWarning('multiple-versions', `Multiple versions of Lit loaded. ` +
-        `Loading multiple versions is not recommended.`);
+    queueMicrotask(() => {
+        issueWarning('multiple-versions', `Multiple versions of Lit loaded. ` +
+            `Loading multiple versions is not recommended.`);
+    });
 }
 /**
  * Renders a value, usually a lit-html TemplateResult, to the container.
@@ -4755,7 +4870,6 @@ if (DEV_MODE && global.litHtmlVersions.length > 1) {
  * {@link https://lit.dev/docs/libraries/standalone-templates/#rendering-lit-html-templates| Rendering Lit HTML Templates}
  */
 const render = (value, container, options) => {
-    var _a, _b;
     if (DEV_MODE && container == null) {
         // Give a clearer error message than
         //     Uncaught TypeError: Cannot read properties of null (reading
@@ -4764,33 +4878,35 @@ const render = (value, container, options) => {
         throw new TypeError(`The container to render into may not be ${container}`);
     }
     const renderId = DEV_MODE ? debugLogRenderId++ : 0;
-    const partOwnerNode = (_a = options === null || options === void 0 ? void 0 : options.renderBefore) !== null && _a !== void 0 ? _a : container;
+    const partOwnerNode = options?.renderBefore ?? container;
     // This property needs to remain unminified.
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let part = partOwnerNode['_$litPart$'];
-    debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-        kind: 'begin render',
-        id: renderId,
-        value,
-        container,
-        options,
-        part,
-    });
+    debugLogEvent &&
+        debugLogEvent({
+            kind: 'begin render',
+            id: renderId,
+            value,
+            container,
+            options,
+            part,
+        });
     if (part === undefined) {
-        const endNode = (_b = options === null || options === void 0 ? void 0 : options.renderBefore) !== null && _b !== void 0 ? _b : null;
+        const endNode = options?.renderBefore ?? null;
         // This property needs to remain unminified.
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        partOwnerNode['_$litPart$'] = part = new ChildPart(container.insertBefore(createMarker(), endNode), endNode, undefined, options !== null && options !== void 0 ? options : {});
+        partOwnerNode['_$litPart$'] = part = new ChildPart(container.insertBefore(createMarker(), endNode), endNode, undefined, options ?? {});
     }
     part._$setValue(value);
-    debugLogEvent === null || debugLogEvent === void 0 ? void 0 : debugLogEvent({
-        kind: 'end render',
-        id: renderId,
-        value,
-        container,
-        options,
-        part,
-    });
+    debugLogEvent &&
+        debugLogEvent({
+            kind: 'end render',
+            id: renderId,
+            value,
+            container,
+            options,
+            part,
+        });
     return part;
 };
 if (ENABLE_EXTRA_SECURITY_HOOKS) {
@@ -4813,15 +4929,16 @@ if (ENABLE_EXTRA_SECURITY_HOOKS) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "customElement": function() { return /* reexport safe */ _lit_reactive_element_decorators_custom_element_js__WEBPACK_IMPORTED_MODULE_0__.customElement; },
-/* harmony export */   "eventOptions": function() { return /* reexport safe */ _lit_reactive_element_decorators_event_options_js__WEBPACK_IMPORTED_MODULE_3__.eventOptions; },
-/* harmony export */   "property": function() { return /* reexport safe */ _lit_reactive_element_decorators_property_js__WEBPACK_IMPORTED_MODULE_1__.property; },
-/* harmony export */   "query": function() { return /* reexport safe */ _lit_reactive_element_decorators_query_js__WEBPACK_IMPORTED_MODULE_4__.query; },
-/* harmony export */   "queryAll": function() { return /* reexport safe */ _lit_reactive_element_decorators_query_all_js__WEBPACK_IMPORTED_MODULE_5__.queryAll; },
-/* harmony export */   "queryAssignedElements": function() { return /* reexport safe */ _lit_reactive_element_decorators_query_assigned_elements_js__WEBPACK_IMPORTED_MODULE_7__.queryAssignedElements; },
-/* harmony export */   "queryAssignedNodes": function() { return /* reexport safe */ _lit_reactive_element_decorators_query_assigned_nodes_js__WEBPACK_IMPORTED_MODULE_8__.queryAssignedNodes; },
-/* harmony export */   "queryAsync": function() { return /* reexport safe */ _lit_reactive_element_decorators_query_async_js__WEBPACK_IMPORTED_MODULE_6__.queryAsync; },
-/* harmony export */   "state": function() { return /* reexport safe */ _lit_reactive_element_decorators_state_js__WEBPACK_IMPORTED_MODULE_2__.state; }
+/* harmony export */   customElement: function() { return /* reexport safe */ _lit_reactive_element_decorators_custom_element_js__WEBPACK_IMPORTED_MODULE_0__.customElement; },
+/* harmony export */   eventOptions: function() { return /* reexport safe */ _lit_reactive_element_decorators_event_options_js__WEBPACK_IMPORTED_MODULE_3__.eventOptions; },
+/* harmony export */   property: function() { return /* reexport safe */ _lit_reactive_element_decorators_property_js__WEBPACK_IMPORTED_MODULE_1__.property; },
+/* harmony export */   query: function() { return /* reexport safe */ _lit_reactive_element_decorators_query_js__WEBPACK_IMPORTED_MODULE_4__.query; },
+/* harmony export */   queryAll: function() { return /* reexport safe */ _lit_reactive_element_decorators_query_all_js__WEBPACK_IMPORTED_MODULE_5__.queryAll; },
+/* harmony export */   queryAssignedElements: function() { return /* reexport safe */ _lit_reactive_element_decorators_query_assigned_elements_js__WEBPACK_IMPORTED_MODULE_7__.queryAssignedElements; },
+/* harmony export */   queryAssignedNodes: function() { return /* reexport safe */ _lit_reactive_element_decorators_query_assigned_nodes_js__WEBPACK_IMPORTED_MODULE_8__.queryAssignedNodes; },
+/* harmony export */   queryAsync: function() { return /* reexport safe */ _lit_reactive_element_decorators_query_async_js__WEBPACK_IMPORTED_MODULE_6__.queryAsync; },
+/* harmony export */   standardProperty: function() { return /* reexport safe */ _lit_reactive_element_decorators_property_js__WEBPACK_IMPORTED_MODULE_1__.standardProperty; },
+/* harmony export */   state: function() { return /* reexport safe */ _lit_reactive_element_decorators_state_js__WEBPACK_IMPORTED_MODULE_2__.state; }
 /* harmony export */ });
 /* harmony import */ var _lit_reactive_element_decorators_custom_element_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lit/reactive-element/decorators/custom-element.js */ "./node_modules/@lit/reactive-element/development/decorators/custom-element.js");
 /* harmony import */ var _lit_reactive_element_decorators_property_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @lit/reactive-element/decorators/property.js */ "./node_modules/@lit/reactive-element/development/decorators/property.js");
@@ -4846,8 +4963,8 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createRef": function() { return /* reexport safe */ lit_html_directives_ref_js__WEBPACK_IMPORTED_MODULE_0__.createRef; },
-/* harmony export */   "ref": function() { return /* reexport safe */ lit_html_directives_ref_js__WEBPACK_IMPORTED_MODULE_0__.ref; }
+/* harmony export */   createRef: function() { return /* reexport safe */ lit_html_directives_ref_js__WEBPACK_IMPORTED_MODULE_0__.createRef; },
+/* harmony export */   ref: function() { return /* reexport safe */ lit_html_directives_ref_js__WEBPACK_IMPORTED_MODULE_0__.ref; }
 /* harmony export */ });
 /* harmony import */ var lit_html_directives_ref_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-html/directives/ref.js */ "./node_modules/lit-html/development/directives/ref.js");
 
@@ -4864,25 +4981,25 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CSSResult": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.CSSResult; },
-/* harmony export */   "LitElement": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.LitElement; },
-/* harmony export */   "ReactiveElement": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.ReactiveElement; },
-/* harmony export */   "UpdatingElement": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.UpdatingElement; },
-/* harmony export */   "_$LE": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__._$LE; },
-/* harmony export */   "_$LH": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__._$LH; },
-/* harmony export */   "adoptStyles": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.adoptStyles; },
-/* harmony export */   "css": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.css; },
-/* harmony export */   "defaultConverter": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.defaultConverter; },
-/* harmony export */   "getCompatibleStyle": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.getCompatibleStyle; },
-/* harmony export */   "html": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.html; },
-/* harmony export */   "isServer": function() { return /* reexport safe */ lit_html_is_server_js__WEBPACK_IMPORTED_MODULE_3__.isServer; },
-/* harmony export */   "noChange": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.noChange; },
-/* harmony export */   "notEqual": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.notEqual; },
-/* harmony export */   "nothing": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.nothing; },
-/* harmony export */   "render": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.render; },
-/* harmony export */   "supportsAdoptingStyleSheets": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.supportsAdoptingStyleSheets; },
-/* harmony export */   "svg": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.svg; },
-/* harmony export */   "unsafeCSS": function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.unsafeCSS; }
+/* harmony export */   CSSResult: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.CSSResult; },
+/* harmony export */   LitElement: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.LitElement; },
+/* harmony export */   ReactiveElement: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.ReactiveElement; },
+/* harmony export */   _$LE: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__._$LE; },
+/* harmony export */   _$LH: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__._$LH; },
+/* harmony export */   adoptStyles: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.adoptStyles; },
+/* harmony export */   css: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.css; },
+/* harmony export */   defaultConverter: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.defaultConverter; },
+/* harmony export */   getCompatibleStyle: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.getCompatibleStyle; },
+/* harmony export */   html: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.html; },
+/* harmony export */   isServer: function() { return /* reexport safe */ lit_html_is_server_js__WEBPACK_IMPORTED_MODULE_3__.isServer; },
+/* harmony export */   mathml: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.mathml; },
+/* harmony export */   noChange: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.noChange; },
+/* harmony export */   notEqual: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.notEqual; },
+/* harmony export */   nothing: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.nothing; },
+/* harmony export */   render: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.render; },
+/* harmony export */   supportsAdoptingStyleSheets: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.supportsAdoptingStyleSheets; },
+/* harmony export */   svg: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.svg; },
+/* harmony export */   unsafeCSS: function() { return /* reexport safe */ lit_element_lit_element_js__WEBPACK_IMPORTED_MODULE_2__.unsafeCSS; }
 /* harmony export */ });
 /* harmony import */ var _lit_reactive_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lit/reactive-element */ "./node_modules/@lit/reactive-element/development/reactive-element.js");
 /* harmony import */ var lit_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lit-html */ "./node_modules/lit-html/development/lit-html.js");
@@ -4890,6 +5007,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html_is_server_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lit-html/is-server.js */ "./node_modules/lit-html/development/is-server.js");
 
 //# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./src/components/Comment.vue":
+/*!************************************!*\
+  !*** ./src/components/Comment.vue ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
+/* harmony import */ var _Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Comment.vue?vue&type=script&lang=ts */ "./src/components/Comment.vue?vue&type=script&lang=ts");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/components/Comment.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ __webpack_exports__["default"] = (__exports__);
+
+/***/ }),
+
+/***/ "./src/components/Comment.vue?vue&type=script&lang=ts":
+/*!************************************************************!*\
+  !*** ./src/components/Comment.vue?vue&type=script&lang=ts ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__["default"]; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=script&lang=ts */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts");
+ 
+
+/***/ }),
+
+/***/ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
+/*!**************************************************************************!*\
+  !*** ./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
+  \**************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
 
 
 /***/ })
