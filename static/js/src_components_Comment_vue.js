@@ -1,6 +1,190 @@
 "use strict";
 (self["webpackChunkaurora"] = self["webpackChunkaurora"] || []).push([["src_components_Comment_vue"],{
 
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
+/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
+/* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
+/* harmony import */ var giscus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! giscus */ "./node_modules/giscus/dist/giscus.mjs");
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_1__.defineComponent)({
+  name: 'ObComment',
+  props: {
+    /** Used for create issue title by giscus */
+    title: {
+      type: String,
+      default: ''
+    },
+    /** Used for create issue body content by giscus */
+    body: {
+      type: String,
+      default: ''
+    },
+    /** Unique ID used by giscus */
+    uid: {
+      type: String,
+      default: ''
+    }
+  },
+  components: {
+    SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_2__.SubTitle
+  },
+  setup(props) {
+    const postTitle = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).title;
+    const postBody = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).body;
+    const postUid = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).uid;
+    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_0__.useAppStore)();
+    const postStore = (0,_stores_post__WEBPACK_IMPORTED_MODULE_3__.usePostStore)();
+    const enabledComment = (postTitle, postBody, postUid) => {
+      /**
+       * Generate the data needed for giscus to generate the issue.
+       */
+      // const title = !postTitle || postTitle === '' ? '' : postTitle
+      // const body =
+      //   !postBody || postBody === ''
+      //     ? window.location.href
+      //     : `${window.location.href} \n ${postBody}`
+      // const uid =
+      //   appStore.themeConfig.plugins.giscus.id === 'pathname'
+      //     ? window.location.pathname
+      //     : postUid
+      /**
+       * Caching the current post data, used
+       * when config changes on render updates.
+       */
+      postStore.setCache({
+        title: postTitle,
+        body: postBody,
+        uid: postUid
+      });
+      if (!appStore.configReady) return;
+    };
+    /** Wait for config is ready */
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.watch)(() => appStore.configReady, (newValue, oldValue) => {
+      if (!oldValue && newValue) {
+        const cachePost = postStore.cachePost;
+        enabledComment(cachePost.title, cachePost.body, cachePost.uid);
+      }
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(() => {
+      enabledComment(postTitle.value, postBody.value, postUid.value);
+    });
+    return {
+      giscusProps: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => ({
+        ...appStore.themeConfig.plugins.giscus
+      })),
+      theme: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => appStore.theme === 'theme-dark' ? 'dark' : 'light')
+    };
+  }
+}));
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: function() { return /* binding */ render; }
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
+
+const _hoisted_1 = {
+  class: "bg-ob-deep-800 p-4 mt-8 lg:px-14 lg:py-10 rounded-2xl shadow-xl mb-8 lg:mb-0"
+};
+const _hoisted_2 = ["repo", "repoId", "category", "categoryId", "mapping", "reactionsEnabled", "emitMetadata", "theme", "lang", "crossorigin", "inputPosition", "loading"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_SubTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SubTitle");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubTitle, {
+    title: 'titles.comment'
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("giscus-widget", {
+    id: "comments",
+    repo: _ctx.giscusProps.repo,
+    repoId: _ctx.giscusProps.repoId,
+    category: _ctx.giscusProps.category,
+    categoryId: _ctx.giscusProps.categoryId,
+    mapping: _ctx.giscusProps.mapping,
+    reactionsEnabled: _ctx.giscusProps.reactionsEnabled,
+    emitMetadata: _ctx.giscusProps.emitMetadata,
+    theme: _ctx.theme,
+    lang: _ctx.giscusProps.lang,
+    crossorigin: _ctx.giscusProps.crossorigin,
+    inputPosition: _ctx.giscusProps.inputPosition,
+    loading: _ctx.giscusProps.loading
+  }, null, 8 /* PROPS */, _hoisted_2)]);
+}
+
+/***/ }),
+
+/***/ "./src/components/Comment.vue":
+/*!************************************!*\
+  !*** ./src/components/Comment.vue ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
+/* harmony import */ var _Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Comment.vue?vue&type=script&lang=ts */ "./src/components/Comment.vue?vue&type=script&lang=ts");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/components/Comment.vue"]])
+/* hot reload */
+if (false) // removed by dead control flow
+{}
+
+
+/* harmony default export */ __webpack_exports__["default"] = (__exports__);
+
+/***/ }),
+
+/***/ "./src/components/Comment.vue?vue&type=script&lang=ts":
+/*!************************************************************!*\
+  !*** ./src/components/Comment.vue?vue&type=script&lang=ts ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__["default"]; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=script&lang=ts */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts");
+ 
+
+/***/ }),
+
+/***/ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
+/*!**************************************************************************!*\
+  !*** ./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
+  \**************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
+
+
+/***/ }),
+
 /***/ "./node_modules/@lit/reactive-element/development/css-tag.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@lit/reactive-element/development/css-tag.js ***!
@@ -395,7 +579,7 @@ const standardProperty = (options = defaultPropertyDeclaration, target, context)
             set(v) {
                 const oldValue = target.get.call(this);
                 target.set.call(this, v);
-                this.requestUpdate(name, oldValue, options);
+                this.requestUpdate(name, oldValue, options, true, v);
             },
             init(v) {
                 if (v !== undefined) {
@@ -410,7 +594,7 @@ const standardProperty = (options = defaultPropertyDeclaration, target, context)
         return function (value) {
             const oldValue = this[name];
             target.call(this, value);
-            this.requestUpdate(name, oldValue, options);
+            this.requestUpdate(name, oldValue, options, true, value);
         };
     }
     throw new Error(`Unsupported decorator location: ${kind}`);
@@ -803,7 +987,7 @@ function query(selector, cache) {
             //      in the case of experimental decorators on fields.
             const { get, set } = typeof nameOrContext === 'object'
                 ? protoOrTarget
-                : descriptor ??
+                : (descriptor ??
                     (() => {
                         const key = DEV_MODE
                             ? Symbol(`${String(nameOrContext)} (@query() cache)`)
@@ -816,7 +1000,7 @@ function query(selector, cache) {
                                 this[key] = v;
                             },
                         };
-                    })();
+                    })());
             return (0,_base_js__WEBPACK_IMPORTED_MODULE_0__.desc)(protoOrTarget, nameOrContext, {
                 get() {
                     let result = get.call(this);
@@ -1577,11 +1761,12 @@ class ReactiveElement
                     : defaultConverter;
             // mark state reflecting
             this.__reflectingProperty = propName;
+            const convertedValue = converter.fromAttribute(value, options.type);
             this[propName] =
-                converter.fromAttribute(value, options.type) ??
+                convertedValue ??
                     this.__defaultValues?.get(propName) ??
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    null;
+                    convertedValue;
             // mark state not reflecting
             this.__reflectingProperty = null;
         }
@@ -1598,16 +1783,24 @@ class ReactiveElement
      * @param oldValue old value of requesting property
      * @param options property options to use instead of the previously
      *     configured options
+     * @param useNewValue if true, the newValue argument is used instead of
+     *     reading the property value. This is important to use if the reactive
+     *     property is a standard private accessor, as opposed to a plain
+     *     property, since private members can't be dynamically read by name.
+     * @param newValue the new value of the property. This is only used if
+     *     `useNewValue` is true.
      * @category updates
      */
-    requestUpdate(name, oldValue, options) {
+    requestUpdate(name, oldValue, options, useNewValue = false, newValue) {
         // If we have a property key, perform property update steps.
         if (name !== undefined) {
             if (DEV_MODE && name instanceof Event) {
                 issueWarning(``, `The requestUpdate() method was called with an Event as the property name. This is probably a mistake caused by binding this.requestUpdate as an event listener. Instead bind a function that will call it with no arguments: () => this.requestUpdate()`);
             }
             const ctor = this.constructor;
-            const newValue = this[name];
+            if (useNewValue === false) {
+                newValue = this[name];
+            }
             options ??= ctor.getPropertyOptions(name);
             const changed = (options.hasChanged ?? notEqual)(newValue, oldValue) ||
                 // When there is no change, check a corner case that can occur when
@@ -2016,7 +2209,7 @@ if (DEV_MODE) {
 }
 // IMPORTANT: do not change the property name or the assignment expression.
 // This line will be used in regexes to search for ReactiveElement usage.
-(global.reactiveElementVersions ??= []).push('2.1.0');
+(global.reactiveElementVersions ??= []).push('2.1.2');
 if (DEV_MODE && global.reactiveElementVersions.length > 1) {
     queueMicrotask(() => {
         issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +
@@ -2024,135 +2217,6 @@ if (DEV_MODE && global.reactiveElementVersions.length > 1) {
     });
 }
 //# sourceMappingURL=reactive-element.js.map
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts ***!
-  \***************************************************************************************************************************************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
-/* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
-/* harmony import */ var giscus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! giscus */ "./node_modules/giscus/dist/giscus.mjs");
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_1__.defineComponent)({
-  name: 'ObComment',
-  props: {
-    /** Used for create issue title by giscus */
-    title: {
-      type: String,
-      default: ''
-    },
-    /** Used for create issue body content by giscus */
-    body: {
-      type: String,
-      default: ''
-    },
-    /** Unique ID used by giscus */
-    uid: {
-      type: String,
-      default: ''
-    }
-  },
-  components: {
-    SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_2__.SubTitle
-  },
-  setup(props) {
-    const postTitle = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).title;
-    const postBody = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).body;
-    const postUid = (0,vue__WEBPACK_IMPORTED_MODULE_1__.toRefs)(props).uid;
-    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_0__.useAppStore)();
-    const postStore = (0,_stores_post__WEBPACK_IMPORTED_MODULE_3__.usePostStore)();
-    const enabledComment = (postTitle, postBody, postUid) => {
-      /**
-       * Generate the data needed for giscus to generate the issue.
-       */
-      // const title = !postTitle || postTitle === '' ? '' : postTitle
-      // const body =
-      //   !postBody || postBody === ''
-      //     ? window.location.href
-      //     : `${window.location.href} \n ${postBody}`
-      // const uid =
-      //   appStore.themeConfig.plugins.giscus.id === 'pathname'
-      //     ? window.location.pathname
-      //     : postUid
-      /**
-       * Caching the current post data, used
-       * when config changes on render updates.
-       */
-      postStore.setCache({
-        title: postTitle,
-        body: postBody,
-        uid: postUid
-      });
-      if (!appStore.configReady) return;
-    };
-    /** Wait for config is ready */
-    (0,vue__WEBPACK_IMPORTED_MODULE_1__.watch)(() => appStore.configReady, (newValue, oldValue) => {
-      if (!oldValue && newValue) {
-        const cachePost = postStore.cachePost;
-        enabledComment(cachePost.title, cachePost.body, cachePost.uid);
-      }
-    });
-    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(() => {
-      enabledComment(postTitle.value, postBody.value, postUid.value);
-    });
-    return {
-      giscusProps: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => ({
-        ...appStore.themeConfig.plugins.giscus
-      })),
-      theme: (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(() => appStore.theme === 'theme-dark' ? 'dark' : 'light')
-    };
-  }
-}));
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: function() { return /* binding */ render; }
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-
-const _hoisted_1 = {
-  class: "bg-ob-deep-800 p-4 mt-8 lg:px-14 lg:py-10 rounded-2xl shadow-xl mb-8 lg:mb-0"
-};
-const _hoisted_2 = ["repo", "repoId", "category", "categoryId", "mapping", "reactionsEnabled", "emitMetadata", "theme", "lang", "crossorigin", "inputPosition", "loading"];
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_SubTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SubTitle");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubTitle, {
-    title: 'titles.comment'
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("giscus-widget", {
-    id: "comments",
-    repo: _ctx.giscusProps.repo,
-    repoId: _ctx.giscusProps.repoId,
-    category: _ctx.giscusProps.category,
-    categoryId: _ctx.giscusProps.categoryId,
-    mapping: _ctx.giscusProps.mapping,
-    reactionsEnabled: _ctx.giscusProps.reactionsEnabled,
-    emitMetadata: _ctx.giscusProps.emitMetadata,
-    theme: _ctx.theme,
-    lang: _ctx.giscusProps.lang,
-    crossorigin: _ctx.giscusProps.crossorigin,
-    inputPosition: _ctx.giscusProps.inputPosition,
-    loading: _ctx.giscusProps.loading
-  }, null, 8 /* PROPS */, _hoisted_2)]);
-}
 
 /***/ }),
 
@@ -2675,7 +2739,7 @@ const _$LE = {
 };
 // IMPORTANT: do not change the property name or the assignment expression.
 // This line will be used in regexes to search for LitElement usage.
-(global.litElementVersions ??= []).push('4.2.0');
+(global.litElementVersions ??= []).push('4.2.2');
 if (DEV_MODE && global.litElementVersions.length > 1) {
     queueMicrotask(() => {
         issueWarning('multiple-versions', `Multiple versions of Lit loaded. Loading multiple versions ` +
@@ -3132,19 +3196,18 @@ const setCommittedValue = (part, value = RESET_VALUE) => (part._$committedValue 
  */
 const getCommittedValue = (part) => part._$committedValue;
 /**
- * Removes a ChildPart from the DOM, including any of its content.
+ * Removes a ChildPart from the DOM, including any of its content and markers.
+ *
+ * Note: The only difference between this and clearPart() is that this also
+ * removes the part's start node. This means that the ChildPart must own its
+ * start node, ie it must be a marker node specifically for this part and not an
+ * anchor from surrounding content.
  *
  * @param part The Part to remove
  */
 const removePart = (part) => {
-    part._$notifyConnectionChanged?.(false, true);
-    let start = part._$startNode;
-    const end = wrap(part._$endNode).nextSibling;
-    while (start !== end) {
-        const n = wrap(start).nextSibling;
-        wrap(start).remove();
-        start = n;
-    }
+    part._$clear();
+    part._$startNode.remove();
 };
 const clearPart = (part) => {
     part._$clear();
@@ -4518,14 +4581,17 @@ class ChildPart {
      * @param start Start node to clear from, for clearing a subset of the part's
      *     DOM (used when truncating iterables)
      * @param from  When `start` is specified, the index within the iterable from
-     *     which ChildParts are being removed, used for disconnecting directives in
-     *     those Parts.
+     *     which ChildParts are being removed, used for disconnecting directives
+     *     in those Parts.
      *
      * @internal
      */
     _$clear(start = wrap(this._$startNode).nextSibling, from) {
         this._$notifyConnectionChanged?.(false, true, from);
-        while (start && start !== this._$endNode) {
+        while (start !== this._$endNode) {
+            // The non-null assertion is safe because if _$startNode.nextSibling is
+            // null, then _$endNode is also null, and we would not have entered this
+            // loop.
             const n = wrap(start).nextSibling;
             wrap(start).remove();
             start = n;
@@ -4837,7 +4903,7 @@ const polyfillSupport = DEV_MODE
 polyfillSupport?.(Template, ChildPart);
 // IMPORTANT: do not change the property name or the assignment expression.
 // This line will be used in regexes to search for lit-html usage.
-(global.litHtmlVersions ??= []).push('3.3.0');
+(global.litHtmlVersions ??= []).push('3.3.2');
 if (DEV_MODE && global.litHtmlVersions.length > 1) {
     queueMicrotask(() => {
         issueWarning('multiple-versions', `Multiple versions of Lit loaded. ` +
@@ -5007,60 +5073,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lit_html_is_server_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lit-html/is-server.js */ "./node_modules/lit-html/development/is-server.js");
 
 //# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ "./src/components/Comment.vue":
-/*!************************************!*\
-  !*** ./src/components/Comment.vue ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
-/* harmony import */ var _Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Comment.vue?vue&type=script&lang=ts */ "./src/components/Comment.vue?vue&type=script&lang=ts");
-/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/components/Comment.vue"]])
-/* hot reload */
-if (false) {}
-
-
-/* harmony default export */ __webpack_exports__["default"] = (__exports__);
-
-/***/ }),
-
-/***/ "./src/components/Comment.vue?vue&type=script&lang=ts":
-/*!************************************************************!*\
-  !*** ./src/components/Comment.vue?vue&type=script&lang=ts ***!
-  \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__["default"]; }
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=script&lang=ts */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=script&lang=ts");
- 
-
-/***/ }),
-
-/***/ "./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true":
-/*!**************************************************************************!*\
-  !*** ./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true ***!
-  \**************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: function() { return /* reexport safe */ _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__.render; }
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Comment_vue_vue_type_template_id_133ed8df_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Comment.vue?vue&type=template&id=133ed8df&ts=true */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Comment.vue?vue&type=template&id=133ed8df&ts=true");
 
 
 /***/ })

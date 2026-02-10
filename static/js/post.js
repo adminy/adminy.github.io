@@ -12,16 +12,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_Post_class__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/models/Post.class */ "./src/models/Post.class.ts");
 /* harmony import */ var _stores_post__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/stores/post */ "./src/stores/post.ts");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
-/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
-/* harmony import */ var _components_Comment_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/Comment.vue */ "./src/components/Comment.vue");
-/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
-/* harmony import */ var _components_ArticleCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/components/ArticleCard */ "./src/components/ArticleCard/index.ts");
-/* harmony import */ var _styles_prism_aurora_future_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/styles/prism-aurora-future.css */ "./src/styles/prism-aurora-future.css");
-/* harmony import */ var _styles_prism_aurora_future_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_prism_aurora_future_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _stores_meta__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/stores/meta */ "./src/stores/meta.ts");
-/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
-/* harmony import */ var _stores_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/stores/common */ "./src/stores/common.ts");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.mjs");
+/* harmony import */ var _components_Comment_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/components/Comment.vue */ "./src/components/Comment.vue");
+/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/components/Title */ "./src/components/Title/index.ts");
+/* harmony import */ var _components_ArticleCard__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/components/ArticleCard */ "./src/components/ArticleCard/index.ts");
+/* harmony import */ var _styles_prism_aurora_future_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/styles/prism-aurora-future.css */ "./src/styles/prism-aurora-future.css");
+/* harmony import */ var _styles_prism_aurora_future_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_prism_aurora_future_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _stores_meta__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/stores/meta */ "./src/stores/meta.ts");
+/* harmony import */ var _stores_app__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/stores/app */ "./src/stores/app.ts");
+/* harmony import */ var _stores_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/stores/common */ "./src/stores/common.ts");
 
 
 
@@ -40,20 +40,20 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Sidebar: _components_Sidebar__WEBPACK_IMPORTED_MODULE_0__.Sidebar,
     Toc: _components_Sidebar__WEBPACK_IMPORTED_MODULE_0__.Toc,
-    Comment: _components_Comment_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_5__.SubTitle,
-    Article: _components_ArticleCard__WEBPACK_IMPORTED_MODULE_6__.Article,
+    Comment: _components_Comment_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+    SubTitle: _components_Title__WEBPACK_IMPORTED_MODULE_7__.SubTitle,
+    Article: _components_ArticleCard__WEBPACK_IMPORTED_MODULE_8__.Article,
     Profile: _components_Sidebar__WEBPACK_IMPORTED_MODULE_0__.Profile
   },
   setup() {
-    const metaStore = (0,_stores_meta__WEBPACK_IMPORTED_MODULE_8__.useMetaStore)();
+    const metaStore = (0,_stores_meta__WEBPACK_IMPORTED_MODULE_10__.useMetaStore)();
     const postStore = (0,_stores_post__WEBPACK_IMPORTED_MODULE_2__.usePostStore)();
-    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_9__.useAppStore)();
-    const commonStore = (0,_stores_common__WEBPACK_IMPORTED_MODULE_10__.useCommonStore)();
-    const route = (0,vue_router__WEBPACK_IMPORTED_MODULE_11__.useRoute)();
+    const appStore = (0,_stores_app__WEBPACK_IMPORTED_MODULE_11__.useAppStore)();
+    const commonStore = (0,_stores_common__WEBPACK_IMPORTED_MODULE_12__.useCommonStore)();
+    const route = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.useRoute)();
     const {
       t
-    } = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_12__.useI18n)();
+    } = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_5__.useI18n)();
     const post = (0,vue__WEBPACK_IMPORTED_MODULE_3__.ref)(new _models_Post_class__WEBPACK_IMPORTED_MODULE_1__.Post());
     const loading = (0,vue__WEBPACK_IMPORTED_MODULE_3__.ref)(true);
     const fetchData = async () => {
@@ -241,10 +241,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       key: tag.slug
     }, [_cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("em", {
       class: "opacity-50"
-    }, "#", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tag.name), 1 /* TEXT */)]);
+    }, "#", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tag.name), 1 /* TEXT */)]);
   }), 128 /* KEYED_FRAGMENT */)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_7, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", {
     class: "opacity-50"
-  }, "#", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.t('settings.default-tag')), 1 /* TEXT */)]))])]), _ctx.post.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h1", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.post.title), 1 /* TEXT */)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_ob_skeleton, {
+  }, "#", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.t('settings.default-tag')), 1 /* TEXT */)]))])]), _ctx.post.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h1", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.post.title), 1 /* TEXT */)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_ob_skeleton, {
     key: 1,
     class: "post-title text-white uppercase",
     width: "100%",
@@ -277,11 +277,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.post.count_time.symbolsCount), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: _ctx.editUrl,
     target: "_blank"
-  }, _cache[4] || (_cache[4] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  }, [...(_cache[4] || (_cache[4] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     class: "pl-2 opacity-70"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     class: "fa fa-pen-nib"
-  })], -1 /* HOISTED */)]), 8 /* PROPS */, _hoisted_19)])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_svg_icon, {
+  })], -1 /* CACHED */)]))], 8 /* PROPS */, _hoisted_19)])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_svg_icon, {
     "icon-class": "clock"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ob_skeleton, {
     width: "40px",
@@ -308,13 +308,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     height: "36px",
     width: "150px",
     class: "mb-6"
-  }), _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ob_skeleton, {
+  }), _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ob_skeleton, {
     tag: "div",
     count: 35,
     height: "16px",
     width: "100px",
     class: "mr-2"
-  }), _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */)), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ob_skeleton, {
+  }), _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* CACHED */)), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ob_skeleton, {
     tag: "div",
     count: 25,
     height: "16px",
@@ -371,27 +371,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --background: #1a1a1a;\n  -
 
 /***/ }),
 
-/***/ "./src/styles/prism-aurora-future.css":
-/*!********************************************!*\
-  !*** ./src/styles/prism-aurora-future.css ***!
-  \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-14.use[1]!../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-14.use[2]!./prism-aurora-future.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-14.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-14.use[2]!./src/styles/prism-aurora-future.css");
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(/*! !../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js")["default"])
-var update = add("99627364", content, false, {"sourceMap":false,"shadowMode":false});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
 /***/ "./src/views/Post.vue":
 /*!****************************!*\
   !*** ./src/views/Post.vue ***!
@@ -410,7 +389,8 @@ __webpack_require__.r(__webpack_exports__);
 ;
 const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Post_vue_vue_type_script_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Post_vue_vue_type_template_id_66b2084c_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/views/Post.vue"]])
 /* hot reload */
-if (false) {}
+if (false) // removed by dead control flow
+{}
 
 
 /* harmony default export */ __webpack_exports__["default"] = (__exports__);
@@ -446,6 +426,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_ts_loader_index_js_clonedRuleSet_41_use_1_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Post_vue_vue_type_template_id_66b2084c_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js!../../node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Post.vue?vue&type=template&id=66b2084c&ts=true */ "./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/views/Post.vue?vue&type=template&id=66b2084c&ts=true");
 
+
+/***/ }),
+
+/***/ "./src/styles/prism-aurora-future.css":
+/*!********************************************!*\
+  !*** ./src/styles/prism-aurora-future.css ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-14.use[1]!../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-14.use[2]!./prism-aurora-future.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-14.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-14.use[2]!./src/styles/prism-aurora-future.css");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(/*! !../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js")["default"])
+var update = add("99627364", content, false, {"sourceMap":false,"shadowMode":false});
+// Hot Module Replacement
+if(false) // removed by dead control flow
+{}
 
 /***/ })
 
