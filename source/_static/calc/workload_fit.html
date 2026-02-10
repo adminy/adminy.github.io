@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Data Workload Fit, Throughput & Cost Estimator</title>
+<style>
+  body { font-family: sans-serif; margin: 20px; }
+  h1, h2, h3 { margin-bottom: 8px; }
+  table { border-collapse: collapse; margin-top: 10px; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: right; }
+  th { background: #f5f5f5; }
+  .section { margin-bottom: 24px; }
+  .tableBox { border: 1px solid #ccc; padding: 10px; margin: 8px 0; }
+  .label { display: inline-block; width: 180px; text-align: left; }
+  input[type="number"], select { width: 120px; }
+  button { margin-top: 4px; }
+  .opRow { border: 1px solid #ddd; padding: 6px; margin: 4px 0; }
+  .badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .badge-pos { background-color: #d4edda; color: #155724; }
+  .badge-neg { background-color: #f8d7da; color: #721c24; }
+  .badge-zero { background-color: #e2e3e5; color: #383d41; }
+</style>
+</head>
+<body>
+
+<h1>Data Workload Fit, Throughput & Cost Estimator</h1>
+
+<div class="section">
+  <h2>Tables</h2>
+  <button onclick="addTable()">Add Table</button>
+  <div id="tables"></div>
+</div>
+
+<div class="section">
+  <h2>Pipeline</h2>
+  <p>Operations run in sequence. First operation chooses a base table. Joins are left‑deep: pipeline output joins with a chosen table.</p>
+  <button onclick="addOperation()">Add Operation</button>
+  <div id="pipeline"></div>
+</div>
+
+<div class="section">
+  <h2>Execution Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="text-align:left;">Final rows</td><td id="sumRows"></td></tr>
+      <tr><td style="text-align:left;">Final row size (bytes)</td><td id="sumRowSize"></td></tr>
+      <tr><td style="text-align:left;">Final size (GB)</td><td id="sumSizeGB"></td></tr>
+      <tr><td style="text-align:left;">Total bytes processed (GB)</td><td id="sumBytesGB"></td></tr>
+      <tr><td style="text-align:left;">Baseline runtime (seconds)</td><td id="sumRuntime"></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>Service startup, memory margin & cost (EUR)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Startup time</th>
+        <th>Memory margin</th>
+        <th>Runtime</th>
+        <th>Cost (EUR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:left;">AWS Lambda</td>
+        <td id="startupLambda"></td>
+        <td id="marginLambda"></td>
+        <td id="rtLambda"></td>
+        <td id="costLambda"></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">ECS Fargate</td>
+        <td id="startupECS"></td>
+        <td id="marginECS"></td>
+        <td id="rtECS"></td>
+        <td id="costECS"></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">AWS Glue</td>
+        <td id="startupGlue"></td>
+        <td id="marginGlue"></td>
+        <td id="rtGlue"></td>
+        <td id="costGlue"></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">EMR Serverless</td>
+        <td id="startupEMR"></td>
+        <td id="marginEMR"></td>
+        <td id="rtEMR"></td>
+        <td id="costEMR"></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">EC2 Spot</td>
+        <td id="startupSpot"></td>
+        <td id="marginSpot"></td>
+        <td id="rtSpot"></td>
+        <td id="costSpot"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+let nextTableId = 1;
+let nextOpId = 1;
+
+const USD_TO_EUR = 0.92;
+
+const THROUGHPUT = {
+  scanMBps: 400,
+  filterMBps: 300,
+  projMBps: 400,
+  joinRowsPs: 1e6,
+  groupRowsPs: 2e6,
+  sortRowsPerMin: 1e8
+};
+
+const PRICING = {
+  lambdaGBs: 0.00001667,
+  ecsVcpuHour: 0.04048,
+  ecsGBHour: 0.004445,
+  glueDPUHour: 0.44,
+  emrVcpuSec: 0.000011,
+  emrGBSec: 0.000001,
+  spotHour: 0.40
+};
+
+const SERVICE_MODELS = {
+  lambda: {
+    startupSec: 0.7,
+    limitSec: 900,
+    mult: { scan: 0.7, filter: 0.7, projection: 0.7, join: 0.5, groupby: 0.6, sort: 0.5 }
+  },
+  ecs: {
+    startupSec: 10,
+    limitSec: Infinity,
+    mult: { scan: 1.0, filter: 1.0, projection: 1.0, join: 1.0, groupby: 1.0, sort: 1.0 }
+  },
+  glue: {
+    startupSec: 180,
+    limitSec: Infinity,
+    mult: { scan: 0.4, filter: 0.4, projection: 0.4, join: 0.3, groupby: 0.4, sort: 0.3 }
+  },
+  emr: {
+    startupSec: 60,
+    limitSec: Infinity,
+    mult: { scan: 0.5, filter: 0.5, projection: 0.5, join: 0.4, groupby: 0.5, sort: 0.4 }
+  },
+  spot: {
+    startupSec: 2,
+    limitSec: Infinity,
+    mult: { scan: 1.2, filter: 1.2, projection: 1.2, join: 1.3, groupby: 1.2, sort: 1.1 }
+  }
+};
+
+function fmt(n) {
+  if (!isFinite(n) || n < 0) return "0";
+  if (n >= 1e9) return (n/1e9).toFixed(2) + "B";
+  if (n >= 1e6) return (n/1e6).toFixed(2) + "M";
+  if (n >= 1e3) return (n/1e3).toFixed(2) + "K";
+  return n.toFixed(2);
+}
+
+function fmtInt(n) {
+  if (!isFinite(n) || n < 0) return "0";
+  if (n >= 1e9) return (n/1e9).toFixed(2) + "B";
+  if (n >= 1e6) return (n/1e6).toFixed(2) + "M";
+  if (n >= 1e3) return (n/1e3).toFixed(2) + "K";
+  return n.toFixed(0);
+}
+
+function fmtTime(sec) {
+  if (sec < 60) return sec.toFixed(1) + " s";
+  if (sec < 3600) return (sec / 60).toFixed(1) + " min";
+  return (sec / 3600).toFixed(1) + " h";
+}
+
+function fmtGBMargin(bytes) {
+  const gb = bytes / 1e9;
+  const abs = Math.abs(gb);
+  let val = abs >= 0.1 ? abs.toFixed(1) : abs.toFixed(2);
+  if (gb > 0) return `<span class="badge badge-pos">+${val} GB</span>`;
+  if (gb < 0) return `<span class="badge badge-neg">-${val} GB</span>`;
+  return `<span class="badge badge-zero">0 GB</span>`;
+}
+
+function fmtNegativeTimeBadge(secOver) {
+  return `<span class="badge badge-neg">-${fmtTime(secOver)}</span>`;
+}
+
+function addTable() {
+  const id = nextTableId++;
+  const div = document.createElement("div");
+  div.className = "tableBox";
+  div.dataset.tableId = id;
+  div.innerHTML = `
+    <h3>
+      Table ${id}
+      <button style="float:right;" onclick="removeTable(${id})">Remove</button>
+    </h3>
+    <div><span class="label">Columns:</span>
+      <input type="number" id="cols-${id}" value="20" min="1" max="500" oninput="updateAll()">
+    </div>
+    <div><span class="label">Column size (bytes):</span>
+      <input type="number" id="colSize-${id}" value="20" min="1" max="1000" oninput="updateAll()">
+    </div>
+    <div><span class="label">Rows:</span>
+      <input type="number" id="rows-${id}" value="20000000" min="1" step="1000000" oninput="updateAll()">
+    </div>
+    <div><span class="label">Row size (bytes):</span>
+      <span id="rowSize-${id}"></span>
+    </div>
+    <div><span class="label">Table size (GB):</span>
+      <span id="tableSize-${id}"></span>
+    </div>
+  `;
+  document.getElementById("tables").appendChild(div);
+  refreshTableSelectors();
+  updateAll();
+}
+
+function removeTable(id) {
+  const el = document.querySelector(`.tableBox[data-table-id='${id}']`);
+  if (el) el.remove();
+  refreshTableSelectors();
+  updateAll();
+}
+
+function refreshTableSelectors() {
+  const tables = Array.from(document.querySelectorAll(".tableBox")).map(t => t.dataset.tableId);
+  const selects = document.querySelectorAll(".tableSelect");
+  selects.forEach(sel => {
+    const current = sel.value;
+    sel.innerHTML = "";
+    tables.forEach(id => {
+      const opt = document.createElement("option");
+      opt.value = id;
+      opt.textContent = "Table " + id;
+      sel.appendChild(opt);
+    });
+    if (current && tables.includes(current)) sel.value = current;
+  });
+}
+
+function addOperation() {
+  const id = nextOpId++;
+  const div = document.createElement("div");
+  div.className = "opRow";
+  div.dataset.opId = id;
+  div.innerHTML = `
+    <div>
+      <strong>Op ${id}</strong>
+      <button style="float:right;" onclick="removeOperation(${id})">Remove</button>
+    </div>
+    <div>
+      <span class="label">Type:</span>
+      <select id="opType-${id}" onchange="renderOpFields(${id}); updateAll();">
+        <option value="filter">Filter</option>
+        <option value="projection">Projection</option>
+        <option value="join">Join</option>
+        <option value="groupby">Group-by</option>
+        <option value="sort">Sort</option>
+      </select>
+    </div>
+    <div id="opFields-${id}"></div>
+  `;
+  document.getElementById("pipeline").appendChild(div);
+  renderOpFields(id);
+  updateAll();
+}
+
+function removeOperation(id) {
+  const el = document.querySelector(`.opRow[data-op-id='${id}']`);
+  if (el) el.remove();
+  updateAll();
+}
+
+function renderOpFields(id) {
+  const type = document.getElementById("opType-" + id).value;
+  const container = document.getElementById("opFields-" + id);
+  let html = "";
+  const firstOp = document.querySelector(".opRow");
+  const isFirst = firstOp && firstOp.dataset.opId === id.toString();
+  if (isFirst) {
+    html += `<div><span class="label">Base table:</span>
+      <select id="opBase-${id}" class="tableSelect" onchange="updateAll()"></select></div>`;
+  }
+  if (type === "filter") {
+    html += `<div><span class="label">Selectivity (% rows kept):</span>
+      <input type="number" id="opSel-${id}" value="50" min="1" max="100" oninput="updateAll()"></div>`;
+  } else if (type === "projection") {
+    html += `<div><span class="label">Columns kept:</span>
+      <input type="number" id="opColsKeep-${id}" value="10" min="1" max="500" oninput="updateAll()"></div>`;
+  } else if (type === "join") {
+    html += `<div><span class="label">Right table:</span>
+      <select id="opRightTable-${id}" class="tableSelect" onchange="updateAll()"></select></div>`;
+  } else if (type === "groupby") {
+    html += `<div><span class="label">Group-by cardinality (rows):</span>
+      <input type="number" id="opCard-${id}" value="1000000" min="1" step="1000" oninput="updateAll()"></div>`;
+  } else if (type === "sort") {
+    html += `<div><span class="label">Sort key columns:</span>
+      <input type="number" id="opSortCols-${id}" value="1" min="1" max="50" oninput="updateAll()"></div>`;
+  }
+  container.innerHTML = html;
+  refreshTableSelectors();
+}
+
+function getTableState(id) {
+  const cols = +document.getElementById("cols-" + id)?.value || 0;
+  const colSize = +document.getElementById("colSize-" + id)?.value || 0;
+  const rows = +document.getElementById("rows-" + id)?.value || 0;
+  const rowSize = cols * colSize;
+  const sizeBytes = rows * rowSize;
+  return { cols, colSize, rows, rowSize, sizeBytes };
+}
+
+function updateTablesDisplay() {
+  document.querySelectorAll(".tableBox").forEach(tbl => {
+    const id = tbl.dataset.tableId;
+    const t = getTableState(id);
+    const rowSizeEl = document.getElementById("rowSize-" + id);
+    const tableSizeEl = document.getElementById("tableSize-" + id);
+    if (rowSizeEl) rowSizeEl.textContent = fmtInt(t.rowSize);
+    if (tableSizeEl) tableSizeEl.textContent = fmt(t.sizeBytes / 1e9);
+  });
+}
+
+function getApproxColsFromRowSize(rowSize) {
+  return Math.max(1, Math.floor(rowSize / 20));
+}
+
+function runPipeline() {
+  const ops = Array.from(document.querySelectorAll(".opRow"));
+  const tables = Array.from(document.querySelectorAll(".tableBox"));
+  if (ops.length === 0 || tables.length === 0) {
+    return {
+      finalRows: 0,
+      finalRowSize: 0,
+      finalBytes: 0,
+      totalBytesProcessed: 0,
+      totalRuntimeSec: 0,
+      maxMemRequired: 0,
+      opTimes: { scan: 0, filter: 0, projection: 0, join: 0, groupby: 0, sort: 0 }
+    };
+  }
+
+  let rows = 0;
+  let rowSize = 0;
+  let totalBytesProcessed = 0;
+  let totalRuntimeSec = 0;
+  let maxMemRequired = 0;
+  const opTimes = { scan: 0, filter: 0, projection: 0, join: 0, groupby: 0, sort: 0 };
+
+  ops.forEach((op, idx) => {
+    const id = op.dataset.opId;
+    const type = document.getElementById("opType-" + id).value;
+
+    if (idx === 0) {
+      const baseSel = document.getElementById("opBase-" + id);
+      if (!baseSel || !baseSel.value) return;
+      const baseId = baseSel.value;
+      const t = getTableState(baseId);
+      rows = t.rows;
+      rowSize = t.rowSize;
+
+      const inBytes = rows * rowSize;
+      const scanThroughput = THROUGHPUT.scanMBps * 1e6;
+      const scanTime = inBytes / scanThroughput;
+      totalBytesProcessed += inBytes;
+      totalRuntimeSec += scanTime;
+      opTimes.scan += scanTime;
+      if (inBytes > maxMemRequired) maxMemRequired = inBytes;
+    }
+
+    if (rows <= 0 || rowSize <= 0) return;
+
+    if (type === "filter") {
+      const sel = +document.getElementById("opSel-" + id).value || 100;
+      const inBytes = rows * rowSize;
+      const outRows = Math.max(1, Math.floor(rows * sel / 100));
+      const throughput = THROUGHPUT.filterMBps * 1e6;
+      const rt = inBytes / throughput;
+      totalBytesProcessed += inBytes;
+      totalRuntimeSec += rt;
+      opTimes.filter += rt;
+      const memReq = inBytes;
+      if (memReq > maxMemRequired) maxMemRequired = memReq;
+      rows = outRows;
+    } else if (type === "projection") {
+      const keep = +document.getElementById("opColsKeep-" + id).value || 1;
+      const oldRowSize = rowSize;
+      const approxCols = getApproxColsFromRowSize(oldRowSize);
+      const newRowSize = Math.max(1, Math.min(keep, 10000)) * (oldRowSize / Math.max(1, approxCols));
+      const inBytes = rows * oldRowSize;
+      const outBytes = rows * newRowSize;
+      const throughput = THROUGHPUT.projMBps * 1e6;
+      const rt = inBytes / throughput;
+      totalBytesProcessed += inBytes;
+      totalRuntimeSec += rt;
+      opTimes.projection += rt;
+      const memReq = Math.max(inBytes, outBytes);
+      if (memReq > maxMemRequired) maxMemRequired = memReq;
+      rowSize = newRowSize;
+    } else if (type === "join") {
+      const rightSel = document.getElementById("opRightTable-" + id);
+      if (!rightSel || !rightSel.value) return;
+      const rightId = rightSel.value;
+      const rtTable = getTableState(rightId);
+      const leftRows = rows;
+      const leftRowSize = rowSize;
+      const rightRows = rtTable.rows;
+      const rightRowSize = rtTable.rowSize;
+      const hashBytes = leftRows * leftRowSize;
+      const probeBytes = rightRows * rightRowSize;
+      const memReq = (hashBytes + probeBytes) * 1.2;
+      if (memReq > maxMemRequired) maxMemRequired = memReq;
+      const outRows = Math.min(leftRows, rightRows);
+      const throughput = THROUGHPUT.joinRowsPs;
+      const rtSec = (leftRows + rightRows) / throughput;
+      totalBytesProcessed += hashBytes + probeBytes;
+      totalRuntimeSec += rtSec;
+      opTimes.join += rtSec;
+      rows = outRows;
+      rowSize = Math.max(leftRowSize, rightRowSize);
+    } else if (type === "groupby") {
+      const card = +document.getElementById("opCard-" + id).value || 1;
+      const outRows = Math.min(rows, card);
+      const inBytes = rows * rowSize;
+      const memReq = outRows * rowSize;
+      if (memReq > maxMemRequired) maxMemRequired = memReq;
+      const throughput = THROUGHPUT.groupRowsPs;
+      const rtSec = rows / throughput;
+      totalBytesProcessed += inBytes;
+      totalRuntimeSec += rtSec;
+      opTimes.groupby += rtSec;
+      rows = outRows;
+    } else if (type === "sort") {
+      const inBytes = rows * rowSize;
+      const memReq = inBytes;
+      if (memReq > maxMemRequired) maxMemRequired = memReq;
+      const throughputRowsPerSec = THROUGHPUT.sortRowsPerMin / 60;
+      const rtSec = rows / throughputRowsPerSec;
+      totalBytesProcessed += inBytes;
+      totalRuntimeSec += rtSec;
+      opTimes.sort += rtSec;
+    }
+  });
+
+  const finalBytes = rows * rowSize;
+  if (finalBytes > maxMemRequired) maxMemRequired = finalBytes;
+
+  return {
+    finalRows: rows,
+    finalRowSize: rowSize,
+    finalBytes,
+    totalBytesProcessed,
+    totalRuntimeSec,
+    maxMemRequired,
+    opTimes
+  };
+}
+
+function updateSummary(p) {
+  document.getElementById("sumRows").textContent = fmtInt(p.finalRows);
+  document.getElementById("sumRowSize").textContent = fmtInt(p.finalRowSize);
+  document.getElementById("sumSizeGB").textContent = fmt(p.finalBytes / 1e9);
+  document.getElementById("sumBytesGB").textContent = fmt(p.totalBytesProcessed / 1e9);
+  document.getElementById("sumRuntime").textContent = fmt(p.totalRuntimeSec);
+}
+
+function evalService(key, memGB, p) {
+  const memBytes = memGB * 1e9;
+  const marginBytes = memBytes - p.maxMemRequired;
+
+  const model = SERVICE_MODELS[key];
+  let baseRuntime = 0;
+  baseRuntime += p.opTimes.scan * model.mult.scan;
+  baseRuntime += p.opTimes.filter * model.mult.filter;
+  baseRuntime += p.opTimes.projection * model.mult.projection;
+  baseRuntime += p.opTimes.join * model.mult.join;
+  baseRuntime += p.opTimes.groupby * model.mult.groupby;
+  baseRuntime += p.opTimes.sort * model.mult.sort;
+
+  const runtime = model.startupSec + baseRuntime;
+  const limit = model.limitSec;
+
+  let costEUR = 0;
+  if (p.finalRows > 0 && p.finalRowSize > 0 && runtime > 0) {
+    let costUSD = 0;
+    if (key === "lambda") {
+      const billable = Math.min(runtime, limit);
+      const gbSeconds = 10 * billable;
+      costUSD = gbSeconds * PRICING.lambdaGBs;
+    } else {
+      if (marginBytes < 0) {
+        costUSD = 0;
+      } else if (key === "ecs") {
+        const hours = runtime / 3600;
+        const vcpuCost = 8 * hours * PRICING.ecsVcpuHour;
+        const memCost = memGB * hours * PRICING.ecsGBHour;
+        costUSD = vcpuCost + memCost;
+      } else if (key === "glue") {
+        const hours = runtime / 3600;
+        const dpu = 2;
+        costUSD = dpu * hours * PRICING.glueDPUHour;
+      } else if (key === "emr") {
+        const vcpu = 8;
+        const vcpuCost = vcpu * runtime * PRICING.emrVcpuSec;
+        const memCost = memGB * runtime * PRICING.emrGBSec;
+        costUSD = vcpuCost + memCost;
+      } else if (key === "spot") {
+        const hours = runtime / 3600;
+        costUSD = hours * PRICING.spotHour;
+      }
+    }
+    costEUR = costUSD * USD_TO_EUR;
+  }
+
+  return { marginBytes, runtime, limit, startup: model.startupSec, costEUR };
+}
+
+function updateServices(p) {
+  const lambda = evalService("lambda", 10, p);
+  const ecs = evalService("ecs", 120, p);
+  const glue = evalService("glue", 32, p);
+  const emr = evalService("emr", 64, p);
+  const spot = evalService("spot", 256, p);
+
+  document.getElementById("startupLambda").textContent = fmtTime(lambda.startup);
+  document.getElementById("marginLambda").innerHTML = fmtGBMargin(lambda.marginBytes);
+  if (lambda.runtime > lambda.limit) {
+    const over = lambda.runtime - lambda.limit;
+    document.getElementById("rtLambda").innerHTML = fmtNegativeTimeBadge(over);
+  } else {
+    document.getElementById("rtLambda").textContent = fmtTime(lambda.runtime);
+  }
+  document.getElementById("costLambda").textContent = fmt(lambda.costEUR);
+
+  document.getElementById("startupECS").textContent = fmtTime(ecs.startup);
+  document.getElementById("marginECS").innerHTML = fmtGBMargin(ecs.marginBytes);
+  document.getElementById("rtECS").textContent = fmtTime(ecs.runtime);
+  document.getElementById("costECS").textContent = fmt(ecs.costEUR);
+
+  document.getElementById("startupGlue").textContent = fmtTime(glue.startup);
+  document.getElementById("marginGlue").innerHTML = fmtGBMargin(glue.marginBytes);
+  document.getElementById("rtGlue").textContent = fmtTime(glue.runtime);
+  document.getElementById("costGlue").textContent = fmt(glue.costEUR);
+
+  document.getElementById("startupEMR").textContent = fmtTime(emr.startup);
+  document.getElementById("marginEMR").innerHTML = fmtGBMargin(emr.marginBytes);
+  document.getElementById("rtEMR").textContent = fmtTime(emr.runtime);
+  document.getElementById("costEMR").textContent = fmt(emr.costEUR);
+
+  document.getElementById("startupSpot").textContent = fmtTime(spot.startup);
+  document.getElementById("marginSpot").innerHTML = fmtGBMargin(spot.marginBytes);
+  document.getElementById("rtSpot").textContent = fmtTime(spot.runtime);
+  document.getElementById("costSpot").textContent = fmt(spot.costEUR);
+}
+
+function updateAll() {
+  updateTablesDisplay();
+  const p = runPipeline();
+  updateSummary(p);
+  updateServices(p);
+}
+
+// bootstrap
+addTable();
+addTable();
+addOperation();
+</script>
+
+</body>
+</html>
